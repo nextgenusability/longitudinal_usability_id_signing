@@ -1,0 +1,9 @@
+repo,denom_theme_assignments,Configuration friction,Authentication friction,Build/CI/installation/distribution release issues,Integration failure/issues,Tedious Workflows,User confusion / unclear documentation,Notification/Logging Issues,Unexpected behavior,Performance issue,Security concerns,Missing feature / enhancement request
+hashicorp/vault,11261,1464,1133,1317,891,186,1322,1471,900,620,634,1323
+sigstore/cosign,3407,389,250,538,410,65,447,502,242,160,89,315
+notaryproject/notation,1197,171,51,194,129,26,156,145,80,51,26,168
+sigstore/fulcio,981,99,96,169,109,12,112,111,35,59,35,144
+Keyfactor/ejbca-ce,962,110,80,123,95,21,133,139,93,67,38,63
+sigstore/rekor,878,97,35,119,57,15,105,165,53,58,22,152
+openpubkey/openpubkey,467,37,72,65,40,2,55,55,26,22,23,70
+Keyfactor/signserver-ce,117,13,11,19,9,0,18,16,11,7,4,9

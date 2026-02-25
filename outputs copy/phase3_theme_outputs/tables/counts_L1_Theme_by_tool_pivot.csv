@@ -1,0 +1,12 @@
+L1_Theme,Keyfactor/ejbca-ce,Keyfactor/signserver-ce,hashicorp/vault,notaryproject/notation,openpubkey/openpubkey,sigstore/cosign,sigstore/fulcio,sigstore/rekor,Total
+Notification/Logging /Web UI Issues,139,16,1471,145,55,502,111,165,2604
+Build/CI/installation/distribution release issues,123,19,1317,194,65,538,169,119,2544
+Configuration friction,110,13,1464,171,37,389,99,97,2380
+User confusion / unclear documentation/documentation improvements,133,18,1322,156,55,447,112,105,2348
+Missing feature / enhancement request,63,9,1323,168,70,315,144,152,2244
+Integration failure/issues,95,9,891,129,40,410,109,57,1740
+Authentication friction,80,11,1133,51,72,250,96,35,1728
+Unexpected behavior,93,11,900,80,26,242,35,53,1440
+Performance issue,67,7,620,51,22,160,59,58,1044
+Security concerns,38,4,634,26,23,89,35,22,871
+Tedious Workflows,21,0,186,26,2,65,12,15,327

@@ -1,0 +1,7 @@
+phase,label,n,errors,error_pct
+Agreement 60,Associated Component,60,0,0.0
+Agreement 60,codes_primary,60,5,8.3
+Phase 2,Usability,60,5,8.3
+Phase 3 (notation),Assoc Component Theme,9,0,0.0
+Phase 3 (notation),L1_Theme,9,0,0.0
+Phase 3 (notation),Nielsen_theme,9,1,11.1

@@ -1,0 +1,3 @@
+level,chi2,dof,p_value,n_assignments,n_tools,n_categories,cramers_v,min_expected,cells_expected_lt5
+Primary themes (inductively generated),517.178786062478,70,2.068162820891224e-69,19270,8,11,0.06191993244841898,1.9854177477944992,1
+Secondary themes (inductively generated),206.74553700650625,21,1.69710227019487e-32,19270,8,4,0.05980212094088267,13.624701608718215,0

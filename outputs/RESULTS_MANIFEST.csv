@@ -1,0 +1,271 @@
+file_path,generated_by,regen_command,description
+outputs/RESULTS_MANIFEST.csv,scripts/build_results_manifest.py,python scripts/build_results_manifest.py,Per-file output manifest (provenance and regeneration command).
+outputs/phase3_theme_outputs/plots/bars/Keyfactor_ejbca-ce__Associated_Component_Theme.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/bars/Keyfactor_ejbca-ce__L1_Theme.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/bars/Keyfactor_ejbca-ce__L1_Theme_Secondary.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/bars/Keyfactor_ejbca-ce__Nielsen_theme.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/bars/Keyfactor_signserver-ce__Associated_Component_Theme.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/bars/Keyfactor_signserver-ce__L1_Theme.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/bars/Keyfactor_signserver-ce__L1_Theme_Secondary.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/bars/Keyfactor_signserver-ce__Nielsen_theme.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/bars/hashicorp_vault__Associated_Component_Theme.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/bars/hashicorp_vault__L1_Theme.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/bars/hashicorp_vault__L1_Theme_Secondary.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/bars/notaryproject_notation__Associated_Component_Theme.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/bars/notaryproject_notation__L1_Theme.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/bars/notaryproject_notation__L1_Theme_Secondary.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/bars/openpubkey_openpubkey__Associated_Component_Theme.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/bars/openpubkey_openpubkey__L1_Theme.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/bars/openpubkey_openpubkey__L1_Theme_Secondary.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/bars/sigstore_cosign__Associated_Component_Theme.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/bars/sigstore_cosign__L1_Theme.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/bars/sigstore_cosign__L1_Theme_Secondary.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/bars/sigstore_fulcio__Associated_Component_Theme.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/bars/sigstore_fulcio__L1_Theme.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/bars/sigstore_fulcio__L1_Theme_Secondary.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/bars/sigstore_rekor__Associated_Component_Theme.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/bars/sigstore_rekor__L1_Theme.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/bars/sigstore_rekor__L1_Theme_Secondary.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/pies/Keyfactor_ejbca-ce__Associated_Component_Theme.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/pies/Keyfactor_ejbca-ce__L1_Theme.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/pies/Keyfactor_ejbca-ce__L1_Theme_Secondary.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/pies/Keyfactor_ejbca-ce__Nielsen_theme.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/pies/Keyfactor_signserver-ce__Associated_Component_Theme.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/pies/Keyfactor_signserver-ce__L1_Theme.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/pies/Keyfactor_signserver-ce__L1_Theme_Secondary.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/pies/Keyfactor_signserver-ce__Nielsen_theme.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/pies/hashicorp_vault__Associated_Component_Theme.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/pies/hashicorp_vault__L1_Theme.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/pies/hashicorp_vault__L1_Theme_Secondary.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/pies/hashicorp_vault__Nielsen_theme.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/pies/notaryproject_notation__Associated_Component_Theme.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/pies/notaryproject_notation__L1_Theme.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/pies/notaryproject_notation__L1_Theme_Secondary.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/pies/notaryproject_notation__Nielsen_theme.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/pies/openpubkey_openpubkey__Associated_Component_Theme.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/pies/openpubkey_openpubkey__L1_Theme.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/pies/openpubkey_openpubkey__L1_Theme_Secondary.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/pies/openpubkey_openpubkey__Nielsen_theme.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/pies/sigstore_cosign__Associated_Component_Theme.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/pies/sigstore_cosign__L1_Theme.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/pies/sigstore_cosign__L1_Theme_Secondary.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/pies/sigstore_cosign__Nielsen_theme.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/pies/sigstore_fulcio__Associated_Component_Theme.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/pies/sigstore_fulcio__L1_Theme.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/pies/sigstore_fulcio__L1_Theme_Secondary.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/pies/sigstore_fulcio__Nielsen_theme.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/pies/sigstore_rekor__Associated_Component_Theme.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/pies/sigstore_rekor__L1_Theme.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/pies/sigstore_rekor__L1_Theme_Secondary.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/pies/sigstore_rekor__Nielsen_theme.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/stacked/stacked_Associated_Component_Theme.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/stacked/stacked_L1_Theme.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/stacked/stacked_L1_Theme_Secondary.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/plots/stacked/stacked_Nielsen_theme.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/tables/_warmup.png,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/tables/counts_Associated_Component_Theme_by_tool_long.csv,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/tables/counts_Associated_Component_Theme_by_tool_pivot.csv,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/tables/counts_L1_Theme_Secondary_by_tool_long.csv,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/tables/counts_L1_Theme_Secondary_by_tool_pivot.csv,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/tables/counts_L1_Theme_by_tool_long.csv,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/tables/counts_L1_Theme_by_tool_pivot.csv,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/tables/counts_Nielsen_theme_by_tool_long.csv,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/tables/counts_Nielsen_theme_by_tool_pivot.csv,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/tables/top20_Associated_Component_Theme_by_tool.tex,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/tables/top20_L1_Theme_Secondary_by_tool.tex,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/tables/top20_L1_Theme_by_tool.tex,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/tables/top20_Nielsen_theme_by_tool.tex,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/tables/usability_vs_nonusability_by_tool.csv,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/tables/usability_vs_nonusability_by_tool.tex,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs/tables/usability_vs_nonusability_overall.csv,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/phase3_theme_outputs.zip,legacy artifact,n/a,Legacy bundled outputs from earlier runs.
+outputs/plots/bars/Keyfactor_ejbca-ce__Associated_Component_Theme.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Per-tool bar charts (when enabled).
+outputs/plots/bars/Keyfactor_ejbca-ce__L1_Theme.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Per-tool bar charts (when enabled).
+outputs/plots/bars/Keyfactor_ejbca-ce__L1_Theme_Secondary.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Per-tool bar charts (when enabled).
+outputs/plots/bars/Keyfactor_ejbca-ce__Nielsen_theme.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Per-tool bar charts (when enabled).
+outputs/plots/bars/Keyfactor_signserver-ce__Associated_Component_Theme.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Per-tool bar charts (when enabled).
+outputs/plots/bars/Keyfactor_signserver-ce__L1_Theme.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Per-tool bar charts (when enabled).
+outputs/plots/bars/Keyfactor_signserver-ce__L1_Theme_Secondary.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Per-tool bar charts (when enabled).
+outputs/plots/bars/Keyfactor_signserver-ce__Nielsen_theme.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Per-tool bar charts (when enabled).
+outputs/plots/bars/hashicorp_vault__Associated_Component_Theme.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Per-tool bar charts (when enabled).
+outputs/plots/bars/hashicorp_vault__L1_Theme.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Per-tool bar charts (when enabled).
+outputs/plots/bars/hashicorp_vault__L1_Theme_Secondary.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Per-tool bar charts (when enabled).
+outputs/plots/bars/notaryproject_notation__Associated_Component_Theme.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Per-tool bar charts (when enabled).
+outputs/plots/bars/notaryproject_notation__L1_Theme.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Per-tool bar charts (when enabled).
+outputs/plots/bars/notaryproject_notation__L1_Theme_Secondary.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Per-tool bar charts (when enabled).
+outputs/plots/bars/openpubkey_openpubkey__Associated_Component_Theme.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Per-tool bar charts (when enabled).
+outputs/plots/bars/openpubkey_openpubkey__L1_Theme.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Per-tool bar charts (when enabled).
+outputs/plots/bars/openpubkey_openpubkey__L1_Theme_Secondary.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Per-tool bar charts (when enabled).
+outputs/plots/bars/sigstore_cosign__Associated_Component_Theme.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Per-tool bar charts (when enabled).
+outputs/plots/bars/sigstore_cosign__L1_Theme.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Per-tool bar charts (when enabled).
+outputs/plots/bars/sigstore_cosign__L1_Theme_Secondary.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Per-tool bar charts (when enabled).
+outputs/plots/bars/sigstore_fulcio__Associated_Component_Theme.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Per-tool bar charts (when enabled).
+outputs/plots/bars/sigstore_fulcio__L1_Theme.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Per-tool bar charts (when enabled).
+outputs/plots/bars/sigstore_fulcio__L1_Theme_Secondary.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Per-tool bar charts (when enabled).
+outputs/plots/bars/sigstore_rekor__Associated_Component_Theme.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Per-tool bar charts (when enabled).
+outputs/plots/bars/sigstore_rekor__L1_Theme.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Per-tool bar charts (when enabled).
+outputs/plots/bars/sigstore_rekor__L1_Theme_Secondary.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Per-tool bar charts (when enabled).
+outputs/plots/pies/Keyfactor_ejbca-ce__Associated_Component_Theme.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Per-tool pie charts for theme distributions.
+outputs/plots/pies/Keyfactor_ejbca-ce__L1_Theme.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Per-tool pie charts for theme distributions.
+outputs/plots/pies/Keyfactor_ejbca-ce__L1_Theme_Secondary.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Per-tool pie charts for theme distributions.
+outputs/plots/pies/Keyfactor_ejbca-ce__Nielsen_theme.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Per-tool pie charts for theme distributions.
+outputs/plots/pies/Keyfactor_signserver-ce__Associated_Component_Theme.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Per-tool pie charts for theme distributions.
+outputs/plots/pies/Keyfactor_signserver-ce__L1_Theme.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Per-tool pie charts for theme distributions.
+outputs/plots/pies/Keyfactor_signserver-ce__L1_Theme_Secondary.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Per-tool pie charts for theme distributions.
+outputs/plots/pies/Keyfactor_signserver-ce__Nielsen_theme.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Per-tool pie charts for theme distributions.
+outputs/plots/pies/hashicorp_vault__Associated_Component_Theme.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Per-tool pie charts for theme distributions.
+outputs/plots/pies/hashicorp_vault__L1_Theme.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Per-tool pie charts for theme distributions.
+outputs/plots/pies/hashicorp_vault__L1_Theme_Secondary.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Per-tool pie charts for theme distributions.
+outputs/plots/pies/hashicorp_vault__Nielsen_theme.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Per-tool pie charts for theme distributions.
+outputs/plots/pies/notaryproject_notation__Associated_Component_Theme.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Per-tool pie charts for theme distributions.
+outputs/plots/pies/notaryproject_notation__L1_Theme.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Per-tool pie charts for theme distributions.
+outputs/plots/pies/notaryproject_notation__L1_Theme_Secondary.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Per-tool pie charts for theme distributions.
+outputs/plots/pies/notaryproject_notation__Nielsen_theme.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Per-tool pie charts for theme distributions.
+outputs/plots/pies/openpubkey_openpubkey__Associated_Component_Theme.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Per-tool pie charts for theme distributions.
+outputs/plots/pies/openpubkey_openpubkey__L1_Theme.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Per-tool pie charts for theme distributions.
+outputs/plots/pies/openpubkey_openpubkey__L1_Theme_Secondary.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Per-tool pie charts for theme distributions.
+outputs/plots/pies/openpubkey_openpubkey__Nielsen_theme.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Per-tool pie charts for theme distributions.
+outputs/plots/pies/sigstore_cosign__Associated_Component_Theme.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Per-tool pie charts for theme distributions.
+outputs/plots/pies/sigstore_cosign__L1_Theme.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Per-tool pie charts for theme distributions.
+outputs/plots/pies/sigstore_cosign__L1_Theme_Secondary.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Per-tool pie charts for theme distributions.
+outputs/plots/pies/sigstore_cosign__Nielsen_theme.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Per-tool pie charts for theme distributions.
+outputs/plots/pies/sigstore_fulcio__Associated_Component_Theme.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Per-tool pie charts for theme distributions.
+outputs/plots/pies/sigstore_fulcio__L1_Theme.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Per-tool pie charts for theme distributions.
+outputs/plots/pies/sigstore_fulcio__L1_Theme_Secondary.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Per-tool pie charts for theme distributions.
+outputs/plots/pies/sigstore_fulcio__Nielsen_theme.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Per-tool pie charts for theme distributions.
+outputs/plots/pies/sigstore_rekor__Associated_Component_Theme.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Per-tool pie charts for theme distributions.
+outputs/plots/pies/sigstore_rekor__L1_Theme.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Per-tool pie charts for theme distributions.
+outputs/plots/pies/sigstore_rekor__L1_Theme_Secondary.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Per-tool pie charts for theme distributions.
+outputs/plots/pies/sigstore_rekor__Nielsen_theme.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Per-tool pie charts for theme distributions.
+outputs/plots/reliability_error_rates_bar.png,scripts/analyze_reliability.py,idtools_usability run reliability,Reliability/inter-rater error bar chart.
+outputs/plots/stacked/stacked_Associated_Component_Theme.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Stacked and normalized stacked bar charts.
+outputs/plots/stacked/stacked_L1_Theme.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Stacked and normalized stacked bar charts.
+outputs/plots/stacked/stacked_L1_Theme_Secondary.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Stacked and normalized stacked bar charts.
+outputs/plots/stacked/stacked_Nielsen_theme.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Stacked and normalized stacked bar charts.
+outputs/plots/stacked/stacked_pct_Associated_Component_Theme.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Stacked and normalized stacked bar charts.
+outputs/plots/stacked/stacked_pct_L1_Theme.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Stacked and normalized stacked bar charts.
+outputs/plots/stacked/stacked_pct_L1_Theme_Secondary.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Stacked and normalized stacked bar charts.
+outputs/plots/stacked/stacked_pct_Nielsen_theme.png,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Stacked and normalized stacked bar charts.
+outputs/plots/trend/aggregate_poisson_expected_counts_associated_component.png,scripts/trend_poisson_phase3.py,python scripts/trend_poisson_phase3.py,Aggregate Poisson fitted mean curve plots.
+outputs/plots/trend/aggregate_poisson_expected_counts_l1_theme.png,scripts/trend_poisson_phase3.py,python scripts/trend_poisson_phase3.py,Aggregate Poisson fitted mean curve plots.
+outputs/plots/trend/heatmap_beta_Associated_Component_Theme.png,scripts/trend_poisson_phase3.py,python scripts/trend_poisson_phase3.py,Poisson slope heatmaps (full/significant).
+outputs/plots/trend/heatmap_beta_L1_Theme.png,scripts/trend_poisson_phase3.py,python scripts/trend_poisson_phase3.py,Poisson slope heatmaps (full/significant).
+outputs/plots/trend/heatmap_beta_L1_Theme_Secondary.png,scripts/trend_poisson_phase3.py,python scripts/trend_poisson_phase3.py,Poisson slope heatmaps (full/significant).
+outputs/plots/trend/heatmap_beta_Nielsen_theme.png,scripts/trend_poisson_phase3.py,python scripts/trend_poisson_phase3.py,Poisson slope heatmaps (full/significant).
+outputs/plots/trend/heatmap_beta_sig_Associated_Component_Theme.png,scripts/trend_poisson_phase3.py,python scripts/trend_poisson_phase3.py,Poisson slope heatmaps (full/significant).
+outputs/plots/trend/heatmap_beta_sig_L1_Theme.png,scripts/trend_poisson_phase3.py,python scripts/trend_poisson_phase3.py,Poisson slope heatmaps (full/significant).
+outputs/plots/trend/heatmap_beta_sig_L1_Theme_Secondary.png,scripts/trend_poisson_phase3.py,python scripts/trend_poisson_phase3.py,Poisson slope heatmaps (full/significant).
+outputs/plots/trend/heatmap_beta_sig_Nielsen_theme.png,scripts/trend_poisson_phase3.py,python scripts/trend_poisson_phase3.py,Poisson slope heatmaps (full/significant).
+outputs/plots/trend/pub/aggregate_poisson_expected_counts_associated_component_pub.png,scripts/make_pub_rq3_figs.py,python scripts/make_pub_rq3_figs.py,Publication-style PNG figures from fig_rq3_* tables.
+outputs/plots/trend/pub/aggregate_poisson_expected_counts_l1_theme_pub.png,scripts/make_pub_rq3_figs.py,python scripts/make_pub_rq3_figs.py,Publication-style PNG figures from fig_rq3_* tables.
+outputs/plots/trend/pub/heatmap_beta_sig_L1_Theme_pub.png,scripts/make_pub_rq3_figs.py,python scripts/make_pub_rq3_figs.py,Publication-style PNG figures from fig_rq3_* tables.
+outputs/plots/trend/pub copy/aggregate_poisson_expected_counts_associated_component_pub.png,legacy artifact,n/a,Legacy copied publication figures.
+outputs/plots/trend/pub copy/aggregate_poisson_expected_counts_l1_theme_pub.png,legacy artifact,n/a,Legacy copied publication figures.
+outputs/plots/trend/pub copy/heatmap_beta_sig_L1_Theme_pub.png,legacy artifact,n/a,Legacy copied publication figures.
+outputs/plots/trend/pub_latex/aggregate_poisson_expected_counts_associated_component_pub_latex.pdf,scripts/pubfigs/make_rq3_figs_latex.py,python scripts/pubfigs/make_rq3_figs_latex.py --tables-dir outputs/tables --out-dir outputs/plots/trend/pub_latex --use-tex off,Publication-style LaTeX-ready PNG/PDF figures.
+outputs/plots/trend/pub_latex/aggregate_poisson_expected_counts_associated_component_pub_latex.png,scripts/pubfigs/make_rq3_figs_latex.py,python scripts/pubfigs/make_rq3_figs_latex.py --tables-dir outputs/tables --out-dir outputs/plots/trend/pub_latex --use-tex off,Publication-style LaTeX-ready PNG/PDF figures.
+outputs/plots/trend/pub_latex/aggregate_poisson_expected_counts_l1_theme_pub_latex.pdf,scripts/pubfigs/make_rq3_figs_latex.py,python scripts/pubfigs/make_rq3_figs_latex.py --tables-dir outputs/tables --out-dir outputs/plots/trend/pub_latex --use-tex off,Publication-style LaTeX-ready PNG/PDF figures.
+outputs/plots/trend/pub_latex/aggregate_poisson_expected_counts_l1_theme_pub_latex.png,scripts/pubfigs/make_rq3_figs_latex.py,python scripts/pubfigs/make_rq3_figs_latex.py --tables-dir outputs/tables --out-dir outputs/plots/trend/pub_latex --use-tex off,Publication-style LaTeX-ready PNG/PDF figures.
+outputs/plots/trend/pub_latex/heatmap_beta_sig_Associated_Component_Theme_pub_latex.pdf,scripts/pubfigs/make_rq3_figs_latex.py,python scripts/pubfigs/make_rq3_figs_latex.py --tables-dir outputs/tables --out-dir outputs/plots/trend/pub_latex --use-tex off,Publication-style LaTeX-ready PNG/PDF figures.
+outputs/plots/trend/pub_latex/heatmap_beta_sig_Associated_Component_Theme_pub_latex.png,scripts/pubfigs/make_rq3_figs_latex.py,python scripts/pubfigs/make_rq3_figs_latex.py --tables-dir outputs/tables --out-dir outputs/plots/trend/pub_latex --use-tex off,Publication-style LaTeX-ready PNG/PDF figures.
+outputs/plots/trend/pub_latex/heatmap_beta_sig_L1_Theme_pub_latex.pdf,scripts/pubfigs/make_rq3_figs_latex.py,python scripts/pubfigs/make_rq3_figs_latex.py --tables-dir outputs/tables --out-dir outputs/plots/trend/pub_latex --use-tex off,Publication-style LaTeX-ready PNG/PDF figures.
+outputs/plots/trend/pub_latex/heatmap_beta_sig_L1_Theme_pub_latex.png,scripts/pubfigs/make_rq3_figs_latex.py,python scripts/pubfigs/make_rq3_figs_latex.py --tables-dir outputs/tables --out-dir outputs/plots/trend/pub_latex --use-tex off,Publication-style LaTeX-ready PNG/PDF figures.
+outputs/plots/trend/pub_latex/heatmap_beta_sig_Nielsen_theme_pub_latex.pdf,scripts/pubfigs/make_rq3_figs_latex.py,python scripts/pubfigs/make_rq3_figs_latex.py --tables-dir outputs/tables --out-dir outputs/plots/trend/pub_latex --use-tex off,Publication-style LaTeX-ready PNG/PDF figures.
+outputs/plots/trend/pub_latex/heatmap_beta_sig_Nielsen_theme_pub_latex.png,scripts/pubfigs/make_rq3_figs_latex.py,python scripts/pubfigs/make_rq3_figs_latex.py --tables-dir outputs/tables --out-dir outputs/plots/trend/pub_latex --use-tex off,Publication-style LaTeX-ready PNG/PDF figures.
+outputs/plots/trend/raw_monthly_usability_counts_by_tool.png,scripts/plot_raw_monthly_usability_by_tool.py,python scripts/plot_raw_monthly_usability_by_tool.py,Raw monthly usability trend lines by tool (non-Poisson).
+outputs/tables/_warmup.png,legacy artifact,n/a,Legacy warmup figure.
+outputs/tables/aggregate_poisson_expected_counts_associated_component_curves.csv,scripts/trend_poisson_phase3.py,python scripts/trend_poisson_phase3.py,Aggregate Poisson curves and slope tables.
+outputs/tables/aggregate_poisson_expected_counts_associated_component_slopes.csv,scripts/trend_poisson_phase3.py,python scripts/trend_poisson_phase3.py,Aggregate Poisson curves and slope tables.
+outputs/tables/aggregate_poisson_expected_counts_associated_component_slopes.tex,scripts/trend_poisson_phase3.py,python scripts/trend_poisson_phase3.py,Aggregate Poisson curves and slope tables.
+outputs/tables/aggregate_poisson_expected_counts_l1_theme_curves.csv,scripts/trend_poisson_phase3.py,python scripts/trend_poisson_phase3.py,Aggregate Poisson curves and slope tables.
+outputs/tables/aggregate_poisson_expected_counts_l1_theme_slopes.csv,scripts/trend_poisson_phase3.py,python scripts/trend_poisson_phase3.py,Aggregate Poisson curves and slope tables.
+outputs/tables/aggregate_poisson_expected_counts_l1_theme_slopes.tex,scripts/trend_poisson_phase3.py,python scripts/trend_poisson_phase3.py,Aggregate Poisson curves and slope tables.
+outputs/tables/counts_Associated_Component_Theme_by_tool_long.csv,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Long-format per-tool counts for each theme family.
+outputs/tables/counts_Associated_Component_Theme_by_tool_pivot.csv,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Pivot-format per-tool counts for each theme family.
+outputs/tables/counts_L1_Theme_Secondary_by_tool_long.csv,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Long-format per-tool counts for each theme family.
+outputs/tables/counts_L1_Theme_Secondary_by_tool_pivot.csv,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Pivot-format per-tool counts for each theme family.
+outputs/tables/counts_L1_Theme_by_tool_long.csv,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Long-format per-tool counts for each theme family.
+outputs/tables/counts_L1_Theme_by_tool_pivot.csv,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Pivot-format per-tool counts for each theme family.
+outputs/tables/counts_Nielsen_theme_by_tool_long.csv,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Long-format per-tool counts for each theme family.
+outputs/tables/counts_Nielsen_theme_by_tool_pivot.csv,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Pivot-format per-tool counts for each theme family.
+outputs/tables/fig_rq3_aggregate_components_curves_long.csv,scripts/pubfigs/make_rq3_figs_latex.py,python scripts/pubfigs/make_rq3_figs_latex.py --tables-dir outputs/tables --out-dir outputs/plots/trend/pub_latex --use-tex off,Helper matrices/curves for publication RQ3 figures.
+outputs/tables/fig_rq3_aggregate_components_curves_wide.csv,scripts/pubfigs/make_rq3_figs_latex.py,python scripts/pubfigs/make_rq3_figs_latex.py --tables-dir outputs/tables --out-dir outputs/plots/trend/pub_latex --use-tex off,Helper matrices/curves for publication RQ3 figures.
+outputs/tables/fig_rq3_aggregate_l1_curves_long.csv,scripts/pubfigs/make_rq3_figs_latex.py,python scripts/pubfigs/make_rq3_figs_latex.py --tables-dir outputs/tables --out-dir outputs/plots/trend/pub_latex --use-tex off,Helper matrices/curves for publication RQ3 figures.
+outputs/tables/fig_rq3_aggregate_l1_curves_wide.csv,scripts/pubfigs/make_rq3_figs_latex.py,python scripts/pubfigs/make_rq3_figs_latex.py --tables-dir outputs/tables --out-dir outputs/plots/trend/pub_latex --use-tex off,Helper matrices/curves for publication RQ3 figures.
+outputs/tables/fig_rq3_heatmap_associated_component_sig_beta_matrix.csv,scripts/pubfigs/make_rq3_figs_latex.py,python scripts/pubfigs/make_rq3_figs_latex.py --tables-dir outputs/tables --out-dir outputs/plots/trend/pub_latex --use-tex off,Helper matrices/curves for publication RQ3 figures.
+outputs/tables/fig_rq3_heatmap_associated_component_sig_mask_matrix.csv,scripts/pubfigs/make_rq3_figs_latex.py,python scripts/pubfigs/make_rq3_figs_latex.py --tables-dir outputs/tables --out-dir outputs/plots/trend/pub_latex --use-tex off,Helper matrices/curves for publication RQ3 figures.
+outputs/tables/fig_rq3_heatmap_associated_component_sig_p_matrix.csv,scripts/pubfigs/make_rq3_figs_latex.py,python scripts/pubfigs/make_rq3_figs_latex.py --tables-dir outputs/tables --out-dir outputs/plots/trend/pub_latex --use-tex off,Helper matrices/curves for publication RQ3 figures.
+outputs/tables/fig_rq3_heatmap_l1_sig_beta_matrix.csv,scripts/pubfigs/make_rq3_figs_latex.py,python scripts/pubfigs/make_rq3_figs_latex.py --tables-dir outputs/tables --out-dir outputs/plots/trend/pub_latex --use-tex off,Helper matrices/curves for publication RQ3 figures.
+outputs/tables/fig_rq3_heatmap_l1_sig_long.csv,scripts/pubfigs/make_rq3_figs_latex.py,python scripts/pubfigs/make_rq3_figs_latex.py --tables-dir outputs/tables --out-dir outputs/plots/trend/pub_latex --use-tex off,Helper matrices/curves for publication RQ3 figures.
+outputs/tables/fig_rq3_heatmap_l1_sig_mask_matrix.csv,scripts/pubfigs/make_rq3_figs_latex.py,python scripts/pubfigs/make_rq3_figs_latex.py --tables-dir outputs/tables --out-dir outputs/plots/trend/pub_latex --use-tex off,Helper matrices/curves for publication RQ3 figures.
+outputs/tables/fig_rq3_heatmap_l1_sig_p_matrix.csv,scripts/pubfigs/make_rq3_figs_latex.py,python scripts/pubfigs/make_rq3_figs_latex.py --tables-dir outputs/tables --out-dir outputs/plots/trend/pub_latex --use-tex off,Helper matrices/curves for publication RQ3 figures.
+outputs/tables/fig_rq3_heatmap_nielsen_sig_beta_matrix.csv,scripts/pubfigs/make_rq3_figs_latex.py,python scripts/pubfigs/make_rq3_figs_latex.py --tables-dir outputs/tables --out-dir outputs/plots/trend/pub_latex --use-tex off,Helper matrices/curves for publication RQ3 figures.
+outputs/tables/fig_rq3_heatmap_nielsen_sig_mask_matrix.csv,scripts/pubfigs/make_rq3_figs_latex.py,python scripts/pubfigs/make_rq3_figs_latex.py --tables-dir outputs/tables --out-dir outputs/plots/trend/pub_latex --use-tex off,Helper matrices/curves for publication RQ3 figures.
+outputs/tables/fig_rq3_heatmap_nielsen_sig_p_matrix.csv,scripts/pubfigs/make_rq3_figs_latex.py,python scripts/pubfigs/make_rq3_figs_latex.py --tables-dir outputs/tables --out-dir outputs/plots/trend/pub_latex --use-tex off,Helper matrices/curves for publication RQ3 figures.
+outputs/tables/l1_theme_grouped_table_counts_by_tool.csv,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Primary/secondary theme grouped tables and source expansions.
+outputs/tables/l1_theme_grouped_table_counts_long.csv,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Primary/secondary theme grouped tables and source expansions.
+outputs/tables/l1_theme_grouped_table_percent_by_tool.csv,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Primary/secondary theme grouped tables and source expansions.
+outputs/tables/l1_theme_grouped_table_percent_by_tool.tex,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Primary/secondary theme grouped tables and source expansions.
+outputs/tables/l1_theme_grouped_table_source_exploded_usability.csv,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Primary/secondary theme grouped tables and source expansions.
+outputs/tables/negative_binomial_sensitivity_overall_by_tool.csv,scripts/trend_poisson_phase3.py,python scripts/trend_poisson_phase3.py,Negative-binomial sensitivity tables for monthly trend estimates.
+outputs/tables/negative_binomial_sensitivity_overall_by_tool.tex,scripts/trend_poisson_phase3.py,python scripts/trend_poisson_phase3.py,Negative-binomial sensitivity tables for monthly trend estimates.
+outputs/tables/nielsen_theme_counts_by_tool.csv,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Nielsen theme counts/percent tables and source expansions.
+outputs/tables/nielsen_theme_counts_long.csv,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Nielsen theme counts/percent tables and source expansions.
+outputs/tables/nielsen_theme_percent_by_tool.csv,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Nielsen theme counts/percent tables and source expansions.
+outputs/tables/nielsen_theme_percent_by_tool.tex,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Nielsen theme counts/percent tables and source expansions.
+outputs/tables/nielsen_theme_table_source_exploded_usability.csv,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Nielsen theme counts/percent tables and source expansions.
+outputs/tables/phase3_theme_codebook_with_examples.csv,scripts/build_phase3_theme_codebook_table.py,python scripts/build_phase3_theme_codebook_table.py,Theme codebook table (primary/secondary/Nielsen/component definitions).
+outputs/tables/phase3_theme_codebook_with_examples.tex,scripts/build_phase3_theme_codebook_table.py,python scripts/build_phase3_theme_codebook_table.py,Theme codebook table (primary/secondary/Nielsen/component definitions).
+outputs/tables/poisson_average_slopes_by_tool_and_l1_theme.csv,scripts/trend_poisson_phase3.py,python scripts/trend_poisson_phase3.py,"Poisson trend tables (overall, per-theme, summaries)."
+outputs/tables/poisson_average_slopes_by_tool_and_l1_theme.tex,scripts/trend_poisson_phase3.py,python scripts/trend_poisson_phase3.py,"Poisson trend tables (overall, per-theme, summaries)."
+outputs/tables/poisson_average_slopes_by_tool_and_l1_theme_long.csv,scripts/trend_poisson_phase3.py,python scripts/trend_poisson_phase3.py,"Poisson trend tables (overall, per-theme, summaries)."
+outputs/tables/poisson_average_slopes_by_tool_and_l1_theme_summary.csv,scripts/trend_poisson_phase3.py,python scripts/trend_poisson_phase3.py,"Poisson trend tables (overall, per-theme, summaries)."
+outputs/tables/poisson_average_slopes_by_tool_and_l1_theme_summary.tex,scripts/trend_poisson_phase3.py,python scripts/trend_poisson_phase3.py,"Poisson trend tables (overall, per-theme, summaries)."
+outputs/tables/poisson_average_slopes_by_tool_and_nielsen_theme.csv,scripts/trend_poisson_phase3.py,python scripts/trend_poisson_phase3.py,"Poisson trend tables (overall, per-theme, summaries)."
+outputs/tables/poisson_average_slopes_by_tool_and_nielsen_theme.tex,scripts/trend_poisson_phase3.py,python scripts/trend_poisson_phase3.py,"Poisson trend tables (overall, per-theme, summaries)."
+outputs/tables/poisson_average_slopes_by_tool_and_nielsen_theme_long.csv,scripts/trend_poisson_phase3.py,python scripts/trend_poisson_phase3.py,"Poisson trend tables (overall, per-theme, summaries)."
+outputs/tables/poisson_average_slopes_by_tool_and_nielsen_theme_summary.csv,scripts/trend_poisson_phase3.py,python scripts/trend_poisson_phase3.py,"Poisson trend tables (overall, per-theme, summaries)."
+outputs/tables/poisson_average_slopes_by_tool_and_nielsen_theme_summary.tex,scripts/trend_poisson_phase3.py,python scripts/trend_poisson_phase3.py,"Poisson trend tables (overall, per-theme, summaries)."
+outputs/tables/poisson_average_slopes_by_tool_summary.csv,scripts/trend_poisson_phase3.py,python scripts/trend_poisson_phase3.py,"Poisson trend tables (overall, per-theme, summaries)."
+outputs/tables/poisson_average_slopes_by_tool_summary.tex,scripts/trend_poisson_phase3.py,python scripts/trend_poisson_phase3.py,"Poisson trend tables (overall, per-theme, summaries)."
+outputs/tables/poisson_diagnostics_all_models.csv,scripts/trend_poisson_phase3.py,python scripts/trend_poisson_phase3.py,"Poisson trend tables (overall, per-theme, summaries)."
+outputs/tables/poisson_diagnostics_overall_by_tool.csv,scripts/trend_poisson_phase3.py,python scripts/trend_poisson_phase3.py,"Poisson trend tables (overall, per-theme, summaries)."
+outputs/tables/poisson_diagnostics_overall_by_tool.tex,scripts/trend_poisson_phase3.py,python scripts/trend_poisson_phase3.py,"Poisson trend tables (overall, per-theme, summaries)."
+outputs/tables/poisson_diagnostics_summary_by_model_set.csv,scripts/trend_poisson_phase3.py,python scripts/trend_poisson_phase3.py,"Poisson trend tables (overall, per-theme, summaries)."
+outputs/tables/poisson_diagnostics_summary_by_model_set.tex,scripts/trend_poisson_phase3.py,python scripts/trend_poisson_phase3.py,"Poisson trend tables (overall, per-theme, summaries)."
+outputs/tables/poisson_overall_usability_trends_by_tool.csv,scripts/trend_poisson_phase3.py,python scripts/trend_poisson_phase3.py,"Poisson trend tables (overall, per-theme, summaries)."
+outputs/tables/poisson_overall_usability_trends_by_tool.tex,scripts/trend_poisson_phase3.py,python scripts/trend_poisson_phase3.py,"Poisson trend tables (overall, per-theme, summaries)."
+outputs/tables/poisson_overall_usability_trends_by_tool_robust_se.csv,scripts/trend_poisson_phase3.py,python scripts/trend_poisson_phase3.py,"Poisson trend tables (overall, per-theme, summaries)."
+outputs/tables/poisson_overall_usability_trends_by_tool_robust_se.tex,scripts/trend_poisson_phase3.py,python scripts/trend_poisson_phase3.py,"Poisson trend tables (overall, per-theme, summaries)."
+outputs/tables/poisson_trends_Associated_Component_Theme.csv,scripts/trend_poisson_phase3.py,python scripts/trend_poisson_phase3.py,"Poisson trend tables (overall, per-theme, summaries)."
+outputs/tables/poisson_trends_Associated_Component_Theme.tex,scripts/trend_poisson_phase3.py,python scripts/trend_poisson_phase3.py,"Poisson trend tables (overall, per-theme, summaries)."
+outputs/tables/poisson_trends_L1_Theme.csv,scripts/trend_poisson_phase3.py,python scripts/trend_poisson_phase3.py,"Poisson trend tables (overall, per-theme, summaries)."
+outputs/tables/poisson_trends_L1_Theme.tex,scripts/trend_poisson_phase3.py,python scripts/trend_poisson_phase3.py,"Poisson trend tables (overall, per-theme, summaries)."
+outputs/tables/poisson_trends_L1_Theme_Secondary.csv,scripts/trend_poisson_phase3.py,python scripts/trend_poisson_phase3.py,"Poisson trend tables (overall, per-theme, summaries)."
+outputs/tables/poisson_trends_L1_Theme_Secondary.tex,scripts/trend_poisson_phase3.py,python scripts/trend_poisson_phase3.py,"Poisson trend tables (overall, per-theme, summaries)."
+outputs/tables/poisson_trends_Nielsen_theme.csv,scripts/trend_poisson_phase3.py,python scripts/trend_poisson_phase3.py,"Poisson trend tables (overall, per-theme, summaries)."
+outputs/tables/poisson_trends_Nielsen_theme.tex,scripts/trend_poisson_phase3.py,python scripts/trend_poisson_phase3.py,"Poisson trend tables (overall, per-theme, summaries)."
+outputs/tables/raw_monthly_usability_counts_by_tool_long.csv,scripts/plot_raw_monthly_usability_by_tool.py,python scripts/plot_raw_monthly_usability_by_tool.py,Raw monthly usability counts by tool (wide and long).
+outputs/tables/raw_monthly_usability_counts_by_tool_wide.csv,scripts/plot_raw_monthly_usability_by_tool.py,python scripts/plot_raw_monthly_usability_by_tool.py,Raw monthly usability counts by tool (wide and long).
+outputs/tables/reliability_error_rates_summary.csv,scripts/analyze_reliability.py,idtools_usability run reliability,Reliability/inter-rater error summary table.
+outputs/tables/rq2_top3_components_by_tool.csv,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Top-3 affected component summary per tool.
+outputs/tables/rq2_top3_components_by_tool.tex,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Top-3 affected component summary per tool.
+outputs/tables/rq2_top3_components_by_tool_long.csv,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Top-3 affected component summary per tool.
+outputs/tables/rq_binary_chi_all_categories_shares_long.csv,scripts/compute_binary_chi_by_theme.py,python scripts/compute_binary_chi_by_theme.py,Binary chi-square association tables and per-tool shares.
+outputs/tables/rq_binary_chi_all_categories_summary.csv,scripts/compute_binary_chi_by_theme.py,python scripts/compute_binary_chi_by_theme.py,Binary chi-square association tables and per-tool shares.
+outputs/tables/rq_binary_chi_all_categories_summary.tex,scripts/compute_binary_chi_by_theme.py,python scripts/compute_binary_chi_by_theme.py,Binary chi-square association tables and per-tool shares.
+outputs/tables/rq_binary_chi_component_theme_shares_long.csv,scripts/compute_binary_chi_by_theme.py,python scripts/compute_binary_chi_by_theme.py,Binary chi-square association tables and per-tool shares.
+outputs/tables/rq_binary_chi_component_theme_summary.csv,scripts/compute_binary_chi_by_theme.py,python scripts/compute_binary_chi_by_theme.py,Binary chi-square association tables and per-tool shares.
+outputs/tables/rq_binary_chi_primary_theme_shares_long.csv,scripts/compute_binary_chi_by_theme.py,python scripts/compute_binary_chi_by_theme.py,Binary chi-square association tables and per-tool shares.
+outputs/tables/rq_binary_chi_primary_theme_summary.csv,scripts/compute_binary_chi_by_theme.py,python scripts/compute_binary_chi_by_theme.py,Binary chi-square association tables and per-tool shares.
+outputs/tables/rq_chi_square_tool_theme_association.csv,legacy/manual chi-square output,n/a,Earlier omnibus chi-square tables retained for reference.
+outputs/tables/rq_chi_square_tool_theme_association.tex,legacy/manual chi-square output,n/a,Earlier omnibus chi-square tables retained for reference.
+outputs/tables/rq_chi_square_tool_theme_association_all.csv,legacy/manual chi-square output,n/a,Earlier omnibus chi-square tables retained for reference.
+outputs/tables/rq_chi_square_tool_theme_association_all.tex,legacy/manual chi-square output,n/a,Earlier omnibus chi-square tables retained for reference.
+outputs/tables/top20_Associated_Component_Theme_by_tool.tex,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Top-20 LaTeX tables by theme family.
+outputs/tables/top20_L1_Theme_Secondary_by_tool.tex,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Top-20 LaTeX tables by theme family.
+outputs/tables/top20_L1_Theme_by_tool.tex,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Top-20 LaTeX tables by theme family.
+outputs/tables/top20_Nielsen_theme_by_tool.tex,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Top-20 LaTeX tables by theme family.
+outputs/tables/usability_vs_nonusability_by_tool.csv,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Usability vs non-usability counts (per tool and overall).
+outputs/tables/usability_vs_nonusability_by_tool.tex,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Usability vs non-usability counts (per tool and overall).
+outputs/tables/usability_vs_nonusability_overall.csv,scripts/analyze_phase3_themes.py,idtools_usability run phase3-themes,Usability vs non-usability counts (per tool and overall).

@@ -1,0 +1,89 @@
+tool,count_in_category,total_assignments_in_family,share_pct,rank_within_category,theme_family,category
+notaryproject/notation,171,1197,14.285714285714285,1,Primary themes (inductively generated),Configuration friction
+hashicorp/vault,1464,11261,13.000621614421453,2,Primary themes (inductively generated),Configuration friction
+Keyfactor/ejbca-ce,110,962,11.434511434511435,3,Primary themes (inductively generated),Configuration friction
+sigstore/cosign,389,3407,11.41766950396243,4,Primary themes (inductively generated),Configuration friction
+Keyfactor/signserver-ce,13,117,11.11111111111111,5,Primary themes (inductively generated),Configuration friction
+sigstore/rekor,97,878,11.047835990888382,6,Primary themes (inductively generated),Configuration friction
+sigstore/fulcio,99,981,10.091743119266056,7,Primary themes (inductively generated),Configuration friction
+openpubkey/openpubkey,37,467,7.922912205567452,8,Primary themes (inductively generated),Configuration friction
+openpubkey/openpubkey,72,467,15.417558886509635,1,Primary themes (inductively generated),Authentication friction
+hashicorp/vault,1133,11261,10.06127342154338,2,Primary themes (inductively generated),Authentication friction
+sigstore/fulcio,96,981,9.785932721712538,3,Primary themes (inductively generated),Authentication friction
+Keyfactor/signserver-ce,11,117,9.401709401709402,4,Primary themes (inductively generated),Authentication friction
+Keyfactor/ejbca-ce,80,962,8.316008316008316,5,Primary themes (inductively generated),Authentication friction
+sigstore/cosign,250,3407,7.33783387144115,6,Primary themes (inductively generated),Authentication friction
+notaryproject/notation,51,1197,4.260651629072681,7,Primary themes (inductively generated),Authentication friction
+sigstore/rekor,35,878,3.986332574031891,8,Primary themes (inductively generated),Authentication friction
+sigstore/fulcio,169,981,17.227319062181447,1,Primary themes (inductively generated),Build/CI/installation/distribution release issues
+Keyfactor/signserver-ce,19,117,16.23931623931624,2,Primary themes (inductively generated),Build/CI/installation/distribution release issues
+notaryproject/notation,194,1197,16.207184628237258,3,Primary themes (inductively generated),Build/CI/installation/distribution release issues
+sigstore/cosign,538,3407,15.791018491341354,4,Primary themes (inductively generated),Build/CI/installation/distribution release issues
+openpubkey/openpubkey,65,467,13.9186295503212,5,Primary themes (inductively generated),Build/CI/installation/distribution release issues
+sigstore/rekor,119,878,13.55353075170843,6,Primary themes (inductively generated),Build/CI/installation/distribution release issues
+Keyfactor/ejbca-ce,123,962,12.785862785862786,7,Primary themes (inductively generated),Build/CI/installation/distribution release issues
+hashicorp/vault,1317,11261,11.695231329366841,8,Primary themes (inductively generated),Build/CI/installation/distribution release issues
+sigstore/cosign,410,3407,12.034047549163487,1,Primary themes (inductively generated),Integration failure/issues
+sigstore/fulcio,109,981,11.11111111111111,2,Primary themes (inductively generated),Integration failure/issues
+notaryproject/notation,129,1197,10.776942355889723,3,Primary themes (inductively generated),Integration failure/issues
+Keyfactor/ejbca-ce,95,962,9.875259875259875,4,Primary themes (inductively generated),Integration failure/issues
+openpubkey/openpubkey,40,467,8.565310492505352,5,Primary themes (inductively generated),Integration failure/issues
+hashicorp/vault,891,11261,7.9122635645146975,6,Primary themes (inductively generated),Integration failure/issues
+Keyfactor/signserver-ce,9,117,7.6923076923076925,7,Primary themes (inductively generated),Integration failure/issues
+sigstore/rekor,57,878,6.492027334851937,8,Primary themes (inductively generated),Integration failure/issues
+Keyfactor/ejbca-ce,21,962,2.182952182952183,1,Primary themes (inductively generated),Tedious Workflows
+notaryproject/notation,26,1197,2.172096908939014,2,Primary themes (inductively generated),Tedious Workflows
+sigstore/cosign,65,3407,1.9078368065746993,3,Primary themes (inductively generated),Tedious Workflows
+sigstore/rekor,15,878,1.7084282460136675,4,Primary themes (inductively generated),Tedious Workflows
+hashicorp/vault,186,11261,1.651718319865021,5,Primary themes (inductively generated),Tedious Workflows
+sigstore/fulcio,12,981,1.2232415902140672,6,Primary themes (inductively generated),Tedious Workflows
+openpubkey/openpubkey,2,467,0.4282655246252677,7,Primary themes (inductively generated),Tedious Workflows
+Keyfactor/signserver-ce,0,117,0.0,8,Primary themes (inductively generated),Tedious Workflows
+Keyfactor/signserver-ce,18,117,15.384615384615385,1,Primary themes (inductively generated),User confusion / unclear documentation
+Keyfactor/ejbca-ce,133,962,13.825363825363826,2,Primary themes (inductively generated),User confusion / unclear documentation
+sigstore/cosign,447,3407,13.120046962136778,3,Primary themes (inductively generated),User confusion / unclear documentation
+notaryproject/notation,156,1197,13.032581453634084,4,Primary themes (inductively generated),User confusion / unclear documentation
+sigstore/rekor,105,878,11.958997722095672,5,Primary themes (inductively generated),User confusion / unclear documentation
+openpubkey/openpubkey,55,467,11.777301927194861,6,Primary themes (inductively generated),User confusion / unclear documentation
+hashicorp/vault,1322,11261,11.73963235947074,7,Primary themes (inductively generated),User confusion / unclear documentation
+sigstore/fulcio,112,981,11.416921508664627,8,Primary themes (inductively generated),User confusion / unclear documentation
+sigstore/rekor,165,878,18.79271070615034,1,Primary themes (inductively generated),Notification/Logging Issues
+sigstore/cosign,502,3407,14.734370413853831,2,Primary themes (inductively generated),Notification/Logging Issues
+Keyfactor/ejbca-ce,139,962,14.44906444906445,3,Primary themes (inductively generated),Notification/Logging Issues
+Keyfactor/signserver-ce,16,117,13.675213675213676,4,Primary themes (inductively generated),Notification/Logging Issues
+hashicorp/vault,1471,11261,13.062783056566913,5,Primary themes (inductively generated),Notification/Logging Issues
+notaryproject/notation,145,1197,12.11361737677527,6,Primary themes (inductively generated),Notification/Logging Issues
+openpubkey/openpubkey,55,467,11.777301927194861,7,Primary themes (inductively generated),Notification/Logging Issues
+sigstore/fulcio,111,981,11.314984709480122,8,Primary themes (inductively generated),Notification/Logging Issues
+Keyfactor/ejbca-ce,93,962,9.667359667359667,1,Primary themes (inductively generated),Unexpected behavior
+Keyfactor/signserver-ce,11,117,9.401709401709402,2,Primary themes (inductively generated),Unexpected behavior
+hashicorp/vault,900,11261,7.992185418701714,3,Primary themes (inductively generated),Unexpected behavior
+sigstore/cosign,242,3407,7.103023187555034,4,Primary themes (inductively generated),Unexpected behavior
+notaryproject/notation,80,1197,6.683375104427736,5,Primary themes (inductively generated),Unexpected behavior
+sigstore/rekor,53,878,6.0364464692482915,6,Primary themes (inductively generated),Unexpected behavior
+openpubkey/openpubkey,26,467,5.567451820128479,7,Primary themes (inductively generated),Unexpected behavior
+sigstore/fulcio,35,981,3.567787971457696,8,Primary themes (inductively generated),Unexpected behavior
+Keyfactor/ejbca-ce,67,962,6.964656964656965,1,Primary themes (inductively generated),Performance issue
+sigstore/rekor,58,878,6.605922551252847,2,Primary themes (inductively generated),Performance issue
+sigstore/fulcio,59,981,6.014271151885831,3,Primary themes (inductively generated),Performance issue
+Keyfactor/signserver-ce,7,117,5.982905982905983,4,Primary themes (inductively generated),Performance issue
+hashicorp/vault,620,11261,5.505727732883403,5,Primary themes (inductively generated),Performance issue
+openpubkey/openpubkey,22,467,4.710920770877944,6,Primary themes (inductively generated),Performance issue
+sigstore/cosign,160,3407,4.696213677722336,7,Primary themes (inductively generated),Performance issue
+notaryproject/notation,51,1197,4.260651629072681,8,Primary themes (inductively generated),Performance issue
+hashicorp/vault,634,11261,5.6300506171743185,1,Primary themes (inductively generated),Security concerns
+openpubkey/openpubkey,23,467,4.925053533190578,2,Primary themes (inductively generated),Security concerns
+Keyfactor/ejbca-ce,38,962,3.9501039501039505,3,Primary themes (inductively generated),Security concerns
+sigstore/fulcio,35,981,3.567787971457696,4,Primary themes (inductively generated),Security concerns
+Keyfactor/signserver-ce,4,117,3.418803418803419,5,Primary themes (inductively generated),Security concerns
+sigstore/cosign,89,3407,2.6122688582330493,6,Primary themes (inductively generated),Security concerns
+sigstore/rekor,22,878,2.5056947608200453,7,Primary themes (inductively generated),Security concerns
+notaryproject/notation,26,1197,2.172096908939014,8,Primary themes (inductively generated),Security concerns
+sigstore/rekor,152,878,17.312072892938495,1,Primary themes (inductively generated),Missing feature / enhancement request
+openpubkey/openpubkey,70,467,14.989293361884368,2,Primary themes (inductively generated),Missing feature / enhancement request
+sigstore/fulcio,144,981,14.678899082568808,3,Primary themes (inductively generated),Missing feature / enhancement request
+notaryproject/notation,168,1197,14.035087719298245,4,Primary themes (inductively generated),Missing feature / enhancement request
+hashicorp/vault,1323,11261,11.748512565491518,5,Primary themes (inductively generated),Missing feature / enhancement request
+sigstore/cosign,315,3407,9.245670678015848,6,Primary themes (inductively generated),Missing feature / enhancement request
+Keyfactor/signserver-ce,9,117,7.6923076923076925,7,Primary themes (inductively generated),Missing feature / enhancement request
+Keyfactor/ejbca-ce,63,962,6.548856548856549,8,Primary themes (inductively generated),Missing feature / enhancement request

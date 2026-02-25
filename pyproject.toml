@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "idtools-usability"
+version = "0.1.0"
+description = "CLI workflows for usability/reliability analysis."
+readme = "readme.md"
+requires-python = ">=3.10"
+dependencies = [
+  "pandas>=2.0",
+  "openpyxl>=3.1",
+  "matplotlib>=3.8",
+  "numpy>=1.24",
+]
+
+[project.scripts]
+idtools_usability = "idtools_usability.cli:main"
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+include = ["idtools_usability*", "scripts*"]
+

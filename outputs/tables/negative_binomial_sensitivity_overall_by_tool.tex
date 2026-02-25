@@ -1,0 +1,20 @@
+\begin{table}[t]
+\centering
+\caption{Negative-binomial sensitivity check for overall monthly usability-count trends by tool.}
+\label{tab:nb-sensitivity-overall-by-tool}
+\scriptsize
+\begin{tabular}{llllllllllll}
+\hline
+tool & beta & p\_value & rr\_per\_month & nb\_beta & nb\_se & nb\_p\_value & nb\_rr\_per\_month & nb\_alpha & nb\_converged & nb\_sig\_0\_05 & nb\_fit\_error \\
+\hline
+sigstore/rekor & -0.0542 & 6.13e-23 & 0.9473 & -0.0544 & 0.0057 & 8.98e-22 & 0.9471 & 0.0087 & yes & yes &  \\
+sigstore/fulcio & -0.0513 & 7.81e-18 & 0.9500 & -0.0493 & 0.0069 & 9.28e-13 & 0.9519 & 0.1012 & yes & yes &  \\
+sigstore/cosign & -0.0348 & 2.43e-32 & 0.9658 & -0.0335 & 0.0040 & 1.27e-16 & 0.9671 & 0.0738 & yes & yes &  \\
+notaryproject/notation & -0.0281 & 5.36e-10 & 0.9723 & -0.0408 & 0.0115 & 0.000373 & 0.9601 & 0.6692 & yes & yes &  \\
+hashicorp/vault & -0.0225 & 3.14e-39 & 0.9777 & -0.0239 & 0.0025 & 1.97e-21 & 0.9764 & 0.0271 & yes & yes &  \\
+Keyfactor/ejbca-ce & -0.0011 & 0.836 & 0.9989 & -0.0011 & 0.0063 & 0.856 & 0.9989 & 0.0947 & yes & no &  \\
+Keyfactor/signserver-ce & 0.0134 & 0.37 & 1.0134 & 0.0165 & 0.0210 & 0.433 & 1.0166 & 1.2653 & yes & no &  \\
+openpubkey/openpubkey & 0.0370 & 4.48e-07 & 1.0377 & 0.1123 & 0.0454 & 0.0133 & 1.1188 & 4.8956 & yes & yes &  \\
+\hline
+\end{tabular}
+\end{table}

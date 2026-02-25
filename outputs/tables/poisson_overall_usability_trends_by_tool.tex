@@ -1,0 +1,20 @@
+\begin{table}[t]
+\centering
+\caption{Poisson regression time trends for monthly counts of usability issues (all themes combined).}
+\label{tab:poisson-overall-trends}
+\scriptsize
+\begin{tabular}{llllllll}
+\hline
+tool & beta & rr\_per\_month & pct\_change\_per\_month & p\_value & n\_months & total\_count & sig\_0\_05 \\
+\hline
+sigstore/rekor & -0.0542 & 0.947 & -5.27 & 6.13e-23* & 49 & 228 & yes \\
+sigstore/fulcio & -0.0513 & 0.950 & -5.00 & 7.81e-18* & 49 & 188 & yes \\
+sigstore/cosign & -0.0348 & 0.966 & -3.42 & 2.43e-32* & 49 & 665 & yes \\
+notaryproject/notation & -0.0281 & 0.972 & -2.77 & 5.36e-10* & 49 & 267 & yes \\
+hashicorp/vault & -0.0225 & 0.978 & -2.23 & 3.14e-39* & 49 & 1794 & yes \\
+Keyfactor/ejbca-ce & -0.0011 & 0.999 & -0.11 & 0.836 & 49 & 177 & no \\
+Keyfactor/signserver-ce & 0.0134 & 1.013 & 1.34 & 0.37 & 49 & 23 & no \\
+openpubkey/openpubkey & 0.0370 & 1.038 & 3.77 & 4.48e-07* & 49 & 109 & yes \\
+\hline
+\end{tabular}
+\end{table}

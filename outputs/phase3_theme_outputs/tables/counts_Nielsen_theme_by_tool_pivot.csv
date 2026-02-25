@@ -1,0 +1,13 @@
+Nielsen_theme,Keyfactor/ejbca-ce,Keyfactor/signserver-ce,hashicorp/vault,notaryproject/notation,openpubkey/openpubkey,sigstore/cosign,sigstore/fulcio,sigstore/rekor,Total
+7. Flexibility and efficiency of use,153,19,1578,218,87,633,185,199,3072
+10. Help and documentation,158,21,1622,232,68,589,157,182,3029
+1. Visibility of system status,83,6,1021,54,21,193,60,59,1497
+9. Help users recognize,48,4,450,51,9,103,20,29,714
+and recover from errors,48,4,450,51,9,103,20,29,714
+diagnose,48,4,450,51,9,103,20,29,714
+4. Consistency and standards,32,2,319,40,23,144,42,56,658
+2. Match between system and the real world,16,3,274,26,23,93,33,27,495
+5. Error prevention,10,1,160,23,11,75,23,26,329
+3. User control and freedom,6,0,118,1,3,6,1,3,138
+6. Recognition rather than recall,9,1,47,12,1,27,6,6,109
+8. Aesthetic and minimalist design,0,0,23,3,3,9,0,6,44

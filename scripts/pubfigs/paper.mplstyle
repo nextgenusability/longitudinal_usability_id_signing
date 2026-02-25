@@ -1,0 +1,27 @@
+# Matplotlib style tuned for LaTeX publication workflows.
+# Based on guidance from:
+# https://duetosymmetry.com/code/latex-mpl-fig-tips/
+
+font.family: serif
+font.serif: CMU Serif, Computer Modern Roman, DejaVu Serif
+mathtext.fontset: cm
+
+axes.labelsize: 9
+axes.titlesize: 10
+font.size: 9
+xtick.labelsize: 8
+ytick.labelsize: 8
+legend.fontsize: 7
+
+xtick.direction: in
+ytick.direction: in
+axes.grid: False
+grid.alpha: 0.20
+grid.linewidth: 0.5
+
+savefig.bbox: tight
+savefig.pad_inches: 0.02
+savefig.format: pdf
+figure.dpi: 200
+
+lines.linewidth: 1.7

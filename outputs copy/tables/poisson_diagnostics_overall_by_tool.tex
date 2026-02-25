@@ -1,0 +1,20 @@
+\begin{table}[t]
+\centering
+\caption{Poisson diagnostic checks for overall monthly usability-count trends by tool.}
+\label{tab:poisson-diagnostics-overall-by-tool}
+\scriptsize
+\begin{tabular}{lllllll}
+\hline
+tool & dispersion\_pearson & dispersion\_deviance & overdispersed\_1\_5 & underdispersed\_0\_8 & ljungbox\_p\_lag1 & autocorr\_sig\_0\_05 \\
+\hline
+Keyfactor/ejbca-ce & 1.433 & 1.441 & no & no & 0.378 & no \\
+Keyfactor/signserver-ce & 1.561 & 1.276 & yes & no & 0.709 & no \\
+hashicorp/vault & 1.987 & 2.164 & yes & no & 0.775 & no \\
+notaryproject/notation & 5.106 & 4.780 & yes & no & 0.000 & yes \\
+openpubkey/openpubkey & 8.574 & 6.106 & yes & no & 0.000 & yes \\
+sigstore/cosign & 2.522 & 2.107 & yes & no & 0.198 & no \\
+sigstore/fulcio & 1.524 & 1.544 & yes & no & 0.196 & no \\
+sigstore/rekor & 0.953 & 1.071 & no & no & 0.931 & no \\
+\hline
+\end{tabular}
+\end{table}

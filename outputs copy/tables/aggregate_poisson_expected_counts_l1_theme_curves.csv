@@ -1,0 +1,540 @@
+category,month,month_start,count,expected_count
+Notification/Logging /Web UI Issues,2021-11,2021-11-01,56,90.54197297890964
+Notification/Logging /Web UI Issues,2021-12,2021-12-01,76,88.33154858056044
+Notification/Logging /Web UI Issues,2022-01,2022-01-01,69,86.17508783972892
+Notification/Logging /Web UI Issues,2022-02,2022-02-01,94,84.07127332780976
+Notification/Logging /Web UI Issues,2022-03,2022-03-01,79,82.01881977891965
+Notification/Logging /Web UI Issues,2022-04,2022-04-01,68,80.01647330470088
+Notification/Logging /Web UI Issues,2022-05,2022-05-01,74,78.06301062829363
+Notification/Logging /Web UI Issues,2022-06,2022-06-01,79,76.15723833700982
+Notification/Logging /Web UI Issues,2022-07,2022-07-01,74,74.2979921532511
+Notification/Logging /Web UI Issues,2022-08,2022-08-01,80,72.4841362232267
+Notification/Logging /Web UI Issues,2022-09,2022-09-01,81,70.71456242303555
+Notification/Logging /Web UI Issues,2022-10,2022-10-01,60,68.98818968168966
+Notification/Logging /Web UI Issues,2022-11,2022-11-01,84,67.30396332066404
+Notification/Logging /Web UI Issues,2022-12,2022-12-01,74,65.66085440957094
+Notification/Logging /Web UI Issues,2023-01,2023-01-01,72,64.05785913756397
+Notification/Logging /Web UI Issues,2023-02,2023-02-01,50,62.49399820008837
+Notification/Logging /Web UI Issues,2023-03,2023-03-01,80,60.96831620060241
+Notification/Logging /Web UI Issues,2023-04,2023-04-01,71,59.47988106690511
+Notification/Logging /Web UI Issues,2023-05,2023-05-01,57,58.02778348171303
+Notification/Logging /Web UI Issues,2023-06,2023-06-01,67,56.611136327138865
+Notification/Logging /Web UI Issues,2023-07,2023-07-01,68,55.22907414273154
+Notification/Logging /Web UI Issues,2023-08,2023-08-01,47,53.88075259674789
+Notification/Logging /Web UI Issues,2023-09,2023-09-01,49,52.56534797033213
+Notification/Logging /Web UI Issues,2023-10,2023-10-01,41,51.28205665428796
+Notification/Logging /Web UI Issues,2023-11,2023-11-01,70,50.030094658136534
+Notification/Logging /Web UI Issues,2023-12,2023-12-01,60,48.80869713115944
+Notification/Logging /Web UI Issues,2024-01,2024-01-01,56,47.61711789513503
+Notification/Logging /Web UI Issues,2024-02,2024-02-01,54,46.4546289884818
+Notification/Logging /Web UI Issues,2024-03,2024-03-01,59,45.32052022153104
+Notification/Logging /Web UI Issues,2024-04,2024-04-01,62,44.214098742656404
+Notification/Logging /Web UI Issues,2024-05,2024-05-01,34,43.13468861499601
+Notification/Logging /Web UI Issues,2024-06,2024-06-01,41,42.081630403507795
+Notification/Logging /Web UI Issues,2024-07,2024-07-01,47,41.054280772106516
+Notification/Logging /Web UI Issues,2024-08,2024-08-01,32,40.05201209063563
+Notification/Logging /Web UI Issues,2024-09,2024-09-01,28,39.07421205143458
+Notification/Logging /Web UI Issues,2024-10,2024-10-01,31,38.12028329526663
+Notification/Logging /Web UI Issues,2024-11,2024-11-01,28,37.18964304637932
+Notification/Logging /Web UI Issues,2024-12,2024-12-01,35,36.28172275647394
+Notification/Logging /Web UI Issues,2025-01,2025-01-01,34,35.39596775736726
+Notification/Logging /Web UI Issues,2025-02,2025-02-01,43,34.531836922132506
+Notification/Logging /Web UI Issues,2025-03,2025-03-01,40,33.68880233451337
+Notification/Logging /Web UI Issues,2025-04,2025-04-01,30,32.8663489664084
+Notification/Logging /Web UI Issues,2025-05,2025-05-01,30,32.06397436322927
+Notification/Logging /Web UI Issues,2025-06,2025-06-01,27,31.281188336940268
+Notification/Logging /Web UI Issues,2025-07,2025-07-01,30,30.517512666591937
+Notification/Logging /Web UI Issues,2025-08,2025-08-01,22,29.772480806165394
+Notification/Logging /Web UI Issues,2025-09,2025-09-01,20,29.045637599549377
+Notification/Logging /Web UI Issues,2025-10,2025-10-01,38,28.336539002475405
+Notification/Logging /Web UI Issues,2025-11,2025-11-01,3,27.644751811241616
+Build/CI/installation/distribution release issues,2021-11,2021-11-01,61,91.18768177010774
+Build/CI/installation/distribution release issues,2021-12,2021-12-01,80,88.81937638191314
+Build/CI/installation/distribution release issues,2022-01,2022-01-01,73,86.51258007370473
+Build/CI/installation/distribution release issues,2022-02,2022-02-01,93,84.26569534587809
+Build/CI/installation/distribution release issues,2022-03,2022-03-01,82,82.07716618871919
+Build/CI/installation/distribution release issues,2022-04,2022-04-01,73,79.94547700483857
+Build/CI/installation/distribution release issues,2022-05,2022-05-01,78,77.86915155959173
+Build/CI/installation/distribution release issues,2022-06,2022-06-01,66,75.84675195875904
+Build/CI/installation/distribution release issues,2022-07,2022-07-01,86,73.87687765277717
+Build/CI/installation/distribution release issues,2022-08,2022-08-01,69,71.95816446683213
+Build/CI/installation/distribution release issues,2022-09,2022-09-01,69,70.0892836561429
+Build/CI/installation/distribution release issues,2022-10,2022-10-01,52,68.26894098578062
+Build/CI/installation/distribution release issues,2022-11,2022-11-01,83,66.49587583438685
+Build/CI/installation/distribution release issues,2022-12,2022-12-01,74,64.76886032116957
+Build/CI/installation/distribution release issues,2023-01,2023-01-01,74,63.086698455572794
+Build/CI/installation/distribution release issues,2023-02,2023-02-01,62,61.448225309030775
+Build/CI/installation/distribution release issues,2023-03,2023-03-01,72,59.85230620823312
+Build/CI/installation/distribution release issues,2023-04,2023-04-01,68,58.29783594934237
+Build/CI/installation/distribution release issues,2023-05,2023-05-01,58,56.78373803261945
+Build/CI/installation/distribution release issues,2023-06,2023-06-01,59,55.308963916927794
+Build/CI/installation/distribution release issues,2023-07,2023-07-01,51,53.87249229359871
+Build/CI/installation/distribution release issues,2023-08,2023-08-01,43,52.4733283791562
+Build/CI/installation/distribution release issues,2023-09,2023-09-01,54,51.11050322641064
+Build/CI/installation/distribution release issues,2023-10,2023-10-01,41,49.78307305344483
+Build/CI/installation/distribution release issues,2023-11,2023-11-01,69,48.49011859002732
+Build/CI/installation/distribution release issues,2023-12,2023-12-01,57,47.23074444100051
+Build/CI/installation/distribution release issues,2024-01,2024-01-01,54,46.004078466202905
+Build/CI/installation/distribution release issues,2024-02,2024-02-01,49,44.80927117649559
+Build/CI/installation/distribution release issues,2024-03,2024-03-01,71,43.64549514547519
+Build/CI/installation/distribution release issues,2024-04,2024-04-01,55,42.51194443646556
+Build/CI/installation/distribution release issues,2024-05,2024-05-01,33,41.407834044391585
+Build/CI/installation/distribution release issues,2024-06,2024-06-01,44,40.33239935214846
+Build/CI/installation/distribution release issues,2024-07,2024-07-01,47,39.284895601090035
+Build/CI/installation/distribution release issues,2024-08,2024-08-01,32,38.26459737526955
+Build/CI/installation/distribution release issues,2024-09,2024-09-01,31,37.270798099075485
+Build/CI/installation/distribution release issues,2024-10,2024-10-01,31,36.30280954791475
+Build/CI/installation/distribution release issues,2024-11,2024-11-01,30,35.35996137160424
+Build/CI/installation/distribution release issues,2024-12,2024-12-01,35,34.441600630140854
+Build/CI/installation/distribution release issues,2025-01,2025-01-01,32,33.54709134152828
+Build/CI/installation/distribution release issues,2025-02,2025-02-01,32,32.675814041347564
+Build/CI/installation/distribution release issues,2025-03,2025-03-01,40,31.827165353766432
+Build/CI/installation/distribution release issues,2025-04,2025-04-01,28,31.000557573690227
+Build/CI/installation/distribution release issues,2025-05,2025-05-01,23,30.1954182597651
+Build/CI/installation/distribution release issues,2025-06,2025-06-01,25,29.41118983795173
+Build/CI/installation/distribution release issues,2025-07,2025-07-01,26,28.64732921539483
+Build/CI/installation/distribution release issues,2025-08,2025-08-01,20,27.903307404321172
+Build/CI/installation/distribution release issues,2025-09,2025-09-01,18,27.178609155705676
+Build/CI/installation/distribution release issues,2025-10,2025-10-01,38,26.472732602451824
+Build/CI/installation/distribution release issues,2025-11,2025-11-01,3,25.78518891183929
+Configuration friction,2021-11,2021-11-01,55,80.19602393965084
+Configuration friction,2021-12,2021-12-01,73,78.36536909382038
+Configuration friction,2022-01,2022-01-01,64,76.57650306743426
+Configuration friction,2022-02,2022-02-01,84,74.82847193658115
+Configuration friction,2022-03,2022-03-01,68,73.12034355281152
+Configuration friction,2022-04,2022-04-01,66,71.45120704606309
+Configuration friction,2022-05,2022-05-01,67,69.82017233893424
+Configuration friction,2022-06,2022-06-01,61,68.22636967204426
+Configuration friction,2022-07,2022-07-01,63,66.6689491402292
+Configuration friction,2022-08,2022-08-01,63,65.14708023932423
+Configuration friction,2022-09,2022-09-01,69,63.6599514232925
+Configuration friction,2022-10,2022-10-01,52,62.20676967146305
+Configuration friction,2022-11,2022-11-01,75,60.78676006564743
+Configuration friction,2022-12,2022-12-01,71,59.39916537691015
+Configuration friction,2023-01,2023-01-01,55,58.04324566177122
+Configuration friction,2023-02,2023-02-01,53,56.71827786762714
+Configuration friction,2023-03,2023-03-01,71,55.42355544717814
+Configuration friction,2023-04,2023-04-01,73,54.158387981657896
+Configuration friction,2023-05,2023-05-01,55,52.92210081266314
+Configuration friction,2023-06,2023-06-01,57,51.714034682387975
+Configuration friction,2023-07,2023-07-01,54,50.53354538207057
+Configuration friction,2023-08,2023-08-01,42,49.38000340846481
+Configuration friction,2023-09,2023-09-01,47,48.25279362815379
+Configuration friction,2023-10,2023-10-01,46,47.15131494952617
+Configuration friction,2023-11,2023-11-01,73,46.07498000224022
+Configuration friction,2023-12,2023-12-01,55,45.02321482400502
+Configuration friction,2024-01,2024-01-01,51,43.99545855451149
+Configuration friction,2024-02,2024-02-01,47,42.991163136350146
+Configuration friction,2024-03,2024-03-01,56,42.0097930227561
+Configuration friction,2024-04,2024-04-01,56,41.050824892025396
+Configuration friction,2024-05,2024-05-01,31,40.113747368450454
+Configuration friction,2024-06,2024-06-01,41,39.19806074962591
+Configuration friction,2024-07,2024-07-01,42,38.30327673997902
+Configuration friction,2024-08,2024-08-01,25,37.42891819038318
+Configuration friction,2024-09,2024-09-01,32,36.57451884371509
+Configuration friction,2024-10,2024-10-01,29,35.73962308622032
+Configuration friction,2024-11,2024-11-01,25,34.9237857045544
+Configuration friction,2024-12,2024-12-01,29,34.12657164837005
+Configuration friction,2025-01,2025-01-01,34,33.34755579832391
+Configuration friction,2025-02,2025-02-01,29,32.58632273937895
+Configuration friction,2025-03,2025-03-01,38,31.842466539281926
+Configuration friction,2025-04,2025-04-01,31,31.11559053209738
+Configuration friction,2025-05,2025-05-01,29,30.40530710668311
+Configuration friction,2025-06,2025-06-01,25,29.71123749999415
+Configuration friction,2025-07,2025-07-01,35,29.033011595104984
+Configuration friction,2025-08,2025-08-01,23,28.37026772384241
+Configuration friction,2025-09,2025-09-01,18,27.722652473923763
+Configuration friction,2025-10,2025-10-01,39,27.08982050049758
+Configuration friction,2025-11,2025-11-01,3,26.471434341986388
+User confusion / unclear documentation/documentation improvements,2021-11,2021-11-01,54,82.18143351961058
+User confusion / unclear documentation/documentation improvements,2021-12,2021-12-01,74,80.1474745478773
+User confusion / unclear documentation/documentation improvements,2022-01,2022-01-01,59,78.16385528088661
+User confusion / unclear documentation/documentation improvements,2022-02,2022-02-01,80,76.22932983024594
+User confusion / unclear documentation/documentation improvements,2022-03,2022-03-01,73,74.34268314282298
+User confusion / unclear documentation/documentation improvements,2022-04,2022-04-01,60,72.50273023758457
+User confusion / unclear documentation/documentation improvements,2022-05,2022-05-01,72,70.70831546132366
+User confusion / unclear documentation/documentation improvements,2022-06,2022-06-01,72,68.95831176280717
+User confusion / unclear documentation/documentation improvements,2022-07,2022-07-01,70,67.25161998488791
+User confusion / unclear documentation/documentation improvements,2022-08,2022-08-01,70,65.58716817413654
+User confusion / unclear documentation/documentation improvements,2022-09,2022-09-01,61,63.96391090756025
+User confusion / unclear documentation/documentation improvements,2022-10,2022-10-01,48,62.38082863598451
+User confusion / unclear documentation/documentation improvements,2022-11,2022-11-01,77,60.836927043685805
+User confusion / unclear documentation/documentation improvements,2022-12,2022-12-01,69,59.331236423873726
+User confusion / unclear documentation/documentation improvements,2023-01,2023-01-01,61,57.86281106962914
+User confusion / unclear documentation/documentation improvements,2023-02,2023-02-01,51,56.430728679916434
+User confusion / unclear documentation/documentation improvements,2023-03,2023-03-01,74,55.03408978029717
+User confusion / unclear documentation/documentation improvements,2023-04,2023-04-01,62,53.67201715798041
+User confusion / unclear documentation/documentation improvements,2023-05,2023-05-01,47,52.34365531085533
+User confusion / unclear documentation/documentation improvements,2023-06,2023-06-01,61,51.048169910160524
+User confusion / unclear documentation/documentation improvements,2023-07,2023-07-01,58,49.78474727645145
+User confusion / unclear documentation/documentation improvements,2023-08,2023-08-01,43,48.552593868537855
+User confusion / unclear documentation/documentation improvements,2023-09,2023-09-01,56,47.350935785069794
+User confusion / unclear documentation/documentation improvements,2023-10,2023-10-01,39,46.17901827845895
+User confusion / unclear documentation/documentation improvements,2023-11,2023-11-01,73,45.036105280830434
+User confusion / unclear documentation/documentation improvements,2023-12,2023-12-01,49,43.921478941707136
+User confusion / unclear documentation/documentation improvements,2024-01,2024-01-01,44,42.83443917713598
+User confusion / unclear documentation/documentation improvements,2024-02,2024-02-01,46,41.7743032299733
+User confusion / unclear documentation/documentation improvements,2024-03,2024-03-01,61,40.74040524105304
+User confusion / unclear documentation/documentation improvements,2024-04,2024-04-01,58,39.73209583096817
+User confusion / unclear documentation/documentation improvements,2024-05,2024-05-01,32,38.74874169220299
+User confusion / unclear documentation/documentation improvements,2024-06,2024-06-01,34,37.78972519136009
+User confusion / unclear documentation/documentation improvements,2024-07,2024-07-01,44,36.85444398123178
+User confusion / unclear documentation/documentation improvements,2024-08,2024-08-01,30,35.94231062247283
+User confusion / unclear documentation/documentation improvements,2024-09,2024-09-01,27,35.05275221463663
+User confusion / unclear documentation/documentation improvements,2024-10,2024-10-01,29,34.18521003634292
+User confusion / unclear documentation/documentation improvements,2024-11,2024-11-01,26,33.33913919435141
+User confusion / unclear documentation/documentation improvements,2024-12,2024-12-01,32,32.514008281320635
+User confusion / unclear documentation/documentation improvements,2025-01,2025-01-01,30,31.70929904203704
+User confusion / unclear documentation/documentation improvements,2025-02,2025-02-01,31,30.924506047904938
+User confusion / unclear documentation/documentation improvements,2025-03,2025-03-01,41,30.159136379492583
+User confusion / unclear documentation/documentation improvements,2025-04,2025-04-01,25,29.412709316935228
+User confusion / unclear documentation/documentation improvements,2025-05,2025-05-01,22,28.684756038000437
+User confusion / unclear documentation/documentation improvements,2025-06,2025-06-01,24,27.974819323626267
+User confusion / unclear documentation/documentation improvements,2025-07,2025-07-01,28,27.282453270747325
+User confusion / unclear documentation/documentation improvements,2025-08,2025-08-01,22,26.607223012228072
+User confusion / unclear documentation/documentation improvements,2025-09,2025-09-01,10,25.94870444372786
+User confusion / unclear documentation/documentation improvements,2025-10,2025-10-01,36,25.3064839573259
+User confusion / unclear documentation/documentation improvements,2025-11,2025-11-01,3,24.68015818173884
+Missing feature / enhancement request,2021-11,2021-11-01,54,79.83368409487863
+Missing feature / enhancement request,2021-12,2021-12-01,73,77.79108892125542
+Missing feature / enhancement request,2022-01,2022-01-01,61,75.80075483379669
+Missing feature / enhancement request,2022-02,2022-02-01,85,73.8613446996421
+Missing feature / enhancement request,2022-03,2022-03-01,70,71.97155559731898
+Missing feature / enhancement request,2022-04,2022-04-01,60,70.1301179414227
+Missing feature / enhancement request,2022-05,2022-05-01,70,68.33579462969212
+Missing feature / enhancement request,2022-06,2022-06-01,59,66.58738021190797
+Missing feature / enhancement request,2022-07,2022-07-01,69,64.88370008005519
+Missing feature / enhancement request,2022-08,2022-08-01,60,63.22360967920598
+Missing feature / enhancement request,2022-09,2022-09-01,63,61.60599373859242
+Missing feature / enhancement request,2022-10,2022-10-01,43,60.029765522352825
+Missing feature / enhancement request,2022-11,2022-11-01,72,58.493866099448
+Missing feature / enhancement request,2022-12,2022-12-01,64,56.9972636322576
+Missing feature / enhancement request,2023-01,2023-01-01,64,55.53895268337773
+Missing feature / enhancement request,2023-02,2023-02-01,54,54.117953540154794
+Missing feature / enhancement request,2023-03,2023-03-01,62,52.733311556501505
+Missing feature / enhancement request,2023-04,2023-04-01,58,51.384096511552976
+Missing feature / enhancement request,2023-05,2023-05-01,53,50.06940198473208
+Missing feature / enhancement request,2023-06,2023-06-01,55,48.788344746803936
+Missing feature / enhancement request,2023-07,2023-07-01,56,47.54006416651091
+Missing feature / enhancement request,2023-08,2023-08-01,42,46.323721632389
+Missing feature / enhancement request,2023-09,2023-09-01,48,45.13849998937766
+Missing feature / enhancement request,2023-10,2023-10-01,33,43.983602989843995
+Missing feature / enhancement request,2023-11,2023-11-01,60,42.858254758653246
+Missing feature / enhancement request,2023-12,2023-12-01,46,41.76169927192537
+Missing feature / enhancement request,2024-01,2024-01-01,51,40.69319984912836
+Missing feature / enhancement request,2024-02,2024-02-01,51,39.65203865816629
+Missing feature / enhancement request,2024-03,2024-03-01,58,38.63751623313034
+Missing feature / enhancement request,2024-04,2024-04-01,53,37.64895100438822
+Missing feature / enhancement request,2024-05,2024-05-01,31,36.68567884069671
+Missing feature / enhancement request,2024-06,2024-06-01,36,35.74705260302938
+Missing feature / enhancement request,2024-07,2024-07-01,36,34.832441709820145
+Missing feature / enhancement request,2024-08,2024-08-01,28,33.941231713330026
+Missing feature / enhancement request,2024-09,2024-09-01,23,33.072823886853165
+Missing feature / enhancement request,2024-10,2024-10-01,31,32.22663482248416
+Missing feature / enhancement request,2024-11,2024-11-01,28,31.40209603917696
+Missing feature / enhancement request,2024-12,2024-12-01,28,30.598653600831696
+Missing feature / enhancement request,2025-01,2025-01-01,30,29.815767744153117
+Missing feature / enhancement request,2025-02,2025-02-01,37,29.05291251603038
+Missing feature / enhancement request,2025-03,2025-03-01,35,28.30957542019483
+Missing feature / enhancement request,2025-04,2025-04-01,21,27.58525707291814
+Missing feature / enhancement request,2025-05,2025-05-01,22,26.879470867519764
+Missing feature / enhancement request,2025-06,2025-06-01,19,26.191742647458035
+Missing feature / enhancement request,2025-07,2025-07-01,25,25.521610387785582
+Missing feature / enhancement request,2025-08,2025-08-01,20,24.868623884754754
+Missing feature / enhancement request,2025-09,2025-09-01,13,24.23234445336486
+Missing feature / enhancement request,2025-10,2025-10-01,31,23.612344632647662
+Missing feature / enhancement request,2025-11,2025-11-01,3,23.008207898493527
+Integration failure/issues,2021-11,2021-11-01,40,58.454518086991676
+Integration failure/issues,2021-12,2021-12-01,50,57.128982233445335
+Integration failure/issues,2022-01,2022-01-01,41,55.83350471168478
+Integration failure/issues,2022-02,2022-02-01,65,54.56740390807628
+Integration failure/issues,2022-03,2022-03-01,46,53.330013665504154
+Integration failure/issues,2022-04,2022-04-01,49,52.12068293287301
+Integration failure/issues,2022-05,2022-05-01,53,50.93877542255826
+Integration failure/issues,2022-06,2022-06-01,47,49.783669275624305
+Integration failure/issues,2022-07,2022-07-01,51,48.65475673463428
+Integration failure/issues,2022-08,2022-08-01,49,47.551443823879374
+Integration failure/issues,2022-09,2022-09-01,39,46.47315003685946
+Integration failure/issues,2022-10,2022-10-01,32,45.419308030850274
+Integration failure/issues,2022-11,2022-11-01,46,44.38936332839698
+Integration failure/issues,2022-12,2022-12-01,54,43.3827740255766
+Integration failure/issues,2023-01,2023-01-01,45,42.39901050687611
+Integration failure/issues,2023-02,2023-02-01,42,41.437555166535894
+Integration failure/issues,2023-03,2023-03-01,60,40.49790213621229
+Integration failure/issues,2023-04,2023-04-01,49,39.57955701881567
+Integration failure/issues,2023-05,2023-05-01,41,38.682036628384175
+Integration failure/issues,2023-06,2023-06-01,47,37.80486873585601
+Integration failure/issues,2023-07,2023-07-01,40,36.947591820606874
+Integration failure/issues,2023-08,2023-08-01,33,36.10975482762158
+Integration failure/issues,2023-09,2023-09-01,36,35.29091693017201
+Integration failure/issues,2023-10,2023-10-01,35,34.49064729787683
+Integration failure/issues,2023-11,2023-11-01,50,33.70852487002071
+Integration failure/issues,2023-12,2023-12-01,40,32.944138134013826
+Integration failure/issues,2024-01,2024-01-01,38,32.19708490887508
+Integration failure/issues,2024-02,2024-02-01,30,31.466972133625156
+Integration failure/issues,2024-03,2024-03-01,43,30.753415660478115
+Integration failure/issues,2024-04,2024-04-01,40,30.056040052722505
+Integration failure/issues,2024-05,2024-05-01,22,29.374478387185924
+Integration failure/issues,2024-06,2024-06-01,31,28.708372061178892
+Integration failure/issues,2024-07,2024-07-01,30,28.057370603816622
+Integration failure/issues,2024-08,2024-08-01,22,27.4211314916192
+Integration failure/issues,2024-09,2024-09-01,23,26.799319968293354
+Integration failure/issues,2024-10,2024-10-01,23,26.191608868600987
+Integration failure/issues,2024-11,2024-11-01,26,25.597678446221558
+Integration failure/issues,2024-12,2024-12-01,21,25.017216205518086
+Integration failure/issues,2025-01,2025-01-01,18,24.44991673711797
+Integration failure/issues,2025-02,2025-02-01,21,23.895481557222357
+Integration failure/issues,2025-03,2025-03-01,32,23.353618950559245
+Integration failure/issues,2025-04,2025-04-01,22,22.824043816897934
+Integration failure/issues,2025-05,2025-05-01,17,22.306477521044005
+Integration failure/issues,2025-06,2025-06-01,20,21.800647746235732
+Integration failure/issues,2025-07,2025-07-01,26,21.306288350865053
+Integration failure/issues,2025-08,2025-08-01,13,20.823139228447538
+Integration failure/issues,2025-09,2025-09-01,15,20.35094617076776
+Integration failure/issues,2025-10,2025-10-01,24,19.889460734127965
+Integration failure/issues,2025-11,2025-11-01,3,19.438440108629795
+Authentication friction,2021-11,2021-11-01,34,56.14787572442785
+Authentication friction,2021-12,2021-12-01,49,54.967753215634154
+Authentication friction,2022-01,2022-01-01,33,53.81243465744043
+Authentication friction,2022-02,2022-02-01,65,52.68139871756058
+Authentication friction,2022-03,2022-03-01,50,51.57413502113045
+Authentication friction,2022-04,2022-04-01,45,50.49014392040353
+Authentication friction,2022-05,2022-05-01,50,49.42893626928703
+Authentication friction,2022-06,2022-06-01,44,48.390033202617026
+Authentication friction,2022-07,2022-07-01,53,47.372965920072666
+Authentication friction,2022-08,2022-08-01,43,46.37727547463215
+Authentication friction,2022-09,2022-09-01,51,45.40251256547496
+Authentication friction,2022-10,2022-10-01,32,44.44823733523691
+Authentication friction,2022-11,2022-11-01,49,43.51401917152647
+Authentication friction,2022-12,2022-12-01,51,42.599436512612854
+Authentication friction,2023-01,2023-01-01,48,41.70407665719823
+Authentication friction,2023-02,2023-02-01,42,40.82753557818809
+Authentication friction,2023-03,2023-03-01,50,39.96941774037585
+Authentication friction,2023-04,2023-04-01,43,39.12933592195945
+Authentication friction,2023-05,2023-05-01,41,38.30691103980913
+Authentication friction,2023-06,2023-06-01,41,37.501771978407945
+Authentication friction,2023-07,2023-07-01,43,36.713555422387586
+Authentication friction,2023-08,2023-08-01,32,35.94190569258392
+Authentication friction,2023-09,2023-09-01,36,35.1864745855384
+Authentication friction,2023-10,2023-10-01,31,34.446921216372814
+Authentication friction,2023-11,2023-11-01,45,33.72291186496651
+Authentication friction,2023-12,2023-12-01,40,33.01411982536673
+Authentication friction,2024-01,2024-01-01,43,32.320225258363955
+Authentication friction,2024-02,2024-02-01,31,31.640915047165997
+Authentication friction,2024-03,2024-03-01,53,30.975882656105387
+Authentication friction,2024-04,2024-04-01,51,30.3248279923166
+Authentication friction,2024-05,2024-05-01,20,29.68745727032043
+Authentication friction,2024-06,2024-06-01,27,29.06348287945467
+Authentication friction,2024-07,2024-07-01,34,28.452623254091097
+Authentication friction,2024-08,2024-08-01,22,27.854602746580227
+Authentication friction,2024-09,2024-09-01,20,27.269151502866563
+Authentication friction,2024-10,2024-10-01,25,26.696005340718216
+Authentication friction,2024-11,2024-11-01,23,26.134905630515796
+Authentication friction,2024-12,2024-12-01,22,25.585599178546993
+Authentication friction,2025-01,2025-01-01,23,25.047838112754075
+Authentication friction,2025-02,2025-02-01,25,24.521379770882714
+Authentication friction,2025-03,2025-03-01,23,24.005986590981742
+Authentication friction,2025-04,2025-04-01,21,23.501426004204426
+Authentication friction,2025-05,2025-05-01,18,23.007470329862773
+Authentication friction,2025-06,2025-06-01,21,22.523896672687684
+Authentication friction,2025-07,2025-07-01,29,22.050486822248452
+Authentication friction,2025-08,2025-08-01,13,21.587027154486297
+Authentication friction,2025-09,2025-09-01,14,21.133308535317468
+Authentication friction,2025-10,2025-10-01,26,20.689126226262463
+Authentication friction,2025-11,2025-11-01,3,20.25427979205865
+Unexpected behavior,2021-11,2021-11-01,35,47.700392207022645
+Unexpected behavior,2021-12,2021-12-01,35,46.6522366912921
+Unexpected behavior,2022-01,2022-01-01,40,45.62711306134538
+Unexpected behavior,2022-02,2022-02-01,45,44.62451522075427
+Unexpected behavior,2022-03,2022-03-01,40,43.64394819391649
+Unexpected behavior,2022-04,2022-04-01,34,42.684927881689866
+Unexpected behavior,2022-05,2022-05-01,46,41.74698082239572
+Unexpected behavior,2022-06,2022-06-01,36,40.82964395807432
+Unexpected behavior,2022-07,2022-07-01,34,39.93246440587622
+Unexpected behavior,2022-08,2022-08-01,34,39.05499923447726
+Unexpected behavior,2022-09,2022-09-01,49,38.19681524540634
+Unexpected behavior,2022-10,2022-10-01,31,37.35748875917844
+Unexpected behavior,2022-11,2022-11-01,43,36.53660540612688
+Unexpected behavior,2022-12,2022-12-01,40,35.73375992183201
+Unexpected behavior,2023-01,2023-01-01,38,34.948555947044866
+Unexpected behavior,2023-02,2023-02-01,34,34.180605832007465
+Unexpected behavior,2023-03,2023-03-01,48,33.42953044507267
+Unexpected behavior,2023-04,2023-04-01,41,32.6949589855297
+Unexpected behavior,2023-05,2023-05-01,28,31.976528800542205
+Unexpected behavior,2023-06,2023-06-01,37,31.273885206109235
+Unexpected behavior,2023-07,2023-07-01,36,30.586681311960085
+Unexpected behavior,2023-08,2023-08-01,22,29.914577850297075
+Unexpected behavior,2023-09,2023-09-01,35,29.257243008301305
+Unexpected behavior,2023-10,2023-10-01,28,28.614352264319002
+Unexpected behavior,2023-11,2023-11-01,42,27.985588227647476
+Unexpected behavior,2023-12,2023-12-01,35,27.37064048184143
+Unexpected behavior,2024-01,2024-01-01,37,26.76920543146262
+Unexpected behavior,2024-02,2024-02-01,28,26.180986152196795
+Unexpected behavior,2024-03,2024-03-01,40,25.60569224426432
+Unexpected behavior,2024-04,2024-04-01,37,25.04303968905171
+Unexpected behavior,2024-05,2024-05-01,22,24.492750708893727
+Unexpected behavior,2024-06,2024-06-01,24,23.954553629936353
+Unexpected behavior,2024-07,2024-07-01,27,23.428182748013413
+Unexpected behavior,2024-08,2024-08-01,15,22.913378197470145
+Unexpected behavior,2024-09,2024-09-01,18,22.40988582286945
+Unexpected behavior,2024-10,2024-10-01,14,21.917457053517015
+Unexpected behavior,2024-11,2024-11-01,18,21.43584878074376
+Unexpected behavior,2024-12,2024-12-01,20,20.964823237884705
+Unexpected behavior,2025-01,2025-01-01,21,20.504147882895285
+Unexpected behavior,2025-02,2025-02-01,16,20.053595283546894
+Unexpected behavior,2025-03,2025-03-01,21,19.61294300514523
+Unexpected behavior,2025-04,2025-04-01,16,19.181973500715756
+Unexpected behavior,2025-05,2025-05-01,18,18.760474003602347
+Unexpected behavior,2025-06,2025-06-01,17,18.34823642242581
+Unexpected behavior,2025-07,2025-07-01,17,17.94505723835062
+Unexpected behavior,2025-08,2025-08-01,14,17.550737404609123
+Unexpected behavior,2025-09,2025-09-01,10,17.16508224823346
+Unexpected behavior,2025-10,2025-10-01,21,16.78790137394695
+Unexpected behavior,2025-11,2025-11-01,3,16.419008570167183
+Performance issue,2021-11,2021-11-01,18,35.61845240192508
+Performance issue,2021-12,2021-12-01,25,34.783105810737176
+Performance issue,2022-01,2022-01-01,26,33.9673502989015
+Performance issue,2022-02,2022-02-01,27,33.17072640396947
+Performance issue,2022-03,2022-03-01,31,32.392785439098
+Performance issue,2022-04,2022-04-01,30,31.633089240333078
+Performance issue,2022-05,2022-05-01,33,30.891209919820355
+Performance issue,2022-06,2022-06-01,24,30.16672962480347
+Performance issue,2022-07,2022-07-01,39,29.459240302274544
+Performance issue,2022-08,2022-08-01,23,28.768343469144313
+Performance issue,2022-09,2022-09-01,34,28.093649987802216
+Performance issue,2022-10,2022-10-01,28,27.434779846940398
+Performance issue,2022-11,2022-11-01,31,26.791361947517746
+Performance issue,2022-12,2022-12-01,32,26.163033893743837
+Performance issue,2023-01,2023-01-01,35,25.549441788964714
+Performance issue,2023-02,2023-02-01,32,24.95024003633573
+Performance issue,2023-03,2023-03-01,32,24.365091144169202
+Performance issue,2023-04,2023-04-01,25,23.79366553584703
+Performance issue,2023-05,2023-05-01,27,23.235641364191533
+Performance issue,2023-06,2023-06-01,24,22.690704330189668
+Performance issue,2023-07,2023-07-01,27,22.15854750596863
+Performance issue,2023-08,2023-08-01,23,21.638871161923277
+Performance issue,2023-09,2023-09-01,18,21.131382597897684
+Performance issue,2023-10,2023-10-01,16,20.635795978326115
+Performance issue,2023-11,2023-11-01,32,20.15183217124021
+Performance issue,2023-12,2023-12-01,26,19.679218591052024
+Performance issue,2024-01,2024-01-01,27,19.217689045024127
+Performance issue,2024-02,2024-02-01,27,18.766983583340384
+Performance issue,2024-03,2024-03-01,26,18.326848352693048
+Performance issue,2024-04,2024-04-01,20,17.897035453303506
+Performance issue,2024-05,2024-05-01,12,17.47730279929639
+Performance issue,2024-06,2024-06-01,13,17.06741398234819
+Performance issue,2024-07,2024-07-01,15,16.667138138533684
+Performance issue,2024-08,2024-08-01,13,16.27624981829523
+Performance issue,2024-09,2024-09-01,10,15.89452885946152
+Performance issue,2024-10,2024-10-01,12,15.521760263244483
+Performance issue,2024-11,2024-11-01,10,15.157734073144317
+Performance issue,2024-12,2024-12-01,16,14.802245256694516
+Performance issue,2025-01,2025-01-01,9,14.455093589980367
+Performance issue,2025-02,2025-02-01,19,14.116083544865672
+Performance issue,2025-03,2025-03-01,17,13.785024178864422
+Performance issue,2025-04,2025-04-01,11,13.461729027595164
+Performance issue,2025-05,2025-05-01,12,13.146015999757685
+Performance issue,2025-06,2025-06-01,11,12.837707274572715
+Performance issue,2025-07,2025-07-01,15,12.536629201626937
+Performance issue,2025-08,2025-08-01,11,12.242612203066955
+Performance issue,2025-09,2025-09-01,8,11.955490678086978
+Performance issue,2025-10,2025-10-01,11,11.675102909656617
+Performance issue,2025-11,2025-11-01,1,11.4012909734361
+Security concerns,2021-11,2021-11-01,19,28.24972965175564
+Security concerns,2021-12,2021-12-01,30,27.658521059446567
+Security concerns,2022-01,2022-01-01,17,27.079685243936748
+Security concerns,2022-02,2022-02-01,32,26.512963268519695
+Security concerns,2022-03,2022-03-01,20,25.958101615500325
+Security concerns,2022-04,2022-04-01,19,25.414852072786132
+Security concerns,2022-05,2022-05-01,24,24.882971622851944
+Security concerns,2022-06,2022-06-01,27,24.362222334028267
+Security concerns,2022-07,2022-07-01,25,23.852371254064874
+Security concerns,2022-08,2022-08-01,24,23.3531903059218
+Security concerns,2022-09,2022-09-01,26,22.864456185741226
+Security concerns,2022-10,2022-10-01,14,22.385950262954662
+Security concerns,2022-11,2022-11-01,21,21.917458482480583
+Security concerns,2022-12,2022-12-01,23,21.458771268968977
+Security concerns,2023-01,2023-01-01,22,21.009683433049783
+Security concerns,2023-02,2023-02-01,14,20.569994079543324
+Security concerns,2023-03,2023-03-01,24,20.13950651759185
+Security concerns,2023-04,2023-04-01,23,19.71802817267166
+Security concerns,2023-05,2023-05-01,17,19.305370500446777
+Security concerns,2023-06,2023-06-01,26,18.9013489024254
+Security concerns,2023-07,2023-07-01,28,18.505782643381533
+Security concerns,2023-08,2023-08-01,15,18.118494770504803
+Security concerns,2023-09,2023-09-01,21,17.739312034242275
+Security concerns,2023-10,2023-10-01,19,17.36806481079694
+Security concerns,2023-11,2023-11-01,24,17.004587026248092
+Security concerns,2023-12,2023-12-01,22,16.648716082259774
+Security concerns,2024-01,2024-01-01,21,16.300292783343902
+Security concerns,2024-02,2024-02-01,19,15.95916126564573
+Security concerns,2024-03,2024-03-01,24,15.625168927219603
+Security concerns,2024-04,2024-04-01,24,15.298166359763922
+Security concerns,2024-05,2024-05-01,13,14.97800728178479
+Security concerns,2024-06,2024-06-01,19,14.664548473158323
+Security concerns,2024-07,2024-07-01,15,14.357649711062555
+Security concerns,2024-08,2024-08-01,11,14.057173707250017
+Security concerns,2024-09,2024-09-01,9,13.762986046633205
+Security concerns,2024-10,2024-10-01,15,13.474955127155233
+Security concerns,2024-11,2024-11-01,11,13.1929521009189
+Security concerns,2024-12,2024-12-01,13,12.916850816547834
+Security concerns,2025-01,2025-01-01,13,12.64652776275383
+Security concerns,2025-02,2025-02-01,6,12.381862013085298
+Security concerns,2025-03,2025-03-01,14,12.122735171831923
+Security concerns,2025-04,2025-04-01,7,11.869031321061478
+Security concerns,2025-05,2025-05-01,13,11.620636968765055
+Security concerns,2025-06,2025-06-01,9,11.377440998087458
+Security concerns,2025-07,2025-07-01,12,11.13933461762018
+Security concerns,2025-08,2025-08-01,8,10.906211312734547
+Security concerns,2025-09,2025-09-01,7,10.67796679793345
+Security concerns,2025-10,2025-10-01,9,10.454498970200211
+Security concerns,2025-11,2025-11-01,3,10.235707863323737
+Tedious Workflows,2021-11,2021-11-01,4,9.662008760262397
+Tedious Workflows,2021-12,2021-12-01,11,9.503371089415875
+Tedious Workflows,2022-01,2022-01-01,9,9.34733804367745
+Tedious Workflows,2022-02,2022-02-01,11,9.193866858476019
+Tedious Workflows,2022-03,2022-03-01,8,9.042915471379363
+Tedious Workflows,2022-04,2022-04-01,8,8.894442510565923
+Tedious Workflows,2022-05,2022-05-01,9,8.748407283485863
+Tedious Workflows,2022-06,2022-06-01,6,8.604769765708323
+Tedious Workflows,2022-07,2022-07-01,8,8.463490589951762
+Tedious Workflows,2022-08,2022-08-01,3,8.324531035294422
+Tedious Workflows,2022-09,2022-09-01,7,8.187853016561926
+Tedious Workflows,2022-10,2022-10-01,7,8.053419073889142
+Tedious Workflows,2022-11,2022-11-01,10,7.921192362453412
+Tedious Workflows,2022-12,2022-12-01,6,7.791136642376345
+Tedious Workflows,2023-01,2023-01-01,4,7.663216268791425
+Tedious Workflows,2023-02,2023-02-01,15,7.537396182074672
+Tedious Workflows,2023-03,2023-03-01,12,7.4136418982357375
+Tedious Workflows,2023-04,2023-04-01,3,7.291919499466731
+Tedious Workflows,2023-05,2023-05-01,12,7.172195624846241
+Tedious Workflows,2023-06,2023-06-01,10,7.054437461195983
+Tedious Workflows,2023-07,2023-07-01,12,6.9386127340875605
+Tedious Workflows,2023-08,2023-08-01,4,6.8246896989969
+Tedious Workflows,2023-09,2023-09-01,4,6.712637132603893
+Tedious Workflows,2023-10,2023-10-01,9,6.602424324234919
+Tedious Workflows,2023-11,2023-11-01,12,6.494021067445842
+Tedious Workflows,2023-12,2023-12-01,9,6.3873976517432185
+Tedious Workflows,2024-01,2024-01-01,10,6.282524854441434
+Tedious Workflows,2024-02,2024-02-01,6,6.17937393265352
+Tedious Workflows,2024-03,2024-03-01,8,6.077916615413493
+Tedious Workflows,2024-04,2024-04-01,6,5.978125095928017
+Tedious Workflows,2024-05,2024-05-01,4,5.8799720239552915
+Tedious Workflows,2024-06,2024-06-01,3,5.783430498309062
+Tedious Workflows,2024-07,2024-07-01,7,5.688474059485716
+Tedious Workflows,2024-08,2024-08-01,4,5.595076682412425
+Tedious Workflows,2024-09,2024-09-01,6,5.5032127693143496
+Tedious Workflows,2024-10,2024-10-01,5,5.4128571426989645
+Tedious Workflows,2024-11,2024-11-01,5,5.323985038455562
+Tedious Workflows,2024-12,2024-12-01,3,5.236572099068061
+Tedious Workflows,2025-01,2025-01-01,4,5.150594366939253
+Tedious Workflows,2025-02,2025-02-01,4,5.066028277824649
+Tedious Workflows,2025-03,2025-03-01,6,4.98285065437413
+Tedious Workflows,2025-04,2025-04-01,3,4.901038699779659
+Tedious Workflows,2025-05,2025-05-01,8,4.820569991527257
+Tedious Workflows,2025-06,2025-06-01,4,4.741422475251589
+Tedious Workflows,2025-07,2025-07-01,8,4.6635744586914365
+Tedious Workflows,2025-08,2025-08-01,4,4.587004605744414
+Tedious Workflows,2025-09,2025-09-01,3,4.5116919306193095
+Tedious Workflows,2025-10,2025-10-01,3,4.437615792084422
+Tedious Workflows,2025-11,2025-11-01,0,4.364755887810345

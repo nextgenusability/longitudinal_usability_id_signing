@@ -1,0 +1,56 @@
+tool_family,theme,beta1_avg
+Keyfactor,Authentication friction,0.009847719773085576
+Keyfactor,Build/CI/installation/distribution release issues,0.008652832694252727
+Keyfactor,Configuration friction,0.005891341414500124
+Keyfactor,Integration failure/issues,0.015293038084337924
+Keyfactor,Missing feature / enhancement request,0.0060241247214169345
+Keyfactor,Notification/Logging /Web UI Issues,0.0007390385415640827
+Keyfactor,Performance issue,0.005887704811033246
+Keyfactor,Security concerns,-0.014161487516356572
+Keyfactor,Tedious Workflows,-0.013429302074417811
+Keyfactor,Unexpected behavior,0.008514801847301226
+Keyfactor,User confusion / unclear documentation/documentation improvements,0.009186448439749192
+Notary,Authentication friction,-0.019096641551435034
+Notary,Build/CI/installation/distribution release issues,-0.025818377145397413
+Notary,Configuration friction,-0.020113727438910302
+Notary,Integration failure/issues,-0.02494088781470661
+Notary,Missing feature / enhancement request,-0.024433780744029163
+Notary,Notification/Logging /Web UI Issues,-0.024426294538970345
+Notary,Performance issue,-0.02491145532469221
+Notary,Security concerns,-0.01101466790957361
+Notary,Tedious Workflows,-0.013953722909034969
+Notary,Unexpected behavior,-0.020131749544527445
+Notary,User confusion / unclear documentation/documentation improvements,-0.02763668726005981
+OpenPubKey,Authentication friction,0.028298111624252515
+OpenPubKey,Build/CI/installation/distribution release issues,0.038763428400189266
+OpenPubKey,Configuration friction,0.03989912195877806
+OpenPubKey,Integration failure/issues,0.033118701248391315
+OpenPubKey,Missing feature / enhancement request,0.03888088276619618
+OpenPubKey,Notification/Logging /Web UI Issues,0.03654275393438786
+OpenPubKey,Performance issue,0.030385077907825707
+OpenPubKey,Security concerns,0.018963152910939078
+OpenPubKey,Tedious Workflows,0.012578967399894845
+OpenPubKey,Unexpected behavior,0.03287876514968739
+OpenPubKey,User confusion / unclear documentation/documentation improvements,0.03814248810747205
+Sigstore,Authentication friction,-0.04866870087868796
+Sigstore,Build/CI/installation/distribution release issues,-0.0469489379269149
+Sigstore,Configuration friction,-0.04614285473289301
+Sigstore,Integration failure/issues,-0.04065346973984322
+Sigstore,Missing feature / enhancement request,-0.0475016975590972
+Sigstore,Notification/Logging /Web UI Issues,-0.047447684156673
+Sigstore,Performance issue,-0.04220053615667752
+Sigstore,Security concerns,-0.04879704313927719
+Sigstore,Tedious Workflows,-0.028062266100575075
+Sigstore,Unexpected behavior,-0.04158922903903056
+Sigstore,User confusion / unclear documentation/documentation improvements,-0.04353765472528833
+Vault,Authentication friction,-0.022898281440547088
+Vault,Build/CI/installation/distribution release issues,-0.024527041216878275
+Vault,Configuration friction,-0.021916329641095165
+Vault,Integration failure/issues,-0.022568385891840882
+Vault,Missing feature / enhancement request,-0.023258847890521964
+Vault,Notification/Logging /Web UI Issues,-0.021951916626906882
+Vault,Performance issue,-0.022166039467437205
+Vault,Security concerns,-0.019724841896234625
+Vault,Tedious Workflows,-0.015219945246177584
+Vault,Unexpected behavior,-0.022994711212821962
+Vault,User confusion / unclear documentation/documentation improvements,-0.025345074379558463

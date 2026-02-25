@@ -1,0 +1,9 @@
+repo,non-usability,usability,total,usability_pct
+hashicorp/vault,96,1794,1890,94.9
+sigstore/cosign,206,665,871,76.3
+notaryproject/notation,66,267,333,80.2
+sigstore/rekor,23,228,251,90.8
+sigstore/fulcio,8,188,196,95.9
+Keyfactor/ejbca-ce,12,177,189,93.7
+openpubkey/openpubkey,38,109,147,74.1
+Keyfactor/signserver-ce,0,23,23,100.0

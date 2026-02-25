@@ -1,0 +1,12 @@
+Associated Component Theme,Keyfactor/ejbca-ce,Keyfactor/signserver-ce,hashicorp/vault,notaryproject/notation,openpubkey/openpubkey,sigstore/cosign,sigstore/fulcio,sigstore/rekor,Total
+CLI tooling,148,23,1715,253,60,621,129,196,3145
+API,150,19,1687,209,76,579,162,192,3074
+Build/CI,176,23,1317,218,65,658,188,119,2764
+Policy/configuration,106,10,1420,141,39,402,97,98,2313
+Web Client,132,16,1258,109,47,454,90,113,2219
+Documentation/Help,123,18,1053,159,59,399,100,80,1991
+Notification/Logging,101,8,979,83,45,275,74,158,1723
+Authentication/Authorization tools,77,11,1073,49,83,234,109,31,1667
+Verification workflow,22,1,189,114,28,590,54,66,1064
+Signing workflow,26,22,321,89,37,382,82,82,1041
+Key Management Core (secret engine),0,0,932,0,0,0,0,0,932

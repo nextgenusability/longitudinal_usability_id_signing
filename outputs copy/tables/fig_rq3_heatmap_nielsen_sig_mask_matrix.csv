@@ -1,0 +1,9 @@
+tool,1. Visibility of system status,2. Match between system and the real world,3. User control and freedom,4. Consistency and standards,5. Error prevention,6. Recognition rather than recall,7. Flexibility and efficiency of use,8. Aesthetic and minimalist design,"9. Help users recognize, diagnose, and recover from errors",10. Help and documentation
+Keyfactor/ejbca-ce,False,False,False,False,False,True,False,False,False,False
+Keyfactor/signserver-ce,False,False,False,False,False,False,False,False,False,False
+hashicorp/vault,True,True,True,True,True,False,True,False,True,True
+notaryproject/notation,True,False,False,False,False,True,True,False,True,True
+openpubkey/openpubkey,True,False,False,True,False,False,True,False,False,True
+sigstore/cosign,True,True,False,True,True,True,True,False,True,True
+sigstore/fulcio,True,True,False,True,True,True,True,False,False,True
+sigstore/rekor,True,True,False,True,True,False,True,False,True,True

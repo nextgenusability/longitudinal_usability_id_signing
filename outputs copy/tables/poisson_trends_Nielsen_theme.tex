@@ -1,0 +1,88 @@
+\begin{table}[t]
+\centering
+\caption{Poisson regression time trends for monthly counts of usability issues by tool and Nielsen_theme (top 15 themes).}
+\label{tab:poisson-nielsen_theme}
+\scriptsize
+\begin{tabular}{lllllll}
+\hline
+tool & theme & beta & rr\_per\_month & pct\_change\_per\_month & p\_value & sig\_0\_05 \\
+\hline
+Keyfactor/ejbca-ce & 2. Match between system and the real world & -0.0066 & 0.993 & -0.66 & 0.711 & no \\
+Keyfactor/ejbca-ce & 10. Help and documentation & -0.0004 & 1.000 & -0.04 & 0.937 & no \\
+Keyfactor/ejbca-ce & 1. Visibility of system status & 0.0014 & 1.001 & 0.14 & 0.858 & no \\
+Keyfactor/ejbca-ce & 7. Flexibility and efficiency of use & 0.0032 & 1.003 & 0.32 & 0.575 & no \\
+Keyfactor/ejbca-ce & 5. Error prevention & 0.0070 & 1.007 & 0.70 & 0.754 & no \\
+Keyfactor/ejbca-ce & 9. Help users recognize, diagnose, and recover from errors & 0.0105 & 1.011 & 1.05 & 0.308 & no \\
+Keyfactor/ejbca-ce & 3. User control and freedom & 0.0186 & 1.019 & 1.88 & 0.528 & no \\
+Keyfactor/ejbca-ce & 4. Consistency and standards & 0.0243 & 1.025 & 2.46 & 0.0604 & no \\
+Keyfactor/ejbca-ce & 6. Recognition rather than recall & 0.0902 & 1.094 & 9.44 & 0.00899* & yes \\
+Keyfactor/signserver-ce & 2. Match between system and the real world & -0.0275 & 0.973 & -2.71 & 0.52 & no \\
+Keyfactor/signserver-ce & 1. Visibility of system status & -0.0230 & 0.977 & -2.27 & 0.44 & no \\
+Keyfactor/signserver-ce & 4. Consistency and standards & 0.0075 & 1.008 & 0.75 & 0.881 & no \\
+Keyfactor/signserver-ce & 10. Help and documentation & 0.0122 & 1.012 & 1.23 & 0.433 & no \\
+Keyfactor/signserver-ce & 7. Flexibility and efficiency of use & 0.0176 & 1.018 & 1.77 & 0.287 & no \\
+Keyfactor/signserver-ce & 9. Help users recognize, diagnose, and recover from errors & 0.0270 & 1.027 & 2.74 & 0.464 & no \\
+Keyfactor/signserver-ce & 6. Recognition rather than recall & 0.0311 & 1.032 & 3.16 & 0.677 & no \\
+Keyfactor/signserver-ce & 5. Error prevention & 0.0633 & 1.065 & 6.53 & 0.469 & no \\
+hashicorp/vault & 3. User control and freedom & -0.0301 & 0.970 & -2.96 & 1.18e-05* & yes \\
+hashicorp/vault & 2. Match between system and the real world & -0.0255 & 0.975 & -2.52 & 8.78e-09* & yes \\
+hashicorp/vault & 10. Help and documentation & -0.0243 & 0.976 & -2.40 & 8.25e-41* & yes \\
+hashicorp/vault & 4. Consistency and standards & -0.0234 & 0.977 & -2.31 & 1.1e-08* & yes \\
+hashicorp/vault & 7. Flexibility and efficiency of use & -0.0230 & 0.977 & -2.27 & 7.07e-36* & yes \\
+hashicorp/vault & 1. Visibility of system status & -0.0224 & 0.978 & -2.22 & 7.23e-23* & yes \\
+hashicorp/vault & 5. Error prevention & -0.0220 & 0.978 & -2.18 & 0.00013* & yes \\
+hashicorp/vault & 6. Recognition rather than recall & -0.0204 & 0.980 & -2.02 & 0.0532 & no \\
+hashicorp/vault & 9. Help users recognize, diagnose, and recover from errors & -0.0177 & 0.982 & -1.75 & 1.95e-07* & yes \\
+hashicorp/vault & 8. Aesthetic and minimalist design & 0.0085 & 1.009 & 0.85 & 0.566 & no \\
+notaryproject/notation & 8. Aesthetic and minimalist design & -0.0685 & 0.934 & -6.62 & 0.188 & no \\
+notaryproject/notation & 6. Recognition rather than recall & -0.0633 & 0.939 & -6.13 & 0.0121* & yes \\
+notaryproject/notation & 1. Visibility of system status & -0.0270 & 0.973 & -2.66 & 0.00726* & yes \\
+notaryproject/notation & 7. Flexibility and efficiency of use & -0.0266 & 0.974 & -2.63 & 9.69e-08* & yes \\
+notaryproject/notation & 10. Help and documentation & -0.0242 & 0.976 & -2.39 & 4.68e-07* & yes \\
+notaryproject/notation & 9. Help users recognize, diagnose, and recover from errors & -0.0216 & 0.979 & -2.13 & 0.0341* & yes \\
+notaryproject/notation & 5. Error prevention & -0.0156 & 0.985 & -1.55 & 0.298 & no \\
+notaryproject/notation & 2. Match between system and the real world & -0.0134 & 0.987 & -1.33 & 0.34 & no \\
+notaryproject/notation & 4. Consistency and standards & -0.0033 & 0.997 & -0.32 & 0.771 & no \\
+notaryproject/notation & 3. User control and freedom & 0.0311 & 1.032 & 3.16 & 0.677 & no \\
+openpubkey/openpubkey & 8. Aesthetic and minimalist design & 0.0151 & 1.015 & 1.53 & 0.715 & no \\
+openpubkey/openpubkey & 3. User control and freedom & 0.0257 & 1.026 & 2.60 & 0.545 & no \\
+openpubkey/openpubkey & 2. Match between system and the real world & 0.0292 & 1.030 & 2.96 & 0.0594 & no \\
+openpubkey/openpubkey & 5. Error prevention & 0.0306 & 1.031 & 3.11 & 0.174 & no \\
+openpubkey/openpubkey & 9. Help users recognize, diagnose, and recover from errors & 0.0324 & 1.033 & 3.29 & 0.196 & no \\
+openpubkey/openpubkey & 1. Visibility of system status & 0.0338 & 1.034 & 3.44 & 0.0401* & yes \\
+openpubkey/openpubkey & 7. Flexibility and efficiency of use & 0.0343 & 1.035 & 3.49 & 2.4e-05* & yes \\
+openpubkey/openpubkey & 4. Consistency and standards & 0.0353 & 1.036 & 3.60 & 0.0257* & yes \\
+openpubkey/openpubkey & 10. Help and documentation & 0.0366 & 1.037 & 3.73 & 7.72e-05* & yes \\
+openpubkey/openpubkey & 6. Recognition rather than recall & 0.1017 & 1.107 & 10.71 & 0.363 & no \\
+sigstore/cosign & 5. Error prevention & -0.0478 & 0.953 & -4.67 & 2.52e-07* & yes \\
+sigstore/cosign & 2. Match between system and the real world & -0.0375 & 0.963 & -3.68 & 2.38e-06* & yes \\
+sigstore/cosign & 1. Visibility of system status & -0.0354 & 0.965 & -3.48 & 9.26e-11* & yes \\
+sigstore/cosign & 7. Flexibility and efficiency of use & -0.0334 & 0.967 & -3.28 & 8.27e-29* & yes \\
+sigstore/cosign & 10. Help and documentation & -0.0323 & 0.968 & -3.18 & 1.7e-25* & yes \\
+sigstore/cosign & 9. Help users recognize, diagnose, and recover from errors & -0.0320 & 0.969 & -3.15 & 1.53e-05* & yes \\
+sigstore/cosign & 6. Recognition rather than recall & -0.0314 & 0.969 & -3.09 & 0.0295* & yes \\
+sigstore/cosign & 4. Consistency and standards & -0.0306 & 0.970 & -3.01 & 8.98e-07* & yes \\
+sigstore/cosign & 8. Aesthetic and minimalist design & -0.0269 & 0.974 & -2.65 & 0.275 & no \\
+sigstore/cosign & 3. User control and freedom & 0.0257 & 1.026 & 2.60 & 0.393 & no \\
+sigstore/fulcio & 6. Recognition rather than recall & -0.0997 & 0.905 & -9.49 & 0.0269* & yes \\
+sigstore/fulcio & 7. Flexibility and efficiency of use & -0.0522 & 0.949 & -5.08 & 5.46e-18* & yes \\
+sigstore/fulcio & 2. Match between system and the real world & -0.0492 & 0.952 & -4.80 & 0.000474* & yes \\
+sigstore/fulcio & 10. Help and documentation & -0.0466 & 0.954 & -4.56 & 2.48e-13* & yes \\
+sigstore/fulcio & 5. Error prevention & -0.0426 & 0.958 & -4.17 & 0.00913* & yes \\
+sigstore/fulcio & 4. Consistency and standards & -0.0404 & 0.960 & -3.96 & 0.00074* & yes \\
+sigstore/fulcio & 1. Visibility of system status & -0.0341 & 0.967 & -3.35 & 0.000483* & yes \\
+sigstore/fulcio & 9. Help users recognize, diagnose, and recover from errors & -0.0306 & 0.970 & -3.01 & 0.0669 & no \\
+sigstore/fulcio & 3. User control and freedom & 0.0203 & 1.021 & 2.05 & 0.779 & no \\
+sigstore/rekor & 2. Match between system and the real world & -0.0722 & 0.930 & -6.97 & 4.7e-05* & yes \\
+sigstore/rekor & 4. Consistency and standards & -0.0570 & 0.945 & -5.54 & 4.18e-07* & yes \\
+sigstore/rekor & 7. Flexibility and efficiency of use & -0.0530 & 0.948 & -5.16 & 1.21e-19* & yes \\
+sigstore/rekor & 10. Help and documentation & -0.0511 & 0.950 & -4.98 & 3.02e-17* & yes \\
+sigstore/rekor & 1. Visibility of system status & -0.0500 & 0.951 & -4.87 & 2.26e-06* & yes \\
+sigstore/rekor & 6. Recognition rather than recall & -0.0470 & 0.954 & -4.59 & 0.15 & no \\
+sigstore/rekor & 9. Help users recognize, diagnose, and recover from errors & -0.0459 & 0.955 & -4.48 & 0.0019* & yes \\
+sigstore/rekor & 5. Error prevention & -0.0419 & 0.959 & -4.10 & 0.00621* & yes \\
+sigstore/rekor & 8. Aesthetic and minimalist design & -0.0398 & 0.961 & -3.90 & 0.208 & no \\
+sigstore/rekor & 3. User control and freedom & -0.0117 & 0.988 & -1.17 & 0.776 & no \\
+\hline
+\end{tabular}
+\end{table}

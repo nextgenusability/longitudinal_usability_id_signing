@@ -1,0 +1,88 @@
+repo,l1_theme_secondary_group,l1_theme_canonical,count
+Keyfactor/ejbca-ce,Cognitive Friction,Notification/Logging Issues,139
+Keyfactor/ejbca-ce,Cognitive Friction,User confusion / unclear documentation,133
+Keyfactor/ejbca-ce,Functional Gap,Missing feature / enhancement request,63
+Keyfactor/ejbca-ce,Functional Reliability,Performance issue,67
+Keyfactor/ejbca-ce,Functional Reliability,Security concerns,38
+Keyfactor/ejbca-ce,Functional Reliability,Unexpected behavior,93
+Keyfactor/ejbca-ce,Operational Friction,Authentication friction,80
+Keyfactor/ejbca-ce,Operational Friction,Build/CI/installation/distribution release issues,123
+Keyfactor/ejbca-ce,Operational Friction,Configuration friction,110
+Keyfactor/ejbca-ce,Operational Friction,Integration failure/issues,95
+Keyfactor/ejbca-ce,Operational Friction,Tedious Workflows,21
+Keyfactor/signserver-ce,Cognitive Friction,Notification/Logging Issues,16
+Keyfactor/signserver-ce,Cognitive Friction,User confusion / unclear documentation,18
+Keyfactor/signserver-ce,Functional Gap,Missing feature / enhancement request,9
+Keyfactor/signserver-ce,Functional Reliability,Performance issue,7
+Keyfactor/signserver-ce,Functional Reliability,Security concerns,4
+Keyfactor/signserver-ce,Functional Reliability,Unexpected behavior,11
+Keyfactor/signserver-ce,Operational Friction,Authentication friction,11
+Keyfactor/signserver-ce,Operational Friction,Build/CI/installation/distribution release issues,19
+Keyfactor/signserver-ce,Operational Friction,Configuration friction,13
+Keyfactor/signserver-ce,Operational Friction,Integration failure/issues,9
+hashicorp/vault,Cognitive Friction,Notification/Logging Issues,1471
+hashicorp/vault,Cognitive Friction,User confusion / unclear documentation,1322
+hashicorp/vault,Functional Gap,Missing feature / enhancement request,1323
+hashicorp/vault,Functional Reliability,Performance issue,620
+hashicorp/vault,Functional Reliability,Security concerns,634
+hashicorp/vault,Functional Reliability,Unexpected behavior,900
+hashicorp/vault,Operational Friction,Authentication friction,1133
+hashicorp/vault,Operational Friction,Build/CI/installation/distribution release issues,1317
+hashicorp/vault,Operational Friction,Configuration friction,1464
+hashicorp/vault,Operational Friction,Integration failure/issues,891
+hashicorp/vault,Operational Friction,Tedious Workflows,186
+notaryproject/notation,Cognitive Friction,Notification/Logging Issues,145
+notaryproject/notation,Cognitive Friction,User confusion / unclear documentation,156
+notaryproject/notation,Functional Gap,Missing feature / enhancement request,168
+notaryproject/notation,Functional Reliability,Performance issue,51
+notaryproject/notation,Functional Reliability,Security concerns,26
+notaryproject/notation,Functional Reliability,Unexpected behavior,80
+notaryproject/notation,Operational Friction,Authentication friction,51
+notaryproject/notation,Operational Friction,Build/CI/installation/distribution release issues,194
+notaryproject/notation,Operational Friction,Configuration friction,171
+notaryproject/notation,Operational Friction,Integration failure/issues,129
+notaryproject/notation,Operational Friction,Tedious Workflows,26
+openpubkey/openpubkey,Cognitive Friction,Notification/Logging Issues,55
+openpubkey/openpubkey,Cognitive Friction,User confusion / unclear documentation,55
+openpubkey/openpubkey,Functional Gap,Missing feature / enhancement request,70
+openpubkey/openpubkey,Functional Reliability,Performance issue,22
+openpubkey/openpubkey,Functional Reliability,Security concerns,23
+openpubkey/openpubkey,Functional Reliability,Unexpected behavior,26
+openpubkey/openpubkey,Operational Friction,Authentication friction,72
+openpubkey/openpubkey,Operational Friction,Build/CI/installation/distribution release issues,65
+openpubkey/openpubkey,Operational Friction,Configuration friction,37
+openpubkey/openpubkey,Operational Friction,Integration failure/issues,40
+openpubkey/openpubkey,Operational Friction,Tedious Workflows,2
+sigstore/cosign,Cognitive Friction,Notification/Logging Issues,502
+sigstore/cosign,Cognitive Friction,User confusion / unclear documentation,447
+sigstore/cosign,Functional Gap,Missing feature / enhancement request,315
+sigstore/cosign,Functional Reliability,Performance issue,160
+sigstore/cosign,Functional Reliability,Security concerns,89
+sigstore/cosign,Functional Reliability,Unexpected behavior,242
+sigstore/cosign,Operational Friction,Authentication friction,250
+sigstore/cosign,Operational Friction,Build/CI/installation/distribution release issues,538
+sigstore/cosign,Operational Friction,Configuration friction,389
+sigstore/cosign,Operational Friction,Integration failure/issues,410
+sigstore/cosign,Operational Friction,Tedious Workflows,65
+sigstore/fulcio,Cognitive Friction,Notification/Logging Issues,111
+sigstore/fulcio,Cognitive Friction,User confusion / unclear documentation,112
+sigstore/fulcio,Functional Gap,Missing feature / enhancement request,144
+sigstore/fulcio,Functional Reliability,Performance issue,59
+sigstore/fulcio,Functional Reliability,Security concerns,35
+sigstore/fulcio,Functional Reliability,Unexpected behavior,35
+sigstore/fulcio,Operational Friction,Authentication friction,96
+sigstore/fulcio,Operational Friction,Build/CI/installation/distribution release issues,169
+sigstore/fulcio,Operational Friction,Configuration friction,99
+sigstore/fulcio,Operational Friction,Integration failure/issues,109
+sigstore/fulcio,Operational Friction,Tedious Workflows,12
+sigstore/rekor,Cognitive Friction,Notification/Logging Issues,165
+sigstore/rekor,Cognitive Friction,User confusion / unclear documentation,105
+sigstore/rekor,Functional Gap,Missing feature / enhancement request,152
+sigstore/rekor,Functional Reliability,Performance issue,58
+sigstore/rekor,Functional Reliability,Security concerns,22
+sigstore/rekor,Functional Reliability,Unexpected behavior,53
+sigstore/rekor,Operational Friction,Authentication friction,35
+sigstore/rekor,Operational Friction,Build/CI/installation/distribution release issues,119
+sigstore/rekor,Operational Friction,Configuration friction,97
+sigstore/rekor,Operational Friction,Integration failure/issues,57
+sigstore/rekor,Operational Friction,Tedious Workflows,15

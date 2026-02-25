@@ -1,0 +1,38 @@
+theme_family,theme,definition
+Primary theme (inductively generated),Missing feature / enhancement request,"User requests functionality that does not currently exist, or enhancement of existing capability."
+Primary theme (inductively generated),Unexpected behavior,Tool behaves incorrectly despite user following expected instructions or documentation.
+Primary theme (inductively generated),Authentication friction,"User cannot authenticate/authorize smoothly due to token, flow, timeout, or identity setup problems."
+Primary theme (inductively generated),Configuration friction,"User struggles to configure the tool due to complexity, rigid settings, or unclear setup requirements."
+Primary theme (inductively generated),Integration failure/issues,Interoperation with external systems fails or requires additional support/enhancement.
+Primary theme (inductively generated),User confusion / unclear documentation,"User is confused, asks usage questions, or documentation is unclear/outdated/insufficient."
+Primary theme (inductively generated),Build/CI/installation/distribution release issues,Problems running/installing/building/distributing the tool in local or CI/CD environments.
+Primary theme (inductively generated),Performance issue,Tool functions but is too slow or resource intensive (or needs performance improvements).
+Primary theme (inductively generated),Security concerns,"Reported vulnerability, unsafe default, leakage risk, or request to harden security posture."
+Primary theme (inductively generated),Notification/Logging Issues,"Logs, errors, status output, or web/client feedback are unclear, noisy, or not actionable."
+Primary theme (inductively generated),Tedious Workflows,Workflow is overly manual or requires too many steps to achieve a routine task.
+Secondary theme (inductively generated),Operational Friction,"Barriers in setup, environment, integration, or workflow execution where users know what to do but the system resists."
+Secondary theme (inductively generated),Cognitive Friction,"Barriers in understanding or mental model clarity, where users do not know how to proceed."
+Secondary theme (inductively generated),Functional Reliability,"Friction when expected function is undermined by failures, slowness, or security risk."
+Secondary theme (inductively generated),Functional Gap,Tool currently lacks capability needed for the user’s intended task.
+Nielsen theme (deductive),1. Visibility of system status,"System should keep users informed with timely, clear feedback about ongoing operations."
+Nielsen theme (deductive),2. Match between system and the real world,Use familiar language and concepts; avoid internal jargon that conflicts with user expectations.
+Nielsen theme (deductive),3. User control and freedom,Provide clear exits/undo paths so users can recover from unwanted states.
+Nielsen theme (deductive),4. Consistency and standards,Use consistent terminology/behavior and follow ecosystem conventions.
+Nielsen theme (deductive),5. Error prevention,"Prevent avoidable mistakes with checks, guardrails, and confirmations before commitment."
+Nielsen theme (deductive),6. Recognition rather than recall,Reduce memory burden by making required actions/options visible in the interface/help.
+Nielsen theme (deductive),7. Flexibility and efficiency of use,Support efficient workflows for experts while remaining usable for less-experienced users.
+Nielsen theme (deductive),8. Aesthetic and minimalist design,Avoid irrelevant/noisy information that hides key outputs or decisions.
+Nielsen theme (deductive),"9. Help users recognize, diagnose, and recover from errors","Error messages should be clear, specific, and provide actionable recovery guidance."
+Nielsen theme (deductive),10. Help and documentation,"Documentation and help text should be discoverable, accurate, and aligned with current behavior."
+Affected component theme,Authentication/Authorization tools,"Identity verification and permission logic, including OIDC flows, token handling, MFA, and RBAC behavior."
+Affected component theme,CLI tooling,"Command-line UX including command/flag behavior, prompts, and output formatting."
+Affected component theme,Signing workflow,End-to-end client-side path used to produce cryptographic signatures for artifacts.
+Affected component theme,Verification workflow,End-to-end client-side path used to validate signatures and trust decisions.
+Affected component theme,Policy/configuration,"Configuration and policy expression/interpretation (e.g., YAML/JSON, OPA/Rego, policy enforcement)."
+Affected component theme,Build/CI/Installation,Friction in installation/build and automated execution in CI/CD or scripted environments.
+Affected component theme,Release pipeline,"Maintainer-side release engineering: building, signing, and publishing official binaries/artifacts."
+Affected component theme,Notification/Logging,"Clarity/actionability of logs, warnings, status output, and debug traces."
+Affected component theme,Core,Issue affects the overall tool/core behavior when a specific component boundary is unclear.
+Affected component theme,API,"Issues in API endpoints, request/response behavior, and API-facing interactions."
+Affected component theme,Web Client,Issues in web UI/client/admin dashboard interactions and feedback.
+Affected component theme,Key Management Core / Secrets Backend,"Key/secret lifecycle and secure storage infrastructure, including KMS/HSM/keychain integrations."

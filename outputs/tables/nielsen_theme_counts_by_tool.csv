@@ -1,0 +1,9 @@
+repo,denom_theme_assignments,1. Visibility of system status,2. Match between system and the real world,3. User control and freedom,4. Consistency and standards,5. Error prevention,6. Recognition rather than recall,7. Flexibility and efficiency of use,8. Aesthetic and minimalist design,"9. Help users recognize, diagnose, and recover from errors",10. Help and documentation
+hashicorp/vault,5612,1021,274,118,319,160,47,1578,23,450,1622
+sigstore/cosign,1872,193,93,6,144,75,27,633,9,103,589
+notaryproject/notation,660,54,26,1,40,23,12,218,3,51,232
+sigstore/rekor,593,59,27,3,56,26,6,199,6,29,182
+sigstore/fulcio,527,60,33,1,42,23,6,185,0,20,157
+Keyfactor/ejbca-ce,515,83,16,6,32,10,9,153,0,48,158
+openpubkey/openpubkey,249,21,23,3,23,11,1,87,3,9,68
+Keyfactor/signserver-ce,57,6,3,0,2,1,1,19,0,4,21
