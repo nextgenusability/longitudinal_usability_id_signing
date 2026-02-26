@@ -5,3 +5,5 @@ venv/
 # macOS metadata
 .DS_Store
 **/.DS_Store
+.env
+**/.env
