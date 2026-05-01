@@ -22,7 +22,7 @@ Some scripts write LaTeX tables through pandas and require `jinja2`; it is inclu
 
 `outputs/data/phase3_paper_version/` contains the labeled workbooks used by the original paper-version analysis.
 
-`outputs/data/phase3_prompt_v4/recode_full/` contains prompt-v4 full-corpus OpenAI API predictions.
+`outputs/data/phase3_prompt_v4/recode_full/` contains prompt-v4 full-corpus OpenAI API predictions. The selected paper rerun uses `LLM Prompts/Master_Classifier_Prompt_v4.txt` because validation performance peaked for v4 among the tested master-prompt variants.
 
 `outputs/data/phase3_prompt_v4/recode_full_core_normalized/` contains the prompt-v4 full-corpus data after component normalization, especially removal of generic `Core` when it co-occurs with a more specific component.
 

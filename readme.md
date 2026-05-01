@@ -255,6 +255,8 @@ The newer master-prompt API reruns are represented by:
 - `LLM Prompts/Master_Classifier_Prompt_v4.txt`
 - `LLM Prompts/Master_Classifier_Prompt_v5.txt`
 
+The prompt used for the paper-version API rerun is `LLM Prompts/Master_Classifier_Prompt_v4.txt`. Among the tested master-prompt variants, v4 produced the best validation performance, so the prompt-v4 outputs are the primary OpenAI API rerun results reported for the revised analysis. `Master_Classifier_Prompt_v5.txt` is retained for transparency as a later experimental variant, not as the paper's selected prompt.
+
 Human-labeled calibration and validation workbooks live under `LLM Prompts/human issues/`. The main sample workbook is `LLM Prompts/human issues/issue_sample_180_50.xlsx`.
 
 ## Validation Sample and Confidence Intervals
