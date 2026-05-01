@@ -1,0 +1,33 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\begin{tabular}{lllrrrrrrrrrrrrl}
+\toprule
+phase & phase12_subset & metric & n & agreement_pct_newflow & error_rate_pct_newflow & cohen_kappa_newflow & gwet_ac1_newflow & agreement_pct_oldflow & error_rate_pct_oldflow & cohen_kappa_oldflow & gwet_ac1_oldflow & delta_agreement_pct & delta_cohen_kappa & delta_gwet_ac1 & winner_by_agreement \\
+\midrule
+Phase 1 & all & Associated Component (full) & 159 & 10.060000 & 89.940000 & NaN & NaN & 10.060000 & 89.940000 & NaN & NaN & 0.000000 & NaN & NaN & tie_or_na \\
+Phase 1 & first_100 & Associated Component (full) & 100 & 13.000000 & 87.000000 & NaN & NaN & 10.000000 & 90.000000 & NaN & NaN & 3.000000 & NaN & NaN & newflow \\
+Phase 1 & last_60 & Associated Component (full) & 59 & 5.080000 & 94.920000 & NaN & NaN & 10.170000 & 89.830000 & NaN & NaN & -5.090000 & NaN & NaN & oldflow \\
+Phase 1 & all & Associated Component (partial overlap) & 159 & 49.060000 & 50.940000 & NaN & NaN & 41.510000 & 58.490000 & NaN & NaN & 7.550000 & NaN & NaN & newflow \\
+Phase 1 & first_100 & Associated Component (partial overlap) & 100 & 52.000000 & 48.000000 & NaN & NaN & 45.000000 & 55.000000 & NaN & NaN & 7.000000 & NaN & NaN & newflow \\
+Phase 1 & last_60 & Associated Component (partial overlap) & 59 & 44.070000 & 55.930000 & NaN & NaN & 35.590000 & 64.410000 & NaN & NaN & 8.480000 & NaN & NaN & newflow \\
+Phase 1 & all & codes_primary (semantic agreement) & 159 & 92.450000 & 7.550000 & NaN & NaN & 91.820000 & 8.180000 & NaN & NaN & 0.630000 & NaN & NaN & newflow \\
+Phase 1 & first_100 & codes_primary (semantic agreement) & 100 & 90.000000 & 10.000000 & NaN & NaN & 90.000000 & 10.000000 & NaN & NaN & 0.000000 & NaN & NaN & tie_or_na \\
+Phase 1 & last_60 & codes_primary (semantic agreement) & 59 & 96.610000 & 3.390000 & NaN & NaN & 94.920000 & 5.080000 & NaN & NaN & 1.690000 & NaN & NaN & newflow \\
+Phase 2 & all & Usability_Non-Usability Type & 159 & 69.810000 & 30.190000 & 0.281897 & 0.506115 & 72.330000 & 27.670000 & 0.355682 & 0.542894 & -2.520000 & -0.073786 & -0.036779 & oldflow \\
+Phase 2 & first_100 & Usability_Non-Usability Type & 100 & 66.000000 & 34.000000 & 0.205607 & 0.438759 & 74.000000 & 26.000000 & 0.371373 & 0.577373 & -8.000000 & -0.165766 & -0.138615 & oldflow \\
+Phase 2 & last_60 & Usability_Non-Usability Type & 59 & 76.270000 & 23.730000 & 0.417489 & 0.617770 & 69.490000 & 30.510000 & 0.332075 & 0.482708 & 6.780000 & 0.085414 & 0.135061 & newflow \\
+Phase 3 & phase3_sample & Associated Component Theme (full) & 18 & 16.670000 & 83.330000 & 0.276349 & 0.775836 & 22.220000 & 77.780000 & 0.271676 & 0.791670 & -5.550000 & 0.004673 & -0.015833 & oldflow \\
+Phase 3 & phase3_sample & Associated Component Theme (partial overlap) & 18 & 61.110000 & 38.890000 & 0.276349 & 0.775836 & 55.560000 & 44.440000 & 0.271676 & 0.791670 & 5.550000 & 0.004673 & -0.015833 & newflow \\
+Phase 3 & phase3_sample & L1_Theme (full) & 17 & 0.000000 & 100.000000 & 0.083558 & 0.890289 & 0.000000 & 100.000000 & 0.050504 & 0.874495 & 0.000000 & 0.033054 & 0.015794 & tie_or_na \\
+Phase 3 & phase3_sample & L1_Theme (partial overlap) & 17 & 11.760000 & 88.240000 & 0.083558 & 0.890289 & 11.760000 & 88.240000 & 0.050504 & 0.874495 & 0.000000 & 0.033054 & 0.015794 & tie_or_na \\
+Phase 3 & phase3_sample & L1_Theme Secondary (full) & 17 & 23.530000 & 76.470000 & 0.162791 & 0.616781 & 11.760000 & 88.240000 & 0.018051 & 0.462096 & 11.770000 & 0.144740 & 0.154685 & newflow \\
+Phase 3 & phase3_sample & L1_Theme Secondary (partial overlap) & 17 & 35.290000 & 64.710000 & 0.162791 & 0.616781 & 23.530000 & 76.470000 & 0.018051 & 0.462096 & 11.760000 & 0.144740 & 0.154685 & newflow \\
+Phase 3 & phase3_sample & Nielsen_theme (full) & 17 & 11.760000 & 88.240000 & 0.231990 & 0.785934 & 0.000000 & 100.000000 & 0.208543 & 0.792140 & 11.760000 & 0.023448 & -0.006206 & newflow \\
+Phase 3 & phase3_sample & Nielsen_theme (partial overlap) & 17 & 47.060000 & 52.940000 & 0.231990 & 0.785934 & 41.180000 & 58.820000 & 0.208543 & 0.792140 & 5.880000 & 0.023448 & -0.006206 & newflow \\
+\bottomrule
+\end{tabular}
+\caption{Agreement comparison between prompt variants (newflow vs oldflow).}
+\label{tab:prompt-agreement-comparison}
+
+\end{table}

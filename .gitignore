@@ -7,3 +7,18 @@ venv/
 **/.DS_Store
 .env
 **/.env
+
+# Python/runtime caches
+__pycache__/
+**/__pycache__/
+*.pyc
+
+# Temporary office/editor lock files
+~$*.xlsx
+**/~$*.xlsx
+
+# Local scratch extraction outputs
+outputs/tmp_*/
+
+# Local backup snapshots
+outputs/*backup*/

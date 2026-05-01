@@ -1,0 +1,97 @@
+tool,count_in_category,total_assignments_in_family,share_pct,rank_within_category,theme_family,category
+sigstore/rekor,152,377,40.318302387267906,1,Affected-component themes,Core
+sigstore/fulcio,109,306,35.62091503267974,2,Affected-component themes,Core
+openpubkey/openpubkey,58,189,30.687830687830687,3,Affected-component themes,Core
+Keyfactor/ejbca-ce,66,290,22.758620689655174,4,Affected-component themes,Core
+hashicorp/vault,464,3099,14.972571797353984,5,Affected-component themes,Core
+Keyfactor/signserver-ce,6,45,13.333333333333334,6,Affected-component themes,Core
+sigstore/cosign,239,1797,13.299944351697274,7,Affected-component themes,Core
+notaryproject/notation,67,607,11.037891268533773,8,Affected-component themes,Core
+notaryproject/notation,199,607,32.78418451400329,1,Affected-component themes,CLI tooling
+sigstore/cosign,484,1797,26.933778519755148,2,Affected-component themes,CLI tooling
+sigstore/rekor,50,377,13.262599469496022,3,Affected-component themes,CLI tooling
+hashicorp/vault,338,3099,10.90674411100355,4,Affected-component themes,CLI tooling
+openpubkey/openpubkey,19,189,10.052910052910052,5,Affected-component themes,CLI tooling
+Keyfactor/signserver-ce,4,45,8.88888888888889,6,Affected-component themes,CLI tooling
+Keyfactor/ejbca-ce,12,290,4.137931034482759,7,Affected-component themes,CLI tooling
+sigstore/fulcio,4,306,1.3071895424836601,8,Affected-component themes,CLI tooling
+Keyfactor/ejbca-ce,62,290,21.379310344827587,1,Affected-component themes,Policy/configuration
+sigstore/fulcio,49,306,16.013071895424837,2,Affected-component themes,Policy/configuration
+hashicorp/vault,492,3099,15.876089060987416,3,Affected-component themes,Policy/configuration
+Keyfactor/signserver-ce,6,45,13.333333333333334,4,Affected-component themes,Policy/configuration
+notaryproject/notation,56,607,9.225700164744646,5,Affected-component themes,Policy/configuration
+sigstore/cosign,150,1797,8.347245409015025,6,Affected-component themes,Policy/configuration
+openpubkey/openpubkey,14,189,7.4074074074074066,7,Affected-component themes,Policy/configuration
+sigstore/rekor,18,377,4.774535809018567,8,Affected-component themes,Policy/configuration
+sigstore/rekor,97,377,25.72944297082228,1,Affected-component themes,API
+hashicorp/vault,424,3099,13.681832849306227,2,Affected-component themes,API
+openpubkey/openpubkey,21,189,11.11111111111111,3,Affected-component themes,API
+sigstore/fulcio,34,306,11.11111111111111,3,Affected-component themes,API
+Keyfactor/ejbca-ce,20,290,6.896551724137931,5,Affected-component themes,API
+Keyfactor/signserver-ce,3,45,6.666666666666667,6,Affected-component themes,API
+sigstore/cosign,45,1797,2.5041736227045077,7,Affected-component themes,API
+notaryproject/notation,10,607,1.6474464579901154,8,Affected-component themes,API
+hashicorp/vault,452,3099,14.585350112939658,1,Affected-component themes,Key Management Core / Secrets Backend
+sigstore/cosign,69,1797,3.8397328881469113,2,Affected-component themes,Key Management Core / Secrets Backend
+notaryproject/notation,23,607,3.789126853377265,3,Affected-component themes,Key Management Core / Secrets Backend
+sigstore/fulcio,9,306,2.941176470588235,4,Affected-component themes,Key Management Core / Secrets Backend
+Keyfactor/ejbca-ce,6,290,2.0689655172413794,5,Affected-component themes,Key Management Core / Secrets Backend
+openpubkey/openpubkey,2,189,1.0582010582010581,6,Affected-component themes,Key Management Core / Secrets Backend
+sigstore/rekor,2,377,0.5305039787798408,7,Affected-component themes,Key Management Core / Secrets Backend
+Keyfactor/signserver-ce,0,45,0.0,8,Affected-component themes,Key Management Core / Secrets Backend
+openpubkey/openpubkey,34,189,17.989417989417987,1,Affected-component themes,Authentication/Authorization tools
+sigstore/fulcio,34,306,11.11111111111111,2,Affected-component themes,Authentication/Authorization tools
+hashicorp/vault,338,3099,10.90674411100355,3,Affected-component themes,Authentication/Authorization tools
+Keyfactor/signserver-ce,3,45,6.666666666666667,4,Affected-component themes,Authentication/Authorization tools
+Keyfactor/ejbca-ce,12,290,4.137931034482759,5,Affected-component themes,Authentication/Authorization tools
+sigstore/cosign,56,1797,3.116304952698943,6,Affected-component themes,Authentication/Authorization tools
+notaryproject/notation,16,607,2.6359143327841847,7,Affected-component themes,Authentication/Authorization tools
+sigstore/rekor,2,377,0.5305039787798408,8,Affected-component themes,Authentication/Authorization tools
+sigstore/cosign,279,1797,15.525876460767945,1,Affected-component themes,Signing workflow
+notaryproject/notation,86,607,14.168039538714991,2,Affected-component themes,Signing workflow
+Keyfactor/signserver-ce,5,45,11.11111111111111,3,Affected-component themes,Signing workflow
+sigstore/fulcio,17,306,5.555555555555555,4,Affected-component themes,Signing workflow
+openpubkey/openpubkey,7,189,3.7037037037037033,5,Affected-component themes,Signing workflow
+Keyfactor/ejbca-ce,4,290,1.3793103448275863,6,Affected-component themes,Signing workflow
+sigstore/rekor,4,377,1.0610079575596816,7,Affected-component themes,Signing workflow
+hashicorp/vault,5,3099,0.16134236850596967,8,Affected-component themes,Signing workflow
+sigstore/cosign,280,1797,15.581524763494714,1,Affected-component themes,Verification workflow
+notaryproject/notation,68,607,11.202635914332784,2,Affected-component themes,Verification workflow
+openpubkey/openpubkey,13,189,6.878306878306878,3,Affected-component themes,Verification workflow
+sigstore/rekor,21,377,5.570291777188329,4,Affected-component themes,Verification workflow
+sigstore/fulcio,6,306,1.9607843137254901,5,Affected-component themes,Verification workflow
+hashicorp/vault,2,3099,0.06453694740238787,6,Affected-component themes,Verification workflow
+Keyfactor/ejbca-ce,0,290,0.0,7,Affected-component themes,Verification workflow
+Keyfactor/signserver-ce,0,45,0.0,7,Affected-component themes,Verification workflow
+Keyfactor/signserver-ce,10,45,22.22222222222222,1,Affected-component themes,Web Client
+Keyfactor/ejbca-ce,58,290,20.0,2,Affected-component themes,Web Client
+hashicorp/vault,295,3099,9.51919974185221,3,Affected-component themes,Web Client
+openpubkey/openpubkey,6,189,3.1746031746031744,4,Affected-component themes,Web Client
+sigstore/rekor,2,377,0.5305039787798408,5,Affected-component themes,Web Client
+notaryproject/notation,1,607,0.16474464579901155,6,Affected-component themes,Web Client
+sigstore/cosign,0,1797,0.0,7,Affected-component themes,Web Client
+sigstore/fulcio,0,306,0.0,7,Affected-component themes,Web Client
+Keyfactor/signserver-ce,7,45,15.555555555555555,1,Affected-component themes,Build/CI/Installation
+Keyfactor/ejbca-ce,33,290,11.379310344827587,2,Affected-component themes,Build/CI/Installation
+sigstore/fulcio,30,306,9.803921568627452,3,Affected-component themes,Build/CI/Installation
+sigstore/cosign,131,1797,7.289927657206455,4,Affected-component themes,Build/CI/Installation
+openpubkey/openpubkey,10,189,5.291005291005291,5,Affected-component themes,Build/CI/Installation
+notaryproject/notation,27,607,4.448105436573312,6,Affected-component themes,Build/CI/Installation
+sigstore/rekor,12,377,3.183023872679045,7,Affected-component themes,Build/CI/Installation
+hashicorp/vault,90,3099,2.904162633107454,8,Affected-component themes,Build/CI/Installation
+notaryproject/notation,41,607,6.754530477759473,1,Affected-component themes,Notification/Logging
+hashicorp/vault,145,3099,4.678928686673121,2,Affected-component themes,Notification/Logging
+sigstore/rekor,12,377,3.183023872679045,3,Affected-component themes,Notification/Logging
+Keyfactor/ejbca-ce,9,290,3.103448275862069,4,Affected-component themes,Notification/Logging
+sigstore/fulcio,9,306,2.941176470588235,5,Affected-component themes,Notification/Logging
+sigstore/cosign,35,1797,1.9476905954368393,6,Affected-component themes,Notification/Logging
+openpubkey/openpubkey,3,189,1.5873015873015872,7,Affected-component themes,Notification/Logging
+Keyfactor/signserver-ce,0,45,0.0,8,Affected-component themes,Notification/Logging
+Keyfactor/ejbca-ce,8,290,2.7586206896551726,1,Affected-component themes,Release pipeline
+Keyfactor/signserver-ce,1,45,2.2222222222222223,2,Affected-component themes,Release pipeline
+notaryproject/notation,13,607,2.14168039538715,3,Affected-component themes,Release pipeline
+hashicorp/vault,54,3099,1.7424975798644726,4,Affected-component themes,Release pipeline
+sigstore/fulcio,5,306,1.6339869281045754,5,Affected-component themes,Release pipeline
+sigstore/cosign,29,1797,1.613800779076238,6,Affected-component themes,Release pipeline
+sigstore/rekor,5,377,1.3262599469496021,7,Affected-component themes,Release pipeline
+openpubkey/openpubkey,2,189,1.0582010582010581,8,Affected-component themes,Release pipeline

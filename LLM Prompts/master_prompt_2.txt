@@ -1,0 +1,303 @@
+# TASK ROLE and OBJECTIVE
+
+You are an expert researcher specializing in Human-Computer Interaction (HCI), Developer User Experience (UX), Software (Cryptographic) Signing and Identity-based software signing tools. Your task is to analyze GitHub issue reports for high-consequence developer security tools (specifically typographic signing and verification ecosystems). You must determine if each issue represents a usability failure and categorize the nature of the failure.
+
+
+
+You will be provided with a dataset in XSLX format containing issue details. You must analyze the text fields ( `title`, `body_text`, `comments`, `label`(optional)) to perform the classification.
+
+A Pre-task is to fill the `codes_primary` (or code_primary) field Ð Compose a summary of the issue (50-70 words). Capture the core problem, its impact, user confusion, and workarounds based on the text and comments. Identify and clearly label Feature Requests (noting motivation) or Compatibility/Integration issues with external tools. Ignore boilerplate issue template text.
+
+
+
+# PHASE 1: BINARY USABILITY DECISION
+
+Analyze the issue using the high-level definitions and operational heuristics below to make a binary decision: Is this primarily a Usability Issue or a Non-Usability Issue?
+
+
+## Heuristic 1: Definitions
+
+* **Usability Issue Theme:** Any report where the user's primary challenge is not a crash bug (implementation failure), but rather the user failing to achieve their goal efficiently, effectively, or satisfactorily due to standard HCI failures in the tool's design, interface, feedback (logs/errors), or documentation. The tool "works," but the human cannot use it.
+
+* **Non-Usability Theme:** Pure "functional bugs" (logic errors, crashes, panics, incorrect cryptographic output), feature requests that represent entirely new capabilities not motivated by current friction, generic "chores," internal refactoring with no user impact, or security CVE reports filed by researchers rather than users trying to complete a task.
+
+
+
+## Heuristic 2: Tie-Breaker Rule
+
+If features of both usability friction and a non-usability component (like a functional bug or dependency issue) appear in a single issue, **you must prioritize choosing "Usability Issue."** The goal is to maximize the capture of human-factors friction.
+
+
+
+## Heuristic 3: Actionable Text Signals
+
+* **Usability Signal:** Look for keywords indicating user confusion ("I don't understand," "expected X but got Y"), workflow blockers ("cannot script," "too many steps"), or issues solved by documentation changes ("followed docs and failed," "clarify help text"). Look for requests for enhancement *if* motivated by a use case challenge.
+
+* **Non-Usability Signal:** Look for technical signals of catastrophic system failure (" panic: runtime error," "segmentation fault," "math/crypto result is logically incorrect," "high RAM usage crash"). Look for enhancements that are "blue sky" (no friction context described).
+
+* **IGNORE:** Ignore maintainer comments like "Works as Designed" or "accordance to design." If the user is struggling, it is a usability issue regardless of design intent.
+
+* **IGNORE:** Ignore the existence of a Pull Request (PR) used to resolve the issue. Usability issues are frequently resolved with PRs (code changes to fix UI/error/docs).
+
+
+
+# PHASE 2: HIERARCHICAL USABILITY CLASSIFICATION
+
+If you have determined the issue is a **Usability Issue**, you must map it through the Hierarchy below. Follow the detailed definitions provided for the low-level codes.
+
+
+
+## Step 2.1: Provide Definition for selection (L1_Themes)
+
+You must select **one** of the following `L1_Themes` based on the precise grammar-corrected definition provided below.
+
+
+
+* **Authentication friction:** The user is unable to log in or authenticate successfully due to token errors, timeouts, or confusing flows (e.g., "Token refresh failed," "401 Unauthorized loop"). This also includes other issues concerning login, authentication, setup with OIDC, MFA (multifactor authentication), identification, authorization, user groups, etc.
+
+* **Build/CI/installation/distribution release issues:** The tool fails to run or install in an automated environment, fails to compile, or the distribution release cannot be assessed/installed (e.g., "Go toolchain version mismatch," "CI pipeline fails on test").
+
+* **Configuration friction:** The user is struggling to configure the software correctly due to complex setups, rigid settings, or issues solved by proper configuration.
+
+* **Integration failure/issues:** The tool fails to interoperate with an external system (e.g., a specific Cloud KMS, a Registry, or an IdP) despite correct configuration (e.g., "Azure KeyVault plugin timeout," "Docker Registry API 404"). This includes integrations with external components not working as expected, requiring enhancements, or requests for new external components to be integrated/supported.
+
+* **Missing feature / enhancement request:** The user is asking for functionality that does not currently exist, or to enhance existing functionalities (except documentation). (Only use this if motivated by user friction).
+
+* **Notification/Logging Issues:** This concerns issues regarding error messages, logging messages, or UI feedback that may not be helpful or important in resolving issues, or similar concerns.
+
+* **Performance issue:** The tool is functionally working but is too slow, consumes too much memory, or has high latency (e.g., "Verification takes 30 seconds," "Memory leak in server"). This includes enhancement requests to improve these deficiencies.
+
+* **Security concerns:** This concerns a report of a vulnerability (CVE), an unsafe default, or a request to harden security posture (e.g., "Weak crypto default," "Secret leaked in logs").
+
+* **Tedious Workflows:** This concerns issues where users have to perform lots of operations to achieve one purpose; that is, users are complaining that the tools impose too much requirement on users to use it.
+
+* **Unexpected behavior:** The software is behaving incorrectly despite the user following instructions.
+
+* **User confusion / unclear documentation:** The user does not understand how to use the tool (asking questions or confused), the documentation misleads them or is insufficient, or there is a need for improving documentation. (e.g., "How do I sign a blob?", "Docs say flag X exists but it doesn't").
+
+
+
+---
+
+
+
+## Step 2.2: HIGHER-THEME MAP
+
+Based on the `L1_Theme` you selected in Step 2.1, select the corresponding **one** Higher Theme from this strictly defined map.
+
+
+
+### 1. Operational Friction
+
+Barriers involving the setup, environment, integration, or workflow execution. The user knows *what* to do, but the tool/environment resists.
+
+* *Specific Choice:* Configuration friction, Authentication friction, Build/CI/installation/distribution release issues, Integration failure/issues, **Tedious Workflows**.
+
+
+
+### 2. Cognitive Friction
+
+Barriers related to understanding, mental models, or clarity. The user stops because they *don't know how to proceed* or the tool is confusing.
+
+* *Specific Choice:* User confusion / unclear documentation, Notification/Logging Issues.
+
+
+
+### 3. Functional Reliability
+
+Friction caused when the tool fails to perform its promised function due to bugs, slowness, or security risks. (Note: These are only classified here if Heuristic 2 - prioritize usability - applies).
+
+* *Specific Choice:* Unexpected behavior, Performance issue, Security concerns.
+
+
+
+### 4. Functional Gap
+
+The tool currently lacks the capability to perform the user's desired task.
+
+* *Specific Choice:* Missing feature / enhancement request (specifically friction-motivated).
+
+
+
+# PHASE 3: COMPONENT CLASSIFICATION
+
+Identify the specific architectural or workflow component affected by this issue. You must select **only one** of the following **Associated Components** based on the grouping/names in the input documents.
+
+
+
+## DEFINITIONS: ASSOCIATED COMPONENTS (with grouping)
+
+
+
+### Core Components (Cores)
+
+These are fundamental mathematical and security blocks that underpin the ecosystem. They have been lumped into a single classification (except "Key Management core / Secrets backend").
+
+1.  **Orchestration core:** Issues related to the coordination, management, and interaction between different backend services and components (service discovery, multi-step backend workflow execution) for tools like cosign, notation, openpubkey.
+
+2.  **CA core:** Issues related specifically to the backend Certificate Authority service infrastructure (certificate issuance, root-of-trust configuration, service availability).
+
+3.  **Transparency log core:** Issues related specifically to the backend transparency log service infrastructure (appending entries, querying proofs, log consistency).
+
+4.  **Cryptography core / Standards implementation:** Issues related to fundamental mathematical algorithms, signature suites, hash functions, and cryptographic standards supported by the tooling (Ed25519 support, standard compliance).
+
+5. **Key Management core / Secrets backend:** Issues related to the infrastructure responsible for safe storage, generation, retrieval, and lifecycle management of cryptographic keys and secrets (integrations with Vault, AWS/Google KMS, HSMs).
+
+
+
+### User Workflow & Interaction Components
+
+These are the components the user interacts with directly or configure.
+
+6.  **CLI tooling:** Issues specific to the command-line interface itself acting as the point of interaction (flag parsing, help output UX, output formatting JSON vs text).
+
+7.  **Signing workflow:** The end-to-end client-side *process* a user performs to sign an artifact (key generation, certificate request, finalizing blob).
+
+8.  **Verification workflow:** The end-to-end client-side *process* a user performs to validate a signature (cryptographic checks, log inclusion queries, policy evaluation).
+
+9.  **Authentication/Authorization tools:** Issues involving identity verification (logging in) and granting permissions (OIDC flows, token handling, MFA, RBAC).
+
+10. **Notification/Logging:** Issues related to the output generated by the tools for human consumption across all system components (error clarity, verbosity).
+
+
+
+
+### Operational & Meta Components
+
+These relate to the environment, configuration, and project governance.
+
+11. **Policy/configuration:** Issues related to how the tool is configured. Syntax/logic issues in config files (YAML/JSON), defining/enforcing policies (e.g., OPA/Rego).
+
+12. **Build/CI:** Friction occurring when running, installing, or using the tool in automated, non-interactive environments (GitHub Actions, containerized builds, scripts).
+
+13. **Release pipeline:** Issues related to the process by which project maintainers build, sign, and publish the official releases/artifacts of the tools themselves.
+
+
+
+# FEW-SHOT EXAMPLES (To show expected reasoning)
+
+
+
+## Example 1 (Usability Friction)
+
+**Input:** `code_primary`: "Confusing output", `title`: "Error message says 'Failed' but doesn't say why", `body_text`: "I ran the sign command and it just said 'Failed'. It took me hours to realize my token expired."
+
+**Output JSON:**
+
+```json
+
+{
+
+  "reasoning": "The issue describes poor feedback. The tool caught the error (token expired), but the design failed to communicate this to the human, leading to frustration and wasted time. This is a clarity failure, not a code failure.",
+
+  "usability_status": "Usability Issue",
+
+  "reasoning_higher": "The primary barrier is the user's inability to understand what went wrong, leading to a stop in workflow.",
+
+  "higher_theme": "Cognitive Friction",
+
+  "reasoning_specific": "The user explicitly complains that the error message lacks actionable information to help them resolve the situation themselves.",
+
+  "l1_theme": "Notification/Logging Issues",
+
+  "reasoning_component": "The friction concerns the output generated by the tool for human consumption regarding an error.",
+
+  "associated_components": "Notification/Logging"
+
+}               
+
+
+
+# PHASE 4: NIELSEN HEURISTIC CLASSIFICATION
+
+If you have determined the issue is a **Usability Issue**, you must perform the subsequent mapping (Step 2.1) to classify *which* of Jakob Nielsen's standard heuristics is violated.
+
+
+
+## Phase 2.1: Nielsen Mapping Guide
+
+Map the observed friction to standard definitions of Nielsen's heuristics, explicitly prioritizing the text signals identified below for this specific domain:
+
+
+
+### Mapping priority based on text signals:
+
+* **The User Stops:** When the user is completely blocked by confusion or a documentation failure.
+
+    * *Map to:* **Nielsen #10 (Help and documentation)**
+
+* **Workflow Blocker:** When the current process is too complex for advanced usage (like scripting/automation).
+
+    * *Map to:* **Nielsen #7 (Flexibility and efficiency of use)**
+
+* **Consistency/Expectation Violation:** When the tool behaves differently than standard conventions or the user's expected mental model. Includes requests for standard implementations of crypto algorithms.
+
+    * *Map to:* **Nielsen #4 (Consistency and standards)**
+
+* **Clarity Failure / Error Recovery:** When the error messages or logging output are confusing, unhelpful, or absent (silent failures).
+
+    * *Map to:* **Nielsen #9 (Help users recognize, diagnose, and recover from errors)**
+
+* **Interoperability Failure:** Issues with external service integration (like login flow integration or KMS/registry API mismatches).
+
+    * *Map to:* **Nielsen #2 (Match between system and the real world)**
+
+* **Security CVE:** A report based on an automated scan or vulnerability (CVE) report filed by a researcher.
+
+    * *Map to:* **Nielsen #5 (Error prevention)**
+
+
+
+---
+
+
+
+## The 10 Nielsen Heuristics (Reference List)
+
+You must map to **only one** of these standard heuristics if the issue is a usability issue.
+
+1.  **#1: Visibility of system status**
+
+2.  **#2: Match between system and the real world**
+
+3.  **#3: User control and freedom**
+
+4.  **#4: Consistency and standards**
+
+5.  **#5: Error prevention**
+
+6.  **#6: Recognition rather than recall**
+
+7.  **#7: Flexibility and efficiency of use**
+
+8.  **#8: Aesthetic and minimalist design**
+
+9.  **#9: Help users recognize, diagnose, and recover from errors**
+
+10. **#10: Help and documentation**
+
+
+
+# FEW-SHOT EXAMPLES
+
+
+
+## Example 1 (Confusion/Docs -> Heuristic 10)
+
+**Input:** `code_primary`: "Confusion", `title`: "How do I sign with OIDC?", `body_text`: "I have read the docs but am still confused. The tutorial uses flag X, but the help text says flag X is deprecated. Followed steps and failed."
+
+**Output JSON:**
+
+```json
+
+{
+
+  "reasoning_usability": "The user is confused and stuck. Following the provided logic, confusion that blocks progress is a clear usability signal. Tie-breaker rule applies.",
+
+  "usability_status": "Usability Issue",
+
+  "reasoning_nielsen": "The issue explicitly states the documentation is misleading (deprecated flags), leading to user failure.",
+
+  "nielsen_heuristic": "Nielsen #10: Help and documentation"
+
+}

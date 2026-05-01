@@ -52,6 +52,10 @@ def split_multi_nielsen(cell) -> list[str]:
     s = str(cell).strip()
     if not s:
         return []
+    s = s.replace("\n", ", ")
+    s = s.replace("[", " ").replace("]", " ")
+    s = s.replace("'", "").replace('"', "")
+    s = re.sub(r"\s+", " ", s).strip()
     matches = re.findall(r"(?:^|,\s*)(\d+\.\s.*?)(?=(?:,\s*\d+\.|$))", s)
     if matches:
         return [m.strip() for m in matches if m.strip()]
@@ -256,9 +260,10 @@ PRIMARY_ALIAS.update(
 SECONDARY_ALIAS = build_alias_map([x[0] for x in SECONDARY_THEMES])
 
 NIELSEN_ALIAS = build_alias_map([x[0] for x in NIELSEN_THEMES])
-for t, _ in NIELSEN_THEMES:
+for i, (t, _) in enumerate(NIELSEN_THEMES, start=1):
     t_no_num = re.sub(r"^\s*\d+\.\s*", "", t)
     NIELSEN_ALIAS[norm_key(t_no_num)] = t
+    NIELSEN_ALIAS[norm_key(str(i))] = t
 NIELSEN_ALIAS[norm_key("9. Help users recognize and recover from errors")] = (
     "9. Help users recognize, diagnose, and recover from errors"
 )
@@ -284,12 +289,49 @@ def choose_secondary_col(df: pd.DataFrame) -> str:
 
 
 def load_all_data() -> pd.DataFrame:
-    paths = sorted(DATA_DIR.glob("*.xlsx"))
+    def _norm_col(c: str) -> str:
+        return re.sub(r"[^a-z0-9]+", "", str(c).strip().lower())
+
+    def _coalesce_alias(df: pd.DataFrame, canonical: str, aliases: list[str]) -> None:
+        if canonical not in df.columns:
+            for a in aliases:
+                if a in df.columns:
+                    df.rename(columns={a: canonical}, inplace=True)
+                    break
+            return
+        for a in aliases:
+            if a in df.columns and a != canonical:
+                df[canonical] = df[canonical].where(df[canonical].notna(), df[a])
+                df.drop(columns=[a], inplace=True)
+
+    def _standardize_columns(df: pd.DataFrame) -> pd.DataFrame:
+        norm_to_col = {_norm_col(c): c for c in df.columns}
+        desired = {
+            "Nielsen_theme": ["Nielsen_Theme"],
+            "Associated Component Theme": ["Associated component Theme", "associated_component_theme"],
+            "L1_Theme Secondary": ["L1_Theme secondary", "L1 theme secondary"],
+            "usability_non-usability_type": ["Usability_non-usability Type", "usability_non_usability_type"],
+            "codes_primary": ["code_primary", "codes primary"],
+            "Associated component": ["Associated Component"],
+        }
+        for canonical, alias_candidates in desired.items():
+            cols = []
+            for c in [canonical] + alias_candidates:
+                norm = _norm_col(c)
+                if norm in norm_to_col:
+                    cols.append(norm_to_col[norm])
+            if not cols:
+                continue
+            _coalesce_alias(df, canonical, [c for c in cols if c != canonical])
+        return df
+
+    paths = sorted(p for p in DATA_DIR.glob("*.xlsx") if not p.name.startswith("~$"))
     if not paths:
         raise FileNotFoundError(f"No xlsx files found under {DATA_DIR}")
     frames = []
     for p in paths:
-        d = pd.read_excel(p)
+        d = pd.read_excel(p, engine="openpyxl")
+        d = _standardize_columns(d)
         d["__source_file__"] = p.name
         frames.append(d)
     df = pd.concat(frames, ignore_index=True)

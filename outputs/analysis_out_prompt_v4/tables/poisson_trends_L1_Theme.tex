@@ -1,0 +1,98 @@
+\begin{table}[t]
+\centering
+\caption{Poisson regression time trends for monthly counts of usability issues by tool and L1_Theme (top 15 themes).}
+\label{tab:poisson-l1_theme}
+\scriptsize
+\begin{tabular}{lllllll}
+\hline
+tool & theme & beta & rr\_per\_month & pct\_change\_per\_month & p\_value & sig\_0\_05 \\
+\hline
+Keyfactor/ejbca-ce & Tedious Workflows & -0.0340 & 0.967 & -3.34 & 0.369 & no \\
+Keyfactor/ejbca-ce & Security concerns & -0.0221 & 0.978 & -2.18 & 0.457 & no \\
+Keyfactor/ejbca-ce & Performance issue & -0.0203 & 0.980 & -2.01 & 0.692 & no \\
+Keyfactor/ejbca-ce & Notification/Logging /Web UI Issues & -0.0136 & 0.987 & -1.35 & 0.333 & no \\
+Keyfactor/ejbca-ce & Build/CI/installation/distribution release issues & -0.0094 & 0.991 & -0.93 & 0.416 & no \\
+Keyfactor/ejbca-ce & User confusion / unclear documentation & -0.0017 & 0.998 & -0.17 & 0.823 & no \\
+Keyfactor/ejbca-ce & Integration failure/issues & 0.0096 & 1.010 & 0.96 & 0.447 & no \\
+Keyfactor/ejbca-ce & Missing feature / enhancement request & 0.0107 & 1.011 & 1.08 & 0.471 & no \\
+Keyfactor/ejbca-ce & Unexpected behavior & 0.0162 & 1.016 & 1.63 & 0.189 & no \\
+Keyfactor/ejbca-ce & Configuration friction & 0.0201 & 1.020 & 2.03 & 0.0627 & no \\
+Keyfactor/ejbca-ce & Authentication friction & 0.0302 & 1.031 & 3.07 & 0.16 & no \\
+Keyfactor/signserver-ce & Performance issue & -0.0633 & 0.939 & -6.13 & 0.469 & no \\
+Keyfactor/signserver-ce & Authentication friction & -0.0190 & 0.981 & -1.88 & 0.599 & no \\
+Keyfactor/signserver-ce & Build/CI/installation/distribution release issues & -0.0030 & 0.997 & -0.30 & 0.924 & no \\
+Keyfactor/signserver-ce & User confusion / unclear documentation & -0.0012 & 0.999 & -0.12 & 0.953 & no \\
+Keyfactor/signserver-ce & Notification/Logging /Web UI Issues & 0.0186 & 1.019 & 1.88 & 0.656 & no \\
+Keyfactor/signserver-ce & Configuration friction & 0.0246 & 1.025 & 2.49 & 0.453 & no \\
+Keyfactor/signserver-ce & Missing feature / enhancement request & 0.0323 & 1.033 & 3.28 & 0.337 & no \\
+Keyfactor/signserver-ce & Unexpected behavior & 0.0460 & 1.047 & 4.70 & 0.414 & no \\
+Keyfactor/signserver-ce & Integration failure/issues & 0.0560 & 1.058 & 5.76 & 0.182 & no \\
+Keyfactor/signserver-ce & Tedious Workflows & 0.0713 & 1.074 & 7.39 & 0.437 & no \\
+hashicorp/vault & User confusion / unclear documentation & -0.0337 & 0.967 & -3.31 & 1.17e-22* & yes \\
+hashicorp/vault & Authentication friction & -0.0325 & 0.968 & -3.20 & 8.31e-07* & yes \\
+hashicorp/vault & Configuration friction & -0.0274 & 0.973 & -2.70 & 6.73e-08* & yes \\
+hashicorp/vault & Missing feature / enhancement request & -0.0245 & 0.976 & -2.42 & 3.39e-15* & yes \\
+hashicorp/vault & Unexpected behavior & -0.0221 & 0.978 & -2.18 & 1.75e-10* & yes \\
+hashicorp/vault & Security concerns & -0.0220 & 0.978 & -2.18 & 0.00426* & yes \\
+hashicorp/vault & Integration failure/issues & -0.0219 & 0.978 & -2.16 & 1.17e-07* & yes \\
+hashicorp/vault & Performance issue & -0.0215 & 0.979 & -2.12 & 0.0271* & yes \\
+hashicorp/vault & Tedious Workflows & -0.0213 & 0.979 & -2.11 & 8.07e-06* & yes \\
+hashicorp/vault & Notification/Logging /Web UI Issues & -0.0181 & 0.982 & -1.79 & 5.79e-06* & yes \\
+hashicorp/vault & Build/CI/installation/distribution release issues & -0.0173 & 0.983 & -1.72 & 0.0135* & yes \\
+notaryproject/notation & Configuration friction & -0.0495 & 0.952 & -4.83 & 0.00625* & yes \\
+notaryproject/notation & Authentication friction & -0.0455 & 0.955 & -4.45 & 0.129 & no \\
+notaryproject/notation & Missing feature / enhancement request & -0.0358 & 0.965 & -3.52 & 1.69e-10* & yes \\
+notaryproject/notation & Tedious Workflows & -0.0353 & 0.965 & -3.47 & 0.00129* & yes \\
+notaryproject/notation & Build/CI/installation/distribution release issues & -0.0309 & 0.970 & -3.04 & 0.0428* & yes \\
+notaryproject/notation & Security concerns & -0.0269 & 0.973 & -2.66 & 0.132 & no \\
+notaryproject/notation & Unexpected behavior & -0.0239 & 0.976 & -2.36 & 0.0739 & no \\
+notaryproject/notation & Notification/Logging /Web UI Issues & -0.0195 & 0.981 & -1.94 & 0.0364* & yes \\
+notaryproject/notation & User confusion / unclear documentation & -0.0159 & 0.984 & -1.57 & 0.152 & no \\
+notaryproject/notation & Performance issue & -0.0145 & 0.986 & -1.44 & 0.567 & no \\
+notaryproject/notation & Integration failure/issues & 0.0051 & 1.005 & 0.52 & 0.667 & no \\
+openpubkey/openpubkey & Security concerns & 0.0318 & 1.032 & 3.24 & 0.0894 & no \\
+openpubkey/openpubkey & Missing feature / enhancement request & 0.0347 & 1.035 & 3.53 & 9.09e-05* & yes \\
+openpubkey/openpubkey & Authentication friction & 0.0357 & 1.036 & 3.63 & 0.294 & no \\
+openpubkey/openpubkey & Tedious Workflows & 0.0429 & 1.044 & 4.38 & 0.275 & no \\
+openpubkey/openpubkey & Integration failure/issues & 0.0445 & 1.046 & 4.55 & 0.0616 & no \\
+openpubkey/openpubkey & User confusion / unclear documentation & 0.0501 & 1.051 & 5.13 & 0.017* & yes \\
+openpubkey/openpubkey & Notification/Logging /Web UI Issues & 0.0525 & 1.054 & 5.39 & 0.118 & no \\
+openpubkey/openpubkey & Unexpected behavior & 0.0616 & 1.064 & 6.35 & 0.0326* & yes \\
+openpubkey/openpubkey & Performance issue & 0.0902 & 1.094 & 9.44 & 0.384 & no \\
+openpubkey/openpubkey & Build/CI/installation/distribution release issues & 0.1049 & 1.111 & 11.06 & 0.00942* & yes \\
+openpubkey/openpubkey & Configuration friction & 0.1322 & 1.141 & 14.13 & 0.172 & no \\
+sigstore/cosign & Security concerns & -0.0549 & 0.947 & -5.34 & 5.41e-08* & yes \\
+sigstore/cosign & Notification/Logging /Web UI Issues & -0.0528 & 0.949 & -5.15 & 4.41e-07* & yes \\
+sigstore/cosign & Authentication friction & -0.0521 & 0.949 & -5.08 & 0.000138* & yes \\
+sigstore/cosign & Missing feature / enhancement request & -0.0500 & 0.951 & -4.88 & 6.27e-36* & yes \\
+sigstore/cosign & Tedious Workflows & -0.0398 & 0.961 & -3.90 & 8.28e-07* & yes \\
+sigstore/cosign & Integration failure/issues & -0.0339 & 0.967 & -3.33 & 3.84e-10* & yes \\
+sigstore/cosign & Unexpected behavior & -0.0286 & 0.972 & -2.82 & 5.49e-06* & yes \\
+sigstore/cosign & User confusion / unclear documentation & -0.0266 & 0.974 & -2.63 & 5.69e-09* & yes \\
+sigstore/cosign & Build/CI/installation/distribution release issues & -0.0235 & 0.977 & -2.33 & 0.00886* & yes \\
+sigstore/cosign & Configuration friction & -0.0155 & 0.985 & -1.53 & 0.0895 & no \\
+sigstore/cosign & Performance issue & 0.0075 & 1.008 & 0.75 & 0.692 & no \\
+sigstore/fulcio & Performance issue & -0.0833 & 0.920 & -8.00 & 0.145 & no \\
+sigstore/fulcio & Tedious Workflows & -0.0801 & 0.923 & -7.70 & 0.0194* & yes \\
+sigstore/fulcio & Build/CI/installation/distribution release issues & -0.0778 & 0.925 & -7.49 & 0.00477* & yes \\
+sigstore/fulcio & User confusion / unclear documentation & -0.0635 & 0.938 & -6.15 & 3.99e-05* & yes \\
+sigstore/fulcio & Configuration friction & -0.0605 & 0.941 & -5.87 & 0.0195* & yes \\
+sigstore/fulcio & Authentication friction & -0.0492 & 0.952 & -4.80 & 0.174 & no \\
+sigstore/fulcio & Missing feature / enhancement request & -0.0473 & 0.954 & -4.62 & 6.82e-10* & yes \\
+sigstore/fulcio & Security concerns & -0.0457 & 0.955 & -4.46 & 0.00138* & yes \\
+sigstore/fulcio & Unexpected behavior & -0.0282 & 0.972 & -2.78 & 0.0967 & no \\
+sigstore/fulcio & Integration failure/issues & -0.0247 & 0.976 & -2.44 & 0.0381* & yes \\
+sigstore/fulcio & Notification/Logging /Web UI Issues & -0.0173 & 0.983 & -1.71 & 0.405 & no \\
+sigstore/rekor & Performance issue & -0.0633 & 0.939 & -6.13 & 0.0121* & yes \\
+sigstore/rekor & Tedious Workflows & -0.0621 & 0.940 & -6.02 & 0.00983* & yes \\
+sigstore/rekor & Security concerns & -0.0580 & 0.944 & -5.63 & 0.00171* & yes \\
+sigstore/rekor & Missing feature / enhancement request & -0.0576 & 0.944 & -5.59 & 1.09e-13* & yes \\
+sigstore/rekor & Unexpected behavior & -0.0555 & 0.946 & -5.40 & 0.000135* & yes \\
+sigstore/rekor & Notification/Logging /Web UI Issues & -0.0496 & 0.952 & -4.84 & 0.0143* & yes \\
+sigstore/rekor & Build/CI/installation/distribution release issues & -0.0483 & 0.953 & -4.71 & 0.0248* & yes \\
+sigstore/rekor & Integration failure/issues & -0.0442 & 0.957 & -4.32 & 0.0013* & yes \\
+sigstore/rekor & User confusion / unclear documentation & -0.0298 & 0.971 & -2.94 & 0.00327* & yes \\
+sigstore/rekor & Configuration friction & -0.0029 & 0.997 & -0.29 & 0.915 & no \\
+\hline
+\end{tabular}
+\end{table}

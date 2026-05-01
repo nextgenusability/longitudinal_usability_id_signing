@@ -91,6 +91,21 @@ NIELSEN_THEME_ORDER = [
     "10. Help and documentation",
 ]
 
+COMPONENT_THEME_ORDER = [
+    "Authentication/Authorization tools",
+    "CLI tooling",
+    "Signing workflow",
+    "Verification workflow",
+    "Policy/configuration",
+    "Build/CI/Installation",
+    "Release pipeline",
+    "Notification/Logging",
+    "Core",
+    "API",
+    "Web Client",
+    "Key Management Core / Secrets Backend",
+]
+
 
 # ---------- Helpers ----------
 def norm_usability(x):
@@ -126,6 +141,12 @@ def split_multi_nielsen(cell) -> list[str]:
     s = str(cell).strip()
     if not s:
         return []
+    # Normalize common list-like artifacts from model output, e.g.
+    # "['9. ...', 10. ...]" -> "9. ..., 10. ..."
+    s = s.replace("\n", ", ")
+    s = s.replace("[", " ").replace("]", " ")
+    s = s.replace("'", "").replace('"', "")
+    s = re.sub(r"\s+", " ", s).strip()
     matches = re.findall(r"(?:^|,\s*)(\d+\.\s.*?)(?=(?:,\s*\d+\.|$))", s)
     if matches:
         return [m.strip() for m in matches if m.strip()]
@@ -146,9 +167,10 @@ def _strip_nielsen_number_prefix(s: str) -> str:
 
 def _nielsen_alias_to_canonical() -> dict[str, str]:
     out: dict[str, str] = {}
-    for canonical in NIELSEN_THEME_ORDER:
+    for i, canonical in enumerate(NIELSEN_THEME_ORDER, start=1):
         out[norm_key(canonical)] = canonical
         out[norm_key(_strip_nielsen_number_prefix(canonical))] = canonical
+        out[norm_key(str(i))] = canonical
     # Common shortened/variant spellings
     out[norm_key("9. Help users recognize and recover from errors")] = NIELSEN_THEME_ORDER[8]
     out[norm_key("Help users recognize, diagnose, and recover from errors")] = NIELSEN_THEME_ORDER[8]
@@ -158,6 +180,47 @@ def _nielsen_alias_to_canonical() -> dict[str, str]:
 def canonicalize_nielsen_theme(x: str, alias_map: dict[str, str]) -> str | None:
     key = norm_key(x)
     return alias_map.get(key)
+
+
+def _component_alias_to_canonical() -> dict[str, str]:
+    aliases = {
+        "Authentication/Authorization tools": [
+            "Authentication/Authorization tools",
+            "Auth/Authz tools",
+        ],
+        "CLI tooling": ["CLI tooling"],
+        "Signing workflow": ["Signing workflow"],
+        "Verification workflow": ["Verification workflow"],
+        "Policy/configuration": ["Policy/configuration", "Policy/config"],
+        "Build/CI/Installation": [
+            "Build/CI/Installation",
+            "Build/CI",
+            "Build/CI/installation",
+            "Build/CI/installation/distribution",
+            "Build/CI/installation/distribution release issues",
+            "Build/CI/installation/distribution release",
+        ],
+        "Release pipeline": ["Release pipeline", "Release Pipeline"],
+        "Notification/Logging": ["Notification/Logging", "Notification/Logging /Web UI Issues"],
+        "Core": ["Core"],
+        "API": ["API", "REST API", "Rest API"],
+        "Web Client": ["Web Client", "Web UI", "Web client"],
+        "Key Management Core / Secrets Backend": [
+            "Key Management Core / Secrets Backend",
+            "Key Management Core (secret engine)",
+            "Key Management Core/Secrets Backend",
+            "Secrets Backend",
+        ],
+    }
+    out: dict[str, str] = {}
+    for canonical, vals in aliases.items():
+        for v in vals:
+            out[norm_key(v)] = canonical
+    return out
+
+
+def canonicalize_component_theme(x: str, alias_map: dict[str, str]) -> str | None:
+    return alias_map.get(norm_key(x))
 
 
 def latex_escape(s: str) -> str:
@@ -342,8 +405,12 @@ def build_nielsen_percent_table(df: pd.DataFrame):
         return
 
     unmapped = src[src["nielsen_theme_canonical"].isna()].copy()
+    unmapped_path = TABLE_DIR / "nielsen_theme_table_unmapped_labels.csv"
     if not unmapped.empty:
-        unmapped.to_csv(TABLE_DIR / "nielsen_theme_table_unmapped_labels.csv", index=False)
+        unmapped.to_csv(unmapped_path, index=False)
+    else:
+        # Avoid stale diagnostics from previous runs.
+        pd.DataFrame(columns=list(src.columns)).to_csv(unmapped_path, index=False)
 
     denom = used.groupby(COL_TOOL).size().rename("denom_theme_assignments")
     counts = (
@@ -393,6 +460,9 @@ def build_rq2_top3_components_table(df: pd.DataFrame):
     tmp = tmp.explode(comp_col)
     tmp = tmp[tmp[comp_col].notna() & (tmp[comp_col].astype(str).str.strip() != "")]
     tmp[comp_col] = tmp[comp_col].astype(str).str.strip()
+    alias_map = _component_alias_to_canonical()
+    tmp[comp_col] = tmp[comp_col].map(lambda x: canonicalize_component_theme(x, alias_map))
+    tmp = tmp[tmp[comp_col].notna()].copy()
     if tmp.empty:
         return
 
@@ -445,12 +515,51 @@ def build_rq2_top3_components_table(df: pd.DataFrame):
 
 
 def load_phase3_excels(data_dir: Path) -> pd.DataFrame:
-    paths = sorted(data_dir.glob("*.xlsx"))
+    def _norm_col(c: str) -> str:
+        return re.sub(r"[^a-z0-9]+", "", str(c).strip().lower())
+
+    def _coalesce_alias(df: pd.DataFrame, canonical: str, aliases: list[str]) -> None:
+        if canonical not in df.columns:
+            for a in aliases:
+                if a in df.columns:
+                    df.rename(columns={a: canonical}, inplace=True)
+                    break
+            return
+        for a in aliases:
+            if a in df.columns and a != canonical:
+                df[canonical] = df[canonical].where(df[canonical].notna(), df[a])
+                df.drop(columns=[a], inplace=True)
+
+    def _standardize_columns(df: pd.DataFrame) -> pd.DataFrame:
+        norm_to_col = {_norm_col(c): c for c in df.columns}
+
+        desired = {
+            "Nielsen_theme": ["Nielsen_Theme"],
+            "Associated Component Theme": ["Associated component Theme", "associated_component_theme"],
+            "L1_Theme Secondary": ["L1_Theme secondary", "L1 theme secondary"],
+            "usability_non-usability_type": ["Usability_non-usability Type", "usability_non_usability_type"],
+            "codes_primary": ["code_primary", "codes primary"],
+            "Associated component": ["Associated Component"],
+        }
+
+        for canonical, alias_candidates in desired.items():
+            cols = []
+            for c in [canonical] + alias_candidates:
+                norm = _norm_col(c)
+                if norm in norm_to_col:
+                    cols.append(norm_to_col[norm])
+            if not cols:
+                continue
+            _coalesce_alias(df, canonical, [c for c in cols if c != canonical])
+        return df
+
+    paths = sorted(p for p in data_dir.glob("*.xlsx") if not p.name.startswith("~$"))
     if not paths:
         raise FileNotFoundError(f"No .xlsx files found in {data_dir.resolve()}")
     dfs = []
     for fp in paths:
-        df = pd.read_excel(fp)
+        df = pd.read_excel(fp, engine="openpyxl")
+        df = _standardize_columns(df)
         df["__source_file__"] = fp.name
         dfs.append(df)
     return pd.concat(dfs, ignore_index=True)
@@ -461,6 +570,11 @@ def exploded_counts(df: pd.DataFrame, theme_col: str) -> pd.DataFrame:
     tmp[theme_col] = tmp[theme_col].apply(lambda x: split_multi_for_col(x, theme_col))
     tmp = tmp.explode(theme_col)
     tmp = tmp[tmp[theme_col].notna() & (tmp[theme_col].astype(str).str.strip() != "")]
+    if theme_col == "Associated Component Theme":
+        alias_map = _component_alias_to_canonical()
+        tmp[theme_col] = tmp[theme_col].astype(str).str.strip()
+        tmp[theme_col] = tmp[theme_col].map(lambda x: canonicalize_component_theme(x, alias_map))
+        tmp = tmp[tmp[theme_col].notna()].copy()
     return tmp.groupby([COL_TOOL, theme_col]).size().reset_index(name="count")
 
 
@@ -655,6 +769,10 @@ def main():
             tdf = df[df[COL_TOOL] == tool]
             vc = tdf[col].apply(lambda x: split_multi_for_col(x, col)).explode()
             vc = vc[vc.notna() & (vc.astype(str).str.strip() != "")]
+            if col == "Associated Component Theme":
+                alias_map = _component_alias_to_canonical()
+                vc = vc.astype(str).str.strip().map(lambda x: canonicalize_component_theme(x, alias_map))
+                vc = vc[vc.notna()]
             counts = vc.value_counts()
             if len(counts) == 0:
                 continue

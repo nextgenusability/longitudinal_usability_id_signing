@@ -1,0 +1,9 @@
+tool,top1,top2,top3
+hashicorp/vault,Policy/configuration (18.4),Key Management Core / Secrets Backend (16.9),API (15.8)
+sigstore/cosign,CLI tooling (30.3),Verification workflow (17.5),Signing workflow (17.5)
+notaryproject/notation,CLI tooling (36.2),Signing workflow (15.6),Verification workflow (12.4)
+sigstore/rekor,API (39.1),CLI tooling (20.2),Core (9.3)
+Keyfactor/ejbca-ce,Policy/configuration (25.6),Web Client (24.0),Build/CI/Installation (13.6)
+sigstore/fulcio,Policy/configuration (22.2),API (15.4),Authentication/Authorization tools (15.4)
+openpubkey/openpubkey,Authentication/Authorization tools (23.4),API (14.5),CLI tooling (13.1)
+Keyfactor/signserver-ce,Web Client (25.0),Build/CI/Installation (17.5),Policy/configuration (15.0)

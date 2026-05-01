@@ -1,0 +1,91 @@
+repo,Associated Component Theme,count
+Keyfactor/ejbca-ce,API,20
+Keyfactor/ejbca-ce,Authentication/Authorization tools,12
+Keyfactor/ejbca-ce,Build/CI/Installation,33
+Keyfactor/ejbca-ce,CLI tooling,12
+Keyfactor/ejbca-ce,Core,18
+Keyfactor/ejbca-ce,Key Management Core / Secrets Backend,6
+Keyfactor/ejbca-ce,Notification/Logging,9
+Keyfactor/ejbca-ce,Policy/configuration,62
+Keyfactor/ejbca-ce,Release pipeline,8
+Keyfactor/ejbca-ce,Signing workflow,4
+Keyfactor/ejbca-ce,Web Client,58
+Keyfactor/signserver-ce,API,3
+Keyfactor/signserver-ce,Authentication/Authorization tools,3
+Keyfactor/signserver-ce,Build/CI/Installation,7
+Keyfactor/signserver-ce,CLI tooling,4
+Keyfactor/signserver-ce,Core,1
+Keyfactor/signserver-ce,Policy/configuration,6
+Keyfactor/signserver-ce,Release pipeline,1
+Keyfactor/signserver-ce,Signing workflow,5
+Keyfactor/signserver-ce,Web Client,10
+hashicorp/vault,API,424
+hashicorp/vault,Authentication/Authorization tools,338
+hashicorp/vault,Build/CI/Installation,90
+hashicorp/vault,CLI tooling,338
+hashicorp/vault,Core,45
+hashicorp/vault,Key Management Core / Secrets Backend,452
+hashicorp/vault,Notification/Logging,145
+hashicorp/vault,Policy/configuration,492
+hashicorp/vault,Release pipeline,54
+hashicorp/vault,Signing workflow,5
+hashicorp/vault,Verification workflow,2
+hashicorp/vault,Web Client,295
+notaryproject/notation,API,10
+notaryproject/notation,Authentication/Authorization tools,16
+notaryproject/notation,Build/CI/Installation,27
+notaryproject/notation,CLI tooling,199
+notaryproject/notation,Core,10
+notaryproject/notation,Key Management Core / Secrets Backend,23
+notaryproject/notation,Notification/Logging,41
+notaryproject/notation,Policy/configuration,56
+notaryproject/notation,Release pipeline,13
+notaryproject/notation,Signing workflow,86
+notaryproject/notation,Verification workflow,68
+notaryproject/notation,Web Client,1
+openpubkey/openpubkey,API,21
+openpubkey/openpubkey,Authentication/Authorization tools,34
+openpubkey/openpubkey,Build/CI/Installation,10
+openpubkey/openpubkey,CLI tooling,19
+openpubkey/openpubkey,Core,14
+openpubkey/openpubkey,Key Management Core / Secrets Backend,2
+openpubkey/openpubkey,Notification/Logging,3
+openpubkey/openpubkey,Policy/configuration,14
+openpubkey/openpubkey,Release pipeline,2
+openpubkey/openpubkey,Signing workflow,7
+openpubkey/openpubkey,Verification workflow,13
+openpubkey/openpubkey,Web Client,6
+sigstore/cosign,API,45
+sigstore/cosign,Authentication/Authorization tools,56
+sigstore/cosign,Build/CI/Installation,131
+sigstore/cosign,CLI tooling,484
+sigstore/cosign,Core,38
+sigstore/cosign,Key Management Core / Secrets Backend,69
+sigstore/cosign,Notification/Logging,35
+sigstore/cosign,Policy/configuration,150
+sigstore/cosign,Release pipeline,29
+sigstore/cosign,Signing workflow,279
+sigstore/cosign,Verification workflow,280
+sigstore/fulcio,API,34
+sigstore/fulcio,Authentication/Authorization tools,34
+sigstore/fulcio,Build/CI/Installation,30
+sigstore/fulcio,CLI tooling,4
+sigstore/fulcio,Core,24
+sigstore/fulcio,Key Management Core / Secrets Backend,9
+sigstore/fulcio,Notification/Logging,9
+sigstore/fulcio,Policy/configuration,49
+sigstore/fulcio,Release pipeline,5
+sigstore/fulcio,Signing workflow,17
+sigstore/fulcio,Verification workflow,6
+sigstore/rekor,API,97
+sigstore/rekor,Authentication/Authorization tools,2
+sigstore/rekor,Build/CI/Installation,12
+sigstore/rekor,CLI tooling,50
+sigstore/rekor,Core,23
+sigstore/rekor,Key Management Core / Secrets Backend,2
+sigstore/rekor,Notification/Logging,12
+sigstore/rekor,Policy/configuration,18
+sigstore/rekor,Release pipeline,5
+sigstore/rekor,Signing workflow,4
+sigstore/rekor,Verification workflow,21
+sigstore/rekor,Web Client,2

@@ -1,0 +1,9 @@
+tool,Authentication friction,Build/CI/installation/distribution release issues,Configuration friction,Integration failure/issues,Missing feature / enhancement request,Notification/Logging /Web UI Issues,Performance issue,Security concerns,Tedious Workflows,Unexpected behavior,User confusion / unclear documentation
+Keyfactor/ejbca-ce,False,False,False,False,False,False,False,False,False,False,False
+Keyfactor/signserver-ce,False,False,False,False,False,False,False,False,False,False,False
+hashicorp/vault,True,True,True,True,True,True,True,True,True,True,True
+notaryproject/notation,False,True,True,False,True,True,False,False,True,False,False
+openpubkey/openpubkey,False,True,False,False,True,False,False,False,False,True,True
+sigstore/cosign,True,True,False,True,True,True,False,True,True,True,True
+sigstore/fulcio,False,True,True,True,True,False,False,True,True,False,True
+sigstore/rekor,False,True,False,True,True,True,True,True,True,True,True

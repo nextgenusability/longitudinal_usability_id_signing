@@ -34,12 +34,12 @@ def norm_usability(x):
 
 
 def load_phase3_data(data_dir: Path) -> pd.DataFrame:
-    paths = sorted(data_dir.glob("*.xlsx"))
+    paths = sorted(p for p in data_dir.glob("*.xlsx") if not p.name.startswith("~$"))
     if not paths:
         raise FileNotFoundError(f"No .xlsx files found in {data_dir.resolve()}")
     frames = []
     for fp in paths:
-        d = pd.read_excel(fp)
+        d = pd.read_excel(fp, engine="openpyxl")
         d["__source_file__"] = fp.name
         frames.append(d)
     df = pd.concat(frames, ignore_index=True)

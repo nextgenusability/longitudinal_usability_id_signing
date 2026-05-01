@@ -1,0 +1,87 @@
+tool,theme,beta,p_value,sig_0_05
+Keyfactor/ejbca-ce,Tedious Workflows,-0.0339728406195068,0.3686643244178842,False
+Keyfactor/ejbca-ce,Security concerns,-0.0220862917669151,0.4572563448788884,False
+Keyfactor/ejbca-ce,Performance issue,-0.020328558574433,0.6915510274425536,False
+Keyfactor/ejbca-ce,Notification/Logging /Web UI Issues,-0.0135603238829405,0.3334542888487511,False
+Keyfactor/ejbca-ce,Build/CI/installation/distribution release issues,-0.0093749260716062,0.41621904719652,False
+Keyfactor/ejbca-ce,User confusion / unclear documentation,-0.0017263964301856,0.822969871802991,False
+Keyfactor/ejbca-ce,Integration failure/issues,0.009566112844321,0.4465922179475259,False
+Keyfactor/ejbca-ce,Missing feature / enhancement request,0.0107009100536489,0.4710218184362573,False
+Keyfactor/ejbca-ce,Unexpected behavior,0.0161970087155449,0.1885258134568427,False
+Keyfactor/ejbca-ce,Configuration friction,0.0200953234586238,0.0626921751216227,False
+Keyfactor/ejbca-ce,Authentication friction,0.0302164810918058,0.1604019589579861,False
+Keyfactor/signserver-ce,Performance issue,-0.0632666727645979,0.4687362429722493,False
+Keyfactor/signserver-ce,Authentication friction,-0.0190198758814329,0.598508321542724,False
+Keyfactor/signserver-ce,Build/CI/installation/distribution release issues,-0.0030010815126098,0.9244329767914748,False
+Keyfactor/signserver-ce,User confusion / unclear documentation,-0.0011539076572514,0.9530847376998044,False
+Keyfactor/signserver-ce,Notification/Logging /Web UI Issues,0.0185853626665957,0.6555849229568708,False
+Keyfactor/signserver-ce,Configuration friction,0.0245743158246479,0.4532564944083388,False
+Keyfactor/signserver-ce,Missing feature / enhancement request,0.0322699104854862,0.3366918325992377,False
+Keyfactor/signserver-ce,Unexpected behavior,0.0459726200850389,0.4139470665484638,False
+Keyfactor/signserver-ce,Integration failure/issues,0.055957133915874,0.1815768491121058,False
+Keyfactor/signserver-ce,Tedious Workflows,0.0712621702839909,0.4367936000680091,False
+hashicorp/vault,User confusion / unclear documentation,-0.0336887044019792,1.1688746861643291e-22,True
+hashicorp/vault,Authentication friction,-0.0324870494184365,8.314827782598637e-07,True
+hashicorp/vault,Configuration friction,-0.0273928722059914,6.728821517936812e-08,True
+hashicorp/vault,Missing feature / enhancement request,-0.0244872883332416,3.389414115763723e-15,True
+hashicorp/vault,Unexpected behavior,-0.0220663663678107,1.7468915265878636e-10,True
+hashicorp/vault,Security concerns,-0.0220466220815567,0.0042607329232666,True
+hashicorp/vault,Integration failure/issues,-0.0218536818577414,1.1662079173078113e-07,True
+hashicorp/vault,Performance issue,-0.021456771135924,0.0271172942406584,True
+hashicorp/vault,Tedious Workflows,-0.0213311057489488,8.071184975315524e-06,True
+hashicorp/vault,Notification/Logging /Web UI Issues,-0.0180761553092552,5.790865869522702e-06,True
+hashicorp/vault,Build/CI/installation/distribution release issues,-0.0173483486636937,0.0135317164453177,True
+notaryproject/notation,Configuration friction,-0.0495164009655648,0.0062471359304484,True
+notaryproject/notation,Authentication friction,-0.0455212279454326,0.129351829532366,False
+notaryproject/notation,Missing feature / enhancement request,-0.0358490225061323,1.68624429235859e-10,True
+notaryproject/notation,Tedious Workflows,-0.0352885297959001,0.0012886761301101,True
+notaryproject/notation,Build/CI/installation/distribution release issues,-0.0309132055008419,0.0427588763784338,True
+notaryproject/notation,Security concerns,-0.0269270285436344,0.1323669299109691,False
+notaryproject/notation,Unexpected behavior,-0.023860013414527,0.0738932866098845,False
+notaryproject/notation,Notification/Logging /Web UI Issues,-0.0195424060150073,0.0363612083101571,True
+notaryproject/notation,User confusion / unclear documentation,-0.0158720899258209,0.1518434004781282,False
+notaryproject/notation,Performance issue,-0.0144954863006843,0.5669114880034065,False
+notaryproject/notation,Integration failure/issues,0.0051483116906338,0.6671561668218899,False
+openpubkey/openpubkey,Security concerns,0.0318474637634501,0.089382200800978,False
+openpubkey/openpubkey,Missing feature / enhancement request,0.0347183525619315,9.09330627424474e-05,True
+openpubkey/openpubkey,Authentication friction,0.0356979184314018,0.2941167620079149,False
+openpubkey/openpubkey,Tedious Workflows,0.0428523533637326,0.2745020673909518,False
+openpubkey/openpubkey,Integration failure/issues,0.044543028704796,0.0616245947394847,False
+openpubkey/openpubkey,User confusion / unclear documentation,0.0500644115904155,0.016952701781404,True
+openpubkey/openpubkey,Notification/Logging /Web UI Issues,0.0525129512755595,0.117800561347789,False
+openpubkey/openpubkey,Unexpected behavior,0.0615887939085312,0.0326200725057203,True
+openpubkey/openpubkey,Performance issue,0.0901679226948008,0.3838886343841583,False
+openpubkey/openpubkey,Build/CI/installation/distribution release issues,0.1049384035180982,0.0094193870834433,True
+openpubkey/openpubkey,Configuration friction,0.132197600147424,0.1717366390901459,False
+sigstore/cosign,Security concerns,-0.0549308311316638,5.4081134542574944e-08,True
+sigstore/cosign,Notification/Logging /Web UI Issues,-0.0528407843870826,4.408133478984141e-07,True
+sigstore/cosign,Authentication friction,-0.0521379369363028,0.0001382476460354,True
+sigstore/cosign,Missing feature / enhancement request,-0.0499835444405586,6.269905062516687e-36,True
+sigstore/cosign,Tedious Workflows,-0.0397530948419313,8.279745565238975e-07,True
+sigstore/cosign,Integration failure/issues,-0.03387034807025,3.843602960005329e-10,True
+sigstore/cosign,Unexpected behavior,-0.0285918854197019,5.491722190413901e-06,True
+sigstore/cosign,User confusion / unclear documentation,-0.0266305119814127,5.692889720290982e-09,True
+sigstore/cosign,Build/CI/installation/distribution release issues,-0.0235362619677649,0.0088628233809486,True
+sigstore/cosign,Configuration friction,-0.0154687619951527,0.0894762459125037,False
+sigstore/cosign,Performance issue,0.0075169490834251,0.6917989330114914,False
+sigstore/fulcio,Performance issue,-0.083337404030754,0.1447892489689912,False
+sigstore/fulcio,Tedious Workflows,-0.080138724921242,0.0193896929099591,True
+sigstore/fulcio,Build/CI/installation/distribution release issues,-0.0778237669090513,0.0047653560377816,True
+sigstore/fulcio,User confusion / unclear documentation,-0.0635052840338883,3.986158782601396e-05,True
+sigstore/fulcio,Configuration friction,-0.0605377831837681,0.0194901152743582,True
+sigstore/fulcio,Authentication friction,-0.0491890457476633,0.1736837166516011,False
+sigstore/fulcio,Missing feature / enhancement request,-0.047347095590004,6.815573207959297e-10,True
+sigstore/fulcio,Security concerns,-0.0456666260123458,0.0013758494027117,True
+sigstore/fulcio,Unexpected behavior,-0.0282298993129837,0.0967025276891119,False
+sigstore/fulcio,Integration failure/issues,-0.0246590943292148,0.0380576236815431,True
+sigstore/fulcio,Notification/Logging /Web UI Issues,-0.0172866650801989,0.4054291225577912,False
+sigstore/rekor,Performance issue,-0.0632666727424222,0.0120777778903537,True
+sigstore/rekor,Tedious Workflows,-0.0621015844685278,0.0098303478223422,True
+sigstore/rekor,Security concerns,-0.0579847603526836,0.001709640009816,True
+sigstore/rekor,Missing feature / enhancement request,-0.0575635680369793,1.0892164467261069e-13,True
+sigstore/rekor,Unexpected behavior,-0.0555327839095098,0.0001351693696506,True
+sigstore/rekor,Notification/Logging /Web UI Issues,-0.0495984089288996,0.014330681605926,True
+sigstore/rekor,Build/CI/installation/distribution release issues,-0.0482596202454354,0.0248408467571998,True
+sigstore/rekor,Integration failure/issues,-0.0441650313684688,0.0013027423637977,True
+sigstore/rekor,User confusion / unclear documentation,-0.0298051672101738,0.0032685639851784,True
+sigstore/rekor,Configuration friction,-0.0028580770591659,0.9148786083949748,False

@@ -1,0 +1,91 @@
+tool,theme,beta,p_value,sig_0_05
+Keyfactor/ejbca-ce,Core,-0.0223807616540871,0.1923240957568052,False
+Keyfactor/ejbca-ce,Signing workflow,-0.0203285585311143,0.574739572391021,False
+Keyfactor/ejbca-ce,Notification/Logging,-0.012862165245372,0.5889661932028378,False
+Keyfactor/ejbca-ce,Release pipeline,-0.006259797852057,0.8027369822767518,False
+Keyfactor/ejbca-ce,Web Client,-0.0037952901989297,0.6829712065456273,False
+Keyfactor/ejbca-ce,Build/CI/Installation,0.0042454844881001,0.7304462928678779,False
+Keyfactor/ejbca-ce,Policy/configuration,0.0110209620952691,0.2230848852948159,False
+Keyfactor/ejbca-ce,Key Management Core / Secrets Backend,0.0134293020902342,0.6453496578263931,False
+Keyfactor/ejbca-ce,API,0.0143673435782772,0.3694215555737111,False
+Keyfactor/ejbca-ce,Authentication/Authorization tools,0.0212055187189464,0.3117247319724802,False
+Keyfactor/ejbca-ce,CLI tooling,0.0741116088472122,0.0059232845932061,True
+Keyfactor/signserver-ce,Core,-0.0801387249267533,0.4084679399494632,False
+Keyfactor/signserver-ce,Authentication/Authorization tools,-0.0274615520402656,0.5198088413298297,False
+Keyfactor/signserver-ce,Release pipeline,-0.0203285585311524,0.7790612482649871,False
+Keyfactor/signserver-ce,CLI tooling,0.0050050120535321,0.8875930415709734,False
+Keyfactor/signserver-ce,Build/CI/Installation,0.0071574935609291,0.789478581339955,False
+Keyfactor/signserver-ce,Web Client,0.0177187784089082,0.436702270331426,False
+Keyfactor/signserver-ce,Signing workflow,0.0289246632717485,0.3836945853346615,False
+Keyfactor/signserver-ce,Policy/configuration,0.0311461956198918,0.3078070596929191,False
+Keyfactor/signserver-ce,API,0.0712621702839909,0.178020242222806,False
+hashicorp/vault,Signing workflow,-0.0729596161190167,0.0781558251110549,False
+hashicorp/vault,CLI tooling,-0.0309145830286254,2.879116174894135e-14,True
+hashicorp/vault,Policy/configuration,-0.0296524694342055,9.815032455959961e-19,True
+hashicorp/vault,Authentication/Authorization tools,-0.0295489774670162,2.842089847642861e-13,True
+hashicorp/vault,API,-0.0270841761522648,4.1722437118016495e-14,True
+hashicorp/vault,Key Management Core / Secrets Backend,-0.0221956885429571,9.038346034342067e-11,True
+hashicorp/vault,Web Client,-0.0210060165456607,6.663101983365622e-07,True
+hashicorp/vault,Notification/Logging,-0.0196777451921371,0.0010566048816034,True
+hashicorp/vault,Build/CI/Installation,-0.0174306176094313,0.0216339711694477,True
+hashicorp/vault,Core,-0.0119567669627284,0.2607287198082695,False
+hashicorp/vault,Release pipeline,-0.009104140803205,0.3464762156787069,False
+hashicorp/vault,Verification workflow,0.0025006257670712,0.960127342426587,False
+notaryproject/notation,API,-0.0518389808738012,0.0454654988369319,True
+notaryproject/notation,Authentication/Authorization tools,-0.0413250874584434,0.0338291374297603,True
+notaryproject/notation,Core,-0.0380351841614642,0.1173477075718003,False
+notaryproject/notation,CLI tooling,-0.0333856617468168,4.2399452491111246e-10,True
+notaryproject/notation,Key Management Core / Secrets Backend,-0.0311461956199152,0.0458551892438123,True
+notaryproject/notation,Signing workflow,-0.0293354638234085,0.0002531177126151,True
+notaryproject/notation,Verification workflow,-0.0262879088040016,0.0032405152594424,True
+notaryproject/notation,Policy/configuration,-0.0250734833091354,0.0105486609858242,True
+notaryproject/notation,Release pipeline,-0.0248222448200082,0.2222085676536445,False
+notaryproject/notation,Build/CI/Installation,-0.0213031907646241,0.1275023357718496,False
+notaryproject/notation,Notification/Logging,-0.0155132895623141,0.1661132160420756,False
+notaryproject/notation,Web Client,0.0151370559644572,0.8327559644809731,False
+openpubkey/openpubkey,Signing workflow,0.0129431236916591,0.631605590232283,False
+openpubkey/openpubkey,API,0.0144039500608947,0.3565243976115113,False
+openpubkey/openpubkey,Core,0.0241147948679957,0.2175358886445636,False
+openpubkey/openpubkey,Verification workflow,0.0277418611037955,0.1762727827401514,False
+openpubkey/openpubkey,Key Management Core / Secrets Backend,0.0368610415409296,0.4952434089527093,False
+openpubkey/openpubkey,Web Client,0.0418318594496302,0.189354648536395,False
+openpubkey/openpubkey,Authentication/Authorization tools,0.0486139716056534,0.0004376359870183,True
+openpubkey/openpubkey,Build/CI/Installation,0.0511697085534622,0.0475508016030525,True
+openpubkey/openpubkey,CLI tooling,0.0777038149753633,0.0003870625560276,True
+openpubkey/openpubkey,Policy/configuration,0.0801387249217545,0.0019826256448343,True
+openpubkey/openpubkey,Notification/Logging,0.0833374040305517,0.1447893898462545,False
+openpubkey/openpubkey,Release pipeline,0.1017410486628467,0.1984554977949042,False
+sigstore/cosign,Policy/configuration,-0.052693483782823,4.513969394220109e-15,True
+sigstore/cosign,Notification/Logging,-0.0516472854461415,0.000189858959053,True
+sigstore/cosign,Authentication/Authorization tools,-0.0438454472637136,3.120967610281903e-05,True
+sigstore/cosign,Key Management Core / Secrets Backend,-0.0398615713911467,1.8858371772983548e-05,True
+sigstore/cosign,Release pipeline,-0.0364587446735988,0.0100900757918283,True
+sigstore/cosign,Verification workflow,-0.0354707007092053,5.811623428265395e-15,True
+sigstore/cosign,Build/CI/Installation,-0.0346943246701846,1.610191128101161e-07,True
+sigstore/cosign,API,-0.034672890190302,0.002146230472961,True
+sigstore/cosign,CLI tooling,-0.0344339492500987,1.4419995945606544e-23,True
+sigstore/cosign,Core,-0.0275094646469694,0.0217691035561559,True
+sigstore/cosign,Signing workflow,-0.024859301328442,1.4890795059711258e-08,True
+sigstore/fulcio,Verification workflow,-0.0957306243152968,0.0291117889260346,True
+sigstore/fulcio,API,-0.0580450926150113,6.502983327390335e-05,True
+sigstore/fulcio,Policy/configuration,-0.051483278444391,1.054653917380953e-05,True
+sigstore/fulcio,Core,-0.0511141446238509,0.0021617691167829,True
+sigstore/fulcio,Build/CI/Installation,-0.0388243161721014,0.0057877409431815,True
+sigstore/fulcio,CLI tooling,-0.0383305003113825,0.3188155398837001,False
+sigstore/fulcio,Signing workflow,-0.0358342004280291,0.0522764366479396,False
+sigstore/fulcio,Authentication/Authorization tools,-0.0278904609544796,0.0279723755711592,True
+sigstore/fulcio,Key Management Core / Secrets Backend,-0.0250521221424794,0.3056499285529126,False
+sigstore/fulcio,Release pipeline,-0.0203285585311174,0.5304546179018061,False
+sigstore/fulcio,Notification/Logging,0.0122960089640105,0.6051663206560187,False
+sigstore/rekor,Release pipeline,-0.0992784289522534,0.043681562864041,True
+sigstore/rekor,Verification workflow,-0.0757868953620154,0.0002299729202689,True
+sigstore/rekor,API,-0.0608637997588987,3.3733239073904713e-12,True
+sigstore/rekor,Notification/Logging,-0.0589296066356962,0.0165348302191398,True
+sigstore/rekor,CLI tooling,-0.0533280685946625,4.9839213908114725e-06,True
+sigstore/rekor,Authentication/Authorization tools,-0.0525129512550608,0.3665189134716404,False
+sigstore/rekor,Build/CI/Installation,-0.0428523533640597,0.0583969633216671,False
+sigstore/rekor,Key Management Core / Secrets Backend,-0.0398181686475282,0.4668113497005954,False
+sigstore/rekor,Policy/configuration,-0.0342905831959755,0.05453766598368,False
+sigstore/rekor,Core,-0.0311461956199263,0.0458551860387876,True
+sigstore/rekor,Web Client,-0.0283743843428464,0.5882153248465476,False
+sigstore/rekor,Signing workflow,-0.0256512382129702,0.485151177273047,False

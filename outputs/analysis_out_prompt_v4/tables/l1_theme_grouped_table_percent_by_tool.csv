@@ -1,0 +1,9 @@
+repo,Configuration friction,Authentication friction,Build/CI/installation/distribution release issues,Integration failure/issues,Tedious Workflows,User confusion / unclear documentation,Notification/Logging Issues,Unexpected behavior,Performance issue,Security concerns,Missing feature / enhancement request
+hashicorp/vault,7.21,4.42,3.57,10.57,7.85,16.39,11.12,15.06,1.9,3.03,18.87
+sigstore/cosign,4.41,2.56,4.69,13.86,6.54,18.48,4.41,9.88,1.0,4.83,29.35
+notaryproject/notation,4.21,1.47,5.05,7.37,10.11,8.84,12.63,6.32,1.68,3.58,38.74
+sigstore/rekor,2.17,0.0,4.35,10.25,4.04,16.77,4.97,10.25,3.73,6.52,36.96
+Keyfactor/ejbca-ce,14.71,3.92,12.42,10.46,1.31,27.45,8.5,11.11,0.65,1.96,7.52
+sigstore/fulcio,3.93,1.79,4.29,13.57,2.86,11.43,4.29,6.79,1.07,11.07,38.93
+openpubkey/openpubkey,1.33,3.33,5.33,7.33,2.67,10.0,4.0,6.0,0.67,10.67,48.67
+Keyfactor/signserver-ce,11.63,9.3,11.63,9.3,2.33,30.23,6.98,4.65,2.33,0.0,11.63

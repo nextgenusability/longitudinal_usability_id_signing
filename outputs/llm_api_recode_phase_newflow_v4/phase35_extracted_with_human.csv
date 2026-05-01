@@ -1,0 +1,927 @@
+repo,issue_number,issue_url_x,created_at,comments_count,unique_participants,labels_x,label_primary,time_tercile,thread_bucket,rationale,title_x,Associated Components,Codes Primary,Agreement_ Associated component (ANAlysts A nad B),Agreement code Primary (Analysts A & B),Unnamed: 16,ACC Associated Components,ACC Codes Primary,Usability_Non-Usability Type- Analyst B (1- usability; 0-non-usability),Usability_Non-Usability Type- Analyst A,Agreement,Usability Theme,sample_id,issue_url_y,title_y,labels_y,body_text,top_3_comments_text,all_comments_text,__source_file__,__human_file__,human_usability_type,human_associated_component,human_associated_component_theme,human_l1_theme,human_l1_theme_secondary,human_nielsen_theme,human_phase3_analyst_a,human_phase3_analyst_a_bin,human_usability_type_bin,human_phase3_theme_seed,human_phase3_usability_seed
+notaryproject/notation,383,https://github.com/notaryproject/notation/issues/383,2022-10-12 16:05:27+00:00,0,0,UX,UX,early,short,time-stratum: early (temporal coverage); thread-size: short (ensure short/medium/long threads); label-diversity: 'UX' present,Add examples for notation command help doc,,,,,,,,,,,,102,https://github.com/notaryproject/notation/issues/383,Add examples for notation command help doc,UX,"We need to add more examples in `--help` information for each command in Alpha.4. These examples will be straightforward and easy to understand the typical usage of each command line with its flags._x000D_
+_x000D_
+Users can easily find these references using the `--help` for each `notation` command line and its flag. This will be a good foundation for further updates. _x000D_
+_x000D_
+- [ ] notation sign_x000D_
+- [ ] notation verify_x000D_
+- [ ] notation key_x000D_
+- [ ] notation certificate_x000D_
+- [ ] notation plugin_x000D_
+",,,notaryproject__notation___non-human.xlsx,notaryproject__notation_phase-3.xlsx,usability,"notation - CLI, Documentation","CLI Tooling, Documentation",Improve documentation,,help and documentation,,,1.0,True,True
+notaryproject/notation,547,https://github.com/notaryproject/notation/issues/547,2023-02-10 04:15:41+00:00,3,3,documentation,documentation,middle,medium,time-stratum: middle (temporal coverage); thread-size: medium (ensure short/medium/long threads); label-diversity: 'documentation' present,`SkippedByTrustPolicy` from JSON output of `notation verify` is not documented,,,,,,,,,,,,103,https://github.com/notaryproject/notation/issues/547,`SkippedByTrustPolicy` from JSON output of `notation verify` is not documented,documentation,"### What is the areas you experience the issue in?_x000D_
+_x000D_
+Notation CLI_x000D_
+_x000D_
+### What is not working as expected?_x000D_
+_x000D_
+The result status `SkippedByTrustPolicy` from the JSON output of `notation verify` is not documented._x000D_
+_x000D_
+Although the follow-up scripts or program can determine the verification status by the return code, developers do not know there is a value `SkippedByTrustPolicy` besides `Success` unless they read through the source code._x000D_
+_x000D_
+### What did you expect to happen?_x000D_
+_x000D_
+Have the JSON output of `notation verify` documented, including the enums of the result status.","byronchien: if a ""reason"" field is being added for [this issue](https://github.com/notaryproject/notation/issues/546), then instead of having ""SkippedByTrustPolicy"" as the result, will just use ""Skipped"" and mention the trust policy in the reason. Will still add documentation for the different result values. | sajayantony: Can we also improve the output of -v I think we can improve the user experience by highliging key areas that are important and removing unnecessary golang masrhalling info. /cc @shizhMSFT ``` signer@3344ae675ce7:/notation-demos$ notation verify -v $IMAGE INFO Using the referrers tag schema INFO Reference sha256:934e37d5c1029186129234a1af1d46b90a9d6b14c02276536e6e9b2ec98db3a9 resolved to manifest descriptor: {MediaType:application/vnd.oci.image.manifest.v1+json Digest:sha256:934e37d5c1029186129234a1af1d46b90a9d6b14c02276536e6e9b2ec98db3a9 Size:507 URLs:[] Annotations:map[] Data:[] Platform:<nil> ArtifactType:} INFO Checking whether signature verification should be skipped or not INFO Trust policy configuration: &{Name:notation-demos-images RegistryScopes:[localhost:5000/hello] SignatureVerification:{VerificationLevel:strict Override:map[]} TrustStores:[ca:notation-demos.io] TrustedIdentities:[*]} INFO Check over. Trust policy is not configured to skip signature verification INFO Processing signature with manifest mediaType: application/vnd.oci.image.manifest.v1+json and digest: sha256:8d11c5ea366ac877d2a8fd8505a2445a406710cddb91504f0156238ceff45195 INFO Trust policy configuration: &{Name:notation-demos-images RegistryScopes:[localhost:5000/hello] SignatureVerification:{VerificationLevel:strict Override:map[]} TrustStores:[ca:notation-demos.io] TrustedIdentities:[*]} Successfully verified signature for localhost:5000/hello@sha256:934e37d5c1029186129234a1af1d46b90a9d6b14c02276536e6e9b2ec98db3a9 ``` | yizha1: Closed by #551","byronchien: if a ""reason"" field is being added for [this issue](https://github.com/notaryproject/notation/issues/546), then instead of having ""SkippedByTrustPolicy"" as the result, will just use ""Skipped"" and mention the trust policy in the reason. Will still add documentation for the different result values.
+sajayantony: Can we also improve the output of -v I think we can improve the user experience by highliging key areas that are important and removing unnecessary golang masrhalling info. /cc @shizhMSFT ``` signer@3344ae675ce7:/notation-demos$ notation verify -v $IMAGE INFO Using the referrers tag schema INFO Reference sha256:934e37d5c1029186129234a1af1d46b90a9d6b14c02276536e6e9b2ec98db3a9 resolved to manifest descriptor: {MediaType:application/vnd.oci.image.manifest.v1+json Digest:sha256:934e37d5c1029186129234a1af1d46b90a9d6b14c02276536e6e9b2ec98db3a9 Size:507 URLs:[] Annotations:map[] Data:[] Platform:<nil> ArtifactType:} INFO Checking whether signature verification should be skipped or not INFO Trust policy configuration: &{Name:notation-demos-images RegistryScopes:[localhost:5000/hello] SignatureVerification:{VerificationLevel:strict Override:map[]} TrustStores:[ca:notation-demos.io] TrustedIdentities:[*]} INFO Check over. Trust policy is not configured to skip signature verification INFO Processing signature with manifest mediaType: application/vnd.oci.image.manifest.v1+json and digest: sha256:8d11c5ea366ac877d2a8fd8505a2445a406710cddb91504f0156238ceff45195 INFO Trust policy configuration: &{Name:notation-demos-images RegistryScopes:[localhost:5000/hello] SignatureVerification:{VerificationLevel:strict Override:map[]} TrustStores:[ca:notation-demos.io] TrustedIdentities:[*]} Successfully verified signature for localhost:5000/hello@sha256:934e37d5c1029186129234a1af1d46b90a9d6b14c02276536e6e9b2ec98db3a9 ```
+yizha1: Closed by #551",notaryproject__notation___non-human.xlsx,notaryproject__notation_phase-3.xlsx,usability,"notation CLI, documentation","CLI Tooling, Documentation","Unexplained Info, insufficient doc",,"10. help and documentation, visibility of system status",,,1.0,True,True
+notaryproject/notation,574,https://github.com/notaryproject/notation/issues/574,2023-02-28 07:26:32+00:00,1,1,"enhancement, triage",enhancement,middle,short,time-stratum: middle (temporal coverage); thread-size: short (ensure short/medium/long threads); label-diversity: 'enhancement' present,Change the default signature manifest,,,,,,,,,,,,104,https://github.com/notaryproject/notation/issues/574,Change the default signature manifest,"enhancement, triage","### What is the areas you would like to add the new feature to?
+
+Notation CLI
+
+### Is your feature request related to a problem?
+
+Currently only a few registries support artifact manifests, but all the registries support image manifests. Notation CLI stores signatures using artifact manifest by default, so there is a portability issue when copying signatures from registries with artifact manifest support to registries do not support it. The experience is broken. Since rc.2, a flag named `--signature-manifest` was introduced for users to select the default manifest, but users need to know what manifest type that registries support. 
+
+### What solution do you propose?
+
+The proposal is for Notation CLI to store signatures using image manifest by default. The UX is improved since It works for most registries without additional configuration, and users don't need to learn what manifest type supported by the target registry.
+
+### What alternatives have you considered?
+
+No alternatives.
+
+### Any additional context?
+
+_No response_","yizha1: Per community discussion, this issue will be released in RC-3","yizha1: Per community discussion, this issue will be released in RC-3",notaryproject__notation___non-human.xlsx,notaryproject__notation_phase-3.xlsx,usability,Notation CLI,CLI tooling,enhancing integration/compatibility with external registry(components/tools),,flexibility and efficiency of use,,,1.0,True,True
+notaryproject/notation,655,https://github.com/notaryproject/notation/issues/655,2023-04-28 21:42:30+00:00,0,0,enhancement,enhancement,middle,short,time-stratum: middle (temporal coverage); thread-size: short (ensure short/medium/long threads); label-diversity: 'enhancement' present,Image Verification for containerd,,,,,,,,,,,,105,https://github.com/notaryproject/notation/issues/655,Image Verification for containerd,enhancement,"### What is the areas you would like to add the new feature to?
+
+Notation CLI
+
+### Is your feature request related to a problem?
+
+Native integration into containerd enables close to runtime image integrity _x000D_
+https://github.com/containerd/containerd/issues/6691_x000D_
+
+
+### What solution do you propose?
+
+Integrate into contianerd as a plugin. 
+
+### What alternatives have you considered?
+
+Nerdctl already provides integration for notation. 
+
+### Any additional context?
+
+_No response_",,,notaryproject__notation___non-human.xlsx,notaryproject__notation_phase-3.xlsx,usability,Notation CLI,CLI tooling,"integration, enhancement request",,flexibility and efficiency of use,,,1.0,True,True
+notaryproject/notation,659,https://github.com/notaryproject/notation/issues/659,2023-05-09 06:00:27+00:00,25,6,bug,bug,middle,long,time-stratum: middle (temporal coverage); thread-size: long (ensure short/medium/long threads); label-diversity: 'bug' present,"Mark feature ""support OCI Referrer API"" as experimental feature",,,,,,,,,,,,106,https://github.com/notaryproject/notation/issues/659,"Mark feature ""support OCI Referrer API"" as experimental feature",bug,"### What is the areas you experience the issue in?
+
+Notation CLI
+
+### What is not working as expected?
+
+Currently [Referrer API](https://github.com/opencontainers/distribution-spec/blob/v1.1.0-rc1/spec.md#listing-referrers) is by default verified by Notation since `v1.0.0-rc.4`. For example, when using `notation sign`, if registries support referrer API, notation will not use an image index pushed to a tag described by the [referrers tag schema](https://github.com/opencontainers/distribution-spec/blob/main/spec.md#referrers-tag-schema). Since OCI spec 1.1 (including both image spec and distribution spec) is not officially released yet, support of Referrer API could lead to breaking changes or portability issue after Notation v1 is released. On the other hand, users may be confused that sometimes image index is pushed, sometimes not, which is an issue of consistency.
+
+### What did you expect to happen?
+
+Mark feature ""support OCI Referrer API"" as experimental feature, and document it properly. Users can use experimental features only after env variable `NOTATION_EXPERIMENTAL=1` is set. _x000D_
+The default behavior of Notation is always using an image index pushed to a tag described by the [referrers tag schema](https://github.com/opencontainers/distribution-spec/blob/v1.1.0-rc2/spec.md#referrers-tag-schema). If users set env variable `NOTATION_EXPERIMENTAL=1`, Notation will check the support of OCI referrer API first, if registries support Referrer API, then notation will not push image index; if registries don't support Referrer API, notation will push image index as the default behavior. _x000D_
+
+
+### How can we reproduce it?
+
+N/A
+
+### Describe your environment
+
+WSL
+
+### What is the version of your Notation CLI or Notation Library?
+
+Notation `v1.0.0-rc.4`","yizha1: @toddysm @iamsamirzon @sajayantony @shizhMSFT @vaninrao10 This issue was created per discussion during community call on 5/8/2023. Please take a look, and this issue should be addressed in Notation v1 release | ghost: Thanks @yizha1, I will take this one. | ghost: I'm trying to summarize behaviors between Notation versions: `Sign` as of Notation v1.0.0-rc.4 (current version): 1. If store signature with `image manifest`: Try Referrers API first, if not supported, automatically fallback to referrers tag schema. 2. If store signature with `artifact manifest`: ping Referrers API, if failed (i.e. Referrers API is not supported), then the whole Sign process is failed, no fallback would occur. `Verify` as of Notation v1.0.0-rc.4 (current version): Regardless of manifest type, always try Referrers API, if not supported, automatically fallback to referrers tag schema. What we want in v1.0 for `Sign`: 1. If experimental flag is disabled (NOTATION_EXPERIMENTAL=0), always use referrers tag schema to store signatures. 2. If experimental flag is enabled (NOTATION_EXPERIMENTAL=1), then try referrers API first, if not supported, automatically fallback to referrers tag schema. What we want in v1.0 for `Verify`: Q: what is the expected behavior here? @yizha1 /cc: @iamsamirzon @vaninrao10 @sajayantony @toddysm @shizhMSFT @FeynmanZhou","yizha1: @toddysm @iamsamirzon @sajayantony @shizhMSFT @vaninrao10 This issue was created per discussion during community call on 5/8/2023. Please take a look, and this issue should be addressed in Notation v1 release
+ghost: Thanks @yizha1, I will take this one.
+ghost: I'm trying to summarize behaviors between Notation versions: `Sign` as of Notation v1.0.0-rc.4 (current version): 1. If store signature with `image manifest`: Try Referrers API first, if not supported, automatically fallback to referrers tag schema. 2. If store signature with `artifact manifest`: ping Referrers API, if failed (i.e. Referrers API is not supported), then the whole Sign process is failed, no fallback would occur. `Verify` as of Notation v1.0.0-rc.4 (current version): Regardless of manifest type, always try Referrers API, if not supported, automatically fallback to referrers tag schema. What we want in v1.0 for `Sign`: 1. If experimental flag is disabled (NOTATION_EXPERIMENTAL=0), always use referrers tag schema to store signatures. 2. If experimental flag is enabled (NOTATION_EXPERIMENTAL=1), then try referrers API first, if not supported, automatically fallback to referrers tag schema. What we want in v1.0 for `Verify`: Q: what is the expected behavior here? @yizha1 /cc: @iamsamirzon @vaninrao10 @sajayantony @toddysm @shizhMSFT @FeynmanZhou
+yizha1: For `notation verify` in v1.0, the behavior is similar to `notation sign`. The default is using image index, if experimental flag is enabled (NOTATION_EXPERIMENTAL=1), then try referrers API first, if not supported, automatically fallback to use the image index. This applies to all the commands including `notation sign`, `notation verify`, `notation ls`, and `notation inspect`
+ghost: > For `notation verify` in v1.0, the behavior is similar to `notation sign`. The default is using image index, if experimental flag is enabled (NOTATION_EXPERIMENTAL=1), then try referrers API first, if not supported, automatically fallback to use the image index. This applies to all the commands including `notation sign`, `notation verify`, `notation ls`, and `notation inspect` (Just an open discussion here.) I'm not sure if this is what we expect, but in the below scenario: Suppose the registry supports the Referrers API, user sets NOTATION_EXPERIMENTAL=1, then sign their artifact. The Sign succeeded without pushing the image index as Referrers API is used. Then, the user turns off experimental by setting NOTATION_EXPERIMENTAL=0. Next, if the user types `notation list` it would show empty, as Notation is default to referrers tag schema now. If the user types `notation verify`, the verification would fail with error: `no signature is associated...`. Now, if the user turns on the experimental again, both `notation list` and `notation verify` would work as Referrers API is turned on again. In the above case, it seems that the result of `list` and `verify` depends on the value of NOTATION_EXPERIMENTAL. IMO, this might not be a very good user experience? So I think, maybe we could just put `Referrers API` behind `experimental` in `Sign`. For other commands, we still try Referrers API first, if failed, automatically fallback to tag schema.
+shizhMSFT: We can assume the use of `NOTATION_EXPERIMENTAL` is fairly consistent and most customer will not enable this flag.
+iamsamirzon: > 2\. rimental flag is enabled (NOTATION_EXPERIMENTAL=1), then try referrers API first, if not supported, automatically fallback to referrers tag schema. I like the proposal from @Two-Hearts about having the Notation Verify check for referrers API first and if not available use the image-index method. As long as this does not cause inconsistent results for registries this may be a good path. Essentially be more flexible when verifying signatures so users do not have to change their deployment time checks (modify scripts or flags for verify) when their registries start supporting 1.1 based signatures
+priteshbandi: My 2 cents, for v1.0 ### For Sign: * If experimental flag is disabled (NOTATION_EXPERIMENTAL=0), always use referrers tag schema to store signatures. Also, customers should not be able to use `--signature-manifest` flag * If experimental flag is enabled (NOTATION_EXPERIMENTAL=1) and customer uses `--signature-manifest artifact` then try referrers API first, if not supported fail the signing. The default behavior without `--signature-manifest ` flag should be same as with experimental disabled. ### For Verify, inspect, list aka any command that only read's content from registry: Always try Referrers API, if not supported, automatically fallback to referrers tag schema. `--signature-manifest` flag is not supported Rationale: 1. How signatures are stored should be a conscious call that user makes i.e. notation should not make any assumptions, which means for sign call we should take intent from users on what mechanism they prefer to store signature. This is required for cross tool compatibility. 2. For operations such as verify, inspect, we can do automatic fallback. This provides backward compatibility for users who moves from signing using image-manifest to use artifact manifest. IMO we should fix this ASAP as its breaking customer experience. **Should we have RC5 with this fix?**
+yizha1: > My 2 cents, for v1.0 > > ### For Sign: > * If experimental flag is disabled (NOTATION_EXPERIMENTAL=0), always use referrers tag schema to store signatures. Also, customers should not be able to use `--signature-manifest` flag The rationale for commands `verify`, `ls` and `inspect` makes sense. But Referrer API doesn't have to be with specific manifest type, that means, no matter what signature manifest is used. We have another [issue](https://github.com/notaryproject/notation/issues/660) to remove `--signature-manifest` flag, since artifact manifest has been removed by recent [OCI image spec v1.0.0-rc.3](https://github.com/opencontainers/image-spec/commit/63b8bd02f5b5a2ce464a9a8ea6df049c326ce20f) release.
+priteshbandi: @yizha1 Yes, we should remove `--signature-manifest` flag and introduce a new experimental flag `--use-referrers-api` (name TBD) using which users can control if they want to push a signature using tag-schema or referrers API. Rationale: 1. OCI spec removed artifact manifest. 2. For backward compatibility in CI/CD tooling. Think about a scenario where a user is using a managed 3rd party registry like ACR, ECR, docker hub and has CICD tooling around it, a notation to sign an image, and a signature verification tool(either homegrown or 3rd party) that supports only tag schema to verify the image. As of today, the registry doesn't support referrers API so notation signs with tag schema and verification tool verify image using tag schema. One day, the registry added support for referrers API and suddenly notation started signing using referrers API, which the verification tool doesn't understand, and that broke the user's CICD.
+ghost: Thanks @priteshbandi, to summarize what we want in RC.5: For `Sign`: 1. `--signautre-manifest` flag would be removed, we will not support signing with OCI artifact manifest anymore. 2. Adding a new flag, `--use-referrers-api` (name TBD), behind `experimental`: - When both `NOTATION_EXPERIMENTAL` and `--use-referrers-api` are set, Notation would try the Referrers API first, if failed, automatically fallback to referrers tag schema. - Otherwise, `Sign` will be using referrers tag schema as default. For other commands that consume signatures, `notation list`, `notation verify`, etc.: 1. Notation still supports OCI artifact manifest. 2. Always try the Referrers API first, if failed, automatically fallback to the referrers tag schema. Does the above sound correct to you? (the new flag's name `--use-referrers-api` lgtm, but might need some further discussions.) /cc: @iamsamirzon @vaninrao10 @toddysm @sajayantony @shizhMSFT @yizha1 @FeynmanZhou
+shizhMSFT: > Always try the Referrers API first, if failed, automatically fallback to the referrers tag schema. There might be a compatibility issue with some registries such as GAR. Basically, attempting the Referrers API to GAR will not return a 404 but an unexpected 302. See discussions: - https://cloud-native.slack.com/archives/CQUH8U287/p1681159105868649 - #630
+priteshbandi: @Two-Hearts > For Sign: Adding a new flag, --use-referrers-api (name TBD), behind experimental: When both NOTATION_EXPERIMENTAL and --use-referrers-api are set, Notation would try the Referrers API first, if failed, automatically fallback to referrers tag schema. Otherwise, Sign will be using referrers tag schema as default IMO we should not fallback for sign operation i.e. When both NOTATION_EXPERIMENTAL and `--use-referrers-api` are set, Notation would try the Referrers API only. If failed, fail the sign operation and ask user to not use `--use-referrers-api` flag. --- @shizhMSFT IMO automatic fallback would useful for most of the registries in OCI 1.0 to 1.1 migration usecase. For scenarios where registries are misbehaving not abiding by [spec](https://github.com/opencontainers/distribution-spec/blob/57b69b6474e2299926802bb10014074d8592b6b8/spec.md#unavailable-referrers-api) we can have --not-use-referrers-api(name TBD) flag.
+ghost: > IMO we should not fallback for sign operation i.e. When both NOTATION_EXPERIMENTAL and `--use-referrers-api` are set, Notation would try the Referrers API only. If failed, fail the sign operation and ask user to not use `--use-referrers-api` flag. Yeah, this also works. In this way, the `Sign` command becomes more deterministic (without any automatic fallback). Waiting for others' comments on this one.
+ghost: > > Always try the Referrers API first, if failed, automatically fallback to the referrers tag schema. > > There might be a compatibility issue with some registries such as GAR. > > Basically, attempting the Referrers API to GAR will not return a 404 but an unexpected 302. > > See discussions: > > * https://cloud-native.slack.com/archives/CQUH8U287/p1681159105868649 > * [Introduce an experimental flag to enable backward compatibility with OCI registries #630](https://github.com/notaryproject/notation/issues/630) @shizhMSFT hmm, yes, we need to resolve issue [630](https://github.com/notaryproject/notation/issues/630). Do we want to have it done in RC.5 or v1.0?
+yizha1: > > IMO we should not fallback for sign operation i.e. When both NOTATION_EXPERIMENTAL and `--use-referrers-api` are set, Notation would try the Referrers API only. If failed, fail the sign operation and ask user to not use `--use-referrers-api` flag. > > Yeah, this also works. In this way, the `Sign` command becomes more deterministic (without any automatic fallback). Waiting for others' comments on this one. Yes, it makes sense. Use the experimental flag means you want to leverage Referrer API, and not tag schema. Otherwise, it may succeed with tag schema, which is not what users expected.
+yizha1: > There might be a compatibility issue with some registries such as GAR. > > Basically, attempting the Referrers API to GAR will not return a 404 but an unexpected 302. > > See discussions: > > * https://cloud-native.slack.com/archives/CQUH8U287/p1681159105868649 > * [Introduce an experimental flag to enable backward compatibility with OCI registries #630](https://github.com/notaryproject/notation/issues/630) Maybe we should raise it to OCI spec maintainers on the determination of referrer API
+shizhMSFT: In order to make `notation` stable while we are building `notation` on top of the instable `distribution-spec`, we need to identify which part of the `distribution-spec` is relatively stable and which is not. Apparently, the referrers tag schema is relatively stable and should be used as the default behavior of `notation`. Meanwhile, the referrers API and its fallback strategy is instable and should be marked as _experimental_. Based on the above fundamentals, I'd like to propose a new _experimental_ flag `--allow-referrers-api` to all registry related commands such as `notation sign` and `notation verify`. - When `--allow-referrers-api` is toggled with `NOTATION_EXPERIMENTAL=1`, `notation` attempts the referrers API and fallback to referrers tag schema on failure. - Otherwise, `notation` has deterministic behavior and uses referrers tag schema. From previous discussions, we have consensus on using referrers tag schema by default for `notation sign` but not aligned on `notation verify`. To me, `notation verify` should not attempt referrers API without `NOTATION_EXPERIMENTAL=1` since the referrers API itself is instable / experimental.
+ghost: > In order to make `notation` stable while we are building `notation` on top of the instable `distribution-spec`, we need to identify which part of the `distribution-spec` is relatively stable and which is not. Apparently, the referrers tag schema is relatively stable and should be used as the default behavior of `notation`. Meanwhile, the referrers API and its fallback strategy is instable and should be marked as _experimental_. > > Based on the above fundamentals, I'd like to propose a new _experimental_ flag `--allow-referrers-api` to all registry related commands such as `notation sign` and `notation verify`. > > * When `--allow-referrers-api` is toggled with `NOTATION_EXPERIMENTAL=1`, `notation` attempts the referrers API and fallback to referrers tag schema on failure. > * Otherwise, `notation` has deterministic behavior and uses referrers tag schema. > > From previous discussions, we have consensus on using referrers tag schema by default for `notation sign` but not aligned on `notation verify`. To me, `notation verify` should not attempt referrers API without `NOTATION_EXPERIMENTAL=1` since the referrers API itself is instable / experimental. Yeah, after discussion with Shiwei offline, I agree with the above design. The `automatic fallback from referrers API to tag schema` is a part of the Referrers API's [spec](https://github.com/opencontainers/distribution-spec/blob/main/spec.md#listing-referrers). As long as a user attempts the Referrers API, the process should include the fallback mechanism to align with the spec. From this point of view, I think we can still claim that Notation is deterministic regarding the use of Referrers API and Referrers tag schema. @priteshbandi What do you think?
+FeynmanZhou: @shizhMSFT 's proposal makes sense to me. Using a new experimental flag `--allow-referrers-api` to all registry-related commands will provide a consistent experience for signing and verification. My only concern is that this is a breaking change for users still using v1.0.0-RC.4 with Referrers API by default. They have to add this additional experimental flag `--allow-referrers-api` when verifying their legacy signatures after upgrading to v1.0.0-RC.4. We may need to document the considerations in the v1.0.0-RC.5 release note and elaborate on related docs. @priteshbandi @Two-Hearts @yizha1 @sajayantony
+priteshbandi: @patrickzheng200 I agree, to summarize #### If experimental flag is disabled (NOTATION_EXPERIMENTAL=0), dont use referrers API i.e. * For sign, only use referrers tag schema to store signatures. * For verify/inspect/list only use referrers tag schema to pull signatures. #### If experimental flag is enabled (NOTATION_EXPERIMENTAL=1) and user uses `--use-referrers` flag; use oci 1.1 spec i.e. use referrers API * For sign, Check if referrers API returns 2xx or not. ~If it doesnt returns 2xx fail signing because registry hasnt correctly/fully implemented oci1.1. If it return 2xx then sign using referrers.~ * If referrers API returns 2xx, sign using referrers * If referrers API returns 404, fallback or the OCI-Subject header was not set, fallback and use tag schema * If referrers API returns anything else, fail the operation * For verify/inspect/list list, etc use referrers API first to pull the signature. * If referrers API returns 2xx use it to list signatures * If referrers API returns 404 or the OCI-Subject header was not set, fallback and use tag schema to list signatures * If referrers API returns anything else, fail the operation ----- @FeynmanZhou Had similar discussion with @toddysm on Thursday, IMO we should mark RC4 as deprecated ASAP and ask customers to directly jump to rc5 from rc3. cc: @iamsamirzon
+ghost: > #### If experimental flag is enabled (NOTATION_EXPERIMENTAL=1) and user uses `--use-referrers` flag; use oci 1.1 spec i.e. use referrers API > * For sign, Check if referrers API returns 2xx or not. If it doesnt returns 2xx fail signing because registry hasnt correctly/fully implemented oci1.1. If it return 2xx then sign using referrers. Thanks @priteshbandi, everything else LGTM. My only question is, when NOTATION_EXPERIMENTAL=1 and uses `--allow-referrers` flag during `Sign`, should we still enable fallback to referrers tag schema if referrers API is not supported? Because the fallback mechanism is a part of the Referrers API spec, trying referrers API without enabling the fallback schema seems not strictly following the distribution spec? Quoting from the spec: `If the [referrers API](https://github.com/opencontainers/distribution-spec/blob/main/spec.md#listing-referrers) returns a 404, the client MUST fallback to pulling the [referrers tag schema](https://github.com/opencontainers/distribution-spec/blob/main/spec.md#referrers-tag-schema).` Reference: https://github.com/opencontainers/distribution-spec/blob/main/spec.md#listing-referrers /cc: @shizhMSFT
+priteshbandi: My interpretation (I am not closely following spec) of spec is that fallback is only for pull operation but since sign is an push operation its better to provide consistency . Also, if user is opting in for oci spec 1.1 we should always use referrers API related behaviors. Want to hear others opinion.
+yizha1: > My interpretation (I am not closely following spec) of spec is that fallback is only for pull operation but since sign is an push operation its better to provide consistency . Also, if user is opting in for oci spec 1.1 we should always use referrers API related behaviors. Want to hear others opinion. @priteshbandi The pushing manifest procedure is defined here https://github.com/opencontainers/distribution-spec/blob/v1.1.0-rc2/spec.md#pushing-manifests-with-subject
+priteshbandi: Thanks @Two-Hearts and @yizha1 for pointing to the right spec. As oci1.1-rc2 calls out, when user adds NOTATION_EXPERIMENTAL=1 and uses --allow-referrers flag, notation should perform fallback for sign operation. --- Updated https://github.com/notaryproject/notation/issues/659#issuecomment-1546369024",notaryproject__notation___non-human.xlsx,notaryproject__notation_phase-3.xlsx,usability,Notation CLI,,integration with external component; Improving documentation,,"flexibility and efficiency of use, consistency and standards, help and documentations",,,1.0,True,True
+notaryproject/notation,671,https://github.com/notaryproject/notation/issues/671,2023-05-17 15:30:57+00:00,5,4,"bug, triage",bug,middle,long,time-stratum: middle (temporal coverage); thread-size: long (ensure short/medium/long threads); label-diversity: 'bug' present,Vote for release of 1.0.0-rc.5 of notation CLI ,,,,,,,,,,,,107,https://github.com/notaryproject/notation/issues/671,Vote for release of 1.0.0-rc.5 of notation CLI ,"bug, triage","We need 3 approvals from the current maintainers to vote for tagging[ d850c3f](https://github.com/notaryproject/notation/commit/d850c3f4ef79193ef88f9c6af75cdd8935d1ef18) as `v1.0.0-rc.5`. Here is the link to [change log](https://github.com/notaryproject/notation/compare/v1.0.0-rc.4...d850c3f) and I've also summarized the changes at the end of the issue._x000D_
+_x000D_
+- [ ] Junjie Gao <junjiegao@microsoft.com> (@JeyJeyGao)_x000D_
+- [x] Milind Gokarn <gokarnm@amazon.com> (@gokarnm)_x000D_
+- [ ] Patrick Zheng <patrickzheng@microsoft.com> (@patrickzheng200)_x000D_
+- [x] Pritesh Bandi <priteshbandi@gmail.com> (@priteshbandi)_x000D_
+- [x] Rakesh Gariganti <garigant@amazon.com> (@rgnote)_x000D_
+- [x] Shiwei Zhang <shizh@microsoft.com> (@shizhMSFT)_x000D_
+----_x000D_
+### change log for rc5_x000D_
+* https://github.com/notaryproject/notation/pull/650_x000D_
+* https://github.com/notaryproject/notation/pull/651_x000D_
+* https://github.com/notaryproject/notation/pull/666_x000D_
+* https://github.com/notaryproject/notation/pull/663_x000D_
+* https://github.com/notaryproject/notation/pull/665_x000D_
+* https://github.com/notaryproject/notation/pull/656_x000D_
+* https://github.com/notaryproject/notation/pull/658_x000D_
+* https://github.com/notaryproject/notation/pull/670",rgnote: LGTM | gokarnm: LGTM | rgnote: LGTM,"rgnote: LGTM
+gokarnm: LGTM
+rgnote: LGTM
+shizhMSFT: LGTM
+priteshbandi: Released RC5 https://github.com/notaryproject/notation/releases/tag/v1.0.0-rc.5.",notaryproject__notation___non-human.xlsx,notaryproject__notation_phase-3.xlsx,non-usability,notation-cli,,,,,,,0.0,False,False
+notaryproject/notation,829,https://github.com/notaryproject/notation/issues/829,2023-11-12 15:04:38+00:00,5,3,enhancement,enhancement,late,long,time-stratum: late (temporal coverage); thread-size: long (ensure short/medium/long threads); label-diversity: 'enhancement' present,docs: invalid signing time fail to sign prompt improvement,,,,,,,,,,,,108,https://github.com/notaryproject/notation/issues/829,docs: invalid signing time fail to sign prompt improvement,enhancement,"### Is your feature request related to a problem?
+
+When the signing time is not within the validity period of the certificate, the signing failure message does not have a certificate expiration date, and the user needs to run other commands to check the validity period of the certificate, which is not a good experience._x000D_
+`./bin/notation sign localhost:5000/gateway@sha256:b992672d71a62c0a94cd8640f7c0db62ffb9de65317100742bf44892b179445f Error: certificate-chain is invalid, certificate with subject ""CN=test,O=Notary,L=Seattle,ST=WA,C=US"" was not valid at signing time of 2023-11-12 08:34:48 +0000 UTC`_x000D_
+_x000D_
+
+
+### What solution do you propose?
+
+It is a good experience to show the certificate validity period in the prompt._x000D_
+`./bin/notation sign localhost:5000/gateway@sha256:b992672d71a62c0a94cd8640f7c0db62ffb9de65317100742bf44892b179445f Error: certificate-chain is invalid, certificate with subject ""CN=test,O=Notary,L=Seattle,ST=WA,C=US"" was invalid at signing time of 2023-11-12 08:33:33 +0000 UTC. Valid from [2023-10-25 02:40:40 +0000 UTC] to [2023-10-26 02:40:40 +0000 UTC]`
+
+### What alternatives have you considered?
+
+N/A
+
+### Any additional context?
+
+_No response_","FeynmanZhou: Hi @fanndu , Thanks for the suggestion. You proposal sounds reasonable to me. It makes signers understand the validity of the certificate immediately when failed to sign images with an expired certificate. Alternatively, signers can get the validity of a certificate by using `notation certificate show --type <type> --store <name> <cert_fileName>` as mentioned in the [spec](https://github.com/notaryproject/notation/blob/main/specs/commandline/certificate.md#show-details-of-a-certain-certificate-file) in this case. But I agree with showing validity in related error message as you mentioned above adds more clarity and convenience to signers. /cc @notaryproject/notaryproject-notation-maintainers for inputs. | yizha1: Thanks @fanndu As a side note, besides the error message for certificate expiry, we need to verify the signature expiry error message to make sure it is clear for users. | fanndu: > Hi @fanndu , > > Thanks for the suggestion. You proposal sounds reasonable to me. It makes signers understand the validity of the certificate immediately when failed to sign images with an expired certificate. > > Alternatively, signers can get the validity of a certificate by using `notation certificate show --type <type> --store <name> <cert_fileName>` as mentioned in the [spec](https://github.com/notaryproject/notation/blob/main/specs/commandline/certificate.md#show-details-of-a-certain-certificate-file) in this case. But I agree with showing validity in related error message as you mentioned above adds more clarity and convenience to signers. > > /cc @notaryproject/notaryproject-notation-maintainers for inputs. Hi @FeynmanZhou, Because of use default certificate, so user could't know which store type and store name, especilly when there are so many certs, as follow: ` ./bin/notation cert ls STORE TYPE STORE NAME CERTIFICATE ca expired-example expired-example.crt ca missing-example missing-example.crt ca test test.crt ca testgenerate testgenerate.crt ca valid-example valid-example.crt ` And there is no cli command to show which cert is default. So i think we should show more cert info here and add new cli to show default cert info. Signing key is define in /Users/xxx/Library/Application Support/notation/signingkeys.json. It's hard for beginners to find it.","FeynmanZhou: Hi @fanndu , Thanks for the suggestion. You proposal sounds reasonable to me. It makes signers understand the validity of the certificate immediately when failed to sign images with an expired certificate. Alternatively, signers can get the validity of a certificate by using `notation certificate show --type <type> --store <name> <cert_fileName>` as mentioned in the [spec](https://github.com/notaryproject/notation/blob/main/specs/commandline/certificate.md#show-details-of-a-certain-certificate-file) in this case. But I agree with showing validity in related error message as you mentioned above adds more clarity and convenience to signers. /cc @notaryproject/notaryproject-notation-maintainers for inputs.
+yizha1: Thanks @fanndu As a side note, besides the error message for certificate expiry, we need to verify the signature expiry error message to make sure it is clear for users.
+fanndu: > Hi @fanndu , > > Thanks for the suggestion. You proposal sounds reasonable to me. It makes signers understand the validity of the certificate immediately when failed to sign images with an expired certificate. > > Alternatively, signers can get the validity of a certificate by using `notation certificate show --type <type> --store <name> <cert_fileName>` as mentioned in the [spec](https://github.com/notaryproject/notation/blob/main/specs/commandline/certificate.md#show-details-of-a-certain-certificate-file) in this case. But I agree with showing validity in related error message as you mentioned above adds more clarity and convenience to signers. > > /cc @notaryproject/notaryproject-notation-maintainers for inputs. Hi @FeynmanZhou, Because of use default certificate, so user could't know which store type and store name, especilly when there are so many certs, as follow: ` ./bin/notation cert ls STORE TYPE STORE NAME CERTIFICATE ca expired-example expired-example.crt ca missing-example missing-example.crt ca test test.crt ca testgenerate testgenerate.crt ca valid-example valid-example.crt ` And there is no cli command to show which cert is default. So i think we should show more cert info here and add new cli to show default cert info. Signing key is define in /Users/xxx/Library/Application Support/notation/signingkeys.json. It's hard for beginners to find it.
+fanndu: @yizha1 I'm working on a PR to fix this.
+yizha1: Thanks @fanndu, I will assign this issue to you. /cc @FeynmanZhou @shizhMSFT",notaryproject__notation___non-human.xlsx,notaryproject__notation_phase-3.xlsx,usability,Notation CLI,CLI Tooling,"tedious workflows, notification/logging",,9. help users recognize ...errors. 7. flexibility and efficiency of use,,,1.0,True,True
+notaryproject/notation,851,https://github.com/notaryproject/notation/issues/851,2023-12-19 09:00:22+00:00,0,0,bug,bug,late,short,time-stratum: late (temporal coverage); thread-size: short (ensure short/medium/long threads); label-diversity: 'bug' present,Fix of setHttpDebugLog function,,,,,,,,,,,,109,https://github.com/notaryproject/notation/issues/851,Fix of setHttpDebugLog function,bug,"### What is not working as expected?
+
+Creating an issue to track these comments:_x000D_
+https://github.com/notaryproject/notation/pull/827#discussion_r1430982227_x000D_
+https://github.com/notaryproject/notation/pull/827#discussion_r1430983979
+
+### What did you expect to happen?
+
+Quote from @shizhMSFT: `When authClient.Client is nil, http.DefaultClient.Transport is changed to http.DefaultTransport if it is nil. Later, http.DefaultClient.Transport is changed to NewTransport. That's a global change and should be avoided.`
+
+### How can we reproduce it?
+
+nil
+
+### Describe your environment
+
+all environments
+
+### What is the version of your Notation CLI or Notation Library?
+
+current main branch",,,notaryproject__notation___non-human.xlsx,notaryproject__notation_phase-3.xlsx,non-usability,Notation-core,,,,,,,0.0,False,False
+notaryproject/notation,880,https://github.com/notaryproject/notation/issues/880,2024-01-29 23:55:42+00:00,5,2,Stale,Stale,late,long,time-stratum: late (temporal coverage); thread-size: long (ensure short/medium/long threads); label-diversity: 'Stale' present,Plan for Notation 1.2.0 release,,,,,,,,,,,,110,https://github.com/notaryproject/notation/issues/880,Plan for Notation 1.2.0 release,Stale,"This is the proposal of releasing Notation `v1.2.0` release_x000D_
+_x000D_
+Target date: Mar 27, 2024_x000D_
+_x000D_
+Main features/enhancements:_x000D_
+_x000D_
+- https://github.com/notaryproject/notation/issues/741_x000D_
+- https://github.com/notaryproject/notation/issues/824 _x000D_
+  - There will be new issues created based on the guideline_x000D_
+- https://github.com/notaryproject/notation/issues/838_x000D_
+- CLI specifications","yizha1: As proposed during [community meeting on Feb 5, 2024](https://hackmd.io/_vrqBGAOSUC_VWvFzWruZw?view), the target date will be moved to `Mid May 2024`. | yizha1: Per the discussion in the meeting on Mar 12, 2024. - OCI 1.1 support will be added to `1.2.0` release, and the scope is as commented by Pritesh in the issue https://github.com/notaryproject/notation/issues/892#issuecomment-1984130603. Additionally, Notary Project `specification` may be updated according to OCI image spec 1.1, which is tracked by the issue https://github.com/notaryproject/specifications/issues/295 - The ETA for implementation of ""signing blob"" is before May - The ETA for Time-stamping support will be provided once Patrick and Junjie are back next week. - Security audit will be requested for features ""signing blob"" and ""time-stamping support"", we will start to book the audit once we have confident ETAs for these features. - Maintainers will review the target date of v1.2.0 release once we are aligned on ETAs for all the features and security audit. /cc: @priteshbandi @vaninrao10 @shizhMSFT @FeynmanZhou","yizha1: As proposed during [community meeting on Feb 5, 2024](https://hackmd.io/_vrqBGAOSUC_VWvFzWruZw?view), the target date will be moved to `Mid May 2024`.
+yizha1: Per the discussion in the meeting on Mar 12, 2024. - OCI 1.1 support will be added to `1.2.0` release, and the scope is as commented by Pritesh in the issue https://github.com/notaryproject/notation/issues/892#issuecomment-1984130603. Additionally, Notary Project `specification` may be updated according to OCI image spec 1.1, which is tracked by the issue https://github.com/notaryproject/specifications/issues/295 - The ETA for implementation of ""signing blob"" is before May - The ETA for Time-stamping support will be provided once Patrick and Junjie are back next week. - Security audit will be requested for features ""signing blob"" and ""time-stamping support"", we will start to book the audit once we have confident ETAs for these features. - Maintainers will review the target date of v1.2.0 release once we are aligned on ETAs for all the features and security audit. /cc: @priteshbandi @vaninrao10 @shizhMSFT @FeynmanZhou",notaryproject__notation___non-human.xlsx,notaryproject__notation_phase-3.xlsx,non-usability,Notation-release,,,,,,,0.0,False,False
+notaryproject/notation,1012,https://github.com/notaryproject/notation/issues/1012,2024-08-16 01:07:06+00:00,1,1,documentation,documentation,late,medium,time-stratum: late (temporal coverage); thread-size: medium (ensure short/medium/long threads); label-diversity: 'documentation' present,Clean up blob sign/verify specs in `v1.1.1`,,,,,,,,,,,,111,https://github.com/notaryproject/notation/issues/1012,Clean up blob sign/verify specs in `v1.1.1`,documentation,"Blob sign/verify related contents were not removed in `v1.1.1` spec files. Please send out a PR to `release-1.1` to fix it._x000D_
+_x000D_
+_Originally posted by @shizhMSFT in https://github.com/notaryproject/notation/pull/1011#discussion_r1718478282__x000D_
+            ",ghost: Closing as completed.,ghost: Closing as completed.,notaryproject__notation___non-human.xlsx,notaryproject__notation_phase-3.xlsx,usability,notation documentation; signing workflow; verification workflow,"Verification workflow, documentation, signing workflow",documentation improvements,,help and documentation,,,1.0,True,True
+notaryproject/notation,1239,https://github.com/notaryproject/notation/issues/1239,2025-03-26 03:00:21+00:00,0,0,enhancement,enhancement,late,short,time-stratum: late (temporal coverage); thread-size: short (ensure short/medium/long threads); label-diversity: 'enhancement' present,Delete the named store dir if empty after `notation cert delete`,,,,,,,,,,,,112,https://github.com/notaryproject/notation/issues/1239,Delete the named store dir if empty after `notation cert delete`,enhancement,"              After deleting the certificate, do we need to delete the trust store folder of the cert if it is empty? Otherwise, there will be many empty folders left there._x000D_
+_x000D_
+_Originally posted by @JeyJeyGao in https://github.com/notaryproject/notation/pull/1231#discussion_r2013297657__x000D_
+            ",,,notaryproject__notation___non-human.xlsx,notaryproject__notation_phase-3.xlsx,usability,notation core,core,user confusion,,"Error prevention, help and documentation",,,1.0,True,True
+openpubkey/openpubkey,4,https://github.com/openpubkey/openpubkey/issues/4,2023-09-20 13:14:15+00:00,0,0,,,early,short,time-stratum: early (temporal coverage); thread-size: short (ensure short/medium/long threads),Add pluggability for OIDC providers,,,,,,,,,,,,113,https://github.com/openpubkey/openpubkey/issues/4,Add pluggability for OIDC providers,,"Currently the OpkClient only supports Google as the OIDC provider:_x000D_
+_x000D_
+https://github.com/bastionzero/openpubkey/blob/2c4e61e93a73d3aee20a1a54e6933836400df618/parties/opkclient.go#L57-L67_x000D_
+_x000D_
+This should be pluggable so that we can create implementations for other OIDC providers too._x000D_
+_x000D_
+- [x] #5 _x000D_
+- [x] #6 ",,,openpubkey__openpubkey___non-human.xlsx,openpubkey__openpubkey.xlsx,usability,"Openpubkey Client, OIDC Authentication","CLI Client, Authentication","Authentication, missing feature",,7,,,1.0,True,True
+openpubkey/openpubkey,61,https://github.com/openpubkey/openpubkey/issues/61,2023-11-15 18:00:33+00:00,3,3,,,early,long,time-stratum: early (temporal coverage); thread-size: long (ensure short/medium/long threads),How do we deal with missing/non-unique `kid` on JWKS endpoint?,,,,,,,,,,,,114,https://github.com/openpubkey/openpubkey/issues/61,How do we deal with missing/non-unique `kid` on JWKS endpoint?,,"In implementing a ledger for OIDC public key, we've found that according to spec, the `kid` is only mandatory if there is more than one key on the JWKS endpoint, and only needs to be unique for each HTTP response on that endpoint. `kid` is obviously super important when trying to lookup the public key given an OPK. I was wondering if adding a hash of the OP public key to the OPK header would solve this? Any other ideas?","kipz: Relevant thread in slack: https://openssf.slack.com/archives/C060S7FHA3E/p1700039887986919 | EthanHeilman: My current thoughts are that we use the JTK ( JSON Web Key (JWK) Thumbprint) from [RFC-7638 JSON Web Key (JWK) Thumbprint](https://www.rfc-editor.org/rfc/rfc7638.html) standard to encode the OP's public key and than either include the JTK as an unprotected header or as part of the CIC protected header. I've gone back and forth several times. I am leaning toward always including the jkt as part of the OP unprotected header. My notes follow. ## Encodings and key name Before we look at where to put them. I want to examine some options for how to encode the hash of the OP public key: `JKT ( JSON Web Key (JWK) Thumbprint) from [RFC-7638 JSON Web Key (JWK) Thumbprint](https://www.rfc-editor.org/rfc/rfc7638.html) is standardizes how to hash and represent a JWK such as the ones used in OpenID Connect JWKS URIs. * While early versions of the drafts references a JOSE header field with the `jkt` this is not in the latest version of the standard and `jkt` is not registered at the IANA protocol registry for[ JOSE Headers (JSON Web Signature and Encryption Header Parameters) ](https://www.iana.org/assignments/jose/jose.xhtml#web-signature-encryption-header-parameters). * However `jkt` is registered in the IANA protocol registry for[ JWK (JSON Web Keys) under JWT Confirmation Methods](https://www.iana.org/assignments/jwt/jwt.xhtml#claims) as JWK SHA-256 Thumbprint. [RFC 9449 OAuth 2.0 Demonstrating Proof of Possession (DPoP)](https://www.rfc-editor.org/rfc/rfc9449.html#name-jwk-thumbprint-confirmation) shows `jkt` being used as a JWT claim. ```json { ""sub"":""someone@example.com"", ""iss"":""https://server.example.com"", ""nbf"":1562262611, ""exp"":1562266216, ""cnf"": { ""jkt"":""0ZcOCORZNYy-DWpqq30jZyJGHTN0d2HglBV3uiguA4I"" } } ``` JWS does have a JOSE header field specifically for that purpose called: (X.509 Certificate SHA-256 Thumbprint). [""x5t#S256""](https://datatracker.ietf.org/doc/html/rfc7515#section-4.1.8) (X.509 Certificate SHA-256 Thumbprint)) > The ""x5t#S256"" (X.509 certificate SHA-256 thumbprint) Header Parameter is a base64url-encoded SHA-256 thumbprint (a.k.a. digest) of the DER encoding of the X.509 certificate [RFC5280] corresponding to the key used to digitally sign the JWS. Note that certificate thumbprints are also sometimes known as certificate fingerprints. Use of this Header Parameter is OPTIONAL. However OPs may not always provide X.509 DER encodings of their public keys and I am concerned with introducing the complexity of serializing a JWK at an JWKS URI to a X.509 DER encoding. It is unclear what the canonical form of JWK to X.509 serialization is since x509s have fields that don't depend on the JWKs. I would suggest using the `jkt` key and encoding the OPs public key according to RFC-7638 JSON Web Key (JWK) Thumbprint. ## Where to put the hash? The nicest solution would be to put the OP (OpenID Provider) public key in the CIC commitment in the nonce that the user's client sends to the OP. Unfortunately that won't work because the user's client doesn't know what public key the OP will use to sign their ID Token until the OP returns the ID Token to the user. Let's look consider the various options: ### Store JKT in unsigned header of the OP **Pros:** 1. It is simple, and it works 2. Since it is unsigned, it can be added at any point by any party and parties that don't care about `jtk` can discard it without breaking signature verification. 3. The use of jkt here very clearly refers to the OP's public key. **Cons:** 1. It introduces unsigned headers which have repeatedly been misused by implementers and resulted in a number of security vulnerabilities. 2. Someone could prove the OP signature is incorrect by adding an bad jtk to the unprotected header. This could cause problems for systems that verify a signature, certificate once and then cache that outcome as they would conclude the PK Token is invalid and then reject it when it shows up without the bad jtk. 3. Parties can discard it without breaking signature verification. Potentially breaking long term verification without realizing it. 4. It would be nice to only have protected headers in PK Tokens so we never have to think about unsigned fields. ### Store JKT as an extended claim in Protected header of the CIC After getting the ID Token, the user's client would add the jtk to the protected header of the CIC. **Pros:** 1. Covered by the CIC signature. 2. This can be a standard part of PK Token creation to address issues where an misconfigured OP reuses a kid. **Cons:** 1. It break the rule the CIC commitment in the nonce is always the same as the protected header of the CIC and thus is always committed to in the nonce. This is not a technical limitation, but just would be an exception to how we treat the values in the CIC. 2. It isn't clear that jkt refers to the OPs public key. One might assume that since it is in CIC protected header next to the user's public key, that it is the thumbprint of the user's public key. ### Store JKT an additional signature in the PK Token After getting the ID Token, the user would sign and add two signatures to the PK Token. The first signature would be the CIC. The second signature would be the CICA (CIC After) which includes claims made after the ID Token is issued. This could be refreshed ID Tokens, signed select disclosures or any other claims a user's client may wish to make after the original ID Token issuance. **Pros:** 1. Works and is fairly clear. **Cons:** 1. Adds another signature, increasing the size of the PK Token. 2. Parties can discard it without breaking signature verification. Potentially breaking long term verification without realizing it. 3. Feels inconsistent to have this extra signature which only shows up because the OP doesn't have a kid. | jonnystoten: I'm in favor of ""Store JKT in unsigned header of the OP"". I don't think the cons are very strong for that option.","kipz: Relevant thread in slack: https://openssf.slack.com/archives/C060S7FHA3E/p1700039887986919
+EthanHeilman: My current thoughts are that we use the JTK ( JSON Web Key (JWK) Thumbprint) from [RFC-7638 JSON Web Key (JWK) Thumbprint](https://www.rfc-editor.org/rfc/rfc7638.html) standard to encode the OP's public key and than either include the JTK as an unprotected header or as part of the CIC protected header. I've gone back and forth several times. I am leaning toward always including the jkt as part of the OP unprotected header. My notes follow. ## Encodings and key name Before we look at where to put them. I want to examine some options for how to encode the hash of the OP public key: `JKT ( JSON Web Key (JWK) Thumbprint) from [RFC-7638 JSON Web Key (JWK) Thumbprint](https://www.rfc-editor.org/rfc/rfc7638.html) is standardizes how to hash and represent a JWK such as the ones used in OpenID Connect JWKS URIs. * While early versions of the drafts references a JOSE header field with the `jkt` this is not in the latest version of the standard and `jkt` is not registered at the IANA protocol registry for[ JOSE Headers (JSON Web Signature and Encryption Header Parameters) ](https://www.iana.org/assignments/jose/jose.xhtml#web-signature-encryption-header-parameters). * However `jkt` is registered in the IANA protocol registry for[ JWK (JSON Web Keys) under JWT Confirmation Methods](https://www.iana.org/assignments/jwt/jwt.xhtml#claims) as JWK SHA-256 Thumbprint. [RFC 9449 OAuth 2.0 Demonstrating Proof of Possession (DPoP)](https://www.rfc-editor.org/rfc/rfc9449.html#name-jwk-thumbprint-confirmation) shows `jkt` being used as a JWT claim. ```json { ""sub"":""someone@example.com"", ""iss"":""https://server.example.com"", ""nbf"":1562262611, ""exp"":1562266216, ""cnf"": { ""jkt"":""0ZcOCORZNYy-DWpqq30jZyJGHTN0d2HglBV3uiguA4I"" } } ``` JWS does have a JOSE header field specifically for that purpose called: (X.509 Certificate SHA-256 Thumbprint). [""x5t#S256""](https://datatracker.ietf.org/doc/html/rfc7515#section-4.1.8) (X.509 Certificate SHA-256 Thumbprint)) > The ""x5t#S256"" (X.509 certificate SHA-256 thumbprint) Header Parameter is a base64url-encoded SHA-256 thumbprint (a.k.a. digest) of the DER encoding of the X.509 certificate [RFC5280] corresponding to the key used to digitally sign the JWS. Note that certificate thumbprints are also sometimes known as certificate fingerprints. Use of this Header Parameter is OPTIONAL. However OPs may not always provide X.509 DER encodings of their public keys and I am concerned with introducing the complexity of serializing a JWK at an JWKS URI to a X.509 DER encoding. It is unclear what the canonical form of JWK to X.509 serialization is since x509s have fields that don't depend on the JWKs. I would suggest using the `jkt` key and encoding the OPs public key according to RFC-7638 JSON Web Key (JWK) Thumbprint. ## Where to put the hash? The nicest solution would be to put the OP (OpenID Provider) public key in the CIC commitment in the nonce that the user's client sends to the OP. Unfortunately that won't work because the user's client doesn't know what public key the OP will use to sign their ID Token until the OP returns the ID Token to the user. Let's look consider the various options: ### Store JKT in unsigned header of the OP **Pros:** 1. It is simple, and it works 2. Since it is unsigned, it can be added at any point by any party and parties that don't care about `jtk` can discard it without breaking signature verification. 3. The use of jkt here very clearly refers to the OP's public key. **Cons:** 1. It introduces unsigned headers which have repeatedly been misused by implementers and resulted in a number of security vulnerabilities. 2. Someone could prove the OP signature is incorrect by adding an bad jtk to the unprotected header. This could cause problems for systems that verify a signature, certificate once and then cache that outcome as they would conclude the PK Token is invalid and then reject it when it shows up without the bad jtk. 3. Parties can discard it without breaking signature verification. Potentially breaking long term verification without realizing it. 4. It would be nice to only have protected headers in PK Tokens so we never have to think about unsigned fields. ### Store JKT as an extended claim in Protected header of the CIC After getting the ID Token, the user's client would add the jtk to the protected header of the CIC. **Pros:** 1. Covered by the CIC signature. 2. This can be a standard part of PK Token creation to address issues where an misconfigured OP reuses a kid. **Cons:** 1. It break the rule the CIC commitment in the nonce is always the same as the protected header of the CIC and thus is always committed to in the nonce. This is not a technical limitation, but just would be an exception to how we treat the values in the CIC. 2. It isn't clear that jkt refers to the OPs public key. One might assume that since it is in CIC protected header next to the user's public key, that it is the thumbprint of the user's public key. ### Store JKT an additional signature in the PK Token After getting the ID Token, the user would sign and add two signatures to the PK Token. The first signature would be the CIC. The second signature would be the CICA (CIC After) which includes claims made after the ID Token is issued. This could be refreshed ID Tokens, signed select disclosures or any other claims a user's client may wish to make after the original ID Token issuance. **Pros:** 1. Works and is fairly clear. **Cons:** 1. Adds another signature, increasing the size of the PK Token. 2. Parties can discard it without breaking signature verification. Potentially breaking long term verification without realizing it. 3. Feels inconsistent to have this extra signature which only shows up because the OP doesn't have a kid.
+jonnystoten: I'm in favor of ""Store JKT in unsigned header of the OP"". I don't think the cons are very strong for that option.",openpubkey__openpubkey___non-human.xlsx,openpubkey__openpubkey.xlsx,usability,openpubkey,"API, Verification workflow, Signing workfloow, Authentication","Security, Authentication, User confusion/unclear documentation, configuration friction, Notification/logging",,"10, 9",,,1.0,True,True
+openpubkey/openpubkey,100,https://github.com/openpubkey/openpubkey/issues/100,2024-02-19 23:18:09+00:00,1,1,enhancement,enhancement,early,medium,time-stratum: early (temporal coverage); thread-size: medium (ensure short/medium/long threads); label-diversity: 'enhancement' present,Design for Gitlab CI support ,,,,,,,,,,,,115,https://github.com/openpubkey/openpubkey/issues/100,Design for Gitlab CI support ,enhancement,"As discussed in [Issue 26: Add GitLab CI signing example](https://github.com/openpubkey/openpubkey/issues/26) the approach used to sign software artifacts in github can not be used with gitlab because the gitlab workload can not specify the aud (audience) claim. Instead an aud claim is hardcoded in the workload configuration YAML. In this issue we propose the following design for gitlab and other settings where there is no client specified nonce or audience field._x000D_
+_x000D_
+## Generating a PK Token in Gitlab_x000D_
+_x000D_
+To generate a PK Token:_x000D_
+1. The workload creates a key pair, (upk, usk), and requests an ID Token from the OP (gitlab)._x000D_
+2. On receiving the ID Token from gitlab, the workload: generates the CIC (upk, alg, nonce), signs the CIC and ID token under the GQ signature._x000D_
+3. The workload then immediate deletes the OPs RSA signature on the ID Token._x000D_
+_x000D_
+The CIC is included as part of the GQ protected header of the ID Token. Thus, when the GQ signature signs the new protected header, it also commits to the CIC. As is currently done with GQ signatures, the original protected header of the ID Token is base64 encoded and included in the protected header signed by the GQ signature._x000D_
+_x000D_
+```_x000D_
+payload: {_x000D_
+  ""iss"": ""gitlab.example.com"",_x000D_
+  ""aud"": ""OPENPUBKEY-PKTOKEN:1234567890"",_x000D_
+  ..._x000D_
+} _x000D_
+signatures: [_x000D_
+  {""protected"": {""typ"": ""JWT"", ""alg"": ""GQ256"", ""kid"":  Base64(origProtected), _x000D_
+  ""cic"": SHA3_256(upk=alice-pubkey, alg=ES256, rz=crypto.Rand()),_x000D_
+  ""signature"": GQSIGN(RSA-sig, (payload, signatures[0].protected))`_x000D_
+  },_x000D_
+  {""protected"": {""upk"": alice-pubkey, ""alg"": ""EC256"", ""rz"": <rz>},_x000D_
+  ""signature"": <SIGN(alice-signkey, (payload, signatures[1].protected))>_x000D_
+  },_x000D_
+]_x000D_
+```_x000D_
+_x000D_
+## Verifying a Gitlab PK Token_x000D_
+_x000D_
+1. Check the aud claim is prefixed with ""OPENPUBKEY-PKTOKEN-"" and that the rest of the aud claim matches the expected aud claim._x000D_
+2. Check that CIC signature verifies,_x000D_
+3. Check that the CIC protected header values are committed to in the cic claim in protected header of GQ signature and that the GQ signature verifies for gitlabs public key._x000D_
+_x000D_
+## Security_x000D_
+_x000D_
+If configured correctly, this is approach offers the same security as the approach used with github. However this approach does introduce a  security risk of misconfiguration not present in the github case. If a GQ signature is not used and an attacker learns the ID Token, the attacker can compute the GQ signature from the RSA signature and insert their own public key. _x000D_
+_x000D_
+We mitigate the risk of this occurring by:_x000D_
+_x000D_
+* Requiring that PK Tokens that use the GQ signature to attest to the CIC must have ""OPENPUBKEY-PKTOKEN-"" prefixed in the audience and that they are not considered valid PK Tokens otherwise. This also prevents attacks in which a gitlab ID Token not intended for use as a PK Token is replayed as a PK Token. Note that this rule does not apply to other types of PK Tokens._x000D_
+* Ensuring that OpenPubkey clients always enforces the deletion of the RSA signature and only generates GQ signature PK Tokens for gitlab._x000D_
+_x000D_
+We argue that this sort of misconfiguration is very unlikely because outside of OpenPubkey, ID Tokens are treated as highly sensitive authentication secrets and within OpenPubkey we prevent this misconfiguration. Someone must configure their gitlab to put ""OPENPUBKEY-PKTOKEN-"" in the aud claim, not use the OpenPubkey protocol and then must expose the ID token to an attacker. We can not prevent people from writing their own insecure protocols._x000D_
+_x000D_
+## Cosigner (Optional)_x000D_
+We propose a security enhancement that adds a cosigner to remove the gitlab OP as a single point of compromise. It also provides additional protection against replay attacks, however we consider this protection to be unnecessary given the other safeguards above._x000D_
+_x000D_
+The aud claim can be postfixed by a commitment to a public key, `cpk`, whose corresponding signing key, `csk`, configured in gitlabs secret manager. This signing key can be used by the workload to sign the CIC in addition to the GQ signature._x000D_
+_x000D_
+Since this signing key's public key is committed to in the aud claim in the ID Token, an ID Token even with a aud claim prefixed with ""OPENPUBKEY-PKTOKEN-"" and the RSA signature is no longer sufficient to attest to the CIC._x000D_
+_x000D_
+```_x000D_
+payload: {_x000D_
+  ""iss"": ""gitlab.example.com"",_x000D_
+  ""aud"": ""OPENPUBKEY-PKTOKEN-CPK""+SHA3_256(cpk),_x000D_
+  ..._x000D_
+} _x000D_
+signatures: [_x000D_
+  {""protected"": {""typ"": ""JWT"", ""alg"": ""GQ256"", ""kid"":  Base64(origProtected), _x000D_
+  ""cic"": SHA3_256(upk=alice-pubkey, alg=ES256, rz=crypto.Rand()),_x000D_
+  ""signature"": GQSIGN(RSA-sig, (payload, signatures[0].protected))`_x000D_
+  },_x000D_
+  {""protected"": {""upk"": alice-pubkey, ""alg"": ""EC256"", ""rz"": <rz>},_x000D_
+  ""signature"": <SIGN(alice-signkey, (payload, signatures[1].protected))>_x000D_
+  },_x000D_
+  {""protected"": {""cospk"": cosigner-pubkey, ""alg"": ""EC256""_x000D_
+  ""cic"": SHA3_256(upk=alice-pubkey, alg=ES256, rz=crypto.Rand()),_x000D_
+  },_x000D_
+  ""signature"": <SIGN(cosigner-signkey, (payload, signatures[2].protected))>_x000D_
+  },_x000D_
+]_x000D_
+```_x000D_
+_x000D_
+Any OpenPubkey verifier configured to expect this audience claim can check this cosigner signature. This removes the gitlab OP as a single point of compromise. This approach can be adapted to JWKS URIs, but changing the aud claim to use be ""OPENPUBKEY-PKTOKEN-CPK""+Cosigner-JWKS-URI_x000D_
+_x000D_
+","EthanHeilman: Gitlab has been merged, largely using this design","EthanHeilman: Gitlab has been merged, largely using this design",openpubkey__openpubkey___non-human.xlsx,openpubkey__openpubkey.xlsx,usability,openpubkey-gitlab integration,"Signing workflow, verification workflow","Security issues, intergation issues",,7,,,1.0,True,True
+openpubkey/openpubkey,137,https://github.com/openpubkey/openpubkey/issues/137,2024-03-18 21:46:49+00:00,1,1,enhancement,enhancement,middle,medium,time-stratum: middle (temporal coverage); thread-size: medium (ensure short/medium/long threads); label-diversity: 'enhancement' present,Add support for verifying by JTK in VerifyProvider if not kid is found,,,,,,,,,,,,116,https://github.com/openpubkey/openpubkey/issues/137,Add support for verifying by JTK in VerifyProvider if not kid is found,enhancement,"Currently the VerifierProvider looks up the OP Public Key using the protected header of the ID Token. Not every OP provides a kid (Key ID). In such cases we need to look up the protected header from the JKT in the public, a.k.a, unprotected header.",EthanHeilman: Fixed by #132,EthanHeilman: Fixed by #132,openpubkey__openpubkey___non-human.xlsx,openpubkey__openpubkey.xlsx,usability,openpubkey-Verification,Verification Workflow,"Security, Missing feature",,"4,7",,,1.0,True,True
+openpubkey/openpubkey,157,https://github.com/openpubkey/openpubkey/issues/157,2024-03-26 23:49:20+00:00,0,0,enhancement,enhancement,middle,short,time-stratum: middle (temporal coverage); thread-size: short (ensure short/medium/long threads); label-diversity: 'enhancement' present,Investigate RSA SecurID OpenID Provider,,,,,,,,,,,,117,https://github.com/openpubkey/openpubkey/issues/157,Investigate RSA SecurID OpenID Provider,enhancement,"_x000D_
+## Experimental Support_x000D_
+Created an experimental branch here: https://github.com/EthanHeilman/openpubkey/tree/rsasecurid_x000D_
+You can test it by:_x000D_
+_x000D_
+## Testing_x000D_
+_x000D_
+1. `cd examples\rsa`_x000D_
+2. `go run .\example.go -- login`_x000D_
+3. Authenticate to the RSA Securid OP _x000D_
+_x000D_
+### Current issue_x000D_
+_x000D_
+The openpubkey client throws the error: ""failed to exchange token: oauth2: ""invalid_grant"" ""Invalid grant: Used token context for authorization code"""" This is a good sign because it means that we were given an auth code by the OP._x000D_
+_x000D_
+This is configured by the RSA SecurID admin code, which shows that the user successfully authenticated_x000D_
+![image](https://github.com/openpubkey/openpubkey/assets/274814/61f98a97-9623-4dbc-91f4-2d40a82eaf1a)_x000D_
+_x000D_
+_x000D_
+# RSA SecurID OP well-known config_x000D_
+_x000D_
+https://setryenv26.auth-demo.securid.com/sso/oidc/.well-known/openid-configuration_x000D_
+_x000D_
+```json_x000D_
+{_x000D_
+ ""authorization_endpoint"":""https://setryenv26.auth-demo.securid.com/sso/oidc/auth"",_x000D_
+ ""token_endpoint"":""https://setryenv26.auth-demo.securid.com/sso/oidc/token"",_x000D_
+ ""issuer"":""https://setryenv26.auth-demo.securid.com/sso/oidc"",_x000D_
+ ""jwks_uri"":""https://setryenv26.auth-demo.securid.com/oidc-fe/keys"",_x000D_
+ ""scopes_supported"":[_x000D_
+  ""openid""_x000D_
+ ],_x000D_
+ ""response_types_supported"":[_x000D_
+  ""code"",_x000D_
+  ""id_token"",_x000D_
+  ""id_token token"",_x000D_
+  ""code id_token"",_x000D_
+  ""code token"",_x000D_
+  ""code id_token token""_x000D_
+ ],_x000D_
+ ""response_modes_supported"":[_x000D_
+  ""fragment"",_x000D_
+  ""query"",_x000D_
+  ""form_post""_x000D_
+ ],_x000D_
+ ""grant_types_supported"":[_x000D_
+  ""authorization_code""_x000D_
+ ],_x000D_
+ ""code_challenge_methods_supported"":[_x000D_
+  ""S256""_x000D_
+ ],_x000D_
+ ""token_endpoint_auth_methods_supported"":[_x000D_
+  ""client_secret_basic"",_x000D_
+  ""client_secret_post"",_x000D_
+  ""client_secret_jwt"",_x000D_
+  ""private_key_jwt""_x000D_
+ ],_x000D_
+ ""request_parameter_supported"":true,_x000D_
+ ""subject_types_supported"":[_x000D_
+  ""public""_x000D_
+ ],_x000D_
+ ""userinfo_endpoint"":""https://setryenv26.auth-demo.securid.com/sso/oidc/userinfo"",_x000D_
+ ""id_token_signing_alg_values_supported"":[_x000D_
+  ""RS256"",_x000D_
+  ""RS384"",_x000D_
+  ""RS512"",_x000D_
+  ""PS256"",_x000D_
+  ""PS384"",_x000D_
+  ""PS512"",_x000D_
+  ""ES256"",_x000D_
+  ""ES256K"",_x000D_
+  ""ES384"",_x000D_
+  ""ES512""_x000D_
+ ],_x000D_
+ ""claim_types_supported"":[_x000D_
+  ""normal""_x000D_
+ ],_x000D_
+ ""claims_supported"":[_x000D_
+  ""iss"",_x000D_
+  ""sub"",_x000D_
+  ""aud"",_x000D_
+  ""exp"",_x000D_
+  ""iat"",_x000D_
+  ""nonce"",_x000D_
+  ""auth_time"",_x000D_
+  ""acr""_x000D_
+ ],_x000D_
+ ""claims_parameter_supported"":true,_x000D_
+ ""request_uri_parameter_supported"":false_x000D_
+}_x000D_
+```",,,openpubkey__openpubkey___non-human.xlsx,openpubkey__openpubkey.xlsx,non-usability,Openpubkey-OIDC Authentication,,,,,,,0.0,False,False
+openpubkey/openpubkey,226,https://github.com/openpubkey/openpubkey/issues/226,2025-01-31 02:00:34+00:00,0,0,enhancement,enhancement,late,short,time-stratum: late (temporal coverage); thread-size: short (ensure short/medium/long threads); label-diversity: 'enhancement' present,Singleton to manage user's browser window,,,,,,,,,,,,118,https://github.com/openpubkey/openpubkey/issues/226,Singleton to manage user's browser window,enhancement,"We share the same browser window we open on the user's browser across the OP chooser, the provider and the cosigner. This requires redirecting the browser window as needed for each of these using channels. This is results in hard to reason about code. Instead we should have a singleton that each of these can subscribe to and then use this manage redirects.
+
+- The browser window manager singleton could also manage a single localhost webserver for each of these and track subscriptions such that when there were no more references to it it could always shut down the server.
+- If implemented as a interface, we could easily mock this out. Currently the channels significantly increase the complex of unittests.",,,openpubkey__openpubkey___non-human.xlsx,openpubkey__openpubkey.xlsx,usability,openpubkey-web (chooser),Web Client,"Notification/Web Ui issues, Tedious Workflow",,8,,,1.0,True,True
+openpubkey/openpubkey,254,https://github.com/openpubkey/openpubkey/issues/254,2025-02-19 00:36:40+00:00,0,0,documentation,documentation,late,medium,time-stratum: late (temporal coverage); thread-size: medium (ensure short/medium/long threads); label-diversity: 'documentation' present,Create support/test matrix for opkssh,,,,,,,,,,,,119,https://github.com/openpubkey/openpubkey/issues/254,Create support/test matrix for opkssh,documentation,"Currently testing from windows (client) to ubuntu (server). 
+Certain commands assume ubuntu, for instance `opkssh install` uses `sudo systemctl restart ssh`. This will not work outside of systemd linux flavors like debian, ubuntu, redhat, centos. We should label which OSes we test against and which OSes we support.
+
+
+Something like the following Ubuntu 24.04.1 LTS
+
+## Server Support
+
+| OS               | Supported | Tested | Version Tested         | Possible Future Support
+| --------        | --------      | ------- | ---------------------- |----------- |
+| Ubuntu       | ✅             |  ✅     |  Ubuntu 24.04.1 LTS  | -  | 
+| Debian        | ✅             |  ❌     |  -                               | -  | 
+| Redhat        | ✅             |  ❌     |  -                               | -  | 
+| OSX            | ❌             |   ❌    |  -                               | Likely  | 
+| WSL            | ❌             |   ❌    |  -                               | Possible | 
+| Windows11 | ❌            |   ❌     |  -                              | Possible | 
+| OS/2 WARP | ❌            |   ❌     |  -                              | Unlikely |
+
+| App                             | Supported | Tested | Version Tested                                                                  | Possible Future Support
+| --------                        | --------      | ------- | ----------------------                                                          |----------- |
+| OpenSSH (Linux)        | ✅             |  ✅     |  OpenSSH_9.6p1 Ubuntu-3ubuntu13.8, OpenSSL 3.0.13  | - | 
+| OpenSSH (OSX)          | ✅             |  ❌     |                                                                                           | likely | 
+| OpenSSH (windows)   | ✅             |  ❌     |                                                                                           | likely | 
+
+
+## Client Support
+
+| OS               | Supported | Tested | Version Tested         | Possible Future Support
+| --------        | --------      | ------- | ---------------------- |----------- |
+| Ubuntu       | ✅             |  ✅     |  Ubuntu 24.04.1 LTS  | -  | 
+| Debian        | ✅             |  ❌     |  -                               | -  | 
+| Redhat        | ✅             |  ❌     |  -                               | -  | 
+| OSX            | ✅           |   ❌    |  -                               | -   | 
+| WSL            | ❌             |   ❌    |  -                               | Possible | 
+| Windows11 | ✅            |   ✅     |  -                              | Likely   | 
+| OS/2 WARP | ❌            |   ❌     |  -                              | Unlikely |
+
+## Application support
+
+| App                             | Supported | Tested | Version Tested                                                                  | Possible Future Support
+| --------                        | --------      | ------- | ----------------------                                                          |----------- |
+| OpenSSH (ubuntu)     | ✅             |  ✅     |  OpenSSH_9.6p1 Ubuntu-3ubuntu13.8, OpenSSL 3.0.13  | - | 
+| OpenSSH (OSX)          | ✅             |  ❌     |  OpenSSH_9.8p1 LibreSSL 3.3.6                                        | - | 
+| OpenSSH (windows)   | ✅             |  ✅     |  OpenSSH_for_Windows_9.5p1, LibreSSL 3.8.2                 | - | 
+| Putty                           | ❌             |  ❌     |  -                                                                                        | possible  | ",,,openpubkey__openpubkey___non-human.xlsx,openpubkey__openpubkey.xlsx,usability,Openpubkey CLI,CLI Client,Unclear Documentation,,"10,4",,,1.0,True,True
+sigstore/cosign,1048,https://github.com/sigstore/cosign/issues/1048,2021-11-14 01:55:50+00:00,0,0,enhancement,enhancement,early,short,time-stratum: early (temporal coverage); thread-size: short (ensure short/medium/long threads); label-diversity: 'enhancement' present,Machine-Readable output for a few cosign subcommands,,,,,,,,,,,,120,https://github.com/sigstore/cosign/issues/1048,Machine-Readable output for a few cosign subcommands,enhancement,"**Description**_x000D_
+_x000D_
+Under certain circumstances it might make sense to provide machine-readable output for a few cosign subcommands._x000D_
+It could be useful to provide information about the used certificate when verifying a blob or OCI image in JSON for further consumption._x000D_
+_x000D_
+I am especially thinking about the Issuer and the URI fields in the certificate. These two fields could establish some sort of trust for end users._x000D_
+_x000D_
+Let's assume we have a Linux package maintainer. A project X builds source tarballs with Github Actions and signs them. These source tarballs are then released on their website and on Github._x000D_
+_x000D_
+_x000D_
+The Linux package maintainer only checks the website, downloads a tampered source tarball and valid signature, but when checking the issuer and the URI field the Linux maintainer would know that something is wrong._x000D_
+_x000D_
+_x000D_
+This not real cosign output depicts the problem:_x000D_
+_x000D_
+Project X located at github.com/projectX/projectX creates a new tarball and signature. The related certificate has the following URI and Issuer:_x000D_
+```_x000D_
+URI: https://github.com/ProjectX/ProjectX/.github/workflows/goreleaser.yml@refs/tags/v0.3.1_x000D_
+Issuer:  https://token.actions.githubusercontent.com_x000D_
+```_x000D_
+_x000D_
+_x000D_
+Later, a malicious actor hacks into Project X's Webservice and uploads their own malicious version of the service with a valid signature:_x000D_
+```_x000D_
+URI: https://github.com/MaliciousActor/ProjectX/.github/workflows/goreleaser.yml@refs/tags/v0.3.1_x000D_
+Issuer:  https://token.actions.githubusercontent.com_x000D_
+```_x000D_
+_x000D_
+_x000D_
+The Linux maintainer could check for the URI and the Issuer and if the URI does not match https://github.com/ProjectX/ProjectX/_x000D_
+the Linux maintainer would be alerted in the package build process._x000D_
+_x000D_
+For this feature it would be nice to have JSON readable output from cosign. I thought about something like this:_x000D_
+```_x000D_
+$ cosign verify-blob /tmp/PROJECTX.tar.gz --signature /tmp/PROJECTX.tar.gz.sig --format json_x000D_
+```_x000D_
+```json_x000D_
+{_x000D_
+    ""CertificateTrusted"": ""True"",_x000D_
+    ""Email"": [],_x000D_
+    ""URI"": [""https://github.com/PROJECTX/PROJECTX/.github/workflows/goreleaser.yml@refs/tags/v0.3.1""]_x000D_
+    ""Issuer"": ""https://token.actions.githubusercontent.com"",_x000D_
+    ""Verified"": ""True""_x000D_
+    ""TLog"": {_x000D_
+        ""UUID"": ""228527476f82c59641e27b8fb9b32f5fadbe47cf42c544ea97dc798490c4c14e"",_x000D_
+        ""Index"": 853327,_x000D_
+    }_x000D_
+}_x000D_
+```_x000D_
+_x000D_
+More Information we could embed into the JSON:_x000D_
+_x000D_
+* Fulcio Root CA ID?_x000D_
+* Rekor Instance URI?_x000D_
+",,,sigstore__cosign___non-human.xlsx,sigstore__cosign.xlsx,usability,cosign CLI,,,,,,,1.0,False,True
+sigstore/cosign,4098,https://github.com/sigstore/cosign/issues/4098,2025-03-04 12:43:56+00:00,4,2,bug,bug,late,long,time-stratum: late (temporal coverage); thread-size: long (ensure short/medium/long threads); label-diversity: 'bug' present,cosign doesn't correctly respect individual TSA certificate chains,,,,,,,,,,,,158,https://github.com/sigstore/cosign/issues/4098,cosign doesn't correctly respect individual TSA certificate chains,bug,"**Description**
+
+I have a private Sigstore instance, in which I attempted to rotate the TSA certificate chain. When trying to verify any blob/image after the rotation, I get the following error:
+
+```
+$ cosign --verbose verify-blob --certificate-identity=kilgore@kilgore.trout --bundle signed.bundle to-sign --rfc3161-timestamp=timestamp.txt --use-signed-timestamps
+Error: unable to load TSA certificates: TSA certificate chain must contain exactly one leaf certificate
+main.go:74: error during command execution: unable to load TSA certificates: TSA certificate chain must contain exactly one leaf certificate
+```
+
+This is because the `GetTSACerts` function in `pkg/cosign/tsa.go` only expects to parse out a single certificate chain, because of the assumption that these individual chains are provided as individual TUF targets.
+
+However in order to be able to properly rotate the TSA certificate chain, one needs to provide the whole TSA certificate chain as a single TUF target (which is possible and I do it). However, when I attempt to introduce a new TSA chain as a new TUF target and keeping the old one as ""Expired"", I get the above error when verifying any artifact.
+
+I think the `GetTSACerts` function should behave more like `GetRekorPubs`, which returns multiple keys and all of them are considered valid for verification.
+
+I think this will actually work fine in the future with https://github.com/sigstore/cosign/pull/3844 because of how the [timestamp verification function from sigstore-go](https://github.com/sigstore/sigstore-go/blob/main/pkg/verify/tsa.go#L87) works. I can submit a PR to fix this if you think it's still worth it before https://github.com/sigstore/cosign/pull/3844 gets merged - I think it's worth because of private Sigstore deployments that might be slower to upgrade.
+
+**Version**
+
+2.4.1, but applies to latest main branch as well AFAICS","haydentherapper: A fix would be welcome, though if it’s a significant change, feel free to not and we will fix it indirectly with Sigstore-go. | bkabrda: @haydentherapper I see two ways to fix this basically: * Either changing `GetTSACerts` to return multiple cert chains (easier but would break the API because it's a public function, so probably not great) * Or introducing a new function, e.g. `GetAllTSACertChains` that would return all valid found TSA certificate chains and using that throughout the codebase; AIUI all of this code will get removed eventually after we fully move to `trusted_root.json`, so adding a small new function temporarily shouldn't be much of a problem. I think going for the second option makes more sense (a little more code required, but not breaking API), WDYT? | haydentherapper: We don't offer any gurantees around API breakages for Cosign so making a breaking change would be fine. I'm OK with either approach.","haydentherapper: A fix would be welcome, though if it’s a significant change, feel free to not and we will fix it indirectly with Sigstore-go.
+bkabrda: @haydentherapper I see two ways to fix this basically: * Either changing `GetTSACerts` to return multiple cert chains (easier but would break the API because it's a public function, so probably not great) * Or introducing a new function, e.g. `GetAllTSACertChains` that would return all valid found TSA certificate chains and using that throughout the codebase; AIUI all of this code will get removed eventually after we fully move to `trusted_root.json`, so adding a small new function temporarily shouldn't be much of a problem. I think going for the second option makes more sense (a little more code required, but not breaking API), WDYT?
+haydentherapper: We don't offer any gurantees around API breakages for Cosign so making a breaking change would be fine. I'm OK with either approach.
+bkabrda: As I mentioned in https://github.com/sigstore/cosign/pull/4174, I don't see a way to fix this without a regression; because #3844 was merged, I no longer need this so much, so I'm closing this issue - feel free to reopen if anyone wants to try to address it.",sigstore__cosign___non-human.xlsx,sigstore__cosign.xlsx,usability,"cosign - Private installation, verification workflow",verification workflow,"User confusion, unexpected behaviour",,"4, 9",,,1.0,True,True
+sigstore/cosign,4204,https://github.com/sigstore/cosign/issues/4204,2025-05-14 21:41:14+00:00,1,1,enhancement,enhancement,late,medium,time-stratum: late (temporal coverage); thread-size: medium (ensure short/medium/long threads); label-diversity: 'enhancement' present,cosign tree support for OCI 1.1 Referrers,,,,,,,,,,,,159,https://github.com/sigstore/cosign/issues/4204,cosign tree support for OCI 1.1 Referrers,enhancement,"**Description**
+
+In previous changes, support for the OCI Referrers API was added:
+
+* https://github.com/sigstore/cosign/pull/3889 for `attest` and `verify-attestation`.
+* https://github.com/sigstore/cosign/pull/2684 for `sign`, `attach`, and `download`.
+
+
+But, support was never added to `cosign tree`. If I sign, attach, or attest to a container image, those results don't appear in the results of `cosign tree`.
+
+I was thinking that if we put this behind a `cosign tree --experimental-oci11` flag, then it would make sense for cosign tree to display *all artifacts found*, both those located by the convention implemented by `cosign triangulate` and those located by the OCI 1.1 Referrers API.
+
+Something like this:
+
+```
+❯ ./cosign tree --experimental-oci11 quay.io/rbean/tree-scsa:example
+📦 Supply Chain Security Related artifacts for an image: quay.io/rbean/tree-scsa:example
+└── 🔐 Signatures for an image tag: quay.io/rbean/tree-scsa:sha256-b3454025ce78fa93aba879b2824a06a59e2b8c5005b2a4286368433cd0f41cde.sig
+   └── 🍒 sha256:ef4e39921eeb670ea453be070877d0fef225a13f97a9f9bf107d4d04d4c0dba6
+└── 💾 Attestations for an image tag: quay.io/rbean/tree-scsa:sha256-b3454025ce78fa93aba879b2824a06a59e2b8c5005b2a4286368433cd0f41cde.att
+   ├── 🍒 sha256:105da535ba7425024b03685048c33a458b3147315458fc1291479bae34f34997
+   └── 🍒 sha256:98c6b2784ffe8a38cc4533d9a5d845cfe4ce72c2aa7e7f00a0682718d0259472
+└── 🔗 application/vnd.dev.sigstore.bundle.v0.3+json artifacts via OCI referrer: quay.io/rbean/tree-scsa@sha256:01ca3469ae921632f7bd965cb34f9c10f07a723ea68223008871e86052bcfec8
+   └── 🍒 sha256:a336d1bfe93e60ae8a5cbbe546663517719d8f3ce1e628ffc0196c0cdf658314
+```
+
+(I already prepared a patch for this at https://github.com/sigstore/cosign/pull/4205, but I was stopped by the pull request template which suggested that an issue should be on file with some time to discuss the right approach first.)","lefosg: I was about to make an issue about that. Indeed, if you sign an image using the oci 1.1 parameter, you cannot even verify the image. In my gitlab ci yaml file i have this line which signs a container image: - COSIGN_EXPERIMENTAL=1 ./cosign sign --registry-referrers-mode=oci-1-1 ""$CI_REGISTRY_IMAGE:1.0.5"" - ... - COSIGN_EXPERIMENTAL=1 ./cosign attest -y --type spdxjson --predicate image.sbom.json ""$CI_REGISTRY_IMAGE:1.0.5"" Signature and sbom attestation appear in the tags. But `cosign verify` outputs Error: no signatures found. The sbom attestation is listed in the `cosign tree` command.","lefosg: I was about to make an issue about that. Indeed, if you sign an image using the oci 1.1 parameter, you cannot even verify the image. In my gitlab ci yaml file i have this line which signs a container image: - COSIGN_EXPERIMENTAL=1 ./cosign sign --registry-referrers-mode=oci-1-1 ""$CI_REGISTRY_IMAGE:1.0.5"" - ... - COSIGN_EXPERIMENTAL=1 ./cosign attest -y --type spdxjson --predicate image.sbom.json ""$CI_REGISTRY_IMAGE:1.0.5"" Signature and sbom attestation appear in the tags. But `cosign verify` outputs Error: no signatures found. The sbom attestation is listed in the `cosign tree` command.",sigstore__cosign___non-human.xlsx,sigstore__cosign.xlsx,usability,cosign - CLI,"CLI client, API, Verification workflow","notification/logging/web ui issues, integration issues, missing feature",,"4,1,6,8, 7",,,1.0,True,True
+sigstore/fulcio,238,https://github.com/sigstore/fulcio/issues/238,2021-11-10 23:51:00+00:00,3,2,question,question,early,medium,time-stratum: early (temporal coverage); thread-size: medium (ensure short/medium/long threads); label-diversity: 'question' present,Malformed collection name: 'caPools/certificateAuthorities/certificates',,,,,,,,,,,,160,https://github.com/sigstore/fulcio/issues/238,Malformed collection name: 'caPools/certificateAuthorities/certificates',question,"**Question**_x000D_
+Hi, i started the fulcio server via the docker-compose file. I create a CA at google but i get following error message:_x000D_
+_x000D_
+```bash_x000D_
+desc = Malformed collection name: 'caPools/certificateAuthorities/certificates'_x000D_
+```_x000D_
+_x000D_
+config looks like this:_x000D_
+_x000D_
+```yaml_x000D_
+.._x000D_
+      ""--ca=googleca"",_x000D_
+      ""--gcp_private_ca_parent=projects/minectl-fn/locations/europe-west3/caPools/dirien/certificateAuthorities/20211110-nmq-zqi"",_x000D_
+      ""--ct-log-url=http://ct_server:6962/test"",_x000D_
+      # Uncomment this for production logging_x000D_
+..._x000D_
+```_x000D_
+_x000D_
+Any hints, of what I am doing wrong? The ~/.config/gcloud is also mapped. Actually everything is set up as described in the DEVELOPMENT.md_x000D_
+_x000D_
+Thanks for your feedback.","haydentherapper: Hey @dirien, this is because Fulcio previously didn't support the GCP CA Service V1 API, it only supported the beta API. With https://github.com/sigstore/fulcio/pull/218, there is now support for the V1 API. You'll need to set `--gcp_private_ca_version`. | dirien: kk @haydentherapper thanks for the feedback! | haydentherapper: We also removed this flag recently since we dropped support for the GCP CA Service beta API.","haydentherapper: Hey @dirien, this is because Fulcio previously didn't support the GCP CA Service V1 API, it only supported the beta API. With https://github.com/sigstore/fulcio/pull/218, there is now support for the V1 API. You'll need to set `--gcp_private_ca_version`.
+dirien: kk @haydentherapper thanks for the feedback!
+haydentherapper: We also removed this flag recently since we dropped support for the GCP CA Service beta API.",sigstore__fulcio___non-human.xlsx,sigstore__fulcio.xlsx,usability,Fulcio,core,"user confusion, integration issues, unexpected behaviour",,,,,1.0,True,True
+sigstore/fulcio,243,https://github.com/sigstore/fulcio/issues/243,2021-11-18 13:51:30+00:00,21,11,enhancement,enhancement,early,long,time-stratum: early (temporal coverage); thread-size: long (ensure short/medium/long threads); label-diversity: 'enhancement' present,Add support for GitLab tokens,,,,,,,,,,,,161,https://github.com/sigstore/fulcio/issues/243,Add support for GitLab tokens,enhancement,"It looks like GitLab offers JWT tokens as well to CI jobs:_x000D_
+_x000D_
+https://docs.gitlab.com/ee/ci/examples/authenticating-with-hashicorp-vault/#how-it-works_x000D_
+_x000D_
+They're available as the `CI_JOB_JWT` environment variable, and the endpoint is `https://gitlab.example.com/-/jwks`._x000D_
+_x000D_
+It sounds like they don't support the audience field, which isn't great but should still be workable.","dlorenc: cc @colek42 | colek42: It looks like this is a premium feature for GitLab as well. | dlorenc: Hmm, over here it says it might be in all job tiers: https://docs.gitlab.com/ee/ci/secrets/","dlorenc: cc @colek42
+colek42: It looks like this is a premium feature for GitLab as well.
+dlorenc: Hmm, over here it says it might be in all job tiers: https://docs.gitlab.com/ee/ci/secrets/
+mattmoor: ``` curl https://gitlab.com/.well-known/openid-configuration ``` ```json { ""issuer"": ""https://gitlab.com"", ""authorization_endpoint"": ""https://gitlab.com/oauth/authorize"", ""token_endpoint"": ""https://gitlab.com/oauth/token"", ""revocation_endpoint"": ""https://gitlab.com/oauth/revoke"", ""introspection_endpoint"": ""https://gitlab.com/oauth/introspect"", ""userinfo_endpoint"": ""https://gitlab.com/oauth/userinfo"", ""jwks_uri"": ""https://gitlab.com/oauth/discovery/keys"", ""scopes_supported"": [ ""api"", ""read_user"", ""read_api"", ""read_repository"", ""write_repository"", ""read_registry"", ""write_registry"", ""sudo"", ""openid"", ""profile"", ""email"" ], ""response_types_supported"": [ ""code"", ""token"" ], ""response_modes_supported"": [ ""query"", ""fragment"" ], ""grant_types_supported"": [ ""authorization_code"", ""implicit"", ""password"", ""client_credentials"", ""refresh_token"" ], ""token_endpoint_auth_methods_supported"": [ ""client_secret_basic"", ""client_secret_post"" ], ""subject_types_supported"": [ ""public"" ], ""id_token_signing_alg_values_supported"": [ ""RS256"" ], ""claim_types_supported"": [ ""normal"" ], ""claims_supported"": [ ""iss"", ""sub"", ""aud"", ""exp"", ""iat"", ""sub_legacy"", ""name"", ""nickname"", ""email"", ""email_verified"", ""website"", ""profile"", ""picture"", ""groups"", ""groups_direct"" ] } ```
+mattmoor: It looks like it doesn't support configuring `aud` (e.g. to `sigstore`)
+dlorenc: > It looks like it doesn't support configuring `aud` (e.g. to `sigstore`) Yep, I think it's up to us to decide if that's too problematic to add support. We can use the gitlab audience here if we want to.
+mattmoor: That feels like a slippery slope. Once we allow it, it's hard to take back and ~every other piece of Vault OIDC documentation I've seen uses `aud: vault`. Github as precedent might help here.
+valdisrigdon: GitLab 14.6 looks to be shipping with an updated token -- `CI_JOB_JWT_V2`. See https://gitlab.com/gitlab-org/gitlab/-/merge_requests/72555. It doesn't look like `aud` is configurable though.
+haydentherapper: Following along, it looks like customizable audiences isn't coming in 15.0 - https://gitlab.com/groups/gitlab-org/-/epics/7335
+Brcrwilliams: Hi 👋 GitLab team member here. We're working on making the `aud` claim configurable via https://gitlab.com/gitlab-org/gitlab/-/issues/356986. Currently, this is scheduled for 15.2 which releases on June 22, but this is subject to change. I recommend following the issue for updates on progress.
+dlorenc: Amazing news!
+olearycrew: @dlorenc another GitLab team member here - this is a really exciting project so I'll be tracking as well as I'd love to get this working and show it off to the community. :smile:
+nsmith5: @Brcrwilliams and @olearycrew do you have some initial ideas for which claims from your OIDC token you might want to map into certificate extensions? You can see the claims that are mapped from Github Actions tokens here: https://github.com/sigstore/fulcio/blob/main/docs/oid-info.md Mapping these OIDC claims to x509 extensions allows folks to write meaningful policy like > only run containers signed by the Fulcio with the Gitlab issuer and from project ""foo/*"" Once we have that solidified, setting up Fulcio support for Gitlab tokens will be super straight forward and we'll all be doing keyless signing in Gitlab in no time :D
+Brcrwilliams: @nsmith5 Currently we provide several claims in this JWT which are documented under [Connect to Cloud Services](https://docs.gitlab.com/ee/ci/cloud_services/#how-it-works). I think these ones would be useful for policies: - `namespace_id` - `namespace_path` - `project_id` - `project_path` These would allow you to assert that the image was signed by a specific project or organization (A namespace is a group).
+haydentherapper: To be in sync with GitHub Actions-bound certificates, we'd also want to include information about the CI workflow that was run. I believe that's `pipeline_id` or `pipeline_source`.
+woodruffw: Just making sure things are linked: is #983 a closer for this?
+haydentherapper: Yes, the blocker was custom audience.
+haydentherapper: Actively we are discussing what is the minimum set of claims needed to support provenance, not just identity, but I would track this separately.
+Edward13ruf: I've just created https://gitlab.com/gitlab-org/gitlab/-/issues/393134 on GitLab to cover off what I see as the missing piece of this. The CICD element is important, but there's also the tokens generated by the /jwt/auth endpoint which need updating to be flexible and support fulcio. This current set of work would only allow me to talk to Fulcio within CICD and not from with external platforms, eg. Gitpod. Unless there's a good way to use Fulcio with something like OAuth2 Proxy, I'm a bit stuck on making it useful for my teams wanting ephemeral tokens automatically and outside of CICD. For context, if I were able to do this then it would enable me to use an access token provided by Gitpod to grab a JWT for fulcio without ever needing to do browser auth. See https://github.com/gitpod-io/gitpod/issues/666#issuecomment-1442486562
+klausenbusk: Is this expected to work with self-hosted gitlab instances? (assuming a new entry is added to https://github.com/sigstore/fulcio/tree/main/federation)
+klausenbusk: I have created a PR as it seems to work in my testing: https://github.com/sigstore/fulcio/pull/1214.",sigstore__fulcio___non-human.xlsx,sigstore__fulcio.xlsx,usability,"Authentication, CI/CD","Authentication, CI/CD","Integration with external component, missing feature/feature request",,"4,7",,,1.0,True,True
+sigstore/fulcio,489,https://github.com/sigstore/fulcio/issues/489,2022-03-28 22:46:59+00:00,1,1,enhancement,enhancement,early,short,time-stratum: early (temporal coverage); thread-size: short (ensure short/medium/long threads); label-diversity: 'enhancement' present,Fulcio as an intermediate CA,,,,,,,,,,,,162,https://github.com/sigstore/fulcio/issues/489,Fulcio as an intermediate CA,enhancement,"[Design doc](https://docs.google.com/document/d/1QLTMgjX7n74PyNpp3SIxsH7vbak8k-EoylttR25gBXM/edit#heading=h.dgwm7wkem51s)_x000D_
+_x000D_
+From the work to support embedded SCTs, coupled with a desire to be able to scale beyond 25 QPS, I've written up a doc on the work to reconfigure the production instance of Fulcio as an intermediate CA._x000D_
+_x000D_
+tl;dr - An in-memory signing key is generated on each server initialization. Fulcio requests an intermediate CA certificate from the managed GCP root, periodically refreshing it. This work involves adding a new CA implementation, which would be a combination of the ephemeral and file CAs._x000D_
+_x000D_
+This has many benefits:_x000D_
+* No outbound calls to create and sign certificates_x000D_
+* Ability to scale up QPS significantly_x000D_
+* Minimizes the risk of signing key leakage_x000D_
+* Automates the process of fetching intermediate CA certs (less operational overhead)","k4leung4: I found a similar issue, https://github.com/sigstore/fulcio/issues/28, should we close that one?","k4leung4: I found a similar issue, https://github.com/sigstore/fulcio/issues/28, should we close that one?",sigstore__fulcio___non-human.xlsx,sigstore__fulcio.xlsx,usability,,signing workflow,"Integration issues, Security concerns, missing feature/enhancement, performance, tedious workflows",,"6, 7",,,1.0,True,True
+sigstore/fulcio,766,https://github.com/sigstore/fulcio/issues/766,2022-08-26 18:26:39+00:00,2,2,"enhancement, ga-blocker",enhancement,middle,medium,time-stratum: middle (temporal coverage); thread-size: medium (ensure short/medium/long threads); label-diversity: 'enhancement' present,Fulcio 1.0,,,,,,,,,,,,163,https://github.com/sigstore/fulcio/issues/766,Fulcio 1.0,"enhancement, ga-blocker","- [x] https://github.com/sigstore/fulcio/issues/716_x000D_
+- [x] https://github.com/sigstore/fulcio/issues/589",haydentherapper: Adding https://github.com/sigstore/fulcio/issues/589 which is also tracked in public good instance | priyawadhwa: this is done and rolled out to prod!,"haydentherapper: Adding https://github.com/sigstore/fulcio/issues/589 which is also tracked in public good instance
+priyawadhwa: this is done and rolled out to prod!",sigstore__fulcio___non-human.xlsx,sigstore__fulcio.xlsx,non-usability,,,,,,,,0.0,False,False
+sigstore/fulcio,1087,https://github.com/sigstore/fulcio/issues/1087,2023-03-29 18:29:27+00:00,0,0,enhancement,enhancement,middle,short,time-stratum: middle (temporal coverage); thread-size: short (ensure short/medium/long threads); label-diversity: 'enhancement' present,Add support for enterprise-unique GitHub Actions OIDC issuer URL,,,,,,,,,,,,164,https://github.com/sigstore/fulcio/issues/1087,Add support for enterprise-unique GitHub Actions OIDC issuer URL,enhancement,"**Description**_x000D_
+_x000D_
+GitHub Actions supports enterprise-unique OIDC issuer URLs for security hardening (specifically, `https://token.actions.githubusercontent.com/<enterprise_slug>`). However, `fulcio` only supports the standard GitHub Actions OIDC issuer URL (`https://token.actions.githubusercontent.com`)._x000D_
+_x000D_
+More information:_x000D_
+_x000D_
+* https://docs.github.com/en/enterprise-cloud@latest/actions/deployment/security-hardening-your-deployments/about-security-hardening-with-openid-connect#switching-to-a-unique-token-url",,,sigstore__fulcio___non-human.xlsx,sigstore__fulcio.xlsx,usability,,"Authentication, CI/CD","Integration issues, security concerns, missing feature/enhancement",,7,,,1.0,True,True
+sigstore/fulcio,1132,https://github.com/sigstore/fulcio/issues/1132,2023-04-23 20:26:28+00:00,4,2,enhancement,enhancement,middle,long,time-stratum: middle (temporal coverage); thread-size: long (ensure short/medium/long threads); label-diversity: 'enhancement' present,Proposal: Combine the individual OIDC extensions into a single extension,,,,,,,,,,,,165,https://github.com/sigstore/fulcio/issues/1132,Proposal: Combine the individual OIDC extensions into a single extension,enhancement,"This is a breakout of the unrelated discussion/proposal in #981, where this was originally brought up incidentally._x000D_
+_x000D_
+## Problem statement_x000D_
+_x000D_
+At the moment, Fulcio-issued certificates contain a bunch of X.509 extensions, roughly one per claim in the corresponding OIDC credential/identity. For example, the extension with OID `1.3.6.1.4.1.57264.1.14` is expected to hold a value corresponding to the ""Source Repository Ref,"" which will be the `git` ref for things like GitHub Actions._x000D_
+_x000D_
+This works perfectly fine, and corresponds roughly to how other PKI ecosystems use X.509 extensions. At the same time, it has a few deficiencies:_x000D_
+_x000D_
+### Strict compliance_x000D_
+_x000D_
+X.509 extensions are defined by RFC 5280 as:_x000D_
+_x000D_
+```asn1_x000D_
+   Extension  ::=  SEQUENCE  {_x000D_
+        extnID      OBJECT IDENTIFIER,_x000D_
+        critical    BOOLEAN DEFAULT FALSE,_x000D_
+        extnValue   OCTET STRING_x000D_
+                    -- contains the DER encoding of an ASN.1 value_x000D_
+                    -- corresponding to the extension type identified_x000D_
+                    -- by extnID_x000D_
+        }_x000D_
+```_x000D_
+_x000D_
+Critically, `extnValue` is required to be a nested DER encoding, which most of the OIDC claims are not (instead, they embed the raw value of the claim as bytes)._x000D_
+_x000D_
+The three solutions here are to:_x000D_
+_x000D_
+1. Define the problem away by defining our own ASN.1 structure (see proposal below), in which OIDC claim values can be raw rather than wrapped in DER;_x000D_
+2. Go through a migration period, where existing OIDC claim extensions are duplicated with correctly encoded ones;_x000D_
+3. Both of the above._x000D_
+  _x000D_
+### Space efficiency_x000D_
+_x000D_
+Encoding each OIDC claim as its own X.509 extension is not space efficient, leading to larger certificate encodings (and thus larger transparency log entries) than strictly necessary. _x000D_
+_x000D_
+In particular:_x000D_
+_x000D_
+1. Separate extensions means a linear overhead of N `SEQUENCE` payloads;_x000D_
+2. Correctly encoded extensions require a linear overhead of N nested DER payloads;_x000D_
+3. Each migration away from old claim encodings requires a linear overhead of claim values with new OIDs._x000D_
+_x000D_
+### Domain separation_x000D_
+_x000D_
+At the moment, the OIDC claim extensions are the only custom claims added by Fulcio. They can be considered ""authenticated,"" in the sense that they are not only bound to the certificate itself but also derived directly from the original identity token._x000D_
+_x000D_
+In the future, Fulcio may choose to introduce additional extensions, ones that wouldn't be considered ""authenticated"" in the same way. Introducing those into the same ""namespace"" (of extensions) as the OIDC claims could potentially result in user and developer confusion about the provenance and trustworthiness of their extension values._x000D_
+_x000D_
+See also #1131 for some motivation for this part, although I think the notion of ""domain separation"" in this context is independently valuable._x000D_
+_x000D_
+## Proposed solution_x000D_
+_x000D_
+My proposed solution is to replace N X.509 extensions for N OIDC claims with a single X.509 extension. _x000D_
+_x000D_
+Two proposed structures for this extension:_x000D_
+_x000D_
+Proposal 1:_x000D_
+_x000D_
+```asn1_x000D_
+Claims ::= SEQUENCE OF Claim_x000D_
+_x000D_
+Claim ::= SEQUENCE {_x000D_
+  id OBJECT IDENTIFIER,_x000D_
+  value ANY DEFINED BY id,_x000D_
+}_x000D_
+```_x000D_
+_x000D_
+Proposal 2:_x000D_
+_x000D_
+```asn1_x000D_
+Claims ::= SEQUENCE OF Claim_x000D_
+_x000D_
+Identifiers ::= SEQUENCE OF OBJECT IDENTIFIER_x000D_
+_x000D_
+Claim ::= SEQUENCE {_x000D_
+  ids Identifiers,_x000D_
+  value OCTET STRING, -- defined by ids_x000D_
+}_x000D_
+```_x000D_
+_x000D_
+In both of these proposals, the top-level `Claims` definition would then be wrapped in an ordinary X.509 extension, with a new Sigstore-controlled OID._x000D_
+_x000D_
+Proposal (2) differs primarily from Proposal (1) in that it offers a few key space and forward-compatibility optimizations:_x000D_
+_x000D_
+1. Each `Claim` has a list of potential identifiers, meaning that future changes to claim OIDs can be accommodated without duplicating `value` by just adding the new OID to the `ids` sequence. This both saves space (no `value` duplication) and makes forward compatibility simpler (no additional extension to search for; no potential dual-state between the ""legacy"" value and the ""new"" value)._x000D_
+2. `value` is explicitly an OCTET STRING, meaning that it doesn't obligate any nested DER encoding (and doesn't contract RFC 5280, being a nested value within an extension)._x000D_
+_x000D_
+## Alternatives considered_x000D_
+_x000D_
+Doing nothing. IMO the current state of affairs is not a *significant* problem; the primary advantages to this proposal would be conceptual purity, strict compliance with RFC 5280, and lower long-term certificate sizes and diminished OID migration friction._x000D_
+_x000D_
+## Problems identified_x000D_
+_x000D_
+None, currently._x000D_
+_x000D_
+This would require a deprecation/migration period, but this is no different from the deprecation requirements for the current ""legacy"" OIDs/extensions for GitHub-specific OIDC claims. _x000D_
+_x000D_
+---_x000D_
+_x000D_
+CC @znewman01 and @haydentherapper for consideration 🙂 ","woodruffw: Re: https://github.com/sigstore/fulcio/issues/981#issuecomment-1519146064 in particular: I agree that this is a significant change for V2 of Fulcio, but IMO it's no more of a breaking change than the other OID changes, and can have the exact same migration pathway as proposed there: the ""legacy"" extensions can be included as well for a while, and then eventually rolled off. | woodruffw: (Also, as a design note: I chose `SEQUENCE` instead of `SET` in the definitions above because of some ambiguity in the DER specifications about how `SET` is actually encoded and whether it really guarantees uniqueness. Uniqueness *would* be an application-level expectation for both `Claims` and `Identifiers`.) | haydentherapper: Adding a bit more context to my comment in the other thread - This proposed change is solid technically, and if we were to start from scratch, this would be a good option. I don't think it buys us much to do it now though: * This doesn't save any work for clients, as they'll need to accept both certificate formats for verification. You could say that at some point we drop support for separate extensions, but that breaks verification for all existing signed artifacts out there, and it means we may not see adoption of new client versions that do drop support. * The space savings are O(bytes), I don't expect the addition of a lot more claims. * ASN.1 is complex, and I'd prefer to not maintain structures if we don't have to. * We already fixed the incorrect encoding for the new extensions we added, where each is now a DER string (could be another type too). This leaves 6 duplicated extensions (5 of which were going to be duplicated because they were GitHub specific).","woodruffw: Re: https://github.com/sigstore/fulcio/issues/981#issuecomment-1519146064 in particular: I agree that this is a significant change for V2 of Fulcio, but IMO it's no more of a breaking change than the other OID changes, and can have the exact same migration pathway as proposed there: the ""legacy"" extensions can be included as well for a while, and then eventually rolled off.
+woodruffw: (Also, as a design note: I chose `SEQUENCE` instead of `SET` in the definitions above because of some ambiguity in the DER specifications about how `SET` is actually encoded and whether it really guarantees uniqueness. Uniqueness *would* be an application-level expectation for both `Claims` and `Identifiers`.)
+haydentherapper: Adding a bit more context to my comment in the other thread - This proposed change is solid technically, and if we were to start from scratch, this would be a good option. I don't think it buys us much to do it now though: * This doesn't save any work for clients, as they'll need to accept both certificate formats for verification. You could say that at some point we drop support for separate extensions, but that breaks verification for all existing signed artifacts out there, and it means we may not see adoption of new client versions that do drop support. * The space savings are O(bytes), I don't expect the addition of a lot more claims. * ASN.1 is complex, and I'd prefer to not maintain structures if we don't have to. * We already fixed the incorrect encoding for the new extensions we added, where each is now a DER string (could be another type too). This leaves 6 duplicated extensions (5 of which were going to be duplicated because they were GitHub specific).
+woodruffw: > * We already fixed the incorrect encoding for the new extensions we added, where each is now a DER string (could be another type too). This leaves 6 duplicated extensions (5 of which were going to be duplicated because they were GitHub specific). Oh, this was a mistake on my part: I missed the part in `oid-info.md` where the new extensions were DER-encoded. Sorry for that! I also was under the impression that the new extensions hadn't actually deployed yet, and were being gated on a 2.0 for Fulcio. I just checked and saw that they have been deployed, however, so my size argument is even less compelling 🙂",sigstore__fulcio___non-human.xlsx,sigstore__fulcio.xlsx,non-usability,,,,,,,,0.0,False,False
+sigstore/fulcio,1178,https://github.com/sigstore/fulcio/issues/1178,2023-05-21 08:38:01+00:00,7,3,enhancement,enhancement,late,long,time-stratum: late (temporal coverage); thread-size: long (ensure short/medium/long threads); label-diversity: 'enhancement' present,AWS KMS documentation Unclear,,,,,,,,,,,,166,https://github.com/sigstore/fulcio/issues/1178,AWS KMS documentation Unclear,enhancement,"**Description**_x000D_
+_x000D_
+When trying to use AWS KMS to sign my certs in fulcsio using `awskms://[endpoint]/[arn]` it took me ages to realize that the endpoint was optional, but the trailing `/` was not. It's not clear from the guidance that the correct prefix when not specifying the endpoint is `awskms:///`. The documentation does show examples of this, but I spent longer than I care to admit not noticing 3 slashes and assuming it was meant to be just 2._x000D_
+_x000D_
+There's also a lack of guidance around exactly what IAM role permissions you need in order to call AWS KMS from fulcio. I ended up reading through https://github.com/sigstore/sigstore/blob/main/pkg/signature/kms/aws/client.go to find the full list of commands that needed to be called._x000D_
+_x000D_
+The last point that is unclear is exactly how to go about setting up the certificate chain needed by fulcio to validate KMS. I'm using a Private CA to achieve this with some success, but its taken a very long time to figure out._x000D_
+","ianhundere: @ChevronTango how are you going about signing the Private CA w/ KMS? we've tried using the ca and cert created via [kms-issuer ](https://github.com/Skyscanner/kms-issuer/tree/main), but keep getting errors, `x509: certificate specifies an incompatible key usage`, even tho we're following the correct spec via the [certificate resource](https://cert-manager.io/docs/reference/api-docs/#cert-manager.io/v1.KeyUsage): - https://github.com/sigstore/fulcio/blob/main/docs/certificate-specification.md | haydentherapper: Can you specify your certificate chain? | ianhundere: > Can you specify your certificate chain? Yes, we've tried using a local key (which was then imported to KMS) to sign a Private CA created via openssl and that worked, but using kms-issuer hasn't seemed to work so far. We've tried including the CA it's created as well as the certificate it creates. Any other suggestions in regards to creating/signing a Private CA using KMS?","ianhundere: @ChevronTango how are you going about signing the Private CA w/ KMS? we've tried using the ca and cert created via [kms-issuer ](https://github.com/Skyscanner/kms-issuer/tree/main), but keep getting errors, `x509: certificate specifies an incompatible key usage`, even tho we're following the correct spec via the [certificate resource](https://cert-manager.io/docs/reference/api-docs/#cert-manager.io/v1.KeyUsage): - https://github.com/sigstore/fulcio/blob/main/docs/certificate-specification.md
+haydentherapper: Can you specify your certificate chain?
+ianhundere: > Can you specify your certificate chain? Yes, we've tried using a local key (which was then imported to KMS) to sign a Private CA created via openssl and that worked, but using kms-issuer hasn't seemed to work so far. We've tried including the CA it's created as well as the certificate it creates. Any other suggestions in regards to creating/signing a Private CA using KMS?
+haydentherapper: An incompatible key usage means that the x509 library failed to build a valid chain. I would confirm that your root and intermediate specifies `Certificate Sign` and `CRL Sign` only.
+ianhundere: > An incompatible key usage means that the x509 library failed to build a valid chain. I would confirm that your root and intermediate specifies `Certificate Sign` and `CRL Sign` only. hmm, i think it's because the CA it creates doesn't have the correct usages select. don't think this is something you can change using kms-issuer: ``` X509v3 extensions: X509v3 Key Usage: critical Digital Signature, Certificate Sign X509v3 Extended Key Usage: TLS Web Client Authentication, TLS Web Server Authentication ```
+ianhundere: ah, i was able to get it working using [step-ca](https://smallstep.com/docs/step-ca/configuration/#aws-kms). cheers 🍻
+Edward13ruf: My approach involved creating a simple CSR (can be anything) and using [aws-kms-sign-csr](https://github.com/g-a-d/aws-kms-sign-csr/blob/master/aws-kms-sign-csr.py) to sign it. I then passed it to my root CSA and asked it to sign the CSR using the [`SubordinateCACertificate_PathLen0_APIPassthrough/V1`](https://docs.aws.amazon.com/privateca/latest/userguide/UsingTemplates.html#SubordinateCACertificate_PathLen0-V1) template. I gave it an ExtendedKeyUsageType of CODE_SIGNING and filled in all the usual subjects and common names when I passed the CSR through to the CA for signing. I was able to pass this information through using the [--api-passthrough](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/acm-pca/issue-certificate.html) option, hence the need for that particular template. The KMS key in particular was RSA_4096 and I passed it through to Fulcio using `awskms:///<kms_arn>` along with a certificate bundle containing both the root CA public key and the KMS backed intermediate public key I signed above. I did all of this in terraform, but was able to achieve a nice reliable and repeatable pattern once I'd figured out all the steps I needed.",sigstore__fulcio___non-human.xlsx,sigstore__fulcio.xlsx,usability,,"Signing workflow, API, Authentication/Authorization","Unclear documentation, Integration issues, unexpected behaviour, configuration friction, Authentication friction",,"10, 7, 6, 9, 1",,,1.0,True,True
+sigstore/fulcio,1235,https://github.com/sigstore/fulcio/issues/1235,2023-06-19 16:28:29+00:00,1,1,question,question,late,medium,time-stratum: late (temporal coverage); thread-size: medium (ensure short/medium/long threads); label-diversity: 'question' present,Support for CirleCI,,,,,,,,,,,,167,https://github.com/sigstore/fulcio/issues/1235,Support for CirleCI,question,"**Question**_x000D_
+Given that CircleCI finally added the ability to specific a custom audience https://circleci.com/docs/api/v2/index.html#operation/PatchOrgClaims . Does it mean that cosign should work now ? It appears though, that given they simply pass the the token as env var in the job (unlike GitHub, looks like there is currently no way for a job to dynamically craft a new token with custom audience). https://circleci.com/docs/openid-connect-tokens/#format-of-the-openid-connect-id-token_x000D_
+_x000D_
+So my understanding, is that we can set it to either a static value `sigstore` or an array that contains `sigstore`. _x000D_
+_x000D_
+Does fulcio support list of audiences ?",haydentherapper: Dup of https://github.com/sigstore/fulcio/issues/591,haydentherapper: Dup of https://github.com/sigstore/fulcio/issues/591,sigstore__fulcio___non-human.xlsx,sigstore__fulcio.xlsx,usability,,Authentication,"confused user/unclear documentation, Authentication friciton, integration issues",,7,,,1.0,True,True
+sigstore/fulcio,1685,https://github.com/sigstore/fulcio/issues/1685,2024-06-04 21:27:35+00:00,0,0,enhancement,enhancement,late,short,time-stratum: late (temporal coverage); thread-size: short (ensure short/medium/long threads); label-diversity: 'enhancement' present,Update to go-jose v4,,,,,,,,,,,,168,https://github.com/sigstore/fulcio/issues/1685,Update to go-jose v4,enhancement,"**Description**_x000D_
+_x000D_
+<!--What needs to be improved? What should be done? Has there been any related work_x000D_
+before? Any relevant links or material?_x000D_
+-->_x000D_
+_x000D_
+Using the deprecated v2 library in [tests](https://github.com/sigstore/fulcio/blob/main/pkg/server/grpc_server_test.go#L55-L56) to generate tokens.",,,sigstore__fulcio___non-human.xlsx,sigstore__fulcio.xlsx,non-usability,,,,,,,,0.0,False,False
+sigstore/rekor,487,https://github.com/sigstore/rekor/issues/487,2021-11-10 23:08:50+00:00,3,3,enhancement,enhancement,early,medium,time-stratum: early (temporal coverage); thread-size: medium (ensure short/medium/long threads); label-diversity: 'enhancement' present,Support UUID --> shard ID parsing,,,,,,,,,,,,169,https://github.com/sigstore/rekor/issues/487,Support UUID --> shard ID parsing,enhancement,"Goal: support parsing the UUID during GET calls to determine which log to query (with defaulting for the 0 case here). This would require two changes:_x000D_
+_x000D_
+- [x] During upload of an entry, the UUID created should include a parseable log ID. For example, if the active log has log ID 163, the UUID might look like: `163-d2f305428d7c222d7b77f56453dd4b6e6851752ecacc78e5992779c8f9b61dd9`, where the number before the `-` separator is the log ID._x000D_
+_x000D_
+- [ ] Then during handling of a GET request for a particular UUID, the log ID can be easily determined and the request routed accordingly._x000D_
+_x000D_
+@dlorenc @bobcallaway Does this sound right to you based on the design?","bobcallaway: Perhaps a nit, but the term ""log ID"" is already in use in [rekor](https://github.com/sigstore/rekor/blob/4fcdcaa58fd5263560a82978d781eb64f5c5f93c/openapi.yaml#L438), [trillian](https://github.com/google/trillian/blob/c1b0472ea95edc1bafc56a07986241bf461d4433/trillian_log_api.pb.go#L107) and [RFC6962](https://datatracker.ietf.org/doc/html/rfc6962#section-3.2) - so I would rather we call it ""partition ID"" or ""shard ID"". > Goal: support parsing the UUID during GET calls to determine which log to query (with defaulting for the 0 case here). This would require two changes: > > * [ ] During upload of an entry, the UUID created should include a parseable log ID. For example, if the active log has log ID 163, the UUID might look like: `163-d2f305428d7c222d7b77f56453dd4b6e6851752ecacc78e5992779c8f9b61dd9`, where the number before the `-` separator is the log ID. Am I correct in saying that in order to handle the case for backward compatibility) if no shard ID is specified, default to the current log (i.e. shard 0)? > * [ ] Then during handling of a GET request for a particular UUID, the log ID can be easily determined and the request routed accordingly. > > @dlorenc @bobcallaway Does this sound right to you based on the design? yes, this aligns with what I had thought of in the design doc | dlorenc: +1, this all sounds right! | lkatalin: Note: make sure UUID will never use the separator char we are using.","bobcallaway: Perhaps a nit, but the term ""log ID"" is already in use in [rekor](https://github.com/sigstore/rekor/blob/4fcdcaa58fd5263560a82978d781eb64f5c5f93c/openapi.yaml#L438), [trillian](https://github.com/google/trillian/blob/c1b0472ea95edc1bafc56a07986241bf461d4433/trillian_log_api.pb.go#L107) and [RFC6962](https://datatracker.ietf.org/doc/html/rfc6962#section-3.2) - so I would rather we call it ""partition ID"" or ""shard ID"". > Goal: support parsing the UUID during GET calls to determine which log to query (with defaulting for the 0 case here). This would require two changes: > > * [ ] During upload of an entry, the UUID created should include a parseable log ID. For example, if the active log has log ID 163, the UUID might look like: `163-d2f305428d7c222d7b77f56453dd4b6e6851752ecacc78e5992779c8f9b61dd9`, where the number before the `-` separator is the log ID. Am I correct in saying that in order to handle the case for backward compatibility) if no shard ID is specified, default to the current log (i.e. shard 0)? > * [ ] Then during handling of a GET request for a particular UUID, the log ID can be easily determined and the request routed accordingly. > > @dlorenc @bobcallaway Does this sound right to you based on the design? yes, this aligns with what I had thought of in the design doc
+dlorenc: +1, this all sounds right!
+lkatalin: Note: make sure UUID will never use the separator char we are using.",sigstore__rekor___non-human.xlsx,sigstore__rekor.xlsx,1.0,API,API,"feature enhancement, integration issues",,7,,,1.0,True,True
+sigstore/rekor,648,https://github.com/sigstore/rekor/issues/648,2022-02-01 23:10:45+00:00,1,1,enhancement,enhancement,early,short,time-stratum: early (temporal coverage); thread-size: short (ensure short/medium/long threads); label-diversity: 'enhancement' present,Shard rekor once prior to GA,,,,,,,,,,,,170,https://github.com/sigstore/rekor/issues/648,Shard rekor once prior to GA,enhancement,"As @bobcallaway suggested, we could shard the log once before GA! This can help build confidence that sharding is working as expected. cc @lkatalin ",priyawadhwa: This is now done 🎉,priyawadhwa: This is now done 🎉,sigstore__rekor___non-human.xlsx,sigstore__rekor.xlsx,0.0,,,,,,,,0.0,False,False
+sigstore/rekor,872,https://github.com/sigstore/rekor/issues/872,2022-06-15 21:49:05+00:00,0,0,bug,bug,early,short,time-stratum: early (temporal coverage); thread-size: short (ensure short/medium/long threads); label-diversity: 'bug' present,attestations for intoto log entries persisted without payloadHash are not being returned,,,,,,,,,,,,171,https://github.com/sigstore/rekor/issues/872,attestations for intoto log entries persisted without payloadHash are not being returned,bug,"**Description**_x000D_
+_x000D_
+Attestations for intoto log entries persisted without payloadHash are not being returned_x000D_
+_x000D_
+**Version**_x000D_
+This was likely introduced with https://github.com/sigstore/rekor/pull/769_x000D_
+",,,sigstore__rekor___non-human.xlsx,sigstore__rekor.xlsx,1.0,Core,core,notification/logging/alert,,"6, 7",,,1.0,True,True
+sigstore/rekor,876,https://github.com/sigstore/rekor/issues/876,2022-06-16 13:50:52+00:00,3,2,bug,bug,early,long,time-stratum: early (temporal coverage); thread-size: long (ensure short/medium/long threads); label-diversity: 'bug' present,Intoto Indexing Bug: cannot find entry by payloadHash,,,,,,,,,,,,172,https://github.com/sigstore/rekor/issues/876,Intoto Indexing Bug: cannot find entry by payloadHash,bug,"**Description**_x000D_
+_x000D_
+<!--Tell us about the bug. What went wrong? How can we reproduce it? What should the correct behavior be?_x000D_
+-->_x000D_
+Currently at head, we cannot use the search index to find entries by payloadHash, which should be indexed: _x000D_
+https://github.com/sigstore/rekor/blob/744339f1be49454bb3009bd0d31327f8d53646cd/pkg/types/intoto/v0.0.1/entry.go#L77-L78_x000D_
+_x000D_
+**Version**_x000D_
+_x000D_
+<!--What version are you using? e.g. `cosign version`..._x000D_
+-->_x000D_
+_x000D_
+_x000D_
+_x000D_
+I spun up a local rekor instance and uploaded an intoto attestation. I logged what keys were added. Check out the payloadHash in all cases:_x000D_
+_x000D_
+The entry:_x000D_
+```_x000D_
+Body: {_x000D_
+  ""IntotoObj"": {_x000D_
+    ""content"": {_x000D_
+      ""hash"": {_x000D_
+        ""algorithm"": ""sha256"",_x000D_
+        ""value"": ""51a0a4f22ff245835d264cd41c6969a58fb3e37884c7aa2cace767714beb2a22""_x000D_
+      },_x000D_
+      ""payloadHash"": {_x000D_
+        ""algorithm"": ""sha256"",_x000D_
+        ""value"": ""d941d60e3f06985f970096cc0ff5ae2990ae64eab57230e5f9c9f4cf89d4e5de""_x000D_
+      }_x000D_
+    },_x000D_
+    ""publicKey"": ""LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURRRENDQXNXZ0F3SUJBZ0lVQU9ySkxadHRpTXFZUm1nWHdRczVva3FHczlNd0NnWUlLb1pJemowRUF3TXcKS2pFVk1CTUdBMVVFQ2hNTWMybG5jM1J2Y21VdVpHVjJNUkV3RHdZRFZRUURFd2h6YVdkemRHOXlaVEFlRncweQpNakEyTVRZeE16STJNREZhRncweU1qQTJNVFl4TXpNMk1EQmFNQUF3V1RBVEJnY3Foa2pPUFFJQkJnZ3Foa2pPClBRTUJCd05DQUFUUlQ4WlFMZnl4RThNZE5DcmhsZWNnQmFyWUs3WjJvb0c1SllCaElwV3IwaTRFSVEzSGg2bSsKYThrcnZVWFFnSmlGclNRdFl6V0EyWlk3WEU2Zi9HNFhvNElCOFRDQ0FlMHdEZ1lEVlIwUEFRSC9CQVFEQWdlQQpNQk1HQTFVZEpRUU1NQW9HQ0NzR0FRVUZCd01ETUF3R0ExVWRFd0VCL3dRQ01BQXdIUVlEVlIwT0JCWUVGSU91ClZEK01RcDJiRDk1c3UwMzN1MTU5bDliT01COEdBMVVkSXdRWU1CYUFGRmpBSGwrUlJhVm1xWHJNa0tHVEl0QXEKeGNYNk1IMEdBMVVkRVFFQi93UnpNSEdHYjJoMGRIQnpPaTh2WjJsMGFIVmlMbU52YlM5emJITmhMV1p5WVcxbApkMjl5YXk5emJITmhMV2RwZEdoMVlpMW5aVzVsY21GMGIzSXZMbWRwZEdoMVlpOTNiM0pyWm14dmQzTXZZblZwCmJHUmxjbDluYjE5emJITmhNeTU1Yld4QWNtVm1jeTkwWVdkekwzWXhMakF1TURBZkJnb3JCZ0VFQVlPL01BRUMKQkJGM2IzSnJabXh2ZDE5a2FYTndZWFJqYURBZEJnb3JCZ0VFQVlPL01BRUVCQTlIYnlCVFRGTkJJRkpsYkdWaApjMlV3T1FZS0t3WUJCQUdEdnpBQkFRUXJhSFIwY0hNNkx5OTBiMnRsYmk1aFkzUnBiMjV6TG1kcGRHaDFZblZ6ClpYSmpiMjUwWlc1MExtTnZiVEEyQmdvckJnRUVBWU8vTUFFREJDZ3laRFEzTldRM05HRTVNMlV6TnpWaVptWXoKTkRJd1pqTXdPVE13TXpNMFlUaGpPRGhpTjJVeU1CMEdDaXNHQVFRQmc3OHdBUVlFRDNKbFpuTXZhR1ZoWkhNdgpiV0ZwYmpBbkJnb3JCZ0VFQVlPL01BRUZCQmxoYzNKaFlTOXpiSE5oTFc5dUxXZHBkR2gxWWkxMFpYTjBNQW9HCkNDcUdTTTQ5QkFNREEya0FNR1lDTVFEMGVpU09FZWVoenVXWlhwWHVYMlJvVEFEY3UrUG9NSEVpb0NYalQwUjkKeE03VzBtQkFZZmVyUmk0YmxmQkxXVVlDTVFDdzhiWjBsaTV2eE9yd25rVFIxU2JsU1lOWk91b2Q1SC8vK09vZwo2WHdXeUp4cnNzcm8rT0RRcHZuYzB0VXB2Szg9Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K""_x000D_
+  }_x000D_
+}_x000D_
+```_x000D_
+_x000D_
+The indexed keys:_x000D_
+```_x000D_
+ sha256:fe24a8c9e6a0eab15c97c70c3d1e56f2dd36b36c231c544c75374a7c96c4d8ac (payloadHash), _x000D_
+_x000D_
+sha256:51a0a4f22ff245835d264cd41c6969a58fb3e37884c7aa2cace767714beb2a22, (envelope digest)_x000D_
+_x000D_
+sha256:4bdb495d05cbb9eb0722ec4fcfef8a02d5ca7a2fca0b0fed718447f89d39a589, (subject digest)_x000D_
+_x000D_
+sha1:2d475d74a93e375bff3420f30930334a8c88b7e2 (materials)_x000D_
+```_x000D_
+_x000D_
+Note that the payload hashes do NOT match_x000D_
+_x000D_
+1. Calculated for the entry [here](https://github.com/sigstore/rekor/blob/4f0b750ea3cee548684227570190250fcd136f02/pkg/types/intoto/v0.0.1/entry.go#L183-L189) via [AttestationKeyValue](https://github.com/sigstore/rekor/blob/4f0b750ea3cee548684227570190250fcd136f02/pkg/types/intoto/v0.0.1/entry.go#L248-L249)_x000D_
+2. Calculated for the index [here](https://github.com/sigstore/rekor/blob/4f0b750ea3cee548684227570190250fcd136f02/pkg/types/intoto/v0.0.1/entry.go#L76-L77) ","asraa: I think this is related to https://github.com/sigstore/rekor/issues/872 The difference in the computation is whether the attestation payload is base64 decoded or not @bobcallaway | bobcallaway: I'm not sure these issues are related; #872 is more about attestation lookup failing for entries created before `payloadHash` was part of the type. I agree with your assessment that `v.env.Payload` returns the base64-encoded payload as a string, which isn't the correct thing to compute the index key against. I think we should change the digest computation to be off of the `[]byte` returned from `v.env.DecodeB64Payload()` instead of taking the hash over the base64 string. | asraa: I can take care of that! FWIW I think the original issue of not finding entries in the slsa code was fixed by https://github.com/sigstore/rekor/pull/870","asraa: I think this is related to https://github.com/sigstore/rekor/issues/872 The difference in the computation is whether the attestation payload is base64 decoded or not @bobcallaway
+bobcallaway: I'm not sure these issues are related; #872 is more about attestation lookup failing for entries created before `payloadHash` was part of the type. I agree with your assessment that `v.env.Payload` returns the base64-encoded payload as a string, which isn't the correct thing to compute the index key against. I think we should change the digest computation to be off of the `[]byte` returned from `v.env.DecodeB64Payload()` instead of taking the hash over the base64 string.
+asraa: I can take care of that! FWIW I think the original issue of not finding entries in the slsa code was fixed by https://github.com/sigstore/rekor/pull/870",sigstore__rekor___non-human.xlsx,sigstore__rekor.xlsx,0.0,,,,,,,,0.0,False,False
+sigstore/rekor,929,https://github.com/sigstore/rekor/issues/929,2022-07-18 04:31:11+00:00,1,1,question,question,middle,short,time-stratum: middle (temporal coverage); thread-size: short (ensure short/medium/long threads); label-diversity: 'question' present,How can rekor prevent a record from a hacker?,,,,,,,,,,,,173,https://github.com/sigstore/rekor/issues/929,How can rekor prevent a record from a hacker?,question,"If a hacker uses rekor-cli to upload a record of a public key/signature, how can an end user of rekor discover it?_x000D_
+Is there any user authentication mechanism that only authenticated user can upload records?_x000D_
+Or, will the rekor tell end user who uploaded the records when end user uses ""get"" or ""verify""?_x000D_
+Thank you.","haydentherapper: Check out https://docs.sigstore.dev/, this has more information on how to use the Rekor CLI and how users can query for artifacts in the log.","haydentherapper: Check out https://docs.sigstore.dev/, this has more information on how to use the Rekor CLI and how users can query for artifacts in the log.",sigstore__rekor___non-human.xlsx,sigstore__rekor.xlsx,1.0,Rekor CLI,Rekor CLI,"user confusion/documentation, security",,10. help & Documentation,,,1.0,True,True
+sigstore/rekor,1026,https://github.com/sigstore/rekor/issues/1026,2022-09-06 15:46:23+00:00,1,1,enhancement,enhancement,middle,medium,time-stratum: middle (temporal coverage); thread-size: medium (ensure short/medium/long threads); label-diversity: 'enhancement' present,Add --file-ca (or something flag) for taking in secret from files like Fulcio does.,,,,,,,,,,,,174,https://github.com/sigstore/rekor/issues/1026,Add --file-ca (or something flag) for taking in secret from files like Fulcio does.,enhancement,"**Description**_x000D_
+_x000D_
+Currently Rekor has an ephemeral signer mode here:_x000D_
+https://github.com/sigstore/rekor/blob/main/cmd/rekor-server/app/root.go#L76_x000D_
+_x000D_
+This works mostly fine, but with us moving to TUF everywhere (and getting rid of various env flags for specifying public keys) if Rekor ever restarts during the testing this will create a new in-mem public key and hence the TUF root doesn't work. Fulcio has a way to specify a file_ca:_x000D_
+https://github.com/sigstore/fulcio/blob/main/cmd/app/serve.go#L69_x000D_
+_x000D_
+We talked about this in the Slack and agreed this would be useful to do, we just need to mark the flag clearly that it's used for testing._x000D_
+_x000D_
+https://sigstore.slack.com/archives/C01CX4E2K70/p1659553415708999_x000D_
+_x000D_
+@asraa ",asraa: @cdris do you think you might have time to take this? It would be like `--filesigner-key` to hold an encrypted key on file (Rekor doesn't need a whole signing cert),asraa: @cdris do you think you might have time to take this? It would be like `--filesigner-key` to hold an encrypted key on file (Rekor doesn't need a whole signing cert),sigstore__rekor___non-human.xlsx,sigstore__rekor.xlsx,1.0,signng workflow,Signing workflow,"integration issues, feature request",,7,,,1.0,True,True
+sigstore/rekor,1173,https://github.com/sigstore/rekor/issues/1173,2022-11-03 20:56:09+00:00,1,1,enhancement,enhancement,middle,medium,time-stratum: middle (temporal coverage); thread-size: medium (ensure short/medium/long threads); label-diversity: 'enhancement' present,Add public key method to EntryImpl,,,,,,,,,,,,175,https://github.com/sigstore/rekor/issues/1173,Add public key method to EntryImpl,enhancement,"**Description**_x000D_
+_x000D_
+<!--What needs to be improved? What should be done? Has there been any related work_x000D_
+before? Any relevant links or material?_x000D_
+-->_x000D_
+_x000D_
+This would be useful for getting an entry's public key or certificate without having to first cast the entry body to a specific type.","asraa: I'm personally in favor of this, and even a `Signature()` public method. I think having this content easily accessible will make it easy for clients to grab (at least for Go). Signature also seems useful to me in case (I personally hope), the SET scopes down further to just Signature content.","asraa: I'm personally in favor of this, and even a `Signature()` public method. I think having this content easily accessible will make it easy for clients to grab (at least for Go). Signature also seems useful to me in case (I personally hope), the SET scopes down further to just Signature content.",sigstore__rekor___non-human.xlsx,sigstore__rekor.xlsx,1.0,signing workflow,signing workflow,"integration issues, tedious workflows",,7,,,1.0,True,True
+sigstore/rekor,1324,https://github.com/sigstore/rekor/issues/1324,2023-02-03 17:52:24+00:00,4,4,enhancement,enhancement,middle,long,time-stratum: middle (temporal coverage); thread-size: long (ensure short/medium/long threads); label-diversity: 'enhancement' present,Support other KMS keys besides GCP,,,,,,,,,,,,176,https://github.com/sigstore/rekor/issues/1324,Support other KMS keys besides GCP,enhancement,"**Description**_x000D_
+_x000D_
+<!--What needs to be improved? What should be done? Has there been any related work_x000D_
+before? Any relevant links or material?_x000D_
+-->_x000D_
+_x000D_
+Very trivial change, we just need to update https://github.com/sigstore/rekor/blob/a90366e15d837d1e33c04797119ffff8b63a12ff/pkg/signer/signer.go#L27 to load all KMS providers and fetch the key with `kms.Get` ([fulcio example](https://github.com/sigstore/fulcio/blob/main/pkg/ca/kmsca/kmsca.go#L42))","jbgcarnes: This feature would help me for sure. If the project open to an MR about it? | haydentherapper: Feel free to fix this issue, thanks! It should be straightforward. | bobcallaway: This will have a pretty dramatic increase in the dependency footprint for Rekor, but the fix is pretty straightforward.","jbgcarnes: This feature would help me for sure. If the project open to an MR about it?
+haydentherapper: Feel free to fix this issue, thanks! It should be straightforward.
+bobcallaway: This will have a pretty dramatic increase in the dependency footprint for Rekor, but the fix is pretty straightforward.
+jtcarnes: Sorry, family health crisis. Taken care of now. I'll push it out in a week or so.",sigstore__rekor___non-human.xlsx,sigstore__rekor.xlsx,1.0,core,core,"Integration issues, enhancement request",,"7,",,,1.0,True,True
+sigstore/rekor,1721,https://github.com/sigstore/rekor/issues/1721,2023-09-29 01:10:38+00:00,0,0,enhancement,enhancement,late,short,time-stratum: late (temporal coverage); thread-size: short (ensure short/medium/long threads); label-diversity: 'enhancement' present,add info to readme file to point out other doc files.,,,,,,,,,,,,177,https://github.com/sigstore/rekor/issues/1721,add info to readme file to point out other doc files.,enhancement,"**Description**_x000D_
+_x000D_
+<!--What needs to be improved? What should be done? Has there been any related work_x000D_
+before? Any relevant links or material?_x000D_
+-->The repositories for Sigstore have a readme.md file that describes some of what is going on with the associated modules in the docs folder.   In addition, there are some repositories that in addition  have doc files that contain further information.  This issue is  for the editing of the readme files to contain short descriptions of the other documentation files and a reminder that docs must be updated to keep in sync with any code changes._x000D_
+_x000D_
+The following repositories will have changes:_x000D_
+_x000D_
+Cosign_x000D_
+Fulcio_x000D_
+Rekor_x000D_
+_x000D_
+_x000D_
+Each repository will be forked and have a branch named jvn-257.   The changes will be in that branch for each repository.",,,sigstore__rekor___non-human.xlsx,sigstore__rekor.xlsx,1.0,core,core,"documentation, feature enhancement",,"10, 7",,,1.0,True,True
+sigstore/rekor,1812,https://github.com/sigstore/rekor/issues/1812,2023-11-06 21:13:07+00:00,1,1,enhancement,enhancement,late,medium,time-stratum: late (temporal coverage); thread-size: medium (ensure short/medium/long threads); label-diversity: 'enhancement' present,Investigate using custom JSON parser,,,,,,,,,,,,178,https://github.com/sigstore/rekor/issues/1812,Investigate using custom JSON parser,enhancement,"**Description**_x000D_
+_x000D_
+<!--What needs to be improved? What should be done? Has there been any related work_x000D_
+before? Any relevant links or material?_x000D_
+-->_x000D_
+_x000D_
+Context threads:_x000D_
+* https://github.com/kubernetes/kube-openapi/issues/315_x000D_
+* https://github.com/kubernetes/kubernetes/pull/112988_x000D_
+* https://github.com/kubernetes/kube-openapi/pull/319_x000D_
+_x000D_
+OpenAPI's JSON unmarshalling is quite slow, and there's been some efforts in the k8s community to create a more performant marshaller. We should see if we can integrate this into Rekor to improve performance.","AdityaByte: Hey @haydentherapper, I'd like to work on this issue. If it's available. I'd love to take it up. Thanks!","AdityaByte: Hey @haydentherapper, I'd like to work on this issue. If it's available. I'd love to take it up. Thanks!",sigstore__rekor___non-human.xlsx,sigstore__rekor.xlsx,1.0,core,core,"integration issues(with openAPI's json tool), performance issues",,7,,,1.0,True,True
+sigstore/rekor,1899,https://github.com/sigstore/rekor/issues/1899,2023-12-11 21:38:34+00:00,2,2,question,question,late,medium,time-stratum: late (temporal coverage); thread-size: medium (ensure short/medium/long threads); label-diversity: 'question' present,Manual rekor upload with cosign public key,,,,,,,,,,,,179,https://github.com/sigstore/rekor/issues/1899,Manual rekor upload with cosign public key,question,"There was a previous issue opened (#1573 ) asking about a manual Rekor upload of an artifact signed with a cosign public key. However, the proposed solution (using the `--pki-format x509` flag) did not work when I tried it._x000D_
+_x000D_
+The same artifact, public key, and signature that verify correctly with cosign do not seem to verify correctly with the rekor-cli:_x000D_
+_x000D_
+```_x000D_
+[lily@fedora cosign]$ cosign verify-blob --key keys/cosign.pub --signature blob_sig generated_payload --insecure-ignore-tlog=true_x000D_
+WARNING: Skipping tlog verification is an insecure practice that lacks of transparency and auditability verification for the blob._x000D_
+Verified OK_x000D_
+_x000D_
+[lily@fedora cosign]$ rekor-cli upload --artifact generated_payload --public-key keys/cosign.pub --pki-format x509 --signature blob_sig_x000D_
+error: error retrieving external entities: invalid signature when validating ASN.1 encoded signature_x000D_
+```_x000D_
+_x000D_
+Is this expected? What am I missing from the command? Or is there a bug?","haydentherapper: My guess is that `blob_sig` cannot be base64 encoded. Try `cat blob_sig | base64 -d > decoded_blob_sig` and see if you can upload that with the same key and artifact. If that works, then we can add a feature to rekor-cli to support decoding base64 encoded sigs. | lkatalin: Thanks @haydentherapper , base64 decoding worked! I can make a PR for base64 support.","haydentherapper: My guess is that `blob_sig` cannot be base64 encoded. Try `cat blob_sig | base64 -d > decoded_blob_sig` and see if you can upload that with the same key and artifact. If that works, then we can add a feature to rekor-cli to support decoding base64 encoded sigs.
+lkatalin: Thanks @haydentherapper , base64 decoding worked! I can make a PR for base64 support.",sigstore__rekor___non-human.xlsx,sigstore__rekor.xlsx,1.0,"rekor cli, verification workflow","rekor cli, verification workflow","user confusion, unexpected behaviour",,"1, 4, 10",,,1.0,True,True
+sigstore/rekor,2062,https://github.com/sigstore/rekor/issues/2062,2024-03-28 23:46:16+00:00,17,4,"enhancement, rekor-v2",enhancement,late,long,time-stratum: late (temporal coverage); thread-size: long (ensure short/medium/long threads); label-diversity: 'enhancement' present,Checkpoint spec compliance: Incorrect key ID for non-ECDSA keys ,,,,,,,,,,,,180,https://github.com/sigstore/rekor/issues/2062,Checkpoint spec compliance: Incorrect key ID for non-ECDSA keys ,"enhancement, rekor-v2","## Background_x000D_
+_x000D_
+https://github.com/C2SP/C2SP/blob/main/signed-note.md defines the specification for a signed note, which is the format of a [checkpoint](https://github.com/C2SP/C2SP/blob/main/tlog-checkpoint.md). Note that this specification was only recently created. When checkpoints were added to Rekor, we followed the code for Go's checksum db note format, which is the signed note format - [docs](https://pkg.go.dev/golang.org/x/exp/sumdb/internal/note), [code](https://cs.opensource.google/go/x/exp/+/refs/tags/sumdb/v0.0.2:sumdb/internal/note/note.go)_x000D_
+_x000D_
+The signature is the following format:_x000D_
+_x000D_
+`— <key name> base64(32-bit key ID || signature)`_x000D_
+_x000D_
+where key ID is the following format, roughly the truncated hash of the key name, signature scheme, and public key:_x000D_
+_x000D_
+`key ID = SHA-256(key name || 0x0A || signature type || public key)[:4]`_x000D_
+_x000D_
+Go's checksum db note code only defines a verifier for ed25519 keys ([code](https://cs.opensource.google/go/x/exp/+/refs/tags/sumdb/v0.0.2:sumdb/internal/note/note.go;l=387)), again aligning with the spec, where signature type = `0x01`. It does not support ecdsa keys._x000D_
+_x000D_
+For historical reasons (citation needed) and as noted in the spec, ecdsa key IDs are the truncated hash of the DER encoded public key in SPKI format ([code](https://github.com/sigstore/rekor/blob/main/pkg/util/signed_note.go#L52-L61), with the truncation happening [here](https://github.com/sigstore/rekor/blob/main/pkg/util/signed_note.go#L119-L120))._x000D_
+_x000D_
+## Issue_x000D_
+_x000D_
+When Rekor generates a signed note, it generates the key ID as a truncated DER encoded public key hash regardless of signature type. ecdsa is spec compliant, but ed25519 and RSA is not. The impact of this is if we were to switch to ed25519 or RSA signing keys, Rekor checkpoints would not be verifiable by omniwitness, armored witness or any other upcoming witness implementations._x000D_
+_x000D_
+The other issue is that the c2sp spec doesn't define support for RSA. There is an issue tracking this request, but general consensus is a lack of interest in supporting RSA due to additional signature support for witnesses, RSA vulnerability concerns and key/signature size. For public instances that could join a witness network, we should strongly recommend using ecdsa or ed25519 keys. For private instances, RSA can still be supported using the `0xff` identifier type as per the spec._x000D_
+_x000D_
+## Fixes_x000D_
+_x000D_
+Given the last time I made a change to the checkpoint format, dropping the timestamp, it impacted clients, I want to make sure we thoughtfully roll this out._x000D_
+_x000D_
+Clients will need to add support for parsing signed notes following the spec, particularly computing the key ID differently for ed25519 and RSA keys. If you want to avoid any chance of breakage for private deployments that are currently using these key types, you could fallback to the DER encoded public key ID._x000D_
+_x000D_
+**However**, I don't know if clients were using the key ID to verify checkpoints. If the client was simply dropping the 32-bit key ID from `base64(32-bit key ID || signature)` before verifying the signature, this change seems quite safe to do. For example, for sigstore-go (which uses the Rekor library), we're doing just that - [`Base64`](https://github.com/sigstore/rekor/blob/main/pkg/util/signed_note.go#L175) is the signature without the key ID (`Hash`). Technically this isn't following the spec, as the key ID should be compared against a known key. That doesn't seem like a requirement for Sigstore though, more for witnesses, since we have a way of distributing trusted keys. (Edit: this is not true for other clients, so we will need client changes)_x000D_
+_x000D_
+For server side changes, given the public instance has only used ecdsa, we could fix the format for ed25519 and RSA signing keys without any impact to clients. If we want to do this in a non-breaking way, we would need to introduce the new checkpoint format in another response field for the `/log` API, though I don't like that approach as much as it'll complicate client logic for fetching a checkpoint and prolong this fix.","haydentherapper: cc @bdehamer @loosebazooka @woodruffw (also @codysoyland, but this'll be handled for Go with the fix in Rekor, since sigstore-go uses Rekor's verifier) Sorry for the long wall of text! The tl;dr is that I want to change the checkpoint key ID format for ed25519 and RSA keys. If your client is simply dropping the key ID, which is the prefix for the checkpoint signature, then this change is really just a no-op for your client. If you are parsing the key ID, then you could need to update to construct the key ID differently based on the signature type. Let me know if this is going to be an issue and if we should go with a non-breaking slower rollout. This is not something we have to rush out, just something to fix before we have more public logs. @woodruffw: For sigstore-python, it looks like you use the log ID (which is the sha256 hash of the DER encoded SPKI pub key) in https://github.com/sigstore/sigstore-python/blob/main/sigstore/_internal/rekor/checkpoint.py#L217-L219, and then compare here - https://github.com/sigstore/sigstore-python/blob/main/sigstore/_internal/rekor/checkpoint.py#L173-L174. so this would need to be changed @bdehamer: For sigstore-js, https://github.com/sigstore/sigstore-js/blob/main/packages/verify/src/timestamp/checkpoint.ts#L91-L93 - looks like you do something similar, where you find the correct key based on the key ID/key hint and compare it to the log ID. So this would need to be updated @loosebazooka - For sigstore-java, looks like you are comparing key IDs in https://github.com/sigstore/sigstore-java/blob/9ec514d10544f93083471f23c44c828b2ba3f9f4/sigstore-java/src/main/java/dev/sigstore/rekor/client/RekorVerifier.java#L158-L166, so this would need to be updated. | bdehamer: As @haydentherapper already noted, sigstore-js is parsing the key ID from the signature and using that to identify the appropriate key. My vote is definitely for a VERY slow rollout of any change which is going to break the current implementation. The last change to the checkpoint format caused a lot of grief in npm land and I'm afraid that if we drop another breaking change again so soon after the last one we run the risk of package developers deciding that it's not worth the hassle. | haydentherapper: Sorry about that rollout, we had assumed the other content in the signed note was considered optional. The good news with this change is that there would be no changes to metadata produced from the public instance, since it uses ecdsa and there would be no changes there. I am unaware of any other public logs. To make sure we don't break anyone, let's do the client changes (I can file bugs in each repo to track the change), and after a few months, we can roll out the change here. We'll also document in Rekor that an ecdsa key should be preferred and must be chosen if you will host a public log. How does that sound?","haydentherapper: cc @bdehamer @loosebazooka @woodruffw (also @codysoyland, but this'll be handled for Go with the fix in Rekor, since sigstore-go uses Rekor's verifier) Sorry for the long wall of text! The tl;dr is that I want to change the checkpoint key ID format for ed25519 and RSA keys. If your client is simply dropping the key ID, which is the prefix for the checkpoint signature, then this change is really just a no-op for your client. If you are parsing the key ID, then you could need to update to construct the key ID differently based on the signature type. Let me know if this is going to be an issue and if we should go with a non-breaking slower rollout. This is not something we have to rush out, just something to fix before we have more public logs. @woodruffw: For sigstore-python, it looks like you use the log ID (which is the sha256 hash of the DER encoded SPKI pub key) in https://github.com/sigstore/sigstore-python/blob/main/sigstore/_internal/rekor/checkpoint.py#L217-L219, and then compare here - https://github.com/sigstore/sigstore-python/blob/main/sigstore/_internal/rekor/checkpoint.py#L173-L174. so this would need to be changed @bdehamer: For sigstore-js, https://github.com/sigstore/sigstore-js/blob/main/packages/verify/src/timestamp/checkpoint.ts#L91-L93 - looks like you do something similar, where you find the correct key based on the key ID/key hint and compare it to the log ID. So this would need to be updated @loosebazooka - For sigstore-java, looks like you are comparing key IDs in https://github.com/sigstore/sigstore-java/blob/9ec514d10544f93083471f23c44c828b2ba3f9f4/sigstore-java/src/main/java/dev/sigstore/rekor/client/RekorVerifier.java#L158-L166, so this would need to be updated.
+bdehamer: As @haydentherapper already noted, sigstore-js is parsing the key ID from the signature and using that to identify the appropriate key. My vote is definitely for a VERY slow rollout of any change which is going to break the current implementation. The last change to the checkpoint format caused a lot of grief in npm land and I'm afraid that if we drop another breaking change again so soon after the last one we run the risk of package developers deciding that it's not worth the hassle.
+haydentherapper: Sorry about that rollout, we had assumed the other content in the signed note was considered optional. The good news with this change is that there would be no changes to metadata produced from the public instance, since it uses ecdsa and there would be no changes there. I am unaware of any other public logs. To make sure we don't break anyone, let's do the client changes (I can file bugs in each repo to track the change), and after a few months, we can roll out the change here. We'll also document in Rekor that an ecdsa key should be preferred and must be chosen if you will host a public log. How does that sound?
+loosebazooka: Wasn't there also something about using a different style of logid for rekor? I can't seem to remember details, but there was no guarantee it was going to continue to be a hash of the public key like CT.
+woodruffw: Summarizing to make sure I understand: 1. For non-ECDSA keys, the key ID is defined as `SHA-256(key name || 0x0A || signature type || public key)[:4]`, where `public key` is `DER(SPKI(raw public key))` 2. For ECDSA keys, the key ID is **not** defined, but Rekor chooses to use `SHA-256(public key)[:4]` 3. `sigstore-python` currently only expects ECDSA-based tlogs, and so does (2) unconditionally Is that correct?
+haydentherapper: > Wasn't there also something about using a different style of logid for rekor? I can't seem to remember details, but there was no guarantee it was going to continue to be a hash of the public key like CT. Yea, the CT v2 [RFC](https://www.rfc-editor.org/rfc/rfc9162.html#section-4.4) defined log IDs as OIDs rather than a hash of a public key. The idea being that you might want to reuse a public key across logs but have each log have its own identity. I don't think we'll move away from the log ID being the hash though as most tools expect this, so instead we'll rotate the key the next time we create a new log. > For non-ECDSA keys, the key ID is defined as SHA-256(key name || 0x0A || signature type || public key)[:4], where public key is DER(SPKI(raw public key)) > For ECDSA keys, the key ID is not defined, but Rekor chooses to use SHA-256(public key)[:4] Unfortunately, reading more, the `public key` encoding is a bit messy. * ed25519 public keys use the [32-byte public key byte array](https://github.com/C2SP/C2SP/blob/main/signed-note.md#ed25519-signatures) for the `public key` part of the key ID, which would be for `0x01` ed25519 checkpoint signatures and `0x04` witness cosignatures (which mandate ed25519). * For `0x02` ECDSA checkpoint signatures and `0x05` RFC6962 checkpoints, it is `SHA256(DER(SPKI(raw public key)))`. (Note that there is an open issue to restrict the new RFC6962 checkpoints to only ecdsa, to not deal with RSA) * For RSA, for `0xff` we are on our own. I would recommend `SHA256(DER(SPKI(raw public key)))` for `public key`, and use `0xff` for the signature type. For ECDSA, it is defined in the [spec](https://github.com/C2SP/C2SP/blob/main/signed-note.md#ed25519-signatures:~:text=Note%20that%20the%20key%20ID%20for%20these%20signatures%20is%20the%20truncated%20SHA%2D256%20hash%20of%20the%20DER%20encoded%20public%20key%20in%20SPKI%20format.). It wasn't Rekor that decided the different format for ecdsa, I believe it was either [RFC 6962](https://datatracker.ietf.org/doc/html/rfc6962#section-3.2) or some of the original witness work, and the spec didn't want to break existing logs using ecdsa. Rekor's key ID is currently `SHA256(DER(SPKI(raw pubkey)))` - [code](https://github.com/sigstore/rekor/blob/main/pkg/util/signed_note.go#L56-L61) > sigstore-python currently only expects ECDSA-based tlogs, and so does (2) unconditionally If you aren't handling RSA or ed25519, then this is even better, as it wouldn't be a breaking client change.
+haydentherapper: I just reread what I wrote, and it's kinda messy. so tldr * ed25519-signed checkpoint key ID: `SHA-256(key name || 0x0A || 0x01 || 32-byte Ed25519 public key)[:4]` * ecdsa-signed checkpoint key ID: `SHA-256(DER(SPKI(raw public key)))[:4]` * RSA checkpoint key ID: `SHA-256(key name || 0x0A || 0xFF || SHA-256(DER(SPKI(raw public key))))[:4]` RSA is up for debate if anyone disagrees, since the spec doesn't define RSA keys. Edit: Also, consider we will add PQ keys at some point, and by the spec, we'll need to reuse `0xff`. If you want to do something else, let's decide now.
+woodruffw: Wow, what a mess 😄 So, to round it off: clients that want to handle key IDs correctly will need to: 1. Stop assuming that everything is ECDSA 2. Propagate the key type from its representation in `TrustedRoot.tlogs[].public_key` 3. Use the key type to determine the key ID algorithm to apply Did I get that right? If so, that'll be a slightly involved patch to `sigstore-python`, but not too bad 🙂 > RSA is up for debate if anyone disagrees, since the spec doesn't define RSA keys. Please direct me to another issue if this is the wrong place, but: is there a demonstrated (public or private) desire for RSA-based tlogs? Given that RSA sigs are much larger and that RSA signing is generally slower, I was under the impression that it wasn't commonly used for tlogs (despite RFC 6962 allowing it). With that being said, if RSA support is already decided, I have no objection to that key ID format.
+haydentherapper: > Stop assuming that everything is ECDSA Correct, particularly adding support for ed25519. > Propagate the key type from its representation in TrustedRoot.tlogs[].public_key > Use the key type to determine the key ID algorithm to apply Correct. Note that at some point, we'll also want to handle `0x04` co-signed checkpoints, signed with ed25519 as per the spec. So the key ID gives you both the signature algorithm and the structure that you're verifying, a checkpoint vs witnessed checkpoint. But that's forward looking > Please direct me to another issue if this is the wrong place, but: is there a demonstrated (public or private) desire for RSA-based tlogs? Given that RSA sigs are much larger and that RSA signing is generally slower, I was under the impression that it wasn't commonly used for tlogs (despite RFC 6962 allowing it). Actually the opposite, RSA is not preferred. I brought this up in https://github.com/C2SP/C2SP/issues/63, and the consensus was a) concerns about RSA vulns particularly for PKCS#1v1.5, b) key/sig size, c) another alg to support. I did point out RFC 6962 allows for it, but since RFC 6962 doesn't have support for checkpoints and C2SP is focused on improving Certificate Transparency, they're fine going off-spec. So if we want to say no RSA for Rekor, I'm OK with that. Rekor does support it currently so we might get some pushback from private instances, so I'd want to ask around. But if we're already in the state where most clients are just supporting ecdsa, then it's not really a breaking change.
+loosebazooka: I vote no rsa support unless it's defined in spec, we'd just be setting ourselves up for future incompatibility
+bdehamer: I was just looking through the [implementation](https://github.com/sigstore/sigstore-js/blob/main/packages/verify/src/timestamp/checkpoint.ts#L91-L93) in sigstore-js trying to understand what may need to change. Currently, it grabs the first four bytes of the checkpoint signature and uses that to find the correct key from the TrustedRoot by looking at the first four bytes of the listed key IDs. ![Image](https://github.com/sigstore/rekor/assets/398027/bac21a54-d1e3-4202-a790-cf21ff3d70f9) At no point does it attempt to calculate the key ID. Would this change if Rekor were to use an ed25519 key? Or could we assume that the key ID listed in the TrustedRoot would always reflect the appropriate format?
+loosebazooka: Interesting, yeah so are logId and keyHint going to use the same transformation over the key? Is it safe to use logId? Or should it always be calculated?
+haydentherapper: @bdehamer, that's a good point. For context, the reason we chose the log ID to be the SHA-256 hash of the DER encoded SPKI public key was to follow RFC 6962. Fulcio's CT log already set the log ID to be that, so we followed the same practice for Rekor. To one of @loosebazooka's questions earlier on, the log ID can be whatever we choose it to be. It probably _shouldn't_ be the key, because otherwise you are forced to rotate the key with every log sharding to maintain unique IDs. But we were trying to follow an existing related spec. For ed25519, we can either: * Change https://github.com/sigstore/protobuf-specs/blob/main/protos/sigstore_common.proto#L136-L139 to say that the log ID's key ID is different for ed25519, equaling `SHA-256(key name || 0x0A || 0x01 || 32-byte Ed25519 public key)`. Return this different log ID in the checkpoint and as part of the Rekor entry response. Also this impacts SET verification since the log ID changes. * Leave the log ID as-is, and change only the checkpoint key ID. This would require clients compute the checkpoint key ID to compare. Impacting the SET verification is what concerns me the most. I believe there are assumptions that the log ID always is `SHA256(DER(SPKI(pubkey)))` in most clients. I'd lean towards the second, making this change only for checkpoints. Tangential, for RSA, I'm planning to continue to follow what we're doing for ECDSA for computing the key ID. I don't want to drop RSA support entirely in case someone is using it and I think this means existing client implementations will continue to work without any changes. I'll just discourage RSA for public logs, and we'll make no guarantees that clients implement RSA support. Lemme know if anyone disagrees.
+haydentherapper: Also, there is another option, which is simply to state that publicly witnessed Rekor logs must use ecdsa.
+haydentherapper: @loosebazooka and I were chatting today about this, and came up with a good compromise that avoids clients needing to know this computation - let's include the checkpoint key ID (the truncated hash) as an optional field in the trust root [`TransparencyLogInstance`](https://github.com/sigstore/protobuf-specs/blob/main/protos/sigstore_trustroot.proto#L33-L43). Clients can then treat the checkpoint key ID as an arbitrary string rather than a constructed identity. I would vote that we make it optional to avoid making this a breaking change to the trust root. If the checkpoint key ID is not set, then the client should assume checkpoint key ID == log ID (which is the case for ecdsa and RSA). For new ed25519 logs, the checkpoint key ID must be set. What do you think @bdehamer @woodruffw?
+woodruffw: I like that idea! That makes things pretty simple on the clients side 🙂
+bdehamer: Sounds great, love it!",sigstore__rekor___non-human.xlsx,sigstore__rekor.xlsx,1.0,Signing and verification workflow,"Signing workflow, verification workflow","possible integration issues, security concerns, missing feature/enhancement request,","operational friction, functional reliability","5, 7",,,1.0,True,True

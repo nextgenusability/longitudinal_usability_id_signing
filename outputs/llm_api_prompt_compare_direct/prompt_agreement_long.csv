@@ -1,0 +1,41 @@
+phase,phase12_subset,metric,n,agreement_pct,error_rate_pct,cohen_kappa,gwet_ac1,variant
+Phase 1,all,Associated Component (full),159,10.06,89.94,,,newflow
+Phase 1,all,Associated Component (partial overlap),159,49.06,50.94,,,newflow
+Phase 1,first_100,Associated Component (full),100,13.0,87.0,,,newflow
+Phase 1,first_100,Associated Component (partial overlap),100,52.0,48.0,,,newflow
+Phase 1,last_60,Associated Component (full),59,5.08,94.92,,,newflow
+Phase 1,last_60,Associated Component (partial overlap),59,44.07,55.93,,,newflow
+Phase 1,all,codes_primary (semantic agreement),159,92.45,7.55,,,newflow
+Phase 1,first_100,codes_primary (semantic agreement),100,90.0,10.0,,,newflow
+Phase 1,last_60,codes_primary (semantic agreement),59,96.61,3.39,,,newflow
+Phase 2,all,Usability_Non-Usability Type,159,69.81,30.19,0.2818968761761382,0.5061153174140942,newflow
+Phase 2,first_100,Usability_Non-Usability Type,100,66.0,34.0,0.2056074766355139,0.4387586662264774,newflow
+Phase 2,last_60,Usability_Non-Usability Type,59,76.27,23.73,0.4174894217207334,0.6177695511337342,newflow
+Phase 3,phase3_sample,Associated Component Theme (full),18,16.67,83.33,0.2763491488591093,0.7758361966201529,newflow
+Phase 3,phase3_sample,Associated Component Theme (partial overlap),18,61.11,38.89,0.2763491488591093,0.7758361966201529,newflow
+Phase 3,phase3_sample,L1_Theme (full),17,0.0,100.0,0.0835579514824798,0.8902886645065008,newflow
+Phase 3,phase3_sample,L1_Theme (partial overlap),17,11.76,88.24,0.0835579514824798,0.8902886645065008,newflow
+Phase 3,phase3_sample,L1_Theme Secondary (full),17,23.53,76.47,0.1627906976744187,0.6167814652473388,newflow
+Phase 3,phase3_sample,L1_Theme Secondary (partial overlap),17,35.29,64.71,0.1627906976744187,0.6167814652473388,newflow
+Phase 3,phase3_sample,Nielsen_theme (full),17,11.76,88.24,0.2319902319902322,0.785934002644083,newflow
+Phase 3,phase3_sample,Nielsen_theme (partial overlap),17,47.06,52.94,0.2319902319902322,0.785934002644083,newflow
+Phase 1,all,Associated Component (full),159,10.06,89.94,,,oldflow
+Phase 1,all,Associated Component (partial overlap),159,41.51,58.49,,,oldflow
+Phase 1,first_100,Associated Component (full),100,10.0,90.0,,,oldflow
+Phase 1,first_100,Associated Component (partial overlap),100,45.0,55.0,,,oldflow
+Phase 1,last_60,Associated Component (full),59,10.17,89.83,,,oldflow
+Phase 1,last_60,Associated Component (partial overlap),59,35.59,64.41,,,oldflow
+Phase 1,all,codes_primary (semantic agreement),159,91.82,8.18,,,oldflow
+Phase 1,first_100,codes_primary (semantic agreement),100,90.0,10.0,,,oldflow
+Phase 1,last_60,codes_primary (semantic agreement),59,94.92,5.08,,,oldflow
+Phase 2,all,Usability_Non-Usability Type,159,72.33,27.67,0.3556824461226744,0.5428944789284545,oldflow
+Phase 2,first_100,Usability_Non-Usability Type,100,74.0,26.0,0.3713733075435202,0.577373211963589,oldflow
+Phase 2,last_60,Usability_Non-Usability Type,59,69.49,30.51,0.3320754716981133,0.4827082318558208,oldflow
+Phase 3,phase3_sample,Associated Component Theme (full),18,22.22,77.78,0.2716763005780345,0.7916695371812005,oldflow
+Phase 3,phase3_sample,Associated Component Theme (partial overlap),18,55.56,44.44,0.2716763005780345,0.7916695371812005,oldflow
+Phase 3,phase3_sample,L1_Theme (full),17,0.0,100.0,0.0505041648399812,0.8744947599910758,oldflow
+Phase 3,phase3_sample,L1_Theme (partial overlap),17,11.76,88.24,0.0505041648399812,0.8744947599910758,oldflow
+Phase 3,phase3_sample,L1_Theme Secondary (full),17,11.76,88.24,0.0180505415162458,0.4620962425840475,oldflow
+Phase 3,phase3_sample,L1_Theme Secondary (partial overlap),17,23.53,76.47,0.0180505415162458,0.4620962425840475,oldflow
+Phase 3,phase3_sample,Nielsen_theme (full),17,0.0,100.0,0.2085427135678391,0.7921397379912666,oldflow
+Phase 3,phase3_sample,Nielsen_theme (partial overlap),17,41.18,58.82,0.2085427135678391,0.7921397379912666,oldflow

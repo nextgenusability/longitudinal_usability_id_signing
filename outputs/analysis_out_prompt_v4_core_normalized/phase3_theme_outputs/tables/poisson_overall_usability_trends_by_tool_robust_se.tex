@@ -1,0 +1,20 @@
+\begin{table}[t]
+\centering
+\caption{Sensitivity check for overall usability trends: Poisson standard errors vs HC0 robust standard errors by tool.}
+\label{tab:poisson-overall-trends-robust-se}
+\scriptsize
+\begin{tabular}{llllllllll}
+\hline
+tool & beta & se & p\_value & poisson\_robust\_se & poisson\_robust\_p\_value & rr\_per\_month & poisson\_robust\_rr\_per\_month & sig\_0\_05 & poisson\_robust\_sig\_0\_05 \\
+\hline
+sigstore/rekor & -0.0505 & 0.0060 & 2.63e-17 & 0.0056 & 1.69e-19 & 0.9508 & 0.9508 & yes & yes \\
+sigstore/fulcio & -0.0479 & 0.0066 & 4.14e-13 & 0.0072 & 3.46e-11 & 0.9533 & 0.9533 & yes & yes \\
+sigstore/cosign & -0.0382 & 0.0029 & 2.43e-40 & 0.0048 & 1.36e-15 & 0.9625 & 0.9625 & yes & yes \\
+notaryproject/notation & -0.0322 & 0.0047 & 1.2e-11 & 0.0088 & 0.000265 & 0.9683 & 0.9683 & yes & yes \\
+hashicorp/vault & -0.0250 & 0.0020 & 3e-37 & 0.0032 & 1.07e-14 & 0.9753 & 0.9753 & yes & yes \\
+Keyfactor/ejbca-ce & -0.0001 & 0.0059 & 0.991 & 0.0059 & 0.991 & 0.9999 & 0.9999 & no & no \\
+Keyfactor/signserver-ce & 0.0126 & 0.0152 & 0.408 & 0.0141 & 0.373 & 1.0127 & 1.0127 & no & no \\
+openpubkey/openpubkey & 0.0404 & 0.0079 & 3.39e-07 & 0.0150 & 0.0072 & 1.0412 & 1.0412 & yes & yes \\
+\hline
+\end{tabular}
+\end{table}

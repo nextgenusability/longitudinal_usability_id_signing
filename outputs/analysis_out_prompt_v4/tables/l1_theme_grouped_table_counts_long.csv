@@ -1,0 +1,87 @@
+repo,l1_theme_secondary_group,l1_theme_canonical,count
+Keyfactor/ejbca-ce,Cognitive Friction,Notification/Logging Issues,26
+Keyfactor/ejbca-ce,Cognitive Friction,User confusion / unclear documentation,84
+Keyfactor/ejbca-ce,Functional Gap,Missing feature / enhancement request,23
+Keyfactor/ejbca-ce,Functional Reliability,Performance issue,2
+Keyfactor/ejbca-ce,Functional Reliability,Security concerns,6
+Keyfactor/ejbca-ce,Functional Reliability,Unexpected behavior,34
+Keyfactor/ejbca-ce,Operational Friction,Authentication friction,12
+Keyfactor/ejbca-ce,Operational Friction,Build/CI/installation/distribution release issues,38
+Keyfactor/ejbca-ce,Operational Friction,Configuration friction,45
+Keyfactor/ejbca-ce,Operational Friction,Integration failure/issues,32
+Keyfactor/ejbca-ce,Operational Friction,Tedious Workflows,4
+Keyfactor/signserver-ce,Cognitive Friction,Notification/Logging Issues,3
+Keyfactor/signserver-ce,Cognitive Friction,User confusion / unclear documentation,13
+Keyfactor/signserver-ce,Functional Gap,Missing feature / enhancement request,5
+Keyfactor/signserver-ce,Functional Reliability,Performance issue,1
+Keyfactor/signserver-ce,Functional Reliability,Unexpected behavior,2
+Keyfactor/signserver-ce,Operational Friction,Authentication friction,4
+Keyfactor/signserver-ce,Operational Friction,Build/CI/installation/distribution release issues,5
+Keyfactor/signserver-ce,Operational Friction,Configuration friction,5
+Keyfactor/signserver-ce,Operational Friction,Integration failure/issues,4
+Keyfactor/signserver-ce,Operational Friction,Tedious Workflows,1
+hashicorp/vault,Cognitive Friction,Notification/Logging Issues,327
+hashicorp/vault,Cognitive Friction,User confusion / unclear documentation,482
+hashicorp/vault,Functional Gap,Missing feature / enhancement request,555
+hashicorp/vault,Functional Reliability,Performance issue,56
+hashicorp/vault,Functional Reliability,Security concerns,89
+hashicorp/vault,Functional Reliability,Unexpected behavior,443
+hashicorp/vault,Operational Friction,Authentication friction,130
+hashicorp/vault,Operational Friction,Build/CI/installation/distribution release issues,105
+hashicorp/vault,Operational Friction,Configuration friction,212
+hashicorp/vault,Operational Friction,Integration failure/issues,311
+hashicorp/vault,Operational Friction,Tedious Workflows,231
+notaryproject/notation,Cognitive Friction,Notification/Logging Issues,60
+notaryproject/notation,Cognitive Friction,User confusion / unclear documentation,42
+notaryproject/notation,Functional Gap,Missing feature / enhancement request,184
+notaryproject/notation,Functional Reliability,Performance issue,8
+notaryproject/notation,Functional Reliability,Security concerns,17
+notaryproject/notation,Functional Reliability,Unexpected behavior,30
+notaryproject/notation,Operational Friction,Authentication friction,7
+notaryproject/notation,Operational Friction,Build/CI/installation/distribution release issues,24
+notaryproject/notation,Operational Friction,Configuration friction,20
+notaryproject/notation,Operational Friction,Integration failure/issues,35
+notaryproject/notation,Operational Friction,Tedious Workflows,48
+openpubkey/openpubkey,Cognitive Friction,Notification/Logging Issues,6
+openpubkey/openpubkey,Cognitive Friction,User confusion / unclear documentation,15
+openpubkey/openpubkey,Functional Gap,Missing feature / enhancement request,73
+openpubkey/openpubkey,Functional Reliability,Performance issue,1
+openpubkey/openpubkey,Functional Reliability,Security concerns,16
+openpubkey/openpubkey,Functional Reliability,Unexpected behavior,9
+openpubkey/openpubkey,Operational Friction,Authentication friction,5
+openpubkey/openpubkey,Operational Friction,Build/CI/installation/distribution release issues,8
+openpubkey/openpubkey,Operational Friction,Configuration friction,2
+openpubkey/openpubkey,Operational Friction,Integration failure/issues,11
+openpubkey/openpubkey,Operational Friction,Tedious Workflows,4
+sigstore/cosign,Cognitive Friction,Notification/Logging Issues,62
+sigstore/cosign,Cognitive Friction,User confusion / unclear documentation,260
+sigstore/cosign,Functional Gap,Missing feature / enhancement request,413
+sigstore/cosign,Functional Reliability,Performance issue,14
+sigstore/cosign,Functional Reliability,Security concerns,68
+sigstore/cosign,Functional Reliability,Unexpected behavior,139
+sigstore/cosign,Operational Friction,Authentication friction,36
+sigstore/cosign,Operational Friction,Build/CI/installation/distribution release issues,66
+sigstore/cosign,Operational Friction,Configuration friction,62
+sigstore/cosign,Operational Friction,Integration failure/issues,195
+sigstore/cosign,Operational Friction,Tedious Workflows,92
+sigstore/fulcio,Cognitive Friction,Notification/Logging Issues,12
+sigstore/fulcio,Cognitive Friction,User confusion / unclear documentation,32
+sigstore/fulcio,Functional Gap,Missing feature / enhancement request,109
+sigstore/fulcio,Functional Reliability,Performance issue,3
+sigstore/fulcio,Functional Reliability,Security concerns,31
+sigstore/fulcio,Functional Reliability,Unexpected behavior,19
+sigstore/fulcio,Operational Friction,Authentication friction,5
+sigstore/fulcio,Operational Friction,Build/CI/installation/distribution release issues,12
+sigstore/fulcio,Operational Friction,Configuration friction,11
+sigstore/fulcio,Operational Friction,Integration failure/issues,38
+sigstore/fulcio,Operational Friction,Tedious Workflows,8
+sigstore/rekor,Cognitive Friction,Notification/Logging Issues,16
+sigstore/rekor,Cognitive Friction,User confusion / unclear documentation,54
+sigstore/rekor,Functional Gap,Missing feature / enhancement request,119
+sigstore/rekor,Functional Reliability,Performance issue,12
+sigstore/rekor,Functional Reliability,Security concerns,21
+sigstore/rekor,Functional Reliability,Unexpected behavior,33
+sigstore/rekor,Operational Friction,Build/CI/installation/distribution release issues,14
+sigstore/rekor,Operational Friction,Configuration friction,7
+sigstore/rekor,Operational Friction,Integration failure/issues,33
+sigstore/rekor,Operational Friction,Tedious Workflows,13

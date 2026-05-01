@@ -1,0 +1,21 @@
+phase,phase12_subset,metric,n,agreement_pct,error_rate_pct,precision_pct,recall_pct,specificity_pct,f1_pct,tp,fp,fn,tn,cohen_kappa,gwet_ac1
+Phase 1,all,Associated Component (full),100,11.0,89.0,,,,,0,0,0,0,,
+Phase 1,all,Associated Component (partial overlap),100,49.0,51.0,,,,,0,0,0,0,,
+Phase 1,first_100,Associated Component (full),100,11.0,89.0,,,,,0,0,0,0,,
+Phase 1,first_100,Associated Component (partial overlap),100,49.0,51.0,,,,,0,0,0,0,,
+Phase 1,last_60,Associated Component (full),0,,,,,,,0,0,0,0,,
+Phase 1,last_60,Associated Component (partial overlap),0,,,,,,,0,0,0,0,,
+Phase 1,all,codes_primary (semantic agreement),100,90.0,10.0,,,,,0,0,0,0,,
+Phase 1,first_100,codes_primary (semantic agreement),100,90.0,10.0,,,,,0,0,0,0,,
+Phase 1,last_60,codes_primary (semantic agreement),0,,,,,,,0,0,0,0,,
+Phase 2,all,Usability_Non-Usability Type,100,74.0,26.0,98.39,70.93,92.86,82.43,61,1,25,13,0.3713733075435202,0.577373211963589
+Phase 2,first_100,Usability_Non-Usability Type,100,74.0,26.0,98.39,70.93,92.86,82.43,61,1,25,13,0.3713733075435202,0.577373211963589
+Phase 2,last_60,Usability_Non-Usability Type,0,,,,,,,0,0,0,0,,
+Phase 3,phase3_sample,Associated Component Theme (full),18,22.22,77.78,,,,,0,0,0,0,0.2716763005780345,0.7916695371812005
+Phase 3,phase3_sample,Associated Component Theme (partial overlap),18,55.56,44.44,,,,,0,0,0,0,0.2716763005780345,0.7916695371812005
+Phase 3,phase3_sample,L1_Theme (full),17,0.0,100.0,,,,,0,0,0,0,0.14999999999999974,0.8514416359710403
+Phase 3,phase3_sample,L1_Theme (partial overlap),17,29.41,70.59,,,,,0,0,0,0,0.14999999999999974,0.8514416359710403
+Phase 3,phase3_sample,L1_Theme Secondary (full),17,11.76,88.24,,,,,0,0,0,0,-0.018181818181817837,0.31064446053584366
+Phase 3,phase3_sample,L1_Theme Secondary (partial overlap),17,35.29,64.71,,,,,0,0,0,0,-0.018181818181817837,0.31064446053584366
+Phase 3,phase3_sample,Nielsen_theme (full),17,0.0,100.0,,,,,0,0,0,0,0.20854271356783916,0.7921397379912666
+Phase 3,phase3_sample,Nielsen_theme (partial overlap),17,41.18,58.82,,,,,0,0,0,0,0.20854271356783916,0.7921397379912666

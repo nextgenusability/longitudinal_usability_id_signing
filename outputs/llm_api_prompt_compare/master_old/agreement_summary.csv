@@ -1,0 +1,13 @@
+phase,metric,n,agreement_pct,error_rate_pct,cohen_kappa,gwet_ac1
+Phase 1,Associated Component (full),100,0.0,100.0,,
+Phase 1,Associated Component (partial overlap),100,2.0,98.0,,
+Phase 1,codes_primary (semantic agreement),100,90.0,10.0,,
+Phase 2,Usability_Non-Usability Type,99,73.74,26.26,0.3545636910732194,0.5781019504999181
+Phase 3,Associated Component Theme (full),17,29.41,70.59,0.30685593476291145,0.7268670038678965
+Phase 3,Associated Component Theme (partial overlap),17,58.82,41.18,0.30685593476291145,0.7268670038678965
+Phase 3,L1_Theme (full),17,0.0,100.0,0.050504164839981276,0.8744947599910758
+Phase 3,L1_Theme (partial overlap),17,11.76,88.24,0.050504164839981276,0.8744947599910758
+Phase 3,L1_Theme Secondary (full),17,11.76,88.24,0.018050541516245838,0.4620962425840475
+Phase 3,L1_Theme Secondary (partial overlap),17,23.53,76.47,0.018050541516245838,0.4620962425840475
+Phase 3,Nielsen_theme (full),17,0.0,100.0,0.20854271356783916,0.7921397379912666
+Phase 3,Nielsen_theme (partial overlap),17,41.18,58.82,0.20854271356783916,0.7921397379912666

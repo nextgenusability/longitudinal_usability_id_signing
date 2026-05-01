@@ -1,0 +1,87 @@
+repo,L1_Theme,count
+Keyfactor/ejbca-ce,Authentication friction,12
+Keyfactor/ejbca-ce,Build/CI/installation/distribution release issues,38
+Keyfactor/ejbca-ce,Configuration friction,45
+Keyfactor/ejbca-ce,Integration failure/issues,32
+Keyfactor/ejbca-ce,Missing feature / enhancement request,23
+Keyfactor/ejbca-ce,Notification/Logging /Web UI Issues,26
+Keyfactor/ejbca-ce,Performance issue,2
+Keyfactor/ejbca-ce,Security concerns,6
+Keyfactor/ejbca-ce,Tedious Workflows,4
+Keyfactor/ejbca-ce,Unexpected behavior,34
+Keyfactor/ejbca-ce,User confusion / unclear documentation,84
+Keyfactor/signserver-ce,Authentication friction,4
+Keyfactor/signserver-ce,Build/CI/installation/distribution release issues,5
+Keyfactor/signserver-ce,Configuration friction,5
+Keyfactor/signserver-ce,Integration failure/issues,4
+Keyfactor/signserver-ce,Missing feature / enhancement request,5
+Keyfactor/signserver-ce,Notification/Logging /Web UI Issues,3
+Keyfactor/signserver-ce,Performance issue,1
+Keyfactor/signserver-ce,Tedious Workflows,1
+Keyfactor/signserver-ce,Unexpected behavior,2
+Keyfactor/signserver-ce,User confusion / unclear documentation,13
+hashicorp/vault,Authentication friction,130
+hashicorp/vault,Build/CI/installation/distribution release issues,105
+hashicorp/vault,Configuration friction,212
+hashicorp/vault,Integration failure/issues,311
+hashicorp/vault,Missing feature / enhancement request,555
+hashicorp/vault,Notification/Logging /Web UI Issues,327
+hashicorp/vault,Performance issue,56
+hashicorp/vault,Security concerns,89
+hashicorp/vault,Tedious Workflows,231
+hashicorp/vault,Unexpected behavior,443
+hashicorp/vault,User confusion / unclear documentation,482
+notaryproject/notation,Authentication friction,7
+notaryproject/notation,Build/CI/installation/distribution release issues,24
+notaryproject/notation,Configuration friction,20
+notaryproject/notation,Integration failure/issues,35
+notaryproject/notation,Missing feature / enhancement request,184
+notaryproject/notation,Notification/Logging /Web UI Issues,60
+notaryproject/notation,Performance issue,8
+notaryproject/notation,Security concerns,17
+notaryproject/notation,Tedious Workflows,48
+notaryproject/notation,Unexpected behavior,30
+notaryproject/notation,User confusion / unclear documentation,42
+openpubkey/openpubkey,Authentication friction,5
+openpubkey/openpubkey,Build/CI/installation/distribution release issues,8
+openpubkey/openpubkey,Configuration friction,2
+openpubkey/openpubkey,Integration failure/issues,11
+openpubkey/openpubkey,Missing feature / enhancement request,73
+openpubkey/openpubkey,Notification/Logging /Web UI Issues,6
+openpubkey/openpubkey,Performance issue,1
+openpubkey/openpubkey,Security concerns,16
+openpubkey/openpubkey,Tedious Workflows,4
+openpubkey/openpubkey,Unexpected behavior,9
+openpubkey/openpubkey,User confusion / unclear documentation,15
+sigstore/cosign,Authentication friction,36
+sigstore/cosign,Build/CI/installation/distribution release issues,66
+sigstore/cosign,Configuration friction,62
+sigstore/cosign,Integration failure/issues,195
+sigstore/cosign,Missing feature / enhancement request,413
+sigstore/cosign,Notification/Logging /Web UI Issues,62
+sigstore/cosign,Performance issue,14
+sigstore/cosign,Security concerns,68
+sigstore/cosign,Tedious Workflows,92
+sigstore/cosign,Unexpected behavior,139
+sigstore/cosign,User confusion / unclear documentation,260
+sigstore/fulcio,Authentication friction,5
+sigstore/fulcio,Build/CI/installation/distribution release issues,12
+sigstore/fulcio,Configuration friction,11
+sigstore/fulcio,Integration failure/issues,38
+sigstore/fulcio,Missing feature / enhancement request,109
+sigstore/fulcio,Notification/Logging /Web UI Issues,12
+sigstore/fulcio,Performance issue,3
+sigstore/fulcio,Security concerns,31
+sigstore/fulcio,Tedious Workflows,8
+sigstore/fulcio,Unexpected behavior,19
+sigstore/fulcio,User confusion / unclear documentation,32
+sigstore/rekor,Build/CI/installation/distribution release issues,14
+sigstore/rekor,Configuration friction,7
+sigstore/rekor,Integration failure/issues,33
+sigstore/rekor,Missing feature / enhancement request,119
+sigstore/rekor,Notification/Logging /Web UI Issues,16
+sigstore/rekor,Performance issue,12
+sigstore/rekor,Security concerns,21
+sigstore/rekor,Tedious Workflows,13
+sigstore/rekor,Unexpected behavior,33
+sigstore/rekor,User confusion / unclear documentation,54

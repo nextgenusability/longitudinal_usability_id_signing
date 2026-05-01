@@ -1,0 +1,12 @@
+category,chi2,dof,p_value,cramers_v,n_assignments,n_tools_with_data,test_status,min_expected,cells_expected_lt5,theme_family
+Missing feature / enhancement request,273.262150369435,7,3.069984119994341e-55,0.2147742523399146,5924,8,ok,10.75,0,Primary themes (inductively generated)
+Notification/Logging Issues,80.87348276548227,7,9.139278039834293e-15,0.1168410760979239,5924,8,ok,3.716407832545577,1,Primary themes (inductively generated)
+Configuration friction,74.56444377557914,7,1.757978010681799e-13,0.11219108971004486,5924,8,ok,2.642133693450371,1,Primary themes (inductively generated)
+Security concerns,70.60387778356825,7,1.1154089809169574e-12,0.10917086523549875,5924,8,ok,1.800135043889264,1,Primary themes (inductively generated)
+User confusion / unclear documentation,66.33691083169538,7,8.096803699016816e-12,0.10582057007307245,5924,8,ok,7.127954085077651,0,Primary themes (inductively generated)
+Unexpected behavior,62.47734262218993,7,4.823638875463363e-11,0.10269605237410954,5924,8,ok,5.1463538149898715,0,Primary themes (inductively generated)
+Build/CI/installation/distribution release issues,55.20712010105558,7,1.3564559700713612e-09,0.09653616041095621,5924,8,ok,1.9743416610398379,1,Primary themes (inductively generated)
+Tedious Workflows,44.3936602352931,7,1.7929427235519651e-07,0.08656711656887274,5924,8,ok,2.910702228224173,1,Primary themes (inductively generated)
+Authentication friction,36.48390363785548,7,5.873516887600382e-06,0.07847713236024075,5924,8,ok,1.4444632005401756,1,Primary themes (inductively generated)
+Integration failure/issues,22.72938526304859,7,0.00189971583619676,0.06194215634870743,5924,8,ok,4.783423362592843,1,Primary themes (inductively generated)
+Performance issue,17.037266912299028,7,0.017157452267670324,0.05362810347972769,5924,8,ok,0.7040850776502363,3,Primary themes (inductively generated)

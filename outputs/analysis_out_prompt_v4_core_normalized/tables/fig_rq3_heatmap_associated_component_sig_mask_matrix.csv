@@ -1,0 +1,9 @@
+tool,API,Authentication/Authorization tools,Build/CI/Installation,CLI tooling,Core,Key Management Core / Secrets Backend,Notification/Logging,Policy/configuration,Release pipeline,Signing workflow,Verification workflow,Web Client
+Keyfactor/ejbca-ce,False,False,False,True,False,False,False,False,False,False,False,False
+Keyfactor/signserver-ce,False,False,False,False,False,False,False,False,False,False,False,False
+hashicorp/vault,True,True,True,True,False,True,True,True,False,False,False,True
+notaryproject/notation,True,True,False,True,False,True,False,True,False,True,True,False
+openpubkey/openpubkey,False,True,True,True,False,False,False,True,False,False,False,False
+sigstore/cosign,True,True,True,True,True,True,True,True,True,True,True,False
+sigstore/fulcio,True,True,True,False,True,False,False,True,False,False,True,False
+sigstore/rekor,True,False,False,True,True,False,True,False,True,False,True,False

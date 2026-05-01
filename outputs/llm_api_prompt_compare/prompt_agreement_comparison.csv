@@ -1,0 +1,13 @@
+phase,metric,n,agreement_pct_master_new,error_rate_pct_master_new,cohen_kappa_master_new,gwet_ac1_master_new,agreement_pct_master_old,error_rate_pct_master_old,cohen_kappa_master_old,gwet_ac1_master_old,delta_agreement_pct,delta_cohen_kappa,delta_gwet_ac1,winner_by_agreement
+Phase 1,Associated Component (full),100,0.0,100.0,,,0.0,100.0,,,0.0,,,tie_or_na
+Phase 1,Associated Component (partial overlap),100,2.0,98.0,,,2.0,98.0,,,0.0,,,tie_or_na
+Phase 1,codes_primary (semantic agreement),100,90.0,10.0,,,90.0,10.0,,,0.0,,,tie_or_na
+Phase 2,Usability_Non-Usability Type,99,73.74,26.26,0.3545636910732194,0.5781019504999181,73.74,26.26,0.3545636910732194,0.5781019504999181,0.0,0.0,0.0,tie_or_na
+Phase 3,Associated Component Theme (full),17,29.41,70.59,0.3068559347629114,0.7268670038678965,29.41,70.59,0.3068559347629114,0.7268670038678965,0.0,0.0,0.0,tie_or_na
+Phase 3,Associated Component Theme (partial overlap),17,58.82,41.18,0.3068559347629114,0.7268670038678965,58.82,41.18,0.3068559347629114,0.7268670038678965,0.0,0.0,0.0,tie_or_na
+Phase 3,L1_Theme (full),17,0.0,100.0,0.0505041648399812,0.8744947599910758,0.0,100.0,0.0505041648399812,0.8744947599910758,0.0,0.0,0.0,tie_or_na
+Phase 3,L1_Theme (partial overlap),17,11.76,88.24,0.0505041648399812,0.8744947599910758,11.76,88.24,0.0505041648399812,0.8744947599910758,0.0,0.0,0.0,tie_or_na
+Phase 3,L1_Theme Secondary (full),17,11.76,88.24,0.0180505415162458,0.4620962425840475,11.76,88.24,0.0180505415162458,0.4620962425840475,0.0,0.0,0.0,tie_or_na
+Phase 3,L1_Theme Secondary (partial overlap),17,23.53,76.47,0.0180505415162458,0.4620962425840475,23.53,76.47,0.0180505415162458,0.4620962425840475,0.0,0.0,0.0,tie_or_na
+Phase 3,Nielsen_theme (full),17,0.0,100.0,0.2085427135678391,0.7921397379912666,0.0,100.0,0.2085427135678391,0.7921397379912666,0.0,0.0,0.0,tie_or_na
+Phase 3,Nielsen_theme (partial overlap),17,41.18,58.82,0.2085427135678391,0.7921397379912666,41.18,58.82,0.2085427135678391,0.7921397379912666,0.0,0.0,0.0,tie_or_na

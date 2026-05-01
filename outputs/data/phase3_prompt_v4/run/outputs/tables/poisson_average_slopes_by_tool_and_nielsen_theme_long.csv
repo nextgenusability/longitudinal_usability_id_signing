@@ -1,0 +1,51 @@
+tool_family,theme,beta1_avg
+Keyfactor,1. Visibility of system status,-0.02269759946139282
+Keyfactor,10. Help and documentation,0.0042530862190758205
+Keyfactor,2. Match between system and the real world,-0.008257749346508365
+Keyfactor,3. User control and freedom,-0.012578967379962402
+Keyfactor,4. Consistency and standards,0.0278599246149057
+Keyfactor,5. Error prevention,0.006500254328475735
+Keyfactor,6. Recognition rather than recall,0.05595713393892761
+Keyfactor,7. Flexibility and efficiency of use,0.016445871992965218
+Keyfactor,8. Aesthetic and minimalist design,-0.008436026081077755
+Keyfactor,"9. Help users recognize, diagnose, and recover from errors",0.005837718341837336
+Notary,1. Visibility of system status,-0.013855325721126372
+Notary,10. Help and documentation,-0.027496903637193953
+Notary,2. Match between system and the real world,-0.01950971162429892
+Notary,3. User control and freedom,-0.057530224566440524
+Notary,4. Consistency and standards,-0.023711556094272862
+Notary,5. Error prevention,-0.05223155249069138
+Notary,6. Recognition rather than recall,-0.044690389110593816
+Notary,7. Flexibility and efficiency of use,-0.03736176442626431
+Notary,8. Aesthetic and minimalist design,-0.01162490934554635
+Notary,"9. Help users recognize, diagnose, and recover from errors",-0.016291198146336148
+OpenPubKey,1. Visibility of system status,0.05595713393892761
+OpenPubKey,10. Help and documentation,0.05336218479082954
+OpenPubKey,2. Match between system and the real world,0.0632666727481252
+OpenPubKey,3. User control and freedom,0.03003124797018038
+OpenPubKey,4. Consistency and standards,0.030100683063676914
+OpenPubKey,5. Error prevention,0.038687886899429154
+OpenPubKey,6. Recognition rather than recall,0.04082057576476956
+OpenPubKey,7. Flexibility and efficiency of use,0.03851544218534398
+OpenPubKey,8. Aesthetic and minimalist design,0.03589102780673603
+OpenPubKey,"9. Help users recognize, diagnose, and recover from errors",0.0440895913685316
+Sigstore,1. Visibility of system status,-0.030815140511911632
+Sigstore,10. Help and documentation,-0.042411325037789306
+Sigstore,2. Match between system and the real world,-0.04264102696756015
+Sigstore,3. User control and freedom,-0.07348232405973122
+Sigstore,4. Consistency and standards,-0.04621874388475985
+Sigstore,5. Error prevention,-0.05590310039204841
+Sigstore,6. Recognition rather than recall,-0.06513569253738472
+Sigstore,7. Flexibility and efficiency of use,-0.047973854465779696
+Sigstore,8. Aesthetic and minimalist design,-0.04313623547624035
+Sigstore,"9. Help users recognize, diagnose, and recover from errors",-0.03880940012610098
+Vault,1. Visibility of system status,-0.02637298167685456
+Vault,10. Help and documentation,-0.031228882977067034
+Vault,2. Match between system and the real world,-0.02714062533908833
+Vault,3. User control and freedom,-0.02525159560321733
+Vault,4. Consistency and standards,-0.021736105007481944
+Vault,5. Error prevention,-0.023171419722532456
+Vault,6. Recognition rather than recall,-0.0214986770972843
+Vault,7. Flexibility and efficiency of use,-0.02285089652501897
+Vault,8. Aesthetic and minimalist design,-0.031273441266395446
+Vault,"9. Help users recognize, diagnose, and recover from errors",-0.0280999772418408

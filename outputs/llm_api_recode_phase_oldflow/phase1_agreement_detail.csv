@@ -1,0 +1,160 @@
+sample_id,phase12_subset,repo,issue_number,human_associated_component,llm_associated_component,human_associated_component_semantic,llm_associated_component_semantic,full_agree,partial_agree,code_primary_semantic_agree
+2,first_100,Keyfactor/ejbca-ce,55,ejbca- user notification,"Keyfactor EJBCA (Certificate Authority) - Email/User Notification System, Keyfactor EJBCA (Certificate Authority) - Core","key_management_or_ca, notification_logging","authentication_authorization, key_management_or_ca, notification_logging",0,1,yes
+3,first_100,Keyfactor/ejbca-ce,218,ejbca,Keyfactor EJBCA (Certificate Authority) core,key_management_or_ca,"authentication_authorization, key_management_or_ca",0,1,yes
+4,first_100,Keyfactor/ejbca-ce,261,ejbca-REST API,"Keyfactor EJBCA (Certificate Authority) - REST API, Keyfactor EJBCA (Certificate Authority) - Web Client",api,"api, authentication_authorization, cli, key_management_or_ca, web_client",0,1,yes
+5,first_100,Keyfactor/ejbca-ce,473,ejbca-web client,Keyfactor EJBCA (Certificate Authority) - Web Client,"cli, web_client","authentication_authorization, cli, key_management_or_ca, web_client",0,1,yes
+6,first_100,Keyfactor/ejbca-ce,520,ejbca-REST API,Keyfactor EJBCA (Certificate Authority) - REST API,api,"api, authentication_authorization, key_management_or_ca",0,1,yes
+7,first_100,Keyfactor/ejbca-ce,568,ejbca,Keyfactor EJBCA (Certificate Authority) core,key_management_or_ca,"authentication_authorization, key_management_or_ca",0,1,yes
+8,first_100,Keyfactor/ejbca-ce,577,ejbca-key generation,"Keyfactor EJBCA (Certificate Authority) core, Keyfactor EJBCA (Certificate Authority) API",key_management_or_ca,"api, authentication_authorization, key_management_or_ca",0,1,yes
+9,first_100,Keyfactor/ejbca-ce,824,ejbca,Keyfactor EJBCA (Certificate Authority) - Release/Tagging/Distribution,key_management_or_ca,"authentication_authorization, key_management_or_ca, release_pipeline",0,1,yes
+10,first_100,Keyfactor/signserver-ce,5,Signserver CLI,"Keyfactor SignServer core, CLI tooling",cli,"cli, core",0,1,yes
+11,first_100,hashicorp/vault,13243,Hashcorp vault,Hashicorp Vault - Transit secrets engine,hashcorp,key_management_or_ca,0,0,yes
+12,first_100,hashicorp/vault,13246,Hashcorp vault,"Hashicorp Vault core, CLI tooling",hashcorp,"cli, core",0,0,yes
+13,first_100,hashicorp/vault,13304,Hashcorp vault-Error alert/ logging,Hashicorp Vault core,notification_logging,core,0,0,yes
+14,first_100,hashicorp/vault,13305,Hash corp vault - azure storage container integration,hashicorp vault core,hash corp azure storage container integration,core,0,0,yes
+15,first_100,hashicorp/vault,13319,hash corp Vault- Policy engine,"Hashicorp Vault core, Authentication/Authorization (ACL policies)",policy_configuration,"authentication_authorization, build_ci, core, key_management_or_ca",0,0,yes
+16,first_100,hashicorp/vault,13346,Hash corp Vault,hashicorp vault core,hash corp,core,0,0,yes
+17,first_100,hashicorp/vault,13358,Vault- OIDC Authentication,Vault CLI,"authentication_authorization, key_management_or_ca",cli,0,0,yes
+18,first_100,hashicorp/vault,13364,Hash corp Vault - API,"Hashicorp Vault - Key Management Core (secret engine), Hashicorp Vault - API",api,"api, key_management_or_ca",0,1,yes
+19,first_100,hashicorp/vault,13388,Hash corp vault- Postgresql secret engine integration,Hashicorp Vault - Key Management Core (secret engine),key_management_or_ca,key_management_or_ca,1,1,yes
+20,first_100,hashicorp/vault,14225,"Hash corp Vault - Service mgt , Kubernetes cluster integration","Hashicorp Vault core, Hashicorp Vault - Kubernetes service registration","hash corp service mgt, kubernetes cluster integration","core, kubernetes service registration",0,0,yes
+21,first_100,hashicorp/vault,14275,hash corp vault,"Hashicorp Vault - Authentication (userpass, token lookup), CLI/HTTP API",hash corp,"api, authentication_authorization, cli, key_management_or_ca",0,0,yes
+22,first_100,hashicorp/vault,14394,Hash corp Vault,Hashicorp Vault - CLI,hash corp,cli,0,0,yes
+23,first_100,hashicorp/vault,15196,Vault- Web interface/client,"Hashicorp Vault - Web Client, Hashicorp Vault - Authentication/Authorization","cli, web_client","authentication_authorization, cli, key_management_or_ca, web_client",0,1,yes
+24,first_100,hashicorp/vault,15210,Vault,HashiCorp Vault core,core,core,1,1,yes
+25,first_100,hashicorp/vault,15252,Hash corp vault- CLI error notification,Vault CLI,"cli, key_management_or_ca, notification_logging",cli,0,1,no
+26,first_100,hashicorp/vault,15641,hash corp vault - Release/package,Hashicorp Vault - Installation/Distribution (APT repository),release_pipeline,"build_ci, release_pipeline",0,1,yes
+27,first_100,hashicorp/vault,16151,Hash corp vault,Hashicorp Vault core,hash corp,core,0,0,yes
+28,first_100,hashicorp/vault,16158,Hash corp vault,"Hashicorp Vault core, CLI tooling",hash corp,"cli, core",0,0,yes
+29,first_100,hashicorp/vault,16282,hash corp vault- auth,"hashicorp vault core, Go API client",authentication_authorization,"api, cli, core",0,0,yes
+30,first_100,hashicorp/vault,16367,Hash corp vault- transit secret engine,"Hashicorp Vault - Transit secrets engine, Hashicorp Vault - API, Hashicorp Vault - Web Client",key_management_or_ca,"api, cli, key_management_or_ca, web_client",0,1,yes
+31,first_100,hashicorp/vault,16424,hash corp vault,Hashicorp Vault core,hash corp,core,0,0,yes
+32,first_100,hashicorp/vault,16529,hash corp vault-pki/transit engine,Hashicorp Vault - Key Management Core (secret engine),hash corp pki transit engine,key_management_or_ca,0,0,no
+33,first_100,hashicorp/vault,16750,"hash corp vault- authentication/Mfa, API","Hashicorp Vault core, CLI tooling, API","api, authentication_authorization, key_management_or_ca","api, cli, core",0,1,yes
+34,first_100,hashicorp/vault,16820,hash corp vault- notification,HashiCorp Vault core,"key_management_or_ca, notification_logging",core,0,0,yes
+35,first_100,hashicorp/vault,17130,Hash corp vault - oidc integration/authentication,"Hashicorp Vault - Authentication/Authorization (OIDC), Hashicorp Vault - CLI","authentication_authorization, key_management_or_ca","authentication_authorization, cli, key_management_or_ca",0,1,yes
+36,first_100,hashicorp/vault,17246,Hash corp vault - API,"Hashicorp Vault core, Authentication/Authorization",api,"authentication_authorization, core, key_management_or_ca",0,0,yes
+37,first_100,hashicorp/vault,17325,Hash corp vault - Web client/ui,Hashicorp Vault - Web Client,"cli, web_client","cli, web_client",1,1,yes
+38,first_100,hashicorp/vault,17475,"Hash corp vault - Web client/ui, authentication/oidc","Vault Web UI, Authentication/Authorization","authentication_authorization, cli, key_management_or_ca, web_client","authentication_authorization, cli, key_management_or_ca, web_client",1,1,yes
+39,first_100,hashicorp/vault,17737,Hash corp vault,"Hashicorp Vault core, API",hash corp,"api, core",0,0,yes
+40,first_100,hashicorp/vault,18151,Hash corp vault - Policy,Hashicorp Vault - CLI,policy_configuration,cli,0,0,no
+41,first_100,hashicorp/vault,18237,Hash corp vault,Hashicorp Vault - RabbitMQ secrets engine,hash corp,key_management_or_ca,0,0,yes
+42,first_100,hashicorp/vault,18248,Hash corp vault,Hashicorp Vault core,hash corp,core,0,0,yes
+43,first_100,hashicorp/vault,18251,Hash corp vault,"Hashicorp Vault core, Storage backend (Consul), Transit secrets engine, CLI tooling",hash corp,"cli, core, key_management_or_ca, storage backend consul",0,0,yes
+44,first_100,hashicorp/vault,18433,hash corp vault,Vault Agent template rendering,hash corp,agent template rendering,0,0,yes
+45,first_100,hashicorp/vault,18491,hash corp vault - Web client/UI,"Hashicorp Vault - Web Client, Hashicorp Vault - Kubernetes/Helm deployment","cli, web_client","cli, kubernetes helm deployment, web_client",0,1,yes
+46,first_100,hashicorp/vault,18573,Hash Vault-API,"hashicorp_vault core, API",api,"api, core",0,1,yes
+47,first_100,hashicorp/vault,19155,Vault-Plugins,Hashicorp Vault core,plugins,core,0,0,no
+48,first_100,hashicorp/vault,19209,hash Vault - Authentication,"Hashicorp Vault - Key Management Core (secret engine), Hashicorp Vault - Authentication/Authorization","authentication_authorization, key_management_or_ca","authentication_authorization, key_management_or_ca",1,1,yes
+49,first_100,hashicorp/vault,19490,Vault- Authentication,"Vault CLI, Vault core","authentication_authorization, key_management_or_ca","cli, core",0,0,yes
+50,first_100,hashicorp/vault,19568,"Hash Vault - Web Client/UI, CLI",Hashicorp Vault - Web Client,"cli, web_client","cli, web_client",1,1,yes
+51,first_100,hashicorp/vault,19697,Hash Vault,Vault core,hash,core,0,0,no
+52,first_100,hashicorp/vault,20272,hash Vault-CLI,"Hashicorp Vault - CLI tooling, Hashicorp Vault - Authentication/Authorization tools",cli,"authentication_authorization, cli, key_management_or_ca",0,1,yes
+53,first_100,hashicorp/vault,20589,hash vault,Hashicorp Vault core,hash,core,0,0,yes
+54,first_100,hashicorp/vault,21521,hash vault,"Hashicorp Vault core, Storage backend",hash,"core, storage backend",0,0,yes
+55,first_100,hashicorp/vault,21976,"Hash vault - CLI, plugin",Vault CLI,"cli, plugin",cli,0,1,yes
+56,first_100,hashicorp/vault,22045,Hash Vault - Community,hashicorp_vault core,hash community,core,0,0,yes
+57,first_100,hashicorp/vault,22214,Hash Vault- Web Client/UI,"Hashicorp Vault - Web Client, Hashicorp Vault - Key Management Core (secret engine)","cli, web_client","cli, key_management_or_ca, web_client",0,1,yes
+58,first_100,hashicorp/vault,22461,"Hash Vault- Authentication, community","hashicorp vault core, Authentication/Authorization (AWS IAM auth method)","authentication_authorization, community, key_management_or_ca","authentication_authorization, core, key_management_or_ca",0,1,yes
+59,first_100,hashicorp/vault,22578,Hash vault,"Hashicorp Vault core, Hashicorp Vault - Seal (gcpckms), Hashicorp Vault - Helm chart",hash,"core, helm chart, key_management_or_ca",0,0,yes
+60,first_100,hashicorp/vault,22602,hash corp vault- secret engine,Hashicorp Vault - AWS secrets engine,key_management_or_ca,key_management_or_ca,1,1,yes
+61,first_100,hashicorp/vault,23793,hash vault - authentication,"Hashicorp Vault core, Authentication/Authorization","authentication_authorization, key_management_or_ca","authentication_authorization, core, key_management_or_ca",0,1,no
+62,first_100,hashicorp/vault,23800,Hash Vault-Web client/UI,"Hashicorp Vault - Web Client, Hashicorp Vault - Authentication/Authorization (Kubernetes auth), Hashicorp Vault - Namespaces","cli, web_client","authentication_authorization, cli, key_management_or_ca, namespaces, web_client",0,1,yes
+63,first_100,hashicorp/vault,23941,"Hash Vault-Web client/UI, Policy","Hashicorp Vault - Web Client, Hashicorp Vault - Key Management Core (secret engine)","cli, policy_configuration, web_client","cli, key_management_or_ca, web_client",0,1,yes
+64,first_100,hashicorp/vault,24039,HAsh vault- API,"Vault core, API",api,"api, core",0,1,yes
+65,first_100,hashicorp/vault,24255,Hash Vault,"Hashicorp Vault core, API",hash,"api, core",0,0,yes
+66,first_100,hashicorp/vault,24269,Hash Vault,Hashicorp Vault core,hash,core,0,0,yes
+67,first_100,hashicorp/vault,24604,Hash vault,"Hashicorp Vault core, Hashicorp Vault Helm chart",hash,"core, helm chart",0,0,yes
+68,first_100,hashicorp/vault,24617,hash corp vault,"Hashicorp Vault core, Authentication (Kubernetes auth), Storage backend",hash corp,"authentication_authorization, core, key_management_or_ca, storage backend",0,0,yes
+69,first_100,hashicorp/vault,24725,hash corp vault,"Hashicorp Vault core, CLI tooling",hash corp,"cli, core",0,0,yes
+70,first_100,hashicorp/vault,24853,hash vault - authentication,"hashicorp vault core, Authentication/Authorization","authentication_authorization, key_management_or_ca","authentication_authorization, core, key_management_or_ca",0,1,yes
+71,first_100,hashicorp/vault,24956,hash vault - authentication,Hashicorp Vault - Authentication/Authorization,"authentication_authorization, key_management_or_ca","authentication_authorization, key_management_or_ca",1,1,yes
+72,first_100,hashicorp/vault,25506,Hash Vault - CLI,Vault CLI,cli,cli,1,1,yes
+73,first_100,hashicorp/vault,26164,hash Vault - Authentication/Authorization,"Hashicorp Vault core, Authentication (AppRole), CLI","authentication_authorization, key_management_or_ca","authentication_authorization, cli, core, key_management_or_ca",0,1,yes
+74,first_100,hashicorp/vault,26180,Hash Vault - API,"Hashicorp Vault core, API",api,"api, core",0,1,yes
+75,first_100,hashicorp/vault,27343,hash Vault- OIDC/Authentication,"Hashicorp Vault core - Authentication (JWT auth method), Hashicorp Vault core - Web UI","authentication_authorization, key_management_or_ca","authentication_authorization, cli, key_management_or_ca, web_client",0,1,no
+76,first_100,hashicorp/vault,27344,hash vault,Hashicorp Vault core,hash,core,0,0,yes
+77,first_100,hashicorp/vault,27805,"Hash Vault-Authentication, Secretc engine/database",Hashicorp Vault - Key Management Core (secret engine),"authentication_authorization, key_management_or_ca",key_management_or_ca,0,1,yes
+78,first_100,hashicorp/vault,27935,"hash vault-notification, packaging",Hashicorp Vault core,"key_management_or_ca, notification_logging, packaging",core,0,0,yes
+79,first_100,hashicorp/vault,28073,hash vault-authentication,"Hashicorp Vault core, API","authentication_authorization, key_management_or_ca","api, core",0,0,no
+80,first_100,hashicorp/vault,28457,hash Vault,hashicorp vault core,hash,core,0,0,yes
+81,first_100,hashicorp/vault,28738,hash vault,"Hashicorp Vault core, Key Management Core / Secrets Backend",hash,"core, key_management_or_ca",0,0,yes
+82,first_100,hashicorp/vault,28792,hash vault-API,"hashicorp vault core, API, CLI",api,"api, cli, core",0,1,yes
+83,first_100,hashicorp/vault,28993,"hash vault-Auth/OIDC,Policy","Hashicorp Vault - Web Client, Hashicorp Vault - Authentication/Authorization, Hashicorp Vault - Key Management Core (secret engine)","authentication_authorization, policy_configuration","authentication_authorization, cli, key_management_or_ca, web_client",0,1,yes
+84,first_100,hashicorp/vault,29033,hash Vault,"Hashicorp Vault core, Notification/Logging",hash,"core, key_management_or_ca, notification_logging",0,0,yes
+85,first_100,hashicorp/vault,29099,Hash Vault,"Hashicorp Vault core, CLI tooling, Web Client, Notification/Logging",hash,"cli, core, key_management_or_ca, notification_logging, web_client",0,0,yes
+86,first_100,hashicorp/vault,29101,hash vault-Web client/UI,Hashicorp Vault - Web Client,"cli, web_client","cli, web_client",1,1,yes
+87,first_100,hashicorp/vault,29179,hash vault-Agent,Vault core,hash agent,core,0,0,yes
+88,first_100,hashicorp/vault,29287,Hash vault-authorization,"Hashicorp Vault - Key Management Core (secret engine), Hashicorp Vault - Authentication/Authorization",authentication_authorization,"authentication_authorization, key_management_or_ca",0,1,yes
+89,first_100,hashicorp/vault,29362,Hash Vault-API,"Hashicorp Vault - Key Management Core (secret engine), Hashicorp Vault - API",api,"api, key_management_or_ca",0,1,yes
+90,first_100,hashicorp/vault,29417,hash Vault-CLi,Vault CLI,cli,cli,1,1,yes
+91,first_100,hashicorp/vault,29928,Hash Vault-API,"Hashicorp Vault - Key Management Core (secret engine), Hashicorp Vault - API, Hashicorp Vault - CLI",api,"api, cli, key_management_or_ca",0,1,yes
+92,first_100,hashicorp/vault,30362,hash vault-secret enginee,"Hashicorp Vault - Key Management Core (secret engine), API",key_management_or_ca,"api, key_management_or_ca",0,1,yes
+93,first_100,hashicorp/vault,30858,Hash Vault- Documentation,Hashicorp Vault core,hash doc,core,0,0,yes
+94,first_100,hashicorp/vault,31343,Hash Vault,Vault core,hash,core,0,0,yes
+95,first_100,hashicorp/vault,31372,Hash corp Vault,Hashicorp Vault core,hash corp,core,0,0,no
+96,first_100,hashicorp/vault,31615,Hash VAult- Telemetry,CLI tooling,hash telemetry,cli,0,0,yes
+97,first_100,hashicorp/vault,31621,Hash Vault-sdk framework,"hashicorp vault core, API",hash sdk framework,"api, core",0,0,yes
+98,first_100,notaryproject/notation,211,Notation -Authentication,notation CLI,"authentication_authorization, key_management_or_ca",cli,0,0,yes
+99,first_100,notaryproject/notation,233,Notation- CLI,"notation core, CLI",cli,"cli, core",0,1,yes
+100,first_100,notaryproject/notation,320,notation,"CLI tooling, Key Management Core / Secrets Backend",core,"cli, key_management_or_ca",0,0,yes
+101,first_100,notaryproject/notation,379,Notation core,notation CLI core,core,cli,0,0,no
+102,last_60,notaryproject/notation,383,"notation - CLI, Documentation",notation CLI,"cli, doc",cli,0,1,yes
+103,last_60,notaryproject/notation,547,"notation CLI, documentation",notation CLI,"cli, doc",cli,0,1,yes
+104,last_60,notaryproject/notation,574,Notation CLI,notation CLI,cli,cli,1,1,yes
+105,last_60,notaryproject/notation,655,Notation CLI,"notation CLI, notation core",cli,"cli, core",0,1,yes
+106,last_60,notaryproject/notation,659,Notation CLI,"notation core, Notation CLI",cli,"cli, core",0,1,yes
+107,last_60,notaryproject/notation,671,notation-cli,notation core,cli,core,0,0,yes
+108,last_60,notaryproject/notation,829,Notation CLI,"notation core, CLI",cli,"cli, core",0,1,yes
+109,last_60,notaryproject/notation,851,Notation-core,Core,core,core,1,1,yes
+110,last_60,notaryproject/notation,880,Notation-release,notation core,release_pipeline,core,0,0,yes
+111,last_60,notaryproject/notation,1012,notation documentation; signing workflow; verification workflow,Core,"doc, key_management_or_ca, signing_workflow, verification_workflow",core,0,0,yes
+112,last_60,notaryproject/notation,1239,notation core,notation core,core,core,1,1,yes
+113,last_60,openpubkey/openpubkey,4,"Openpubkey Client, OIDC Authentication","openpubkey core, API","authentication_authorization, cli, key_management_or_ca","api, core",0,0,yes
+114,last_60,openpubkey/openpubkey,61,openpubkey,openpubkey core,core,core,1,1,yes
+115,last_60,openpubkey/openpubkey,100,openpubkey-gitlab integration,Core,gitlab integration,core,0,0,yes
+116,last_60,openpubkey/openpubkey,137,openpubkey-Verification,openpubkey core,"key_management_or_ca, verification_workflow",core,0,0,yes
+117,last_60,openpubkey/openpubkey,157,Openpubkey-OIDC Authentication,openpubkey core,"authentication_authorization, key_management_or_ca",core,0,0,yes
+118,last_60,openpubkey/openpubkey,226,openpubkey-web (chooser),openpubkey core,web_client,core,0,0,yes
+119,last_60,openpubkey/openpubkey,254,Openpubkey CLI,"CLI tooling, Core",cli,"cli, core",0,1,yes
+120,last_60,sigstore/cosign,1048,cosign CLI,"cosign core, CLI",cli,"cli, core",0,1,yes
+121,last_60,sigstore/cosign,1215,cosign-KMS integration,cosign core,key_management_or_ca,core,0,0,yes
+122,last_60,sigstore/cosign,1288,cosign,"cosign core, CLI",core,"cli, core",0,1,yes
+123,last_60,sigstore/cosign,1321,Cosign-Verification(Verify attestation),"cosign core, CLI tooling","key_management_or_ca, verification_workflow","cli, core",0,0,yes
+124,last_60,sigstore/cosign,1323,cosign - notification,cosign core,"key_management_or_ca, notification_logging",core,0,0,yes
+125,last_60,sigstore/cosign,1385,cosign,cosign core,core,core,1,1,no
+126,last_60,sigstore/cosign,1443,cosign,cosign core,core,core,1,1,yes
+127,last_60,sigstore/cosign,1554,cosign-signing workflow,"cosign core, CLI",signing_workflow,"cli, core",0,0,yes
+128,last_60,sigstore/cosign,1642,cosign-error handling/notification,cosign core,"key_management_or_ca, notification_logging",core,0,0,yes
+129,last_60,sigstore/cosign,1653,cosign-webhook (API),"cosign Kubernetes webhook, cosign policy/ClusterImagePolicy","api, web_client","policy_configuration, web_client",0,1,yes
+130,last_60,sigstore/cosign,1655,Cosign-signature storage,"cosign core, cosigned admission controller, ClusterImagePolicy",signing_workflow,"core, policy_configuration, signing_workflow",0,1,yes
+131,last_60,sigstore/cosign,1847,Cosign-Signing Workflow,cosign CLI,signing_workflow,cli,0,0,no
+132,last_60,sigstore/cosign,1853,cosign,"cosign core, Build/CI",core,"build_ci, core, web_client",0,1,yes
+133,last_60,sigstore/cosign,1994,cosign,"cosign core, CLI tooling",core,"cli, core",0,1,yes
+134,last_60,sigstore/cosign,2053,cosign-CLI,cosign CLI,cli,cli,1,1,yes
+135,last_60,sigstore/cosign,2068,cosign- versioning/release,cosign core,release_pipeline,core,0,0,yes
+136,last_60,sigstore/cosign,2097,cosign_signing workflow,"cosign core, CLI",signing_workflow,"cli, core",0,0,yes
+137,last_60,sigstore/cosign,2382,cosign - verification,"cosign core, CLI tooling, Verification workflow, Policy/configuration","key_management_or_ca, verification_workflow","cli, core, key_management_or_ca, policy_configuration, verification_workflow",0,1,yes
+138,last_60,sigstore/cosign,2419,"cosign- apis, verfifcation workflow","cosign core, Rekor API","api, key_management_or_ca","api, core",0,1,yes
+139,last_60,sigstore/cosign,2462,"cosign - verification workflow, CLI",cosign core,"cli, key_management_or_ca, verification_workflow",core,0,0,yes
+140,last_60,sigstore/cosign,2516,cosign - verification workflow,"cosign core, CLI","key_management_or_ca, verification_workflow","cli, core",0,0,yes
+141,last_60,sigstore/cosign,2518,"Cosign - Releases, API, CLI","cosign core, API, CLI tooling, Build/CI, Notification/Logging","api, cli, release_pipeline","api, build_ci, cli, core, key_management_or_ca, notification_logging, web_client",0,1,yes
+142,last_60,sigstore/cosign,2568,cosign,"cosign core, Verification workflow, CLI",core,"cli, core, key_management_or_ca, verification_workflow",0,1,yes
+143,last_60,sigstore/cosign,2593,cosign - CLI,cosign core,cli,core,0,0,yes
+144,last_60,sigstore/cosign,2832,cosign - CLI,cosign CLI,cli,cli,1,1,yes
+145,last_60,sigstore/cosign,2858,cosign,"cosign core, CLI",core,"cli, core",0,1,yes
+146,last_60,sigstore/cosign,3025,cosign - key creation,cosign core,key_management_or_ca,core,0,0,yes
+147,last_60,sigstore/cosign,3235,cosign - verifcation workflow,cosign CLI,key_management_or_ca,cli,0,0,yes
+148,last_60,sigstore/cosign,3260,cosign - verifcation workflow,"cosign core, CLI",key_management_or_ca,"cli, core",0,0,no
+149,last_60,sigstore/cosign,3330,cosign - release/installation,"cosign core, installation/distribution, documentation","build_ci, release_pipeline","build_ci, core, doc, release_pipeline",0,1,yes
+150,last_60,sigstore/cosign,3340,"cosign- signing workflow, OIDC authentication, CI/CD.",cosign core,"authentication_authorization, build_ci, key_management_or_ca, signing_workflow",core,0,0,yes
+151,last_60,sigstore/cosign,3343,"Cosign - Signing workflow, CI/CD","cosign core, Build/CI","build_ci, signing_workflow","build_ci, core, web_client",0,1,yes
+152,last_60,sigstore/cosign,3368,"Cosign - relase/installation, Verification workflow","cosign core, CLI","build_ci, key_management_or_ca, verification_workflow","cli, core",0,0,yes
+153,last_60,sigstore/cosign,3465,cosign,"cosign core, Fulcio",core,core,1,1,yes
+154,last_60,sigstore/cosign,3671,cosign - verififcation workflow,"sigstore cosign core, Documentation",key_management_or_ca,"core, doc",0,0,yes
+155,last_60,sigstore/cosign,3976,cosign - verififcation workflow,"cosign core, CLI",key_management_or_ca,"cli, core",0,0,yes
+156,last_60,sigstore/cosign,4012,cosign - Authentication (OIDC),cosign core,"authentication_authorization, key_management_or_ca",core,0,0,yes
+157,last_60,sigstore/cosign,4076,cosign,"CLI tooling, Core",core,"cli, core",0,1,yes
+158,last_60,sigstore/cosign,4098,"cosign - Private installation, verification workflow","cosign core, CLI tooling, Verification workflow","build_ci, key_management_or_ca, verification_workflow","cli, core, key_management_or_ca, verification_workflow",0,1,yes
+159,last_60,sigstore/cosign,4204,cosign - CLI,cosign CLI - tree subcommand,cli,cli,1,1,yes
+160,last_60,sigstore/fulcio,238,Fulcio,sigstore fulcio core,key_management_or_ca,core,0,0,yes

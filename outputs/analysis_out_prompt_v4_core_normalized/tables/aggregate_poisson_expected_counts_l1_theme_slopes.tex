@@ -1,0 +1,23 @@
+\begin{table}[t]
+\centering
+\caption{Aggregate Poisson regression slopes for expected monthly usability issue counts by L1 theme across all tools.}
+\label{tab:poisson-aggregate-l1-theme}
+\scriptsize
+\begin{tabular}{llllllll}
+\hline
+category & beta & rr\_per\_month & pct\_change\_per\_month & p\_value & n\_months & total\_count & sig\_0\_05 \\
+\hline
+Missing feature / enhancement request & -0.0326 & 0.968 & -3.21 & 1.21e-62* & 49 & 1481 & yes \\
+Security concerns & -0.0326 & 0.968 & -3.20 & 9.21e-12* & 49 & 248 & yes \\
+Authentication friction & -0.0304 & 0.970 & -2.99 & 9.42e-09* & 49 & 199 & yes \\
+Tedious Workflows & -0.0284 & 0.972 & -2.80 & 1.7e-14* & 49 & 401 & yes \\
+User confusion / unclear documentation & -0.0270 & 0.973 & -2.66 & 2.35e-30* & 49 & 982 & yes \\
+Integration failure/issues & -0.0218 & 0.978 & -2.16 & 1.3e-14* & 49 & 659 & yes \\
+Unexpected behavior & -0.0218 & 0.978 & -2.16 & 1.35e-15* & 49 & 709 & yes \\
+Performance issue & -0.0218 & 0.978 & -2.16 & 0.00316* & 49 & 97 & yes \\
+Notification/Logging /Web UI Issues & -0.0217 & 0.979 & -2.14 & 1.55e-11* & 49 & 512 & yes \\
+Build/CI/installation/distribution release issues & -0.0193 & 0.981 & -1.91 & 1.04e-05* & 49 & 272 & yes \\
+Configuration friction & -0.0193 & 0.981 & -1.91 & 3.55e-07* & 49 & 364 & yes \\
+\hline
+\end{tabular}
+\end{table}

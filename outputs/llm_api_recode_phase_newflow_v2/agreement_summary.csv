@@ -1,0 +1,21 @@
+phase,phase12_subset,metric,n,agreement_pct,error_rate_pct,precision_pct,recall_pct,specificity_pct,f1_pct,tp,fp,fn,tn,cohen_kappa,gwet_ac1
+Phase 1,all,Associated Component (full),159,10.06,89.94,,,,,0,0,0,0,,
+Phase 1,all,Associated Component (partial overlap),159,55.35,44.65,,,,,0,0,0,0,,
+Phase 1,first_100,Associated Component (full),100,11.0,89.0,,,,,0,0,0,0,,
+Phase 1,first_100,Associated Component (partial overlap),100,52.0,48.0,,,,,0,0,0,0,,
+Phase 1,last_60,Associated Component (full),59,8.47,91.53,,,,,0,0,0,0,,
+Phase 1,last_60,Associated Component (partial overlap),59,61.02,38.98,,,,,0,0,0,0,,
+Phase 1,all,codes_primary (semantic agreement),159,93.08,6.92,,,,,0,0,0,0,,
+Phase 1,first_100,codes_primary (semantic agreement),100,92.0,8.0,,,,,0,0,0,0,,
+Phase 1,last_60,codes_primary (semantic agreement),59,94.92,5.08,,,,,0,0,0,0,,
+Phase 2,all,Usability_Non-Usability Type,159,80.5,19.5,95.69,81.02,77.27,87.75,111,5,26,17,0.41620277152670876,0.7110531406630127
+Phase 2,first_100,Usability_Non-Usability Type,100,74.0,26.0,92.86,75.58,64.29,83.33,65,5,21,9,0.26966292134831454,0.6041412911084044
+Phase 2,last_60,Usability_Non-Usability Type,59,91.53,8.47,100.0,90.2,100.0,94.85,46,0,5,8,0.7138700290979632,0.8802030456852792
+Phase 3,phase3_sample,Associated Component Theme (full),18,16.67,83.33,,,,,0,0,0,0,0.23129759593847962,0.7518438177874187
+Phase 3,phase3_sample,Associated Component Theme (partial overlap),18,61.11,38.89,,,,,0,0,0,0,0.23129759593847962,0.7518438177874187
+Phase 3,phase3_sample,L1_Theme (full),17,11.76,88.24,,,,,0,0,0,0,0.28824965755464205,0.8634834508952794
+Phase 3,phase3_sample,L1_Theme (partial overlap),17,41.18,58.82,,,,,0,0,0,0,0.28824965755464205,0.8634834508952794
+Phase 3,phase3_sample,L1_Theme Secondary (full),17,23.53,76.47,,,,,0,0,0,0,0.2280701754385965,0.4467455621301776
+Phase 3,phase3_sample,L1_Theme Secondary (partial overlap),17,47.06,52.94,,,,,0,0,0,0,0.2280701754385965,0.4467455621301776
+Phase 3,phase3_sample,Nielsen_theme (full),17,17.65,82.35,,,,,0,0,0,0,0.2459263729631867,0.7699953980671882
+Phase 3,phase3_sample,Nielsen_theme (partial overlap),17,52.94,47.06,,,,,0,0,0,0,0.2459263729631867,0.7699953980671882

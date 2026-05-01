@@ -1,0 +1,12 @@
+{
+  "model": "gpt-5.1",
+  "base_url": "https://api.openai.com/v1",
+  "out_dir": "outputs/data/phase3_prompt_v4/recode_full",
+  "master_prompt": "LLM Prompts/Master_Classifier_Prompt_v4.txt",
+  "n_total_issues": 3900,
+  "n_pred_rows": 3900,
+  "cache_path": "outputs/data/phase3_prompt_v4/recode_full/full_predictions_cache.csv",
+  "overwrite": false,
+  "max_items": null,
+  "timestamp_epoch": 1773121813
+}

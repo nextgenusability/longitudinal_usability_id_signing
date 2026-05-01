@@ -1,0 +1,78 @@
+tool,theme,beta,p_value,sig_0_05
+Keyfactor/ejbca-ce,8. Aesthetic and minimalist design,-0.0801387249267533,0.4084679399494632,False
+Keyfactor/ejbca-ce,3. User control and freedom,-0.0125789673799624,0.7245075709251425,False
+Keyfactor/ejbca-ce,2. Match between system and the real world,-0.0082577493465083,0.6315527631169661,False
+Keyfactor/ejbca-ce,10. Help and documentation,0.0008411453192578,0.9020723807504724,False
+Keyfactor/ejbca-ce,"9. Help users recognize, diagnose, and recover from errors",0.0020949625880669,0.7988798698393123,False
+Keyfactor/ejbca-ce,5. Error prevention,0.0029602216246682,0.7696040365147369,False
+Keyfactor/ejbca-ce,4. Consistency and standards,0.0043275653911399,0.7100022216382116,False
+Keyfactor/ejbca-ce,7. Flexibility and efficiency of use,0.0087769491179528,0.4124663622049015,False
+Keyfactor/ejbca-ce,1. Visibility of system status,0.0178714738418122,0.3065444684422945,False
+Keyfactor/ejbca-ce,6. Recognition rather than recall,0.0559571339389276,0.504159087537928,False
+Keyfactor/signserver-ce,1. Visibility of system status,-0.0632666727645979,0.4687362429722493,False
+Keyfactor/signserver-ce,10. Help and documentation,0.0076650271188938,0.656049642024507,False
+Keyfactor/signserver-ce,"9. Help users recognize, diagnose, and recover from errors",0.0095804740956077,0.6549445163654801,False
+Keyfactor/signserver-ce,5. Error prevention,0.0100402870322832,0.752311959791492,False
+Keyfactor/signserver-ce,7. Flexibility and efficiency of use,0.0241147948679775,0.3832421557343252,False
+Keyfactor/signserver-ce,4. Consistency and standards,0.0513922838386714,0.2762848690882092,False
+Keyfactor/signserver-ce,8. Aesthetic and minimalist design,0.0632666727645978,0.4687362429722502,False
+hashicorp/vault,8. Aesthetic and minimalist design,-0.0312734412663954,0.0055752296115551,True
+hashicorp/vault,10. Help and documentation,-0.031228882977067,1.8150139122556254e-27,True
+hashicorp/vault,"9. Help users recognize, diagnose, and recover from errors",-0.0280999772418408,4.99946604625217e-18,True
+hashicorp/vault,2. Match between system and the real world,-0.0271406253390883,1.5145109232485e-07,True
+hashicorp/vault,1. Visibility of system status,-0.0263729816768545,2.9028310594428207e-08,True
+hashicorp/vault,3. User control and freedom,-0.0252515956032173,0.0019623069266799,True
+hashicorp/vault,5. Error prevention,-0.0231714197225324,9.157054989098439e-10,True
+hashicorp/vault,7. Flexibility and efficiency of use,-0.0228508965250189,6.7604468250787025e-16,True
+hashicorp/vault,4. Consistency and standards,-0.0217361050074819,1.558523195004391e-09,True
+hashicorp/vault,6. Recognition rather than recall,-0.0214986770972843,0.0188635751882005,True
+notaryproject/notation,3. User control and freedom,-0.0575302245664405,0.0411110996836918,True
+notaryproject/notation,5. Error prevention,-0.0522315524906913,1.049893012200362e-05,True
+notaryproject/notation,6. Recognition rather than recall,-0.0446903891105938,0.0033268921094837,True
+notaryproject/notation,7. Flexibility and efficiency of use,-0.0373617644262643,1.810809580528382e-09,True
+notaryproject/notation,10. Help and documentation,-0.0274969036371939,0.0001594919254916,True
+notaryproject/notation,4. Consistency and standards,-0.0237115560942728,0.0059101667301298,True
+notaryproject/notation,2. Match between system and the real world,-0.0195097116242989,0.1270176952582366,False
+notaryproject/notation,"9. Help users recognize, diagnose, and recover from errors",-0.0162911981463361,0.0841446657637086,False
+notaryproject/notation,1. Visibility of system status,-0.0138553257211263,0.1795686440441151,False
+notaryproject/notation,8. Aesthetic and minimalist design,-0.0116249093455463,0.514195932706669,False
+openpubkey/openpubkey,3. User control and freedom,0.0300312479701803,0.3675328628613443,False
+openpubkey/openpubkey,4. Consistency and standards,0.0301006830636769,0.1062477267085405,False
+openpubkey/openpubkey,8. Aesthetic and minimalist design,0.035891027806736,0.2482515734931163,False
+openpubkey/openpubkey,7. Flexibility and efficiency of use,0.0385154421853439,6.235208422596166e-05,True
+openpubkey/openpubkey,5. Error prevention,0.0386878868994291,0.0068262469902134,True
+openpubkey/openpubkey,6. Recognition rather than recall,0.0408205757647695,0.3629819066163857,False
+openpubkey/openpubkey,"9. Help users recognize, diagnose, and recover from errors",0.0440895913685316,0.0771275200638538,False
+openpubkey/openpubkey,10. Help and documentation,0.0533621847908295,0.0015535139190572,True
+openpubkey/openpubkey,1. Visibility of system status,0.0559571339389276,0.504159087537928,False
+openpubkey/openpubkey,2. Match between system and the real world,0.0632666727481252,0.05524558074487,False
+sigstore/cosign,6. Recognition rather than recall,-0.0537583380148085,3.210000811904716e-05,True
+sigstore/cosign,5. Error prevention,-0.050306955966422,6.298665586857359e-14,True
+sigstore/cosign,7. Flexibility and efficiency of use,-0.0453008857935901,7.510066211432091e-33,True
+sigstore/cosign,10. Help and documentation,-0.0313456102076539,1.5103978140573126e-14,True
+sigstore/cosign,1. Visibility of system status,-0.0287672394743752,0.0037207722530449,True
+sigstore/cosign,"9. Help users recognize, diagnose, and recover from errors",-0.028267761050959,4.348314018270462e-08,True
+sigstore/cosign,8. Aesthetic and minimalist design,-0.0273360560088884,0.0462850572952693,True
+sigstore/cosign,4. Consistency and standards,-0.0272851812878965,2.3172732813582146e-07,True
+sigstore/cosign,3. User control and freedom,-0.0271067436265884,0.0187090238663654,True
+sigstore/cosign,2. Match between system and the real world,-0.0269941286368592,0.0001779378515293,True
+sigstore/fulcio,6. Recognition rather than recall,-0.0886514451699203,0.0221398164459296,True
+sigstore/fulcio,8. Aesthetic and minimalist design,-0.0736982660088837,0.0361187876756598,True
+sigstore/fulcio,4. Consistency and standards,-0.05839582528865,4.730330723309381e-05,True
+sigstore/fulcio,10. Help and documentation,-0.0551553026692695,2.408940813868277e-07,True
+sigstore/fulcio,2. Match between system and the real world,-0.0496257600286404,0.0176880036135686,True
+sigstore/fulcio,7. Flexibility and efficiency of use,-0.0431634643836289,4.5492150094275226e-08,True
+sigstore/fulcio,"9. Help users recognize, diagnose, and recover from errors",-0.0428523533634009,0.0172375292074939,True
+sigstore/fulcio,5. Error prevention,-0.0411085938007803,0.0017770836636261,True
+sigstore/fulcio,3. User control and freedom,-0.0398181686475277,0.4668113591404438,False
+sigstore/fulcio,1. Visibility of system status,-0.0238600134138032,0.2583195399796189,False
+sigstore/rekor,3. User control and freedom,-0.1535220599050774,0.325328078664284,False
+sigstore/rekor,5. Error prevention,-0.0762937514089428,7.090815140782191e-06,True
+sigstore/rekor,7. Flexibility and efficiency of use,-0.0554572132201199,2.1413313782381077e-12,True
+sigstore/rekor,6. Recognition rather than recall,-0.0529972944274252,0.0890143718633958,False
+sigstore/rekor,4. Consistency and standards,-0.0529752250777329,2.022417600244049e-05,True
+sigstore/rekor,2. Match between system and the real world,-0.0513031922371807,0.0016963350607496,True
+sigstore/rekor,"9. Help users recognize, diagnose, and recover from errors",-0.0453080859639428,0.0004303568703504,True
+sigstore/rekor,10. Help and documentation,-0.0407330622364444,1.3303972661040833e-05,True
+sigstore/rekor,1. Visibility of system status,-0.0398181686475564,0.039572684064062,True
+sigstore/rekor,8. Aesthetic and minimalist design,-0.0283743844109487,0.4438561812665043,False

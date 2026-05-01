@@ -1,0 +1,78 @@
+repo,nielsen_theme_canonical,count
+Keyfactor/ejbca-ce,1. Visibility of system status,17
+Keyfactor/ejbca-ce,10. Help and documentation,107
+Keyfactor/ejbca-ce,2. Match between system and the real world,17
+Keyfactor/ejbca-ce,3. User control and freedom,4
+Keyfactor/ejbca-ce,4. Consistency and standards,37
+Keyfactor/ejbca-ce,5. Error prevention,49
+Keyfactor/ejbca-ce,6. Recognition rather than recall,1
+Keyfactor/ejbca-ce,7. Flexibility and efficiency of use,44
+Keyfactor/ejbca-ce,8. Aesthetic and minimalist design,1
+Keyfactor/ejbca-ce,"9. Help users recognize, diagnose, and recover from errors",74
+Keyfactor/signserver-ce,1. Visibility of system status,1
+Keyfactor/signserver-ce,10. Help and documentation,17
+Keyfactor/signserver-ce,4. Consistency and standards,3
+Keyfactor/signserver-ce,5. Error prevention,5
+Keyfactor/signserver-ce,7. Flexibility and efficiency of use,7
+Keyfactor/signserver-ce,8. Aesthetic and minimalist design,1
+Keyfactor/signserver-ce,"9. Help users recognize, diagnose, and recover from errors",11
+hashicorp/vault,1. Visibility of system status,240
+hashicorp/vault,10. Help and documentation,677
+hashicorp/vault,2. Match between system and the real world,204
+hashicorp/vault,3. User control and freedom,81
+hashicorp/vault,4. Consistency and standards,408
+hashicorp/vault,5. Error prevention,372
+hashicorp/vault,6. Recognition rather than recall,63
+hashicorp/vault,7. Flexibility and efficiency of use,664
+hashicorp/vault,8. Aesthetic and minimalist design,44
+hashicorp/vault,"9. Help users recognize, diagnose, and recover from errors",520
+notaryproject/notation,1. Visibility of system status,48
+notaryproject/notation,10. Help and documentation,103
+notaryproject/notation,2. Match between system and the real world,32
+notaryproject/notation,3. User control and freedom,9
+notaryproject/notation,4. Consistency and standards,72
+notaryproject/notation,5. Error prevention,48
+notaryproject/notation,6. Recognition rather than recall,27
+notaryproject/notation,7. Flexibility and efficiency of use,152
+notaryproject/notation,8. Aesthetic and minimalist design,16
+notaryproject/notation,"9. Help users recognize, diagnose, and recover from errors",58
+openpubkey/openpubkey,1. Visibility of system status,1
+openpubkey/openpubkey,10. Help and documentation,24
+openpubkey/openpubkey,2. Match between system and the real world,7
+openpubkey/openpubkey,3. User control and freedom,5
+openpubkey/openpubkey,4. Consistency and standards,16
+openpubkey/openpubkey,5. Error prevention,29
+openpubkey/openpubkey,6. Recognition rather than recall,3
+openpubkey/openpubkey,7. Flexibility and efficiency of use,64
+openpubkey/openpubkey,8. Aesthetic and minimalist design,6
+openpubkey/openpubkey,"9. Help users recognize, diagnose, and recover from errors",10
+sigstore/cosign,1. Visibility of system status,56
+sigstore/cosign,10. Help and documentation,337
+sigstore/cosign,2. Match between system and the real world,105
+sigstore/cosign,3. User control and freedom,41
+sigstore/cosign,4. Consistency and standards,196
+sigstore/cosign,5. Error prevention,147
+sigstore/cosign,6. Recognition rather than recall,41
+sigstore/cosign,7. Flexibility and efficiency of use,437
+sigstore/cosign,8. Aesthetic and minimalist design,29
+sigstore/cosign,"9. Help users recognize, diagnose, and recover from errors",206
+sigstore/fulcio,1. Visibility of system status,12
+sigstore/fulcio,10. Help and documentation,61
+sigstore/fulcio,2. Match between system and the real world,15
+sigstore/fulcio,3. User control and freedom,2
+sigstore/fulcio,4. Consistency and standards,35
+sigstore/fulcio,5. Error prevention,35
+sigstore/fulcio,6. Recognition rather than recall,7
+sigstore/fulcio,7. Flexibility and efficiency of use,99
+sigstore/fulcio,8. Aesthetic and minimalist design,7
+sigstore/fulcio,"9. Help users recognize, diagnose, and recover from errors",19
+sigstore/rekor,1. Visibility of system status,16
+sigstore/rekor,10. Help and documentation,69
+sigstore/rekor,2. Match between system and the real world,25
+sigstore/rekor,3. User control and freedom,1
+sigstore/rekor,4. Consistency and standards,44
+sigstore/rekor,5. Error prevention,31
+sigstore/rekor,6. Recognition rather than recall,7
+sigstore/rekor,7. Flexibility and efficiency of use,112
+sigstore/rekor,8. Aesthetic and minimalist design,4
+sigstore/rekor,"9. Help users recognize, diagnose, and recover from errors",38

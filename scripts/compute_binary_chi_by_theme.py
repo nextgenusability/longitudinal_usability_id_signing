@@ -69,23 +69,47 @@ def load_components() -> pd.DataFrame:
 
 
 def binary_chi_for_category(df: pd.DataFrame, category: str) -> tuple[dict, pd.DataFrame]:
-    pos = df[category].astype(float)
-    total = df.sum(axis=1).astype(float)
+    pos = df[category].astype(float).fillna(0.0)
+    total = df.sum(axis=1).astype(float).fillna(0.0)
     neg = total - pos
 
-    obs = np.vstack([pos.values, neg.values])
-    chi2, p, dof, exp = chi2_contingency(obs)
-    v = np.sqrt(chi2 / (obs.sum() * min(obs.shape[0] - 1, obs.shape[1] - 1)))
+    # Keep only tools with non-zero assignments in this family.
+    valid = total > 0
+    pos_v = pos[valid]
+    neg_v = neg[valid]
+    obs = np.vstack([pos_v.values, neg_v.values]) if len(pos_v) else np.zeros((2, 0))
+
+    chi2 = np.nan
+    p = np.nan
+    dof = 0
+    exp = np.full_like(obs, np.nan, dtype=float)
+    v = np.nan
+    test_status = "skipped"
+
+    # Chi-square needs at least 2 columns and non-zero marginals for both rows.
+    if obs.shape[1] >= 2 and obs.sum() > 0 and pos_v.sum() > 0 and neg_v.sum() > 0:
+        try:
+            chi2, p, dof, exp = chi2_contingency(obs)
+            denom = obs.sum() * min(obs.shape[0] - 1, obs.shape[1] - 1)
+            v = np.sqrt(chi2 / denom) if denom > 0 else np.nan
+            test_status = "ok"
+        except ValueError:
+            # e.g., expected table contains a zero cell
+            test_status = "skipped_zero_expected"
+    else:
+        test_status = "skipped_zero_margin"
 
     stats = {
         "category": category,
-        "chi2": float(chi2),
+        "chi2": float(chi2) if pd.notna(chi2) else np.nan,
         "dof": int(dof),
-        "p_value": float(p),
-        "cramers_v": float(v),
-        "n_assignments": int(obs.sum()),
-        "min_expected": float(exp.min()),
-        "cells_expected_lt5": int((exp < 5).sum()),
+        "p_value": float(p) if pd.notna(p) else np.nan,
+        "cramers_v": float(v) if pd.notna(v) else np.nan,
+        "n_assignments": int(pos.sum() + neg.sum()),
+        "n_tools_with_data": int(valid.sum()),
+        "test_status": test_status,
+        "min_expected": float(np.nanmin(exp)) if exp.size and np.isfinite(exp).any() else np.nan,
+        "cells_expected_lt5": int((exp < 5).sum()) if exp.size and np.isfinite(exp).any() else np.nan,
     }
 
     shares = pd.DataFrame(
@@ -96,7 +120,8 @@ def binary_chi_for_category(df: pd.DataFrame, category: str) -> tuple[dict, pd.D
             "share_pct": (pos / total * 100.0).values,
         }
     )
-    shares["rank_within_category"] = shares["share_pct"].rank(ascending=False, method="min").astype(int)
+    ranks = shares["share_pct"].rank(ascending=False, method="min", na_option="bottom")
+    shares["rank_within_category"] = ranks.where(shares["share_pct"].notna()).astype("Int64")
     shares = shares.sort_values(["share_pct", "tool"], ascending=[False, True])
     return stats, shares
 
@@ -216,4 +241,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

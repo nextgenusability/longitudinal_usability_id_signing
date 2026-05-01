@@ -1,0 +1,5 @@
+L1_Theme Secondary,Keyfactor/ejbca-ce,Keyfactor/signserver-ce,hashicorp/vault,notaryproject/notation,openpubkey/openpubkey,sigstore/cosign,sigstore/fulcio,sigstore/rekor,Total
+Operational Friction,91,13,860,133,37,379,74,78,1665
+Functional Gap,34,6,597,176,70,439,109,118,1549
+Cognitive Friction,89,13,570,89,21,301,36,63,1182
+Functional Reliability,45,5,490,32,15,149,23,44,803

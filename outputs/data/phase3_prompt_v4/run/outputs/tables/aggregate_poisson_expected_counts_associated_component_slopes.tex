@@ -1,0 +1,24 @@
+\begin{table}[t]
+\centering
+\caption{Aggregate Poisson regression slopes for expected monthly usability issue counts by affected component across all tools.}
+\label{tab:poisson-aggregate-component}
+\scriptsize
+\begin{tabular}{llllllll}
+\hline
+category & beta & rr\_per\_month & pct\_change\_per\_month & p\_value & n\_months & total\_count & sig\_0\_05 \\
+\hline
+Verification workflow & -0.0338 & 0.967 & -3.32 & 1.08e-18* & 49 & 390 & yes \\
+Core & -0.0312 & 0.969 & -3.07 & 1.02e-45* & 49 & 1161 & yes \\
+CLI tooling & -0.0308 & 0.970 & -3.03 & 6.99e-43* & 49 & 1110 & yes \\
+API & -0.0306 & 0.970 & -3.01 & 1.15e-25* & 49 & 654 & yes \\
+Policy/configuration & -0.0289 & 0.971 & -2.85 & 8.13e-30* & 49 & 847 & yes \\
+Signing workflow & -0.0253 & 0.975 & -2.50 & 3.56e-12* & 49 & 407 & yes \\
+Authentication/Authorization tools & -0.0246 & 0.976 & -2.43 & 8.11e-14* & 49 & 495 & yes \\
+Key Management Core / Secrets Backend & -0.0241 & 0.976 & -2.38 & 5.43e-15* & 49 & 563 & yes \\
+Build/CI/Installation & -0.0221 & 0.978 & -2.19 & 2.07e-08* & 49 & 340 & yes \\
+Notification/Logging & -0.0221 & 0.978 & -2.19 & 1.28e-06* & 49 & 254 & yes \\
+Release pipeline & -0.0191 & 0.981 & -1.89 & 0.00429* & 49 & 117 & yes \\
+Web Client & -0.0161 & 0.984 & -1.60 & 1.47e-05* & 49 & 372 & yes \\
+\hline
+\end{tabular}
+\end{table}

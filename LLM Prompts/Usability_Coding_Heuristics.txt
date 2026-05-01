@@ -1,0 +1,303 @@
+In the course of understanding our coding heuristics, we Incorporated the following updates from Phase 1-3 based on previous calibration and feedback between the 2 human annotators and the LLM. Kindly use them to complement the latter information presented for each phase (1-3) of the coding guidelines/heuristics.
+* Phase 1 (Associated Component): Prefer 'tool_name core' when the referenced surface is an external dependency/integration and it is not clearly a distinct tool component. Treat Docker and container images as installation/distribution aids (not an external component). Do not use packaging/dependencies as components. For multiple components, list all (comma-separated) and be consistent.
+* Phase 1 (codes_primary): Write codes_primary as a short prose summary that preserves the reporter stance (question/confusion vs bug vs feature request), and explicitly note key context such as following documentation, linked issues/guides, integration context, reproducibility, or lack of context.
+* Phase 2 (Usability vs Non-usability): UI issues are usability. If the reporter is asking questions / seeking clarification, classify as usability. Notifications/alerting requests are usability even when framed as a new feature. Feature requests explicitly not motivated by a problem are non-usability.
+* Phase 3-5 (Themes): An issue may have multiple labels per column. Use codes_primary as the anchor but reread body_text whenever codes_primary is insufficient. Integration with external tools counts as Nielsen 'Flexibility and efficiency of use' (may co-occur with other Nielsen themes).
+* Vault-specific: When the usability surface is a Vault secret engine, mark the component theme as 'Key Management Core (secret engine)' (in addition to other applicable themes).
+* Swap convention: L1_Theme contains the detailed L1 categories; L1_Theme Secondary contains the higher-level mapping buckets.
+* Semantic matching rule used in analysis: For component/theme agreement, partial overlap counts as a match (at least one shared label).
+
+
+
+
+
+
+
+
+
+
+Phase 1:  Coding For Understanding Issues
+Coding/Annotation Heuristics
+To summarize our workflow for annotating the "Associated_component_primary"(or "Associated component") and "code_primary":
+1. Understand the issue and context.
+Examine the labels, title, body text, and comments to understand what the issue is about. understand what the user reported, were they confused about using the tool, where they asking questions, where they requesting new feature, where these feature motivated by challenges, what was the follow up comments saying; where they affirming the issue, was other users reporting the same issues, were the comments showing the user asking questions or providing more contexts about this issue, etc. 
+2. Assign "Associated_component_primary".
+If the issue mentions a specific functionality or subsystem experiencing the problem, record the tool name plus the relevant component/functionality. For example:
+a. Keyfactor EJBCA (Certificate Authority) - Email/User Notification System
+b. Keyfactor EJBCA (Certificate Authority) - Docker Image
+c. Keyfactor EJBCA (Certificate Authority) - Web Client
+d. Hash corp Vault - Authentication (or Authorization), secrets engine etc.
+*In situations where you cannot tell the actual associated component or the issue affects all the entirety of the tools, just use "core". (in our manual codes we used the name of the tool instead of "core"). If a command is about issues with a command; e.g "Vault sign" or "cosign tree" then it is likely a CLI problem in addition to other component. If a command is about a. If a command is about a 
+*In cases where there is more than one affected component separate by a comma.
+If the affected functionality is external to the component, do not record the functionality just go with the Tool component's core. Example; if cosign is being integrated to vault key store databases do not list associated component as databases since it is external; just put it as "cosign core". 
+3. Assign/compose "code_primary".
+code_primary should capture what the issue is about and, when possible (based on the comments and resolution), its impact/effect, as much information summary about this issue as possible but keep it between 30-50 words (or more if only warranted). For example: 
+a. "Docker image issue prevents the web client from being installed. User reports that this issue can be reproduced and that they do not understand if they are doing something wrong. They were asked to use a workaround to make this installation work"
+b. Handle feature requests and compatibility requests.
+If the issue is a request for a new feature or capability or reports a compatibility problem, record "code_primary" column accordingly (i.e., as the feature request (also record whether it was motivated by any challenge as seen in the "body_text" column) or compatibility issue (if the issue is  about the tool not working with an external tool e.g. vault  with DynamoDB, raft, GCP etc.) with the description) state clearly this issue involves using the tool with another i.e. use keywords  like compatible/integration etc.
+c. When comprehending the issues always not the template texts that may come with the issue templates of each tool; e.g. for hashicorp vault- "<!-- Please reserve GitHub issues for bug reports and feature requests. For questions, the best place to get answers is on our discussion forum, as they will get more visibility from experienced users than the issue tracker. Please note: We take Vault's security and our users' trust very seriously. If you believe you have found a security issue in Vault, please responsibly disclose by contacting us at security@hashicorp.com. Our PGP key is available at our security page. -->" Do not include these template texts in your interpretation.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Phase 2:  Coding For distinguishing usability and non-usabilty Issues
+Coding Heuristics
+In this phase, we are categorizing issues either as Usability or non-Usability issues. 
+We have made the following definitions;
+* Usability Issue Theme: Any issue where the software is technically functional (it didn't crash due to a bug), but the user failed to achieve their goal efficiently, effectively, or satisfactorily due to the design, interface, feedback, or documentation.
+* Non-Usability Theme: Pure functional bugs (e.g., null pointer exceptions, incorrect cryptographic calculations), feature requests that are entirely new capabilities outside current scope, or infrastructure tasks.
+To code this:
+1. Read the "code_primary" column, ascertain if the detail is enough to make the above distinction. Note the following key points to note for easy giveaway of usability issues from "code_primary" column
+a. If the code_primary says that the issue is a request/new feature request and the summary says they were motivated by a challenge the user has faced or a use case the user is facing, 
+a. in cases we cannot tell from the "code_primary" we can look at the body_text ( in some cases-for hashcorp vault- the issues are generated from a template and we can see this detail about motivation for feature request in the first sections of these feature request were motivated by any challenge or use case), then we also check comments (if any comments ) to check if there is any motivation for this issue there.
+b. If the body_text does not have that this feature request is not motivated by any challenge (i.e. "...  it would just be nice if the tool could do this" not that "I faced this challenge, can we include this capability"), then we consider it a non-usability issue.
+b. If the code_primary (or body_text, or comments) has keywords about the user being confused or asking a question then it is a usability concern
+c. If the issue is a web UI/Client concern, then it is a usability concern
+d. If the issue involves someone following documentation and not achieving expected outcomes, then it is usability (it could also be non-usability but because such a person indicates they followed the rules and got the issue we consider it a usability concern)
+e. If the issue is mostly about the error/logging/notification being informative enough then it is usability issue
+Summary of the above points
+* If a feature request is motivated by a user's challenge, workflow blocker, or confusion(user not sure of something/asking question), it is likely a usability issue (addressing friction), regardless of admin's comments on design intent.
+* If the code_primary or body_text (or comments) has keywords about the user being confused, surprised, or asking a question to understand behavior.
+* If the issue is a Web UI/Client concern.
+* If the issue involves someone following documentation and not achieving expected outcomes, or the error occurring because the tool was counterintuitive in that case.
+* If the issue is about error messages, logging, or notifications not being informative enough to take action, or not properly formatted.
+
+2. For non-usability issues; we check the code_primary column:  If  code_primary is not exhaustive; then check the comments and body_text 
+a. For feature request or enhancement: If the body_text shows a feature request is "blue sky" (e.g., "it would be cool if...") and not motivated by a current struggle or challenge (note in some issues they follow an issue template and you can find this info in the  *is this feature motivated by a problem*, *### Is your feature request related to a problem?*- section (eg tools like hashcorp vault, notaryproject_notation, have this), otherwise we observe from the body_text ).
+b. If the issue describes an actual system failure, crash, panic, or incorrect mathematical/cryptographic result (i.e., the code is broken versus the design being confusing). In this case, the issue must be resolved by the tool admins (not a PR by users/any user). When reading an issue, ask yourself this question to determine if it's a non-usability. issue:
+i. "Did the program stop running unexpectedly, enter an invalid state, or produce a mathematically/logically incorrect result?"
+1. If YES: It is a Non-Usability.
+2. If NO (it finished running, but the result was confusing/annoying): It is likely a Usability Issue.
+ii. Did The software enters a state where it can no longer function due to mismanaging system resources.
+iii. Also, if this is a random error that cannot be reproduced by user, then it is also a non-usability issue since it could be caused by anything not necessarily the tool.
+iv.  If issue is too close to call (user just describes an issue with no detail that he had an understanding issue or that he was not sure about doing something in the body_text) and there is no comments for proper contextualization then default to non-usability i.e. someone reports an issue and the person does not appear to be asking any questions in the body_text/if it seems the user is just stating the error they received without asking how things work or if their work is good then it is non-usability since we cannot be sure if it is random, system crash etc.
+"Contrast Examples" (How to Be Sure)
+The best way to be sure is to see the same situation handled two different ways. One is a non-usability issue, one is a usability issue.
+Contrast Set A: The Failed Validation
+* The non-usability issue: "I signed this image using the standard workflow. When I run verify, it says Error: Crypto/RSA verification failed. I have triple-checked keys. The signature generation seems broken."
+o Reasoning: The core mathematical function of the tool is not working.
+* The Usability Issue: "I tried to verify an image. It said Error: verification failed. I spent 3 hours debugging and realized I was pointing to the wrong public key file. The error message should have told me the key didn't match the format, rather than just a generic fail."
+o Reasoning: The tool worked perfectly-it correctly rejected a wrong key. The failure was in the messaging (Nielsen #9 - Error Diagnosis), which caused user friction.
+Contrast Set B: The Program Stopping
+* The non-usability issue: "When I run the command with the --verbose flag, it instantly defaults and dumps a stack trace."
+o Reasoning: The code tried to access memory it shouldn't. It broke.
+* The Usability Issue: "When I run the command, it prints 'Error: missing argument' and exits immediately. I had to read the source code to figure out which argument was missing."
+o Reasoning: The program stopped intentionally because of bad input. It didn't crash. It just provided terrible feedback (Nielsen #1 & #9).
+
+NOTE: If an issue contains aspects of usability and non-usability as described above, choose usability.
+
+Specific Tool Notes: These are notes to consider when coding/annotating different tools based on the nature/manner in which the issues are reported in their issues.
+1. Openpubkey: consider the labels to know if an issue is enhancement (i.e. feature_request) because sometimes the body_text may not be generated with the template. So, read the issue's body_text describes wanting a new feature without using the template, then we may confirm using the label and title. Sometimes it could be a fix (not necessarily a new feature).
+a. OP means Open Pub; so when used like OP client- Open Pub client, OP chooser- open pub chooser
+b. Opk-openpubkey
+c. See note on sigstore-cosign item a.
+2. Sigstore-Cosign:
+a. Some of the issues here may just be discussions by members of the team tracking some implementations, lookout for those they are not usability issues since they do not report any new issue.
+b. The issue title and labels here seems to be more informational; put them into consideration for code_primary summary. E.g issues tagged "questions", are confused users trying to understand some things. Titles that are questions are to be treated as questions (even if label says otherwise). Also, when the title is blank treat as enquiry.
+c. For issues with labels enhancement (feature request), treat title like the feature and body_text as context + reason (challenge motivating feature request) if any comments treat as added context.
+d. If issue is a bug then we should also check like we mentioned if the user indicates confusion, question, or that they followed documentation, previous issues, or even other tutorials.
+e. FR-feature request
+
+
+
+
+Phase 3:  Thematic Grouping- Nielsen's  Grouping
+Coding Heuristics for Nielsen Thematic Grouping
+NB: Do this only for issues; where the "Usability_Non-Usability Type" Column  says "usability" i.e only for usability issues not for "non_usability" issues.
+
+To simplify, read the summary from the code_primary column to note the themes (if possible, reread the comments,body_text) 
+This applies to phase 4, 4b, and 5 also: 
+a.  there may be more than one nielsen theme here
+b. the examples are not the only possible examples
+c. codes_primary column: highlight all major properties, points/issues affected by this issues use them and map them each; e.g if the codes_primary is "user requesting a feature to genrate ejbca-server keys from HSM which is currently not supported by ejbca. User is advised to make his own integration", this issue has a new user request, and integration support for an external tool aspects  so the themes (Nielsen, L1_theme) themes has to cover these aspects.
+d. Seperate each by comma.
+
+1. Visibility of system status
+Nielsen Definition: "The design should always keep users informed about what is going on, through appropriate feedback within a reasonable amount of time". 
+How to identify in Issues: Look for issues/complaints where the user is unsure if the tool is working, frozen, or finished. System not giving any output as expected, Basically, non-error/general notifications/output messages are not clear or not even visible for users to understand error
+* Example markers: "The command just hung with no output," "I didn't know if the upload succeeded," "Needs a progress bar for long operations."
+2. Match between system and the real world
+Nielsen Definition: "The design should speak the users' language. Use words, phrases, and concepts familiar to the user, rather than internal jargon". 
+How to identify in Issues: Look for confusion caused by the tool using internal terminology instead of standard industry terms  (e.g., Docker/Kubernetes concepts).
+* Example markers: "What does [obscure internal term] mean in the flag description?", "Why is this called X when everyone else calls it Y?", "The error message exposed internal variable names."
+3. User control and freedom
+Nielsen Definition: Users need a "clearly marked 'emergency exit'" to leave unwanted states without extended dialogue. Support undo and redo. 
+How to identify in GitHub Issues: Look for scenarios where users feel trapped in a process or cannot easily reverse an action.
+* Example markers: "I couldn't cancel the operation with Ctrl+C," "I accidentally signed the wrong artifact and can't undo it," "Need a dry-run flag before performing destructive actions."
+4. Consistency and standards
+Nielsen Definition: "Users should not have to wonder whether different words, situations, or actions mean the same thing. Follow platform and industry conventions". 
+How to identify in GitHub Issues: Look for complaints that the tool behaves differently than other standard tools in the ecosystem (example it works in sigstore cosign but not in sigstore rekor), is internally inconsistent, or counterintuitive to use.
+* Example markers: "This flag works differently here than it does in Docker," "Why does command A use --file but command B uses --path?", "Does not follow POSIX standards for arguments."
+5. Error prevention
+Nielsen Definition: Good design prevents problems before they happen. Remove error-prone conditions or check for them and present users with a confirmation option before they commit to the action.
+How to identify in GitHub Issues: Look for users falling into "traps" that the system could have easily identified beforehand. Users are asking about consequences of performing an action.
+* Example markers: "The tool let me upload an invalid signature file without warning," "Should prompt for confirmation before overwriting," "Allowed me to use an expired key."
+6. Recognition rather than recall
+Nielsen Definition: "Minimize the user's memory load by making elements, actions, and options visible." Users shouldn't have to remember information from one part of the interface to another. 
+How to identify in GitHub Issues: For a CLI, this often relates to how much the user has to memorize versus being prompted. Here users are complaining about the the load the system places on them to do a task.
+* Example markers: "I have to constantly check the docs for basic flag syntax," "Lack of tab-completion makes this hard to use," "Help output doesn't show required arguments clearly."
+7. Flexibility and efficiency of use
+Nielsen Definition: The design should cater to both inexperienced and experienced users. Allow users to tailor frequent actions. 
+How to identify in GitHub Issues: Look for workflow blockers. Power users complain about an inability to automate/script, while new users complain about complexity for simple tasks. Also, users are limited by integration to other tools.
+* Example markers: "Too many steps for a simple sign operation," "Need JSON output so I can pipe this into another tool," "Cannot configure defaults for repetitive flags."
+8. Aesthetic and minimalist design
+Nielsen Definition: "Interfaces should not contain information which is irrelevant or rarely needed. Every extra unit of information in a dialogue competes with the relevant units of information and diminishes their relative visibility".  Users are complaining or recommending a new way to present info, or workflow etc.
+How to identify in GitHub Issues: Look for complaints about "noisy" output that hides the actual result user cares about or UI/UX challenges for users to effectively achieve tasks on the web client.
+* Example markers: "The default output is too verbose," "Debug logs are printed by default, obscuring the success message," "Help text is a wall of text and hard to scan," "The web interface authentication need to be redesigned."
+9. Help users recognize, diagnose, and recover from errors
+Nielsen Definition: "Error messages should be expressed in plain language (no codes), precisely indicate the problem, and constructively suggest a solution". 
+How to identify in GitHub Issues: This will be a major category for developer tools. Look for reports of "terse" or useless error messages.
+* Example markers: "The tool just failed with 'Error 500' and no context," "The error message didn't tell me how to fix the certificate issue," "Printed a raw stack trace instead of a human-readable message." If the message is not an error message use the next theme; help and documentation.
+10. Help and documentation
+Source Definition: While the system should ideally be self-explanatory, it may be necessary to provide documentation to help users understand how to complete their tasks. How to identify in GitHub Issues: Explicit complaints about the quality, existence, or accuracy of the documentation (both the readme/website and the CLI --help text).
+* Example markers: "The examples in the README don't work," "Documentation is outdated compared to the current CLI version," "Cannot find info on how to use this feature with private registries."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Phase 4:  Thematic Grouping- L1 Themes
+Coding Heuristics for L1 Thematic Grouping
+NB: Do this only for issues; where the "Usability_Non-Usability Type" Column  says "usability" i.e only for usability issues not for "non_usability" issues.
+
+To simplify, read the summary from the code_primary column to note the themes (if possible, reread the comments,bodytext). There may be more than one theme for an issue, seperate each issue with "," or ";"-whichever you prefer.
+This applies to phase 4, 4b, and 5 also: 
+a.  there may be more than one nielsen theme here
+b. the examples are not the only possible examples
+c. codes_primary column: highlight all major properties, points/issues affected by this issues use them and map them each; e.g if the codes_primary is "user requesting a feature to genrate ejbca-server keys from HSM which is currently not supported by ejbca. User is advised to make his own integration", this issue has a new user request, and integration support for an external tool aspects  so the  themes (Nielsen, L1_theme)themes has to cover these aspects.
+d. Seperate each by comma.
+
+1. Missing feature / enhancement request
+The user is asking for functionality that does not currently exist, or to enhance existing functionalities (except documentation). (e.g., "Add support for Ed25519 keys").
+2. Unexpected behavior
+The software is behaving incorrectly (errors) despite the user following instructions/documentations.
+3. Authentication friction
+The user is unable to log in or authenticate successfully due to token errors, timeouts, or confusing flows (e.g., "Token refresh failed," "401 Unauthorized loop"). This also includes other issues concerning login, authentication, setup with OIDC, MFA (multifactor authentication), identification, authorization, user groups, etc.
+4. Configuration friction
+The user is struggling to configure the software correctly due to complex setups, rigid settings, or issues solved by proper configuration.
+5. Integration failure/issues
+The tool fails to interoperate with an external system (e.g., a specific Cloud KMS, a Registry, or an IdP) despite correct configuration (e.g., "Azure KeyVault plugin timeout," "Docker Registry API 404"). This includes integrations to external components not working as expected, requiring enhancements, or requests for new external components to be integrated/supported. In cases where the "external components" are components from the same tool we do not consider these integration issues since they are notexternal components e.g sigstore's Fulcio integration issue in sigstore cosign or keyfactor ejbca and signserver etc.
+6. User confusion / unclear documentation/documentation improvements
+The user does not understand how to use the tool (asking questions or confused), the documentation misleads them or is insufficient, or there is a need for improving documentation. (e.g., "How do I sign a blob?", "Docs say flag X exists but it doesn't").
+7. Build/CI/installation/distribution release issues
+The tool fails to run or install in an automated environment, fails to compile, or the distribution release cannot be assessed/installed. (e.g., "Go toolchain version mismatch," "CI pipeline fails on test").
+8. Performance issue
+The tool is functionally working but is too slow, consumes too much memory, or has high latency (e.g., "Verification takes 30 seconds," ). This includes enhancement requests to improve these deficiencies.
+9. Security concerns
+This concerns a report of a vulnerability (CVE), an unsafe default, or a request to harden security posture (e.g., "Weak crypto default," "Secret leaked in logs").
+10. Notification/Logging /Web UI Issues
+This concerns issues regarding error messages, logging messages, or UI (web client) feedback that may not be helpful or important in resolving issues, or similar concerns.
+11. Tedious Workflows
+This concerns issues where users have to perform lots of operations to achieve one purpose; that is users are complaining that the tools impose too many requirements on users to use it.
+
+
+
+
+
+
+
+
+
+Phase 4B:  Thematic Grouping- L1_Themes Secondary
+Coding Heuristics for L1_Themes Secondary Thematic Grouping
+NB: Do this only for issues; where the "Usability_Non-Usability Type" Column  says "usability" i.e only for usability issues not for "non_usability" issues.
+
+Read the "L1_theme" and map as described below. If more than one item in L1_Theme column then map each.
+
+1. Operational Friction
+* Description: Barriers involving the setup, environment, integration, or workflow execution. The user knows what to do, but the tool/environment resists.
+* Mapped Secondary Codes:
+o Configuration friction
+o Authentication friction
+o Build/CI/installation/distribution release issues
+o Integration failure/issues
+o Tedious Workflows
+2. Cognitive Friction
+* Description: Barriers related to understanding, mental models, or clarity. The user stops because they don't know how to proceed or the tool is confusing.
+* Mapped Secondary Codes:
+o User confusion / unclear documentation
+o Notification/Logging Issues
+3. Functional Reliability
+* Description: Friction caused when the tool fails to perform its promised function due to bugs, slowness/performance issues, or security risks.
+* Mapped Secondary Codes:
+o Unexpected behavior
+o Performance issue
+o Security concerns
+4. Functional Gap
+* Description: The tool currently lacks the capability to perform the user's desired task.
+* Mapped Secondary Codes:
+o Missing feature / enhancement request
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Phase 5:  Thematic Grouping- Associated Component -> Associated Component Theme Column
+Coding Heuristics 
+NB: Do this only for issues; where the "Usability_Non-Usability Type" Column  says "usability" i.e only for usability issues not for "non_usability" issues.
+Read the "Associated Component" column and map as described below; remember one issue can have multiple associated component and so can have multiple mapping below. So separate each them as I describe above. Note also that multiple components can be written as: "notation - core, authentication".
+Fill in the decided /mapped theme to the "Associated Component Theme" column.
+1. Authentication/Authorization tools
+Issues involving the processes of identity verification (logging in) and granting permissions. This includes OIDC flows (both client-side and provider-side integration), token handling, multi-factor authentication (MFA), and role-based access control (RBAC) logic. The components would be marked with Authentication/Auth, OIDC/etc.
+2. CLI tooling
+Issues specific to the command-line interface itself acting as the point of interaction especially with commands. This concerns flag parsing logic, help output text, terminal user experience (UX), output formatting options (e.g., JSON vs text), and interactive prompts.
+3. Signing workflow
+The end-to-end client-side process a user performs to cryptographically sign an artifact.  issues like these often have the key idea  that "user is trying to sign".
+4. Verification workflow
+The end-to-end client-side process a user performs to validate a signature. issues like these often have the key idea  that "user is trying to  verify" a signature.
+5. Policy/configuration
+Issues related to how the tool is configured by the user or administrator. This includes syntax or logic issues within configuration files (e.g., YAML/JSON), defining and enforcing security policies (e.g., OPA/Rego), and how the tool interprets these settings.
+6. Build/CI/Installation
+Friction occurring when running, installing, or using the tool in automated, non-interactive environments, such as CI/CD pipelines (e.g., GitHub Actions), containerized build environments, or automated scripts.
+7. Release pipeline
+Issues related to the process by which project maintainers build, sign, and publish the official releases, binaries, and artifacts of the tools themselves.
+8. Notification/Logging
+Issues related to the output generated by the tools for human consumption or operational monitoring. This includes the clarity, verbosity, and actionability of error messages, warning logs, informational status updates, and debug traces across all parts of the system.
+9. Core
+Core issues are issues marked as affecting the core/overall (unclear which part is being affected) tool for either of the tools.
+10. API: If. The issues affect the REST APIs of the tools Or the API endpoint
+11. Web Client: If the issue affects the web UI, client or admin dashboard of these tools.
+12. Key Management Core / Secrets Backend
+Issues related to the infrastructure responsible for the secure storage, generation, retrieval, and lifecycle management of cryptographic keys and secrets. This scope covers integrations with external Key Management Systems (e.g., HashiCorp Vault, AWS KMS, Google Cloud KMS), Hardware Security Modules (HSMs), and secure local storage mechanisms (e.g., system keychains, YubiKeys). For this I want you to specify which issues are secrets engine issues in parentheses. Ex (Authentication, Key management core (secret engine))
+
+
+
+
+

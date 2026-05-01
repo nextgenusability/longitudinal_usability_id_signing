@@ -1,0 +1,540 @@
+category,month_start,expected_count
+Authentication friction,2021-11-01,7.687621833414327
+Build/CI/installation/distribution release issues,2021-11-01,8.505847038444362
+Configuration friction,2021-11-01,11.374868046527496
+Integration failure/issues,2021-11-01,21.664029747384777
+Missing feature / enhancement request,2021-11-01,59.607372174809754
+Notification/Logging /Web UI Issues,2021-11-01,16.776537329592955
+Performance issue,2021-11-01,3.186483488687544
+Security concerns,2021-11-01,9.964797407050808
+Tedious Workflows,2021-11-01,14.943179059906956
+Unexpected behavior,2021-11-01,23.30340153404689
+User confusion / unclear documentation,2021-11-01,35.62883464599768
+Authentication friction,2021-12-01,7.457726142002771
+Build/CI/installation/distribution release issues,2021-12-01,8.343032143709813
+Configuration friction,2021-12-01,11.157522042398677
+Integration failure/issues,2021-12-01,21.19618728727981
+Missing feature / enhancement request,2021-12-01,57.69280700200811
+Notification/Logging /Web UI Issues,2021-12-01,16.416965165827033
+Performance issue,2021-12-01,3.117784518305646
+Security concerns,2021-12-01,9.645643524904193
+Tedious Workflows,2021-12-01,14.524836010512788
+Unexpected behavior,2021-12-01,22.800371267146453
+User confusion / unclear documentation,2021-12-01,34.68111521604857
+Authentication friction,2022-01-01,7.234705402309036
+Build/CI/installation/distribution release issues,2022-01-01,8.183333774563797
+Configuration friction,2022-01-01,10.944328990666094
+Integration failure/issues,2022-01-01,20.738448052199427
+Missing feature / enhancement request,2022-01-01,55.83973690384514
+Notification/Logging /Web UI Issues,2022-01-01,16.065099725946702
+Performance issue,2022-01-01,3.0505666629360446
+Security concerns,2022-01-01,9.336711546558368
+Tedious Workflows,2022-01-01,14.118204719792912
+Unexpected behavior,2022-01-01,22.30819947723908
+User confusion / unclear documentation,2022-01-01,33.758604921532225
+Authentication friction,2022-02-01,7.018354021262492
+Build/CI/installation/distribution release issues,2022-02-01,8.02669227594981
+Configuration friction,2022-02-01,10.735209538531556
+Integration failure/issues,2022-02-01,20.29059385939067
+Missing feature / enhancement request,2022-02-01,54.046186682892994
+Notification/Logging /Web UI Issues,2022-02-01,15.720775831445284
+Performance issue,2022-02-01,2.9847979904891124
+Security concerns,2022-02-01,9.037674083492758
+Tedious Workflows,2022-02-01,13.722957310204144
+Unexpected behavior,2022-02-01,21.82665177182326
+User confusion / unclear documentation,2022-02-01,32.86063320480347
+Authentication friction,2022-03-01,6.808472553982692
+Build/CI/installation/distribution release issues,2022-03-01,7.873049134700188
+Configuration friction,2022-03-01,10.53008584943542
+Integration failure/issues,2022-03-01,19.852411237835057
+Missing feature / enhancement request,2022-03-01,52.31024458428239
+Notification/Logging /Web UI Issues,2022-03-01,15.38383184409334
+Performance issue,2022-03-01,2.920447257314901
+Security concerns,2022-03-01,8.748214232830698
+Tedious Workflows,2022-03-01,13.338775083327144
+Unexpected behavior,2022-03-01,21.355498818024557
+User confusion / unclear documentation,2022-03-01,31.98654734490793
+Authentication friction,2022-04-01,6.604867519919865
+Build/CI/installation/distribution release issues,2022-04-01,7.72234695767861
+Configuration friction,2022-04-01,10.328881574085
+Integration failure/issues,2022-04-01,19.423691326496986
+Missing feature / enhancement request,2022-04-01,50.63006025795294
+Notification/Logging /Web UI Issues,2022-04-01,15.05410959005977
+Performance issue,2022-04-01,2.8574838933607363
+Security concerns,2022-04-01,8.468025241503826
+Tedious Workflows,2022-04-01,12.965348262891466
+Unexpected behavior,2022-04-01,20.89451623337794
+User confusion / unclear documentation,2022-04-01,31.13571198312992
+Authentication friction,2022-05-01,6.407351224493646
+Build/CI/installation/distribution release issues,2022-05-01,7.574529450340969
+Configuration friction,2022-05-01,10.131521822036488
+Integration failure/issues,2022-05-01,19.004229774769527
+Missing feature / enhancement request,2022-05-01,49.00384278635486
+Notification/Logging /Web UI Issues,2022-05-01,14.731454285659222
+Performance issue,2022-05-01,2.795877987648795
+Security concerns,2022-05-01,8.196810181172625
+Tedious Workflows,2022-05-01,12.602375744994784
+Unexpected behavior,2022-05-01,20.443484478967505
+User confusion / unclear documentation,2022-05-01,30.307508661160572
+Authentication friction,2022-06-01,6.215741586065656
+Build/CI/installation/distribution release issues,2022-06-01,7.429541395706666
+Configuration friction,2022-06-01,9.93793313381994
+Integration failure/issues,2022-06-01,18.593826645070106
+Missing feature / enhancement request,2022-06-01,47.42985877550041
+Notification/Logging /Web UI Issues,2022-06-01,14.415714464690954
+Performance issue,2022-06-01,2.7356002740667935
+Security concerns,2022-06-01,7.93428163355869
+Tedious Workflows,2022-06-01,12.249564855314857
+Unexpected behavior,2022-06-01,20.002188754873096
+User confusion / unclear documentation,2022-06-01,29.501335371550628
+Authentication friction,2022-07-01,6.029861968086387
+Build/CI/installation/distribution release issues,2022-07-01,7.287328633732386
+Configuration friction,2022-07-01,9.748043453596832
+Integration failure/issues,2022-07-01,18.19228631753963
+Missing feature / enhancement request,2022-07-01,45.90643050732977
+Notification/Logging /Web UI Issues,2022-07-01,14.10674190733508
+Performance issue,2022-07-01,2.676622117465005
+Security concerns,2022-07-01,7.680161385855199
+Tedious Workflows,2022-07-01,11.906631113118497
+Unexpected behavior,2022-07-01,19.570418897873612
+User confusion / unclear documentation,2022-07-01,28.71660612012101
+Authentication friction,2022-08-01,5.849541016261708
+Build/CI/installation/distribution release issues,2022-08-01,7.1478380410807
+Configuration friction,2022-08-01,9.561782102340086
+Integration failure/issues,2022-08-01,17.799417396799754
+Missing feature / enhancement request,2022-08-01,44.43193415142238
+Notification/Logging /Web UI Issues,2022-08-01,13.804391570572772
+Performance issue,2022-08-01,2.6189155000530313
+Security concerns,2022-08-01,7.434180135892822
+Tedious Workflows,2022-08-01,11.573298001877273
+Unexpected behavior,2022-08-01,19.147969281358716
+User confusion / unclear documentation,2022-08-01,27.952750500013288
+Authentication friction,2022-09-01,5.674612500588808
+Build/CI/installation/distribution release issues,2022-09-01,7.011017511275948
+Configuration friction,2022-09-01,9.379079751526572
+Integration failure/issues,2022-09-01,17.415032620723686
+Missing feature / enhancement request,2022-09-01,43.00479803414731
+Notification/Logging /Web UI Issues,2022-09-01,13.508521520097748
+Performance issue,2022-09-01,2.562453008089848
+Security concerns,2022-09-01,7.196077206748607
+Tedious Workflows,2022-09-01,11.24929674630489
+Unexpected behavior,2022-09-01,18.73463871740088
+User confusion / unclear documentation,2022-09-01,27.209213277070223
+Authentication friction,2022-10-01,5.504915162116043
+Build/CI/installation/distribution release issues,2022-10-01,6.8768159352399385
+Configuration friction,2022-10-01,9.199868397332256
+Integration failure/issues,2022-10-01,17.038948771177132
+Missing feature / enhancement request,2022-10-01,41.62350096340776
+Notification/Logging /Web UI Issues,2022-10-01,13.21899286368711
+Performance issue,2022-10-01,2.507207818860803
+Security concerns,2022-10-01,6.965600270495439
+Tedious Workflows,2022-10-01,10.934366095636609
+Unexpected behavior,2022-10-01,18.33023036094147
+User confusion / unclear documentation,2022-10-01,26.485453986245226
+Authentication friction,2022-11-01,5.34029256428535
+Build/CI/installation/distribution release issues,2022-11-01,6.745183182200245
+Configuration friction,2022-11-01,9.024081335320435
+Integration failure/issues,2022-11-01,16.67098658668686
+Missing feature / enhancement request,2022-11-01,40.28657060719432
+Notification/Logging /Web UI Issues,2022-11-01,12.935669686000264
+Performance issue,2022-11-01,2.4531536879353903
+Security concerns,2022-11-01,6.742505080799245
+Tedious Workflows,2022-11-01,10.62825211297586
+Unexpected behavior,2022-11-01,17.934551616044963
+User confusion / unclear documentation,2022-11-01,25.780946538747013
+Authentication friction,2022-12-01,5.180592948720219
+Build/CI/installation/distribution release issues,2022-12-01,6.616070080963943
+Configuration friction,2022-12-01,8.851653135613613
+Integration failure/issues,2022-12-01,16.310970676995176
+Missing feature / enhancement request,2022-12-01,38.99258192421823
+Notification/Logging /Web UI Issues,2022-12-01,12.658418984775306
+Performance issue,2022-12-01,2.400264936699735
+Security concerns,2022-12-01,6.526555214080655
+Tedious Workflows,2022-12-01,10.330707970538205
+Unexpected behavior,2022-12-01,17.54741404417684
+User confusion / unclear documentation,2022-12-01,25.095178839634382
+Authentication friction,2023-01-01,5.025669095326287
+Build/CI/installation/distribution release issues,2023-01-01,6.4894284015497865
+Configuration friction,2023-01-01,8.682519618539779
+Integration failure/issues,2023-01-01,15.958729439459646
+Missing feature / enhancement request,2023-01-01,37.74015564495219
+Notification/Logging /Web UI Issues,2023-01-01,12.387110608392872
+Performance issue,2023-01-01,2.348516440157874
+Security concerns,2023-01-01,6.317521818966749
+Tedious Workflows,2023-01-01,10.04149375062759
+Unexpected behavior,2023-01-01,17.168633274461367
+User confusion / unclear documentation,2023-01-01,24.42765241558277
+Authentication friction,2023-02-01,4.875378186575565
+Build/CI/installation/distribution release issues,2023-02-01,6.365210837171983
+Configuration friction,2023-02-01,8.516617830744023
+Integration failure/issues,2023-02-01,15.614094977258189
+Missing feature / enhancement request,2023-02-01,36.527956801459574
+Notification/Logging /Web UI Issues,2023-02-01,12.121617194778205
+Performance issue,2023-02-01,2.297883614996034
+Security concerns,2023-02-01,6.115183373767397
+Tedious Workflows,2023-02-01,9.760376252184376
+Unexpected behavior,2023-02-01,16.79802891587663
+User confusion / unclear documentation,2023-02-01,23.777882052552066
+Authentication friction,2023-03-01,4.729581675849203
+Build/CI/installation/distribution release issues,2023-03-01,6.243370986568827
+Configuration friction,2023-03-01,8.353886021756614
+Integration failure/issues,2023-03-01,15.276903019360573
+Missing feature / enhancement request,2023-03-01,35.35469330444483
+Notification/Logging /Web UI Issues,2023-03-01,11.861814111612748
+Performance issue,2023-03-01,2.2483424079042367
+Security concerns,2023-03-01,5.919325451719192
+Tedious Workflows,2023-03-01,9.487128802749163
+Unexpected behavior,2023-03-01,16.435424471344813
+User confusion / unclear documentation,2023-03-01,23.14539544309252
+Authentication friction,2023-04-01,4.588145159717417
+Build/CI/installation/distribution release issues,2023-04-01,6.123863336669584
+Configuration friction,2023-04-01,8.19426362100879
+Integration failure/issues,2023-04-01,14.946992842228113
+Missing feature / enhancement request,2023-04-01,34.219114566008535
+Notification/Logging /Web UI Issues,2023-04-01,11.607579397827196
+Performance issue,2023-04-01,2.199869284149688
+Security concerns,2023-04-01,5.729740493748172
+Tedious Workflows,2023-04-01,9.221531075690804
+Unexpected behavior,2023-04-01,16.080647253677103
+User confusion / unclear documentation,2023-04-01,22.529732843032185
+Authentication friction,2023-05-01,4.450938254038843
+Build/CI/installation/distribution release issues,2023-05-01,6.006643245593156
+Configuration friction,2023-05-01,8.03769121528773
+Integration failure/issues,2023-05-01,14.624207193204368
+Missing feature / enhancement request,2023-05-01,33.12001016663902
+Notification/Logging /Web UI Issues,2023-05-01,11.358793706348472
+Performance issue,2023-05-01,2.1524412163965123
+Security concerns,2023-05-01,5.546227588510532
+Tedious Workflows,2023-05-01,8.963368912551228
+Unexpected behavior,2023-05-01,15.733528303332845
+User confusion / unclear documentation,2023-05-01,21.930446737296403
+Authentication friction,2023-06-01,4.3178344737651
+Build/CI/installation/distribution release issues,2023-06-01,5.89166692597219
+Configuration friction,2023-06-01,7.884110526622296
+Integration failure/issues,2023-06-01,14.308392215560175
+Missing feature / enhancement request,2023-06-01,32.05620856501969
+Notification/Logging /Web UI Issues,2023-06-01,11.11534024807387
+Performance issue,2023-06-01,2.1060356737665376
+Security concerns,2023-06-01,5.36859225947822
+Tedious Workflows,2023-06-01,8.712434150363821
+Unexpected behavior,2023-06-01,15.393902307954104
+User confusion / unclear documentation,2023-06-01,21.34710151461637
+Authentication friction,2023-07-01,4.18871111633975
+Build/CI/installation/distribution release issues,2023-07-01,5.778891428596375
+Configuration friction,2023-07-01,7.733464390591341
+Integration failure/issues,2023-07-01,13.99939737515739
+Missing feature / enhancement request,2023-07-01,31.026575849276696
+Notification/Logging /Web UI Issues,2023-07-01,10.877104737045965
+Performance issue,2023-07-01,2.060630611135913
+Security concerns,2023-07-01,5.196646258843787
+Tedious Workflows,2023-07-01,8.468524453806133
+Unexpected behavior,2023-07-01,15.06160752363706
+User confusion / unclear documentation,2023-07-01,20.779273150890457
+Authentication friction,2023-08-01,4.0634491485841755
+Build/CI/installation/distribution release issues,2023-08-01,5.668274626368835
+Configuration friction,2023-08-01,7.585696735046476
+Integration failure/issues,2023-08-01,13.69707538869634
+Missing feature / enhancement request,2023-08-01,30.030014528336324
+Notification/Logging /Web UI Issues,2023-08-01,10.643975336802614
+Performance issue,2023-08-01,2.0162044586624956
+Security concerns,2023-08-01,5.030207368026081
+Tedious Workflows,2023-08-01,8.231443152051565
+Unexpected behavior,2023-08-01,14.73648569790293
+User confusion / unclear documentation,2023-08-01,20.226548900968034
+Authentication friction,2023-09-01,3.9419330969660944
+Build/CI/installation/distribution release issues,2023-09-01,5.559775198569635
+Configuration friction,2023-09-01,7.440752559241405
+Integration failure/issues,2023-09-01,13.401282153512833
+Missing feature / enhancement request,2023-09-01,29.065462362103148
+Notification/Logging /Web UI Issues,2023-09-01,10.415842607876842
+Performance issue,2023-09-01,1.9727361115390163
+Security concerns,2023-09-01,4.869099204565368
+Tedious Workflows,2023-09-01,8.000999080188484
+Unexpected behavior,2023-09-01,14.418381994331572
+User confusion / unclear documentation,2023-09-01,19.68852699863179
+Authentication friction,2023-10-01,3.8240509411495633
+Build/CI/installation/distribution release issues,2023-10-01,5.453352615420477
+Configuration friction,2023-10-01,7.298577913360027
+Integration failure/issues,2023-10-01,13.111876678891148
+Missing feature / enhancement request,2023-10-01,28.1318912292127
+Notification/Logging /Web UI Issues,2023-10-01,10.192599456421918
+Performance issue,2023-10-01,1.9302049199671625
+Security concerns,2023-10-01,4.713151035203241
+Tedious Workflows,2023-10-01,7.777006425078933
+Unexpected behavior,2023-10-01,14.10714491882204
+User confusion / unclear documentation,2023-10-01,19.16481636456038
+Authentication friction,2023-11-01,3.70969401072832
+Build/CI/installation/distribution release issues,2023-11-01,5.348967122944887
+Configuration friction,2023-11-01,7.1591198784357495
+Integration failure/issues,2023-11-01,12.828721018860453
+Missing feature / enhancement request,2023-11-01,27.22830603115132
+Notification/Logging /Web UI Issues,2023-11-01,9.97414108393762
+Performance issue,2023-11-01,1.888590679347816
+Security concerns,2023-11-01,4.56219759494924
+Tedious Workflows,2023-11-01,7.55928457553256
+Unexpected behavior,2023-11-01,13.802626247444795
+User confusion / unclear documentation,2023-11-01,18.655036322059296
+Authentication friction,2023-12-01,3.598756885047292
+Build/CI/installation/distribution release issues,2023-12-01,5.246579728118175
+Configuration friction,2023-12-01,7.022326546654443
+Integration failure/issues,2023-12-01,12.55168020644242
+Missing feature / enhancement request,2023-12-01,26.353743631575224
+Notification/Logging /Web UI Issues,2023-12-01,9.76036493807397
+Performance issue,2023-12-01,1.847873620682784
+Security concerns,2023-12-01,4.4160789119424235
+Tedious Workflows,2023-12-01,7.347657976675068
+Unexpected behavior,2023-12-01,13.504680955851418
+User confusion / unclear documentation,2023-12-01,18.158816320353235
+Authentication friction,2024-01-01,3.491137296019902
+Build/CI/installation/distribution release issues,2024-01-01,5.146152184301657
+Configuration friction,2024-01-01,6.888147002033788
+Integration failure/issues,2024-01-01,12.28062218931882
+Missing feature / enhancement request,2024-01-01,25.507271829698343
+Notification/Logging /Web UI Issues,2024-01-01,9.551170664489424
+Performance issue,2024-01-01,1.8080344011834657
+Security concerns,2024-01-01,4.274640137922295
+Tedious Workflows,2024-01-01,7.141955988393681
+Unexpected behavior,2024-01-01,13.21316715020797
+User confusion / unclear documentation,2024-01-01,17.675795665238745
+Authentication friction,2024-02-01,3.3867360338515846
+Build/CI/installation/distribution release issues,2024-02-01,5.047646976955692
+Configuration friction,2024-02-01,6.756531301471793
+Integration failure/issues,2024-02-01,12.015417766888405
+Missing feature / enhancement request,2024-02-01,24.687988366654455
+Notification/Logging /Web UI Issues,2024-02-01,9.346460059740853
+Performance issue,2024-02-01,1.7690540950819844
+Security concerns,2024-02-01,4.137731384129434
+Tedious Workflows,2024-02-01,6.942012747745518
+Unexpected behavior,2024-02-01,12.92794599961936
+User confusion / unclear documentation,2024-02-01,17.205623256901536
+Authentication friction,2024-03-01,3.2854568555826216
+Build/CI/installation/distribution release issues,2024-03-01,4.951027309626181
+Configuration friction,2024-03-01,6.627430456157415
+Integration failure/issues,2024-03-01,11.75594052868306
+Missing feature / enhancement request,2024-03-01,23.89501996377452
+Notification/Logging /Web UI Issues,2024-03-01,9.14613702518326
+Performance issue,2024-03-01,1.7309141846404368
+Security concerns,2024-03-01,4.005207562461931
+Tedious Workflows,2024-03-01,6.747667035217923
+Unexpected behavior,2024-03-01,12.648881670012292
+User confusion / unclear documentation,2024-03-01,16.74795733470776
+Authentication friction,2024-04-01,3.187206396365958
+Build/CI/installation/distribution release issues,2024-04-01,4.856257090199325
+Configuration friction,2024-04-01,6.50079641333639
+Integration failure/issues,2024-04-01,11.502066794113864
+Missing feature / enhancement request,2024-04-01,23.12752139175433
+Notification/Logging /Web UI Issues,2024-04-01,8.950107521857584
+Performance issue,2024-04-01,1.6935965513539708
+Security concerns,2024-04-01,3.876928231719267
+Tedious Workflows,2024-04-01,6.558762144732914
+Unexpected behavior,2024-04-01,12.375841259445526
+User confusion / unclear documentation,2024-04-01,16.302465228783824
+Authentication friction,2024-05-01,3.0918940833982353
+Build/CI/installation/distribution release issues,2024-05-01,4.763300917419464
+Configuration friction,2024-05-01,6.376582038425467
+Integration failure/issues,2024-05-01,11.253675553518404
+Missing feature / enhancement request,2024-05-01,22.38467456971996
+Notification/Logging /Web UI Issues,2024-05-01,8.758279526345355
+Performance issue,2024-05-01,1.6570834673435233
+Security concerns,2024-05-01,3.752757448770733
+Tedious Workflows,2024-05-01,6.375145757290944
+Unexpected behavior,2024-05-01,12.108694734816453
+User confusion / unclear documentation,2024-05-01,15.868823118204054
+Authentication friction,2024-06-01,2.9994320524246794
+Build/CI/installation/distribution release issues,2024-06-01,4.672124067665008
+Configuration friction,2024-06-01,6.2547410974684
+Integration failure/issues,2024-06-01,11.010648410481144
+Missing feature / enhancement request,2024-06-01,21.665687693230954
+Notification/Logging /Web UI Issues,2024-06-01,8.570562987569524
+Performance issue,2024-06-01,1.6213575869341277
+Security concerns,2024-06-01,3.632563624490637
+Tedious Workflows,2024-06-01,6.19666981815206
+Unexpected behavior,2024-06-01,11.847314869934
+User confusion / unclear documentation,2024-06-01,15.446715795610585
+Authentication friction,2024-07-01,2.9097350667408897
+Build/CI/installation/distribution release issues,2024-07-01,4.5826924819774835
+Configuration friction,2024-07-01,6.135228239927156
+Integration failure/issues,2024-07-01,10.772869525399429
+Missing feature / enhancement request,2024-07-01,20.969794390291717
+Notification/Logging /Web UI Issues,2024-07-01,8.386869784521213
+Performance issue,2024-07-01,1.5864019384147836
+Security concerns,2024-07-01,3.5162193843076457
+Tedious Workflows,2024-07-01,6.023190417455466
+Unexpected behavior,2024-07-01,11.591577184928251
+User confusion / unclear documentation,2024-07-01,15.03583643809428
+Authentication friction,2024-08-01,2.822720438616843
+Build/CI/installation/distribution release issues,2024-08-01,4.494972753338861
+Configuration friction,2024-08-01,6.017998981801956
+Integration failure/issues,2024-08-01,10.54022556026819
+Missing feature / enhancement request,2024-08-01,20.29625290447144
+Notification/Logging /Web UI Issues,2024-08-01,8.207113684892489
+Performance issue,2024-08-01,1.552199915975988
+Security concerns,2024-08-01,3.4036014332204596
+Tedious Workflows,2024-08-01,5.854567674181199
+Unexpected behavior,2024-08-01,11.34135988696802
+User confusion / unclear documentation,2024-08-01,14.635886384170206
+Authentication friction,2024-09-01,2.7383079530706933
+Build/CI/installation/distribution release issues,2024-09-01,4.408932114192431
+Configuration friction,2024-09-01,5.903009689073828
+Integration failure/issues,2024-09-01,10.312605624657076
+Missing feature / enhancement request,2024-09-01,19.644345304261932
+Notification/Logging /Web UI Issues,2024-09-01,8.031210304595762
+Performance issue,2024-09-01,1.5187352718210798
+Security concerns,2024-09-01,3.294590425136794
+Tedious Workflows,2024-09-01,5.6906656233603785
+Unexpected behavior,2024-09-01,11.096543812258052
+User confusion / unclear documentation,2024-09-01,14.246574916685432
+Authentication friction,2024-10-01,2.6564197939220846
+Build/CI/installation/distribution release issues,2024-10-01,4.324538424202529
+Configuration friction,2024-10-01,5.790217561463558
+Integration failure/issues,2024-10-01,10.08990122285416
+Missing feature / enhancement request,2024-10-01,19.013376717830553
+Notification/Logging /Web UI Issues,2024-10-01,7.859077068150797
+Performance issue,2024-10-01,1.4859921084476664
+Security concerns,2024-10-01,3.18907083639719
+Tedious Workflows,2024-10-01,5.53135210644305
+Unexpected behavior,2024-10-01,10.857012369288354
+User confusion / unclear documentation,2024-10-01,13.86761905150152
+Authentication friction,2024-11-01,2.576980472056817
+Build/CI/installation/distribution release issues,2024-11-01,4.241760158248571
+Configuration friction,2024-11-01,5.679580616500946
+Integration failure/issues,2024-11-01,9.87200620215119
+Missing feature / enhancement request,2024-11-01,18.40267459235253
+Notification/Logging /Web UI Issues,2024-11-01,7.690633169920775
+Performance issue,2024-11-01,1.4539548710954564
+Security concerns,2024-11-01,3.086930843349609
+Tedious Workflows,2024-11-01,5.3764986647352675
+Unexpected behavior,2024-11-01,10.622651483308452
+User confusion / unclear documentation,2024-11-01,13.498743331797993
+Authentication friction,2024-12-01,2.499916755836731
+Build/CI/installation/distribution release issues,2024-12-01,4.160566394648896
+Configuration friction,2024-12-01,5.571057673898474
+Integration failure/issues,2024-12-01,9.65881670224555
+Missing feature / enhancement request,2024-12-01,17.811587977133325
+Notification/Logging /Web UI Issues,2024-12-01,7.525799536179177
+Performance issue,2024-12-01,1.4226083403569134
+Security concerns,2024-12-01,2.988062203845102
+Tedious Workflows,2024-12-01,5.225980435819456
+Unexpected behavior,2024-12-01,10.393349542000356
+User confusion / unclear documentation,2024-12-01,13.13967962784724
+Authentication friction,2025-01-01,2.4251576035906623
+Build/CI/installation/distribution release issues,2025-01-01,4.080926803610031
+Configuration friction,2025-01-01,5.464608340223549
+Integration failure/issues,2025-01-01,9.45023110573496
+Missing feature / enhancement request,2025-01-01,17.239486829756746
+Notification/Logging /Web UI Issues,2025-01-01,7.364498787989675
+Performance issue,2025-01-01,1.3919376249472206
+Security concerns,2025-01-01,2.8923601425289363
+Tedious Workflows,2025-01-01,5.079676052874547
+Unexpected behavior,2025-01-01,10.168997342324117
+User confusion / unclear documentation,2025-01-01,12.790166942115428
+Authentication friction,2025-02-01,2.3526340981242324
+Build/CI/installation/distribution release issues,2025-02-01,4.002811635897037
+Configuration friction,2025-02-01,5.360192993863623
+Integration failure/issues,2025-02-01,9.246149989681228
+Missing feature / enhancement request,2025-02-01,16.68576134451931
+Notification/Logging /Web UI Issues,2025-02-01,7.206655204881623
+Performance issue,2025-02-01,1.3619281546301203
+Security concerns,2025-02-01,2.799723239805647
+Tedious Workflows,2025-02-01,4.9374675468147045
+Unexpected behavior,2025-02-01,9.94948803851087
+User confusion / unclear documentation,2025-02-01,12.449951219547655
+Authentication friction,2025-03-01,2.282279383188097
+Build/CI/installation/distribution release issues,2025-03-01,3.926191711720739
+Configuration friction,2025-03-01,5.257772770278593
+Integration failure/issues,2025-03-01,9.04647607822004
+Missing feature / enhancement request,2025-03-01,16.149821302435104
+Notification/Logging /Web UI Issues,2025-03-01,7.052194689304118
+Performance issue,2025-03-01,1.3325656732962707
+Security concerns,2025-03-01,2.710053324360319
+Tedious Workflows,2025-03-01,4.799240251167744
+Unexpected behavior,2025-03-01,9.734717091178451
+User confusion / unclear documentation,2025-03-01,12.118785162899512
+Authentication friction,2025-04-01,2.214028601846094
+Build/CI/installation/distribution release issues,2025-04-01,3.8510384098376647
+Configuration friction,2025-04-01,5.15730954753499
+Integration failure/issues,2025-04-01,8.851114196194095
+Missing feature / enhancement request,2025-04-01,15.631095442118136
+Notification/Logging /Web UI Issues,2025-04-01,6.901044731841882
+Performance issue,2025-04-01,1.303836232190828
+Security concerns,2025-04-01,2.623255369122218
+Tedious Workflows,2025-04-01,4.664882709616524
+Unexpected behavior,2025-04-01,9.524582217545465
+User confusion / unclear documentation,2025-04-01,11.796428052980708
+Authentication friction,2025-05-01,2.1478188366864694
+Build/CI/installation/distribution release issues,2025-05-01,3.7773236568586257
+Configuration friction,2025-05-01,5.058765932116581
+Integration failure/issues,2025-05-01,8.65997122378762
+Missing feature / enhancement request,2025-05-01,15.129030850871738
+Notification/Logging /Web UI Issues,2025-05-01,6.753134377176699
+Performance issue,2025-05-01,1.2757261832870386
+Security concerns,2025-05-01,2.5392373905605146
+Tedious Workflows,2025-05-01,4.534286586128778
+Unexpected behavior,2025-05-01,9.31898334271995
+User confusion / unclear documentation,2025-05-01,11.482645573680268
+Authentication friction,2025-06-01,2.0835890518210634
+Build/CI/installation/distribution release issues,2025-06-01,3.7050199167619513
+Configuration friction,2025-06-01,4.962105245006087
+Integration failure/issues,2025-06-01,8.472956052140523
+Missing feature / enhancement request,2025-06-01,14.643092375335964
+Notification/Logging /Web UI Issues,2025-06-01,6.608394190778393
+Performance issue,2025-06-01,1.2482221728026957
+Security concerns,2025-06-01,2.4579103512053733
+Tedious Workflows,2025-06-01,4.407346577602907
+Unexpected behavior,2025-06-01,9.11782255203966
+User confusion / unclear documentation,2025-06-01,11.177209641645971
+Authentication friction,2025-07-01,2.0212800366189967
+Build/CI/installation/distribution release issues,2025-07-01,3.634100180607452
+Configuration friction,2025-07-01,4.867291508032849
+Integration failure/issues,2025-07-01,8.289979539921083
+Missing feature / enhancement request,2025-07-01,14.172762051064716
+Notification/Logging /Web UI Issues,2025-07-01,6.466756226309717
+Performance issue,2025-07-01,1.221311134856373
+Security concerns,2025-07-01,2.3791880652911113
+Tedious Workflows,2025-07-01,4.283960328959318
+Unexpected behavior,2025-07-01,8.921004044440998
+User confusion / unclear documentation,2025-07-01,10.879898240494311
+Authentication friction,2025-08-01,1.9608343511229764
+Build/CI/installation/distribution release issues,2025-08-01,3.564537956447281
+Configuration friction,2025-08-01,4.774289430481361
+Integration failure/issues,2025-08-01,8.110954470836477
+Missing feature / enhancement request,2025-08-01,13.717538550424631
+Notification/Logging /Web UI Issues,2025-08-01,6.32815399372986
+Performance issue,2025-08-01,1.194980285260432
+Security concerns,2025-08-01,2.302987107421433
+Tedious Workflows,2025-08-01,4.164028350608812
+Unexpected behavior,2025-08-01,8.728434086834653
+User confusion / unclear documentation,2025-08-01,10.590495259430384
+Authentication friction,2025-09-01,1.902196273097911
+Build/CI/installation/distribution release issues,2025-09-01,3.4963072594299027
+Configuration friction,2025-09-01,4.683064395955675
+Integration failure/issues,2025-09-01,7.935795512060883
+Missing feature / enhancement request,2025-09-01,13.276936648227284
+Notification/Logging /Web UI Issues,2025-09-01,6.192522428081587
+Performance issue,2025-09-01,1.169217115447846
+Security concerns,2025-09-01,2.229226724159944
+Tedious Workflows,2025-09-01,4.047453938231509
+Unexpected behavior,2025-09-01,8.54002096946599
+User confusion / unclear documentation,2025-09-01,10.3087903361605
+Authentication friction,2025-10-01,1.845311746663016
+Build/CI/installation/distribution release issues,2025-10-01,3.429382602093503
+Configuration friction,2025-10-01,4.593582449494798
+Integration failure/issues,2025-10-01,7.764419173561317
+Missing feature / enhancement request,2025-10-01,12.850486704524982
+Notification/Logging /Web UI Issues,2025-10-01,6.059797858947373
+Performance issue,2025-10-01,1.1440093865299583
+Security concerns,2025-10-01,2.157828748452258
+Tedious Workflows,2025-10-01,3.934143094801599
+Unexpected behavior,2025-10-01,8.355674962239132
+User confusion / unclear documentation,2025-10-01,10.03457870398329
+Authentication friction,2025-11-01,1.790128332460064
+Build/CI/installation/distribution release issues,2025-11-01,3.3637389848451904
+Configuration friction,2025-11-01,4.505810284934281
+Integration failure/issues,2025-11-01,7.596743768301887
+Missing feature / enhancement request,2025-11-01,12.437734164019073
+Notification/Logging /Web UI Issues,2025-11-01,5.9299179805601785
+Performance issue,2025-11-01,1.1193451234823548
+Security concerns,2025-11-01,2.0887175167890004
+Tedious Workflows,2025-11-01,3.824004454795062
+Unexpected behavior,2025-11-01,8.175308271983734
+User confusion / unclear documentation,2025-11-01,9.767661042948122

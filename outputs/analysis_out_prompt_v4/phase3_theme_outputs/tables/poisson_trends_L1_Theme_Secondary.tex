@@ -1,0 +1,44 @@
+\begin{table}[t]
+\centering
+\caption{Poisson regression time trends for monthly counts of usability issues by tool and L1_Theme Secondary (top 15 themes).}
+\label{tab:poisson-l1_theme_secondary}
+\scriptsize
+\begin{tabular}{lllllll}
+\hline
+tool & theme & beta & rr\_per\_month & pct\_change\_per\_month & p\_value & sig\_0\_05 \\
+\hline
+Keyfactor/ejbca-ce & Cognitive Friction & 0.0003 & 1.000 & 0.03 & 0.97 & no \\
+Keyfactor/ejbca-ce & Functional Gap & 0.0040 & 1.004 & 0.40 & 0.743 & no \\
+Keyfactor/ejbca-ce & Operational Friction & 0.0042 & 1.004 & 0.42 & 0.568 & no \\
+Keyfactor/ejbca-ce & Functional Reliability & 0.0067 & 1.007 & 0.67 & 0.527 & no \\
+Keyfactor/signserver-ce & Cognitive Friction & -0.0012 & 0.999 & -0.12 & 0.953 & no \\
+Keyfactor/signserver-ce & Functional Reliability & 0.0141 & 1.014 & 1.42 & 0.659 & no \\
+Keyfactor/signserver-ce & Operational Friction & 0.0195 & 1.020 & 1.97 & 0.33 & no \\
+Keyfactor/signserver-ce & Functional Gap & 0.0321 & 1.033 & 3.26 & 0.295 & no \\
+hashicorp/vault & Cognitive Friction & -0.0320 & 0.969 & -3.15 & 2.44e-24* & yes \\
+hashicorp/vault & Functional Gap & -0.0244 & 0.976 & -2.41 & 4.22e-16* & yes \\
+hashicorp/vault & Operational Friction & -0.0233 & 0.977 & -2.30 & 8.07e-21* & yes \\
+hashicorp/vault & Functional Reliability & -0.0208 & 0.979 & -2.06 & 2.02e-10* & yes \\
+notaryproject/notation & Functional Gap & -0.0377 & 0.963 & -3.70 & 6.81e-11* & yes \\
+notaryproject/notation & Functional Reliability & -0.0253 & 0.975 & -2.50 & 0.0511 & no \\
+notaryproject/notation & Operational Friction & -0.0222 & 0.978 & -2.19 & 0.000438* & yes \\
+notaryproject/notation & Cognitive Friction & -0.0180 & 0.982 & -1.78 & 0.0186* & yes \\
+openpubkey/openpubkey & Functional Gap & 0.0350 & 1.036 & 3.56 & 0.000116* & yes \\
+openpubkey/openpubkey & Functional Reliability & 0.0420 & 1.043 & 4.29 & 0.0372* & yes \\
+openpubkey/openpubkey & Cognitive Friction & 0.0455 & 1.047 & 4.66 & 0.00862* & yes \\
+openpubkey/openpubkey & Operational Friction & 0.0515 & 1.053 & 5.29 & 0.000128* & yes \\
+sigstore/cosign & Functional Gap & -0.0507 & 0.951 & -4.95 & 6.74e-39* & yes \\
+sigstore/cosign & Operational Friction & -0.0367 & 0.964 & -3.61 & 8.12e-21* & yes \\
+sigstore/cosign & Cognitive Friction & -0.0299 & 0.971 & -2.94 & 3.37e-12* & yes \\
+sigstore/cosign & Functional Reliability & -0.0242 & 0.976 & -2.40 & 5.28e-05* & yes \\
+sigstore/fulcio & Cognitive Friction & -0.0734 & 0.929 & -7.08 & 2.12e-06* & yes \\
+sigstore/fulcio & Operational Friction & -0.0488 & 0.952 & -4.77 & 1.94e-07* & yes \\
+sigstore/fulcio & Functional Gap & -0.0432 & 0.958 & -4.23 & 9.1e-09* & yes \\
+sigstore/fulcio & Functional Reliability & -0.0324 & 0.968 & -3.18 & 0.0388* & yes \\
+sigstore/rekor & Functional Gap & -0.0590 & 0.943 & -5.73 & 5.46e-14* & yes \\
+sigstore/rekor & Operational Friction & -0.0568 & 0.945 & -5.52 & 2.55e-09* & yes \\
+sigstore/rekor & Functional Reliability & -0.0508 & 0.950 & -4.96 & 3.53e-05* & yes \\
+sigstore/rekor & Cognitive Friction & -0.0335 & 0.967 & -3.29 & 0.000428* & yes \\
+\hline
+\end{tabular}
+\end{table}

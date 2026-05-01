@@ -56,6 +56,20 @@ NIELSEN_THEME_ORDER = [
     "9. Help users recognize, diagnose, and recover from errors",
     "10. Help and documentation",
 ]
+COMPONENT_THEME_ORDER = [
+    "Authentication/Authorization tools",
+    "CLI tooling",
+    "Signing workflow",
+    "Verification workflow",
+    "Policy/configuration",
+    "Build/CI/Installation",
+    "Release pipeline",
+    "Notification/Logging",
+    "Core",
+    "API",
+    "Web Client",
+    "Key Management Core / Secrets Backend",
+]
 
 # If you want to restrict to a date window:
 DATE_MIN = None  # e.g., "2021-01-01"
@@ -96,6 +110,10 @@ def split_multi_nielsen(cell) -> list[str]:
     s = str(cell).strip()
     if not s:
         return []
+    s = s.replace("\n", ", ")
+    s = s.replace("[", " ").replace("]", " ")
+    s = s.replace("'", "").replace('"', "")
+    s = re.sub(r"\s+", " ", s).strip()
     # Capture tokens from one numbered label up to the next numbered label or end.
     matches = re.findall(r"(?:^|,\s*)(\d+\.\s.*?)(?=(?:,\s*\d+\.|$))", s)
     if matches:
@@ -123,21 +141,98 @@ def _strip_nielsen_number_prefix(s: str) -> str:
 
 def _nielsen_alias_to_canonical() -> dict[str, str]:
     out: dict[str, str] = {}
-    for canonical in NIELSEN_THEME_ORDER:
+    for i, canonical in enumerate(NIELSEN_THEME_ORDER, start=1):
         out[norm_key(canonical)] = canonical
         out[norm_key(_strip_nielsen_number_prefix(canonical))] = canonical
+        out[norm_key(str(i))] = canonical
     out[norm_key("9. Help users recognize and recover from errors")] = NIELSEN_THEME_ORDER[8]
     out[norm_key("Help users recognize, diagnose, and recover from errors")] = NIELSEN_THEME_ORDER[8]
     return out
 
 
+def _component_alias_to_canonical() -> dict[str, str]:
+    aliases = {
+        "Authentication/Authorization tools": [
+            "Authentication/Authorization tools",
+            "Auth/Authz tools",
+        ],
+        "CLI tooling": ["CLI tooling"],
+        "Signing workflow": ["Signing workflow"],
+        "Verification workflow": ["Verification workflow"],
+        "Policy/configuration": ["Policy/configuration", "Policy/config"],
+        "Build/CI/Installation": [
+            "Build/CI/Installation",
+            "Build/CI",
+            "Build/CI/installation",
+            "Build/CI/installation/distribution",
+            "Build/CI/installation/distribution release issues",
+            "Build/CI/installation/distribution release",
+        ],
+        "Release pipeline": ["Release pipeline", "Release Pipeline"],
+        "Notification/Logging": ["Notification/Logging", "Notification/Logging /Web UI Issues"],
+        "Core": ["Core"],
+        "API": ["API", "REST API", "Rest API"],
+        "Web Client": ["Web Client", "Web UI", "Web client"],
+        "Key Management Core / Secrets Backend": [
+            "Key Management Core / Secrets Backend",
+            "Key Management Core (secret engine)",
+            "Key Management Core/Secrets Backend",
+            "Secrets Backend",
+        ],
+    }
+    out: dict[str, str] = {}
+    for canonical, vals in aliases.items():
+        for v in vals:
+            out[norm_key(v)] = canonical
+    return out
+
+
 def load_phase3_excels(data_dir: Path) -> pd.DataFrame:
-    paths = sorted(data_dir.glob("*.xlsx"))
+    def _norm_col(c: str) -> str:
+        return re.sub(r"[^a-z0-9]+", "", str(c).strip().lower())
+
+    def _coalesce_alias(df: pd.DataFrame, canonical: str, aliases: list[str]) -> None:
+        if canonical not in df.columns:
+            for a in aliases:
+                if a in df.columns:
+                    df.rename(columns={a: canonical}, inplace=True)
+                    break
+            return
+        for a in aliases:
+            if a in df.columns and a != canonical:
+                df[canonical] = df[canonical].where(df[canonical].notna(), df[a])
+                df.drop(columns=[a], inplace=True)
+
+    def _standardize_columns(df: pd.DataFrame) -> pd.DataFrame:
+        norm_to_col = {_norm_col(c): c for c in df.columns}
+
+        desired = {
+            "Nielsen_theme": ["Nielsen_Theme"],
+            "Associated Component Theme": ["Associated component Theme", "associated_component_theme"],
+            "L1_Theme Secondary": ["L1_Theme secondary", "L1 theme secondary"],
+            "usability_non-usability_type": ["Usability_non-usability Type", "usability_non_usability_type"],
+            "codes_primary": ["code_primary", "codes primary"],
+            "Associated component": ["Associated Component"],
+        }
+
+        for canonical, alias_candidates in desired.items():
+            cols = []
+            for c in [canonical] + alias_candidates:
+                norm = _norm_col(c)
+                if norm in norm_to_col:
+                    cols.append(norm_to_col[norm])
+            if not cols:
+                continue
+            _coalesce_alias(df, canonical, [c for c in cols if c != canonical])
+        return df
+
+    paths = sorted(p for p in data_dir.glob("*.xlsx") if not p.name.startswith("~$"))
     if not paths:
         raise FileNotFoundError(f"No .xlsx files found in {data_dir.resolve()}")
     dfs = []
     for fp in paths:
-        df = pd.read_excel(fp)
+        df = pd.read_excel(fp, engine="openpyxl")
+        df = _standardize_columns(df)
         df["__source_file__"] = fp.name
         dfs.append(df)
     out = pd.concat(dfs, ignore_index=True)
@@ -574,6 +669,12 @@ def aggregate_poisson_expected_curves(
     if tmp.empty:
         return pd.DataFrame()
     tmp[category_col] = tmp[category_col].astype(str).str.strip()
+    if category_col == AGG_COMPONENT_COL:
+        comp_alias_map = _component_alias_to_canonical()
+        tmp[category_col] = tmp[category_col].map(lambda x: comp_alias_map.get(norm_key(x)))
+        tmp = tmp[tmp[category_col].notna()].copy()
+        if tmp.empty:
+            return pd.DataFrame()
 
     totals = tmp[category_col].value_counts()
     if AGG_TOPK_CATEGORIES is not None:
@@ -834,6 +935,7 @@ def main():
 
     # ---- C) Theme-by-tool slopes for each Phase 3 theme column ----
     nielsen_alias_map = _nielsen_alias_to_canonical()
+    component_alias_map = _component_alias_to_canonical()
     l1_theme_out: pd.DataFrame | None = None
     nielsen_theme_out: pd.DataFrame | None = None
     for theme_col in THEME_COLS:
@@ -844,9 +946,12 @@ def main():
         tmp[theme_col] = tmp[theme_col].apply(lambda x: split_multi_for_col(x, theme_col))
         tmp = tmp.explode(theme_col)
         tmp = tmp[tmp[theme_col].notna() & (tmp[theme_col].astype(str).str.strip() != "")].copy()
+        tmp[theme_col] = tmp[theme_col].astype(str).str.strip()
         if theme_col == "Nielsen_theme":
-            tmp[theme_col] = tmp[theme_col].astype(str).str.strip()
             tmp[theme_col] = tmp[theme_col].map(lambda x: nielsen_alias_map.get(norm_key(x)))
+            tmp = tmp[tmp[theme_col].notna()].copy()
+        if theme_col == AGG_COMPONENT_COL:
+            tmp[theme_col] = tmp[theme_col].map(lambda x: component_alias_map.get(norm_key(x)))
             tmp = tmp[tmp[theme_col].notna()].copy()
 
         # Choose top themes globally (by total occurrences)

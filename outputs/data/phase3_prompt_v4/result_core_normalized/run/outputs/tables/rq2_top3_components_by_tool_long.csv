@@ -1,0 +1,25 @@
+tool,rank,component,count,pct_within_tool_component_assignments,tool_total_component_assignments
+hashicorp/vault,1,Policy/configuration,492,18.36,2680
+hashicorp/vault,2,Key Management Core / Secrets Backend,452,16.87,2680
+hashicorp/vault,3,API,424,15.82,2680
+sigstore/cosign,1,CLI tooling,484,30.33,1596
+sigstore/cosign,2,Verification workflow,280,17.54,1596
+sigstore/cosign,3,Signing workflow,279,17.48,1596
+notaryproject/notation,1,CLI tooling,199,36.18,550
+notaryproject/notation,2,Signing workflow,86,15.64,550
+notaryproject/notation,3,Verification workflow,68,12.36,550
+sigstore/rekor,1,API,97,39.11,248
+sigstore/rekor,2,CLI tooling,50,20.16,248
+sigstore/rekor,3,Core,23,9.27,248
+Keyfactor/ejbca-ce,1,Policy/configuration,62,25.62,242
+Keyfactor/ejbca-ce,2,Web Client,58,23.97,242
+Keyfactor/ejbca-ce,3,Build/CI/Installation,33,13.64,242
+sigstore/fulcio,1,Policy/configuration,49,22.17,221
+sigstore/fulcio,2,API,34,15.38,221
+sigstore/fulcio,3,Authentication/Authorization tools,34,15.38,221
+openpubkey/openpubkey,1,Authentication/Authorization tools,34,23.45,145
+openpubkey/openpubkey,2,API,21,14.48,145
+openpubkey/openpubkey,3,CLI tooling,19,13.1,145
+Keyfactor/signserver-ce,1,Web Client,10,25.0,40
+Keyfactor/signserver-ce,2,Build/CI/Installation,7,17.5,40
+Keyfactor/signserver-ce,3,Policy/configuration,6,15.0,40
