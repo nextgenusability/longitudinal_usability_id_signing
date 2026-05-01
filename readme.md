@@ -224,7 +224,7 @@ The complete tracked-file inventory is generated in:
 
 - `ARTIFACT_FILE_INVENTORY.md`
 
-That file lists each tracked artifact file, its file type, and the information it contains, including the inventory file itself. It excludes Python bytecode caches and `.DS_Store` files because those are local/runtime artifacts rather than research artifacts.
+That file groups each tracked artifact file by role (`result tables`, `result figures`, `raw/source data`, `LLM-classified data`, `prompts`, scripts, and documentation), describes the information each file contains, and flags files that have been superseded by newer prompt-v4/core-normalized outputs where that relationship is clear. It excludes Python bytecode caches and `.DS_Store` files because those are local/runtime artifacts rather than research artifacts.
 
 ## Data Collection Inputs
 
