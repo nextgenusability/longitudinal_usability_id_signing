@@ -8,18 +8,20 @@ Files are grouped by artifact role. The **Status / newer file** column flags out
 
 | Group | Files | Meaning |
 |---|---:|---|
-| Documentation and manifests | 5 | README, artifact guide, generated inventory, and result manifests. |
-| Prompts and coding protocols | 11 | LLM prompt versions and coding heuristic/instruction documents. |
-| Raw/source data | 27 | Collected GitHub issue workbooks, original labeled workbooks, and collection archives. |
-| Human-labeled validation and agreement data | 60 | Human-coded calibration/validation samples and agreement/reliability outputs. |
-| LLM-classified data and recoding outputs | 506 | OpenAI/API predictions, caches, copied recoded workbooks, and prompt comparisons. |
-| Result tables | 474 | CSV/LaTeX statistical, descriptive, diagnostic, and support tables. |
-| Result figures | 422 | Generated plots, heatmaps, bars, pies, stacked charts, and publication figures. |
-| Scripts and software | 27 | Python, shell, package, and dependency files used to collect, recode, analyze, and plot. |
-| Legacy, backup, or convenience archives | 266 | Older snapshots or ZIP packages retained for transparency/convenience. |
-| Other project files | 1 | Files that do not fit the main artifact categories. |
+| [Documentation and manifests](#documentation-and-manifests) | 5 | README, artifact guide, generated inventory, and result manifests. |
+| [Prompts and coding protocols](#prompts-and-coding-protocols) | 11 | LLM prompt versions and coding heuristic/instruction documents. |
+| [Raw/source data](#rawsource-data) | 27 | Collected GitHub issue workbooks, original labeled workbooks, and collection archives. |
+| [Human-labeled validation and agreement data](#human-labeled-validation-and-agreement-data) | 60 | Human-coded calibration/validation samples and agreement/reliability outputs. |
+| [LLM-classified data and recoding outputs](#llm-classified-data-and-recoding-outputs) | 506 | OpenAI/API predictions, caches, copied recoded workbooks, and prompt comparisons. |
+| [Result tables](#result-tables) | 474 | CSV/LaTeX statistical, descriptive, diagnostic, and support tables. |
+| [Result figures](#result-figures) | 422 | Generated plots, heatmaps, bars, pies, stacked charts, and publication figures. |
+| [Scripts and software](#scripts-and-software) | 27 | Python, shell, package, and dependency files used to collect, recode, analyze, and plot. |
+| [Legacy, backup, or convenience archives](#legacy-backup-or-convenience-archives) | 266 | Older snapshots or ZIP packages retained for transparency/convenience. |
+| [Other project files](#other-project-files) | 1 | Files that do not fit the main artifact categories. |
 
 ## Documentation and manifests
+
+[Back to Group Summary](#group-summary)
 
 | Path | Type | Contents / purpose | Status / newer file |
 |---|---|---|---|
@@ -30,6 +32,8 @@ Files are grouped by artifact role. The **Status / newer file** column flags out
 | `readme.md` | Markdown documentation | Primary artifact overview, quick-start commands, repository map, and links to inventories. | Current/retained artifact file. |
 
 ## Prompts and coding protocols
+
+[Back to Group Summary](#group-summary)
 
 | Path | Type | Contents / purpose | Status / newer file |
 |---|---|---|---|
@@ -46,6 +50,8 @@ Files are grouped by artifact role. The **Status / newer file** column flags out
 | `LLM Prompts/master_prompt_2.txt` | Text prompt/notes | Master LLM classifier prompt variant used for API recoding experiments. | Current/retained artifact file. |
 
 ## Raw/source data
+
+[Back to Group Summary](#group-summary)
 
 | Path | Type | Contents / purpose | Status / newer file |
 |---|---|---|---|
@@ -78,6 +84,8 @@ Files are grouped by artifact role. The **Status / newer file** column flags out
 | `outputs/data/phase3_paper_version/sigstore__rekor___non-human_phase3_labeled.xlsx` | Excel workbook | Paper-version labeled data workbook copied into the isolated data layout. | Current/retained artifact file. |
 
 ## Human-labeled validation and agreement data
+
+[Back to Group Summary](#group-summary)
 
 | Path | Type | Contents / purpose | Status / newer file |
 |---|---|---|---|
@@ -143,6 +151,8 @@ Files are grouped by artifact role. The **Status / newer file** column flags out
 | `outputs/tables/stratified_sampling_strata_table.csv` | CSV data/table | Validation-sample finite-population CI, strata, or strata-check table. | Current/retained artifact file. |
 
 ## LLM-classified data and recoding outputs
+
+[Back to Group Summary](#group-summary)
 
 | Path | Type | Contents / purpose | Status / newer file |
 |---|---|---|---|
@@ -655,6 +665,8 @@ Files are grouped by artifact role. The **Status / newer file** column flags out
 
 ## Result tables
 
+[Back to Group Summary](#group-summary)
+
 | Path | Type | Contents / purpose | Status / newer file |
 |---|---|---|---|
 | `outputs/analysis_out_paper_version/phase3_theme_outputs/tables/counts_Associated_Component_Theme_by_tool_long.csv` | CSV data/table | paper-version/original manuscript descriptive count/percentage table by tool/theme/component. | Original manuscript/paper-version output; newer API rerun outputs are in `outputs/analysis_out_prompt_v4_core_normalized/`. |
@@ -1134,6 +1146,8 @@ Files are grouped by artifact role. The **Status / newer file** column flags out
 
 ## Result figures
 
+[Back to Group Summary](#group-summary)
+
 | Path | Type | Contents / purpose | Status / newer file |
 |---|---|---|---|
 | `outputs/analysis_out_paper_version/phase3_theme_outputs/plots/bars/Keyfactor_ejbca-ce__Associated_Component_Theme.png` | PNG figure | paper-version/original manuscript bar chart for theme/component distributions. | Original manuscript/paper-version output; newer API rerun outputs are in `outputs/analysis_out_prompt_v4_core_normalized/`. |
@@ -1561,6 +1575,8 @@ Files are grouped by artifact role. The **Status / newer file** column flags out
 
 ## Scripts and software
 
+[Back to Group Summary](#group-summary)
+
 | Path | Type | Contents / purpose | Status / newer file |
 |---|---|---|---|
 | `idtools_usability/__init__.py` | Python source/script | Small local Python package/CLI helper used by the artifact. | Current/retained artifact file. |
@@ -1592,6 +1608,8 @@ Files are grouped by artifact role. The **Status / newer file** column flags out
 | `scripts/trend_poisson_phase3.py` | Python source/script | Analysis, plotting, reliability, comparison, or artifact-maintenance script. | Current/retained artifact file. |
 
 ## Legacy, backup, or convenience archives
+
+[Back to Group Summary](#group-summary)
 
 | Path | Type | Contents / purpose | Status / newer file |
 |---|---|---|---|
@@ -1863,6 +1881,8 @@ Files are grouped by artifact role. The **Status / newer file** column flags out
 | `outputs/phase3_theme_outputs.zip` | ZIP archive | Archived copy of phase-3 theme outputs; convenience package only. | Current/retained artifact file. |
 
 ## Other project files
+
+[Back to Group Summary](#group-summary)
 
 | Path | Type | Contents / purpose | Status / newer file |
 |---|---|---|---|
