@@ -2,7 +2,24 @@
 
 This document explains how to regenerate the main result sets and how the important output files relate to the scripts that created them.
 
+**Navigation:** [README](readme.md) | [Artifact Guide](ARTIFACT.md) | [File Inventory](ARTIFACT_FILE_INVENTORY.md)
+
+## Table of Contents
+
+- [Environment](#environment)
+- [Input Data](#input-data)
+- [Main Output Trees](#main-output-trees)
+- [Regenerate Original Paper-Version Outputs](#regenerate-original-paper-version-outputs)
+- [Regenerate Prompt-v4 Full-Corpus Recoding](#regenerate-prompt-v4-full-corpus-recoding)
+- [Create Core-Normalized Prompt-v4 Corpus](#create-core-normalized-prompt-v4-corpus)
+- [Run Isolated Prompt-v4 Analysis](#run-isolated-prompt-v4-analysis)
+- [Script-to-Output Map](#script-to-output-map)
+- [Study Window](#study-window)
+- [Current Rebuttal-Relevant Numbers](#current-rebuttal-relevant-numbers)
+
 ## Environment
+
+[Back to Table of Contents](#table-of-contents) | [README](readme.md) | [File Inventory](ARTIFACT_FILE_INVENTORY.md)
 
 ```bash
 python3 -m venv .venv
@@ -16,6 +33,8 @@ Some scripts write LaTeX tables through pandas and require `jinja2`; it is inclu
 
 ## Input Data
 
+[Back to Table of Contents](#table-of-contents) | [README](readme.md) | [File Inventory](ARTIFACT_FILE_INVENTORY.md)
+
 `LLM Prompts/gh-issues/` contains the full 3,900-issue corpus as one workbook per repository. These workbooks include `issues` and `comments` sheets and are used by the OpenAI API recoding scripts.
 
 `LLM Prompts/human issues/` contains human-labeled files and `issue_sample_180_50.xlsx`, the calibration/validation sample sheet.
@@ -27,6 +46,8 @@ Some scripts write LaTeX tables through pandas and require `jinja2`; it is inclu
 `outputs/data/phase3_prompt_v4/recode_full_core_normalized/` contains the prompt-v4 full-corpus data after component normalization, especially removal of generic `Core` when it co-occurs with a more specific component.
 
 ## Main Output Trees
+
+[Back to Table of Contents](#table-of-contents) | [README](readme.md) | [File Inventory](ARTIFACT_FILE_INVENTORY.md)
 
 `outputs/analysis_out_paper_version/` is the original manuscript output tree.
 
@@ -43,6 +64,8 @@ Each analysis tree mirrors the same basic structure:
 - `phase3_theme_outputs/`: mirrored legacy-style copy of tables/plots for compatibility with earlier manuscript references.
 
 ## Regenerate Original Paper-Version Outputs
+
+[Back to Table of Contents](#table-of-contents) | [README](readme.md) | [File Inventory](ARTIFACT_FILE_INVENTORY.md)
 
 ```bash
 bash scripts/regenerate_artifact.sh
@@ -65,6 +88,8 @@ python scripts/build_results_manifest.py
 ```
 
 ## Regenerate Prompt-v4 Full-Corpus Recoding
+
+[Back to Table of Contents](#table-of-contents) | [README](readme.md) | [File Inventory](ARTIFACT_FILE_INVENTORY.md)
 
 Set the API key:
 
@@ -92,6 +117,8 @@ The API wrapper uses:
 
 ## Create Core-Normalized Prompt-v4 Corpus
 
+[Back to Table of Contents](#table-of-contents) | [README](readme.md) | [File Inventory](ARTIFACT_FILE_INVENTORY.md)
+
 ```bash
 python scripts/openai_api/make_core_normalized_corpus.py \
   --input-dir outputs/data/phase3_prompt_v4/recode_full \
@@ -101,6 +128,8 @@ python scripts/openai_api/make_core_normalized_corpus.py \
 This creates a duplicated result corpus for sensitivity analysis. When `Core` appears together with more specific component labels, `Core` is removed so that component-level tables are less dominated by generic labels.
 
 ## Run Isolated Prompt-v4 Analysis
+
+[Back to Table of Contents](#table-of-contents) | [README](readme.md) | [File Inventory](ARTIFACT_FILE_INVENTORY.md)
 
 ```bash
 bash scripts/openai_api/run_isolated_phase3_analysis.sh \
@@ -122,6 +151,8 @@ This script:
 9. Copies results into the requested `outputs/analysis_out_*` directory.
 
 ## Script-to-Output Map
+
+[Back to Table of Contents](#table-of-contents) | [README](readme.md) | [File Inventory](ARTIFACT_FILE_INVENTORY.md)
 
 ### Reliability
 
@@ -327,9 +358,13 @@ Current corpus context summary:
 
 ## Study Window
 
+[Back to Table of Contents](#table-of-contents) | [README](readme.md) | [File Inventory](ARTIFACT_FILE_INVENTORY.md)
+
 The issue collection window runs from November 5, 2021 through November 5, 2025. Monthly trend models use calendar-month bins from `2021-11` through `2025-11` inclusive (`n_months=49`), representing 48 elapsed months.
 
 ## Current Rebuttal-Relevant Numbers
+
+[Back to Table of Contents](#table-of-contents) | [README](readme.md) | [File Inventory](ARTIFACT_FILE_INVENTORY.md)
 
 - Rerun pipeline usability issue rate: `2,965/3,900 = 76%`.
 - Combined human validation usability rate: `131/180 = 72.8%`.

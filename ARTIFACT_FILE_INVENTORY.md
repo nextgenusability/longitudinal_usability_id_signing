@@ -4,6 +4,8 @@ Generated from tracked repository files on 2026-05-01. Python bytecode caches an
 
 Files are grouped by artifact role. The **Status / newer file** column flags outputs that are superseded by newer prompt-v4/core-normalized results where that relationship is clear.
 
+**Navigation:** [README](readme.md) | [Artifact Guide](ARTIFACT.md) | [File Inventory](ARTIFACT_FILE_INVENTORY.md)
+
 ## Group Summary
 
 | Group | Files | Meaning |

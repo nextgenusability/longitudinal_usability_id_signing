@@ -9,6 +9,8 @@ The repository is organized around two main result families:
 
 For the detailed script-to-output regeneration map, see `ARTIFACT.md`. For a generated per-file inventory, see `ARTIFACT_FILE_INVENTORY.md`.
 
+**Navigation:** [README](readme.md) | [Artifact Guide](ARTIFACT.md) | [File Inventory](ARTIFACT_FILE_INVENTORY.md)
+
 ## Table of Contents
 
 - [Quick Start](#quick-start)
@@ -27,6 +29,8 @@ For the detailed script-to-output regeneration map, see `ARTIFACT.md`. For a gen
 - [Notes](#notes)
 
 ## Quick Start
+
+[Back to Table of Contents](#table-of-contents) | [Artifact Guide](ARTIFACT.md) | [File Inventory](ARTIFACT_FILE_INVENTORY.md)
 
 Create a virtual environment and install dependencies:
 
@@ -55,6 +59,8 @@ bash scripts/openai_api/run_isolated_phase3_analysis.sh \
 
 ## Security and Redaction Note
 
+[Back to Table of Contents](#table-of-contents) | [Artifact Guide](ARTIFACT.md) | [File Inventory](ARTIFACT_FILE_INVENTORY.md)
+
 Some generated CSV files contain raw public GitHub issue text. Public issue text can include token-looking examples, test credentials, logs, or accidentally posted secrets. GitHub push protection correctly blocks such patterns even when they appear inside public issue text.
 
 We therefore **redact token-like strings in generated text artifacts** rather than relying on ZIP files to hide them. Zipping files is useful for convenience packaging, but it is not an appropriate privacy or security boundary for a public research artifact. The redacted full-corpus files retain the issue metadata, labels, and analysis-relevant text while replacing token-like strings with placeholders such as `[REDACTED_VAULT_TOKEN]`, `[REDACTED_AWS_ACCESS_KEY_ID]`, and `[REDACTED_GOOGLE_OAUTH_CLIENT_ID]`.
@@ -62,6 +68,8 @@ We therefore **redact token-like strings in generated text artifacts** rather th
 Existing ZIP archives in this repository, such as `issue_collections/gh_issue_exports.zip` and `outputs/phase3_theme_outputs.zip`, are convenience snapshots only. They should not be used as a substitute for redaction.
 
 ## Repository Layout at a Glance
+
+[Back to Table of Contents](#table-of-contents) | [Artifact Guide](ARTIFACT.md) | [File Inventory](ARTIFACT_FILE_INVENTORY.md)
 
 | Path | What it contains | Most important files |
 |---|---|---|
@@ -82,6 +90,8 @@ Existing ZIP archives in this repository, such as `issue_collections/gh_issue_ex
 | `outputs copy/` | Legacy backup/snapshot of earlier generated outputs. | Historical comparison files only |
 
 ## Complete Directory Inventory
+
+[Back to Table of Contents](#table-of-contents) | [Artifact Guide](ARTIFACT.md) | [File Inventory](ARTIFACT_FILE_INVENTORY.md)
 
 This table lists every tracked directory that contains artifact files, with direct and recursive file counts. A direct count means files immediately in that directory; recursive count includes files in nested subdirectories.
 
@@ -220,6 +230,8 @@ This table lists every tracked directory that contains artifact files, with dire
 
 ## Complete File Inventory
 
+[Back to Table of Contents](#table-of-contents) | [Artifact Guide](ARTIFACT.md) | [File Inventory](ARTIFACT_FILE_INVENTORY.md)
+
 The complete tracked-file inventory is generated in:
 
 - `ARTIFACT_FILE_INVENTORY.md`
@@ -227,6 +239,8 @@ The complete tracked-file inventory is generated in:
 That file groups each tracked artifact file by role (`result tables`, `result figures`, `raw/source data`, `LLM-classified data`, `prompts`, scripts, and documentation), describes the information each file contains, and flags files that have been superseded by newer prompt-v4/core-normalized outputs where that relationship is clear. It excludes Python bytecode caches and `.DS_Store` files because those are local/runtime artifacts rather than research artifacts.
 
 ## Data Collection Inputs
+
+[Back to Table of Contents](#table-of-contents) | [Artifact Guide](ARTIFACT.md) | [File Inventory](ARTIFACT_FILE_INVENTORY.md)
 
 `issue_collections/export_issues_discussions.py` collects issues, issue comments, discussions, discussion comments, and repository README content from GitHub. It expects a GitHub access token in the environment variable `github_access_token` when authenticated API access is needed.
 
@@ -242,6 +256,8 @@ python issue_collections/export_issues_discussions.py \
 The collected issue workbooks used by the LLM/API pipelines are stored under `LLM Prompts/gh-issues/`. The archive `issue_collections/gh_issue_exports.zip` is a convenience snapshot of collected exports.
 
 ## LLM Prompt and Human Labeling Inputs
+
+[Back to Table of Contents](#table-of-contents) | [Artifact Guide](ARTIFACT.md) | [File Inventory](ARTIFACT_FILE_INVENTORY.md)
 
 The original phase-based prompt workflow is represented by:
 
@@ -260,6 +276,8 @@ The prompt used for the paper-version API rerun is `LLM Prompts/Master_Classifie
 Human-labeled calibration and validation workbooks live under `LLM Prompts/human issues/`. The main sample workbook is `LLM Prompts/human issues/issue_sample_180_50.xlsx`.
 
 ## Validation Sample and Confidence Intervals
+
+[Back to Table of Contents](#table-of-contents) | [Artifact Guide](ARTIFACT.md) | [File Inventory](ARTIFACT_FILE_INVENTORY.md)
 
 The combined 180-issue validation sample is saved here:
 
@@ -285,6 +303,8 @@ The corresponding CI support tables are:
 
 ## Full-Corpus Context Table
 
+[Back to Table of Contents](#table-of-contents) | [Artifact Guide](ARTIFACT.md) | [File Inventory](ARTIFACT_FILE_INVENTORY.md)
+
 To describe the 3,900-issue corpus context, run:
 
 ```bash
@@ -300,6 +320,8 @@ Outputs:
 These tables report per-repository median `[IQR]` for comment count, unique commenters, thread participants, and approximate issue-thread word count.
 
 ## OpenAI API Recoding
+
+[Back to Table of Contents](#table-of-contents) | [Artifact Guide](ARTIFACT.md) | [File Inventory](ARTIFACT_FILE_INVENTORY.md)
 
 Phase-sample recoding:
 
@@ -325,6 +347,8 @@ Both scripts use shared OpenAI API code in `scripts/openai_api/recode_phase_samp
 
 ## Analysis Output Families
 
+[Back to Table of Contents](#table-of-contents) | [Artifact Guide](ARTIFACT.md) | [File Inventory](ARTIFACT_FILE_INVENTORY.md)
+
 | Output family | Path | Data source | Purpose |
 |---|---|---|---|
 | Paper-version analysis | `outputs/analysis_out_paper_version/` | `outputs/data/phase3_paper_version/` | Original manuscript tables/figures generated from the earlier ChatGPT-UI-coded phase-3 labels. |
@@ -334,6 +358,8 @@ Both scripts use shared OpenAI API code in `scripts/openai_api/recode_phase_samp
 | Shared support tables | `outputs/tables/` | Validation sample and full corpus | CI summaries, context tables, strata checks, and manuscript support tables. |
 
 ## Important Generated Tables
+
+[Back to Table of Contents](#table-of-contents) | [Artifact Guide](ARTIFACT.md) | [File Inventory](ARTIFACT_FILE_INVENTORY.md)
 
 Main chi-square association tables:
 
@@ -359,6 +385,8 @@ Corpus context and validation support tables:
 - `outputs/tables/stratified_sampling_ci_from_pipeline_extract.csv`
 
 ## Regeneration Commands
+
+[Back to Table of Contents](#table-of-contents) | [Artifact Guide](ARTIFACT.md) | [File Inventory](ARTIFACT_FILE_INVENTORY.md)
 
 Create the prompt-v4 core-normalized corpus from the prompt-v4 full-corpus recode:
 
@@ -387,6 +415,8 @@ python scripts/compare_analysis_outputs.py \
 ```
 
 ## Notes
+
+[Back to Table of Contents](#table-of-contents) | [Artifact Guide](ARTIFACT.md) | [File Inventory](ARTIFACT_FILE_INVENTORY.md)
 
 - The study window is November 5, 2021 through November 5, 2025. Monthly trend outputs use 49 calendar month bins (`2021-11` through `2025-11` inclusive), representing a 48-month elapsed window.
 - The latest corpus-level rerun yielded `2,965/3,900 = 76%` usability-related issues. This falls inside the human-validation CI above.
